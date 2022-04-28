@@ -26,80 +26,7 @@
     },
     "autoRefreshSample": false
   },
-  "explorationFilters": [
-    {
-      "validityFilter": {
-        "column": "date_mutation",
-        "type": "validity",
-        "params": {
-          "nok": true,
-          "type": "DateSource",
-          "ok": true,
-          "empty": true
-        }
-      },
-      "column": "date_mutation",
-      "active": true,
-      "alphanumFilter": {
-        "values": [
-          "2019-07-24"
-        ],
-        "column": "date_mutation",
-        "type": "alphanum",
-        "params": {
-          "mode": "full_string",
-          "normalization": "exact"
-        }
-      },
-      "type": "columnFilter",
-      "$$hashKey": "object:9154",
-      "facet": {
-        "columnType": "ALPHANUM",
-        "selectedValues": {},
-        "column": "date_mutation",
-        "sort": "count",
-        "type": "facet",
-        "currentMode": "ALPHANUM"
-      },
-      "currentMode": "SIMPLE_ALPHANUM"
-    },
-    {
-      "validityFilter": {
-        "column": "longitude",
-        "type": "validity",
-        "params": {
-          "nok": true,
-          "type": "DoubleMeaning",
-          "ok": true,
-          "empty": true
-        }
-      },
-      "column": "longitude",
-      "active": true,
-      "alphanumFilter": {
-        "values": [],
-        "column": "longitude",
-        "type": "alphanum",
-        "params": {
-          "mode": "full_string",
-          "normalization": "exact"
-        }
-      },
-      "type": "columnFilter",
-      "$$hashKey": "object:9441",
-      "facet": {
-        "columnType": "NUMERICAL",
-        "selectedValues": {
-          "2.36727": true
-        },
-        "column": "longitude",
-        "sort": "count",
-        "type": "facet",
-        "currentMode": "ALPHANUM"
-      },
-      "currentMode": "FACET"
-    }
-  ],
+  "explorationFilters": [],
   "origin": "PREPARE_RECIPE",
   "exploreUIParams": {
     "autoRefresh": true
@@ -119,28 +46,6 @@
         ],
         "keep": false,
         "appliesTo": "COLUMNS"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": true,
-      "type": "CreateColumnWithGREL",
-      "params": {
-        "expression": "valeur_fonciere / lot1_surface_carrez",
-        "column": "prix_m2_lot1"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": true,
-      "type": "CreateColumnWithGREL",
-      "params": {
-        "expression": "valeur_fonciere / surface_reelle_bati",
-        "column": "prix_m2_bati"
       },
       "alwaysShowComment": false
     },
