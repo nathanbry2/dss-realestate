@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651151938188
+    "lastModifiedOn": 1651153242042
   },
   "creationTag": {
     "versionNumber": 0,
@@ -68,7 +68,8 @@
       {"name":"nombre_pieces_principales","type":"bigint"},
       {"name":"longitude","type":"double"},
       {"name":"latitude","type":"double"},
-      {"name":"pluscode_16","type":"string"}
+      {"name":"pluscode_16","type":"string"},
+      {"name":"pluscode_12","type":"string"}
     ],
     "userModified": true
   },
