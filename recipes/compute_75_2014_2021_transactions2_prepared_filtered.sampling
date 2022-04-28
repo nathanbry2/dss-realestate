@@ -5,6 +5,7 @@
       {
         "input": "prix_m2_not_null",
         "col": "longitude",
+        "num": 0,
         "operator": "\u003e\u003d [number]"
       },
       {
