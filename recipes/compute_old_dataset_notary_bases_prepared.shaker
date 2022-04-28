@@ -31,19 +31,7 @@
   "exploreUIParams": {
     "autoRefresh": true
   },
-  "steps": [
-    {
-      "preview": true,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "CreateColumnWithGREL",
-      "params": {
-        "expression": "get(pluscode_16,0,13)",
-        "column": "pluscode_12"
-      },
-      "alwaysShowComment": false
-    }
-  ],
+  "steps": [],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
