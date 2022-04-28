@@ -85,15 +85,15 @@
           },
           {
             "name": "valeur_fonciere",
-            "type": "string"
+            "type": "double"
           },
           {
             "name": "code_postal",
-            "type": "string"
+            "type": "bigint"
           },
           {
             "name": "lot1_surface_carrez",
-            "type": "string"
+            "type": "double"
           },
           {
             "name": "type_local",
@@ -101,19 +101,19 @@
           },
           {
             "name": "surface_reelle_bati",
-            "type": "string"
+            "type": "bigint"
           },
           {
             "name": "nombre_pieces_principales",
-            "type": "string"
+            "type": "bigint"
           },
           {
             "name": "longitude",
-            "type": "string"
+            "type": "double"
           },
           {
             "name": "latitude",
-            "type": "string"
+            "type": "double"
           }
         ],
         "userModified": false
