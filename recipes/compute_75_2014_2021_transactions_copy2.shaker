@@ -48,6 +48,37 @@
         "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "if(and(isNull(lot1_surface_carrez),isNull(surface_reelle_bati)),0,1) ",
+        "column": "has_surface"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnValue",
+      "params": {
+        "normalizationMode": "EXACT",
+        "booleanMode": "AND",
+        "columns": [
+          "has_surface"
+        ],
+        "values": [
+          "1"
+        ],
+        "matchingMode": "FULL_STRING",
+        "action": "KEEP_ROW",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -81,6 +112,7 @@
     "latitude": 106,
     "nombre_pieces_principales": 203,
     "lot1_surface_carrez": 158,
+    "has_surface": 127,
     "date_mutation": 141,
     "type_local": 120,
     "surface_reelle_bati": 158,
