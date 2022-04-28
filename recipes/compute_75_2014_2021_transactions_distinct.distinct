@@ -1,0 +1,78 @@
+{
+  "preFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "keys": [
+    {
+      "column": "date_mutation"
+    },
+    {
+      "column": "nature_mutation"
+    },
+    {
+      "column": "valeur_fonciere"
+    },
+    {
+      "column": "code_postal"
+    },
+    {
+      "column": "lot1_surface_carrez"
+    },
+    {
+      "column": "type_local"
+    },
+    {
+      "column": "surface_reelle_bati"
+    },
+    {
+      "column": "nombre_pieces_principales"
+    },
+    {
+      "column": "longitude"
+    },
+    {
+      "column": "latitude"
+    }
+  ],
+  "globalCount": false,
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "outputColumnNameOverrides": {},
+  "postFilter": {
+    "distinct": false,
+    "enabled": false
+  }
+}
