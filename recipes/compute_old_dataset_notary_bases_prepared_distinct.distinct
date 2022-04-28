@@ -9,9 +9,6 @@
     },
     {
       "column": "latitude"
-    },
-    {
-      "column": "pluscode_16"
     }
   ],
   "globalCount": false,
@@ -61,10 +58,6 @@
           {
             "name": "latitude",
             "type": "double"
-          },
-          {
-            "name": "pluscode_16",
-            "type": "string"
           }
         ],
         "userModified": false
