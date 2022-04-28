@@ -96,7 +96,7 @@
       "limitFollowing": false,
       "orders": [
         {
-          "column": "longitude",
+          "column": "latitude",
           "desc": false
         }
       ],
