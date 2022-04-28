@@ -27,7 +27,7 @@
       "$idx": 7,
       "sum": false,
       "concat": false,
-      "type": "string",
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -46,7 +46,7 @@
       "$idx": 7,
       "sum": false,
       "concat": false,
-      "type": "string",
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -85,7 +85,7 @@
       "$idx": 1,
       "sum": false,
       "concat": false,
-      "type": "string",
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -103,7 +103,7 @@
       "$idx": 2,
       "sum": false,
       "concat": false,
-      "type": "string",
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -121,7 +121,7 @@
       "$idx": 3,
       "sum": false,
       "concat": false,
-      "type": "string",
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -157,7 +157,7 @@
       "$idx": 5,
       "sum": false,
       "concat": false,
-      "type": "string",
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -175,7 +175,7 @@
       "$idx": 6,
       "sum": false,
       "concat": false,
-      "type": "string",
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -233,11 +233,11 @@
           },
           {
             "name": "longitude",
-            "type": "string"
+            "type": "double"
           },
           {
             "name": "latitude",
-            "type": "string"
+            "type": "double"
           },
           {
             "name": "count",
