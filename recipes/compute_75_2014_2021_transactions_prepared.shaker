@@ -29,7 +29,43 @@
   "explorationFilters": [
     {
       "validityFilter": {
-        "column": "prix_m2_not_null",
+        "column": "date_mutation",
+        "type": "validity",
+        "params": {
+          "nok": true,
+          "type": "DateSource",
+          "ok": true,
+          "empty": true
+        }
+      },
+      "column": "date_mutation",
+      "active": true,
+      "alphanumFilter": {
+        "values": [
+          "2019-07-24"
+        ],
+        "column": "date_mutation",
+        "type": "alphanum",
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        }
+      },
+      "type": "columnFilter",
+      "$$hashKey": "object:9154",
+      "facet": {
+        "columnType": "ALPHANUM",
+        "selectedValues": {},
+        "column": "date_mutation",
+        "sort": "count",
+        "type": "facet",
+        "currentMode": "ALPHANUM"
+      },
+      "currentMode": "SIMPLE_ALPHANUM"
+    },
+    {
+      "validityFilter": {
+        "column": "longitude",
         "type": "validity",
         "params": {
           "nok": true,
@@ -38,11 +74,11 @@
           "empty": true
         }
       },
-      "column": "prix_m2_not_null",
+      "column": "longitude",
       "active": true,
       "alphanumFilter": {
         "values": [],
-        "column": "prix_m2_not_null",
+        "column": "longitude",
         "type": "alphanum",
         "params": {
           "mode": "full_string",
@@ -50,15 +86,16 @@
         }
       },
       "type": "columnFilter",
-      "$$hashKey": "object:17897",
+      "$$hashKey": "object:9441",
       "facet": {
         "columnType": "NUMERICAL",
-        "minValue": 50000,
-        "selectedValues": {},
-        "column": "prix_m2_not_null",
+        "selectedValues": {
+          "2.36727": true
+        },
+        "column": "longitude",
         "sort": "count",
         "type": "facet",
-        "currentMode": "NUMERICAL"
+        "currentMode": "ALPHANUM"
       },
       "currentMode": "FACET"
     }
