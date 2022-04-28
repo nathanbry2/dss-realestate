@@ -230,7 +230,9 @@
     }
   },
   "enlargeYourBits": true,
-  "outputColumnNameOverrides": {},
+  "outputColumnNameOverrides": {
+    "code_postal_first": "code_postal"
+  },
   "computedColumns": [],
   "postFilter": {
     "$status": {
