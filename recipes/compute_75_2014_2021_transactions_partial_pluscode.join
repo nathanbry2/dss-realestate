@@ -158,14 +158,8 @@
   },
   "virtualInputs": [
     {
-      "preFilter": {
-        "distinct": false,
-        "enabled": false
-      },
       "autoSelectColumns": false,
-      "originLabel": "75_2014_2021_transactions2_prepared_filtered",
-      "index": 0,
-      "computedColumns": []
+      "index": 1
     },
     {
       "preFilter": {
@@ -174,7 +168,7 @@
       },
       "autoSelectColumns": false,
       "originLabel": "old_dataset_notary_bases_unique",
-      "index": 1,
+      "index": 0,
       "computedColumns": []
     }
   ],
