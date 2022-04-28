@@ -1,8 +1,11 @@
 import numpy as np
 from math import sin, cos, sqrt, atan2, radians
 
-# R = approximate radius of earth in km,
-# centre cordinates correspond to Place Dauphine coordinates (which is considered as Paris surface centre)
+''' R = approximate radius of earth in km,
+    centre cordinates correspond to Place Dauphine coordinates (which is considered as Paris surface centre)
+    
+    This functions computes the distance (in km) between a location and Paris centre. 
+    It takes into input the latitude and longitude columns of a pandas dataframe, and returns a distance column'''
 
 def distance_to_centre(lat, long, R = 6373.0, lat_centre = 48.8565, long_centre = 2.3424):
    
