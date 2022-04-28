@@ -72,6 +72,53 @@
   },
   "outputColumnNameOverrides": {},
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "date_mutation",
+            "type": "string"
+          },
+          {
+            "name": "nature_mutation",
+            "type": "string"
+          },
+          {
+            "name": "valeur_fonciere",
+            "type": "string"
+          },
+          {
+            "name": "code_postal",
+            "type": "string"
+          },
+          {
+            "name": "lot1_surface_carrez",
+            "type": "string"
+          },
+          {
+            "name": "type_local",
+            "type": "string"
+          },
+          {
+            "name": "surface_reelle_bati",
+            "type": "string"
+          },
+          {
+            "name": "nombre_pieces_principales",
+            "type": "string"
+          },
+          {
+            "name": "longitude",
+            "type": "string"
+          },
+          {
+            "name": "latitude",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   }
