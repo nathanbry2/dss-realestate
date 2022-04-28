@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651142632518
+    "lastModifiedOn": 1651142635513
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,7 +57,18 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"date_mutation","type":"string"},
+      {"name":"nature_mutation","type":"string"},
+      {"name":"valeur_fonciere","type":"double"},
+      {"name":"code_postal","type":"bigint"},
+      {"name":"lot1_surface_carrez","type":"double"},
+      {"name":"type_local","type":"string"},
+      {"name":"surface_reelle_bati","type":"bigint"},
+      {"name":"nombre_pieces_principales","type":"bigint"},
+      {"name":"longitude","type":"double"},
+      {"name":"latitude","type":"double"}
+    ],
     "userModified": true
   },
   "dkuProperties": [],
