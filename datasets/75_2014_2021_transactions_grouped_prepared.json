@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651143367038
+    "lastModifiedOn": 1651144257497
   },
   "creationTag": {
     "versionNumber": 0,
@@ -67,6 +67,8 @@
       {"name":"code_postal","type":"bigint"},
       {"name":"lot1_surface_carrez_sum","type":"double"},
       {"name":"surface_reelle_bati_sum","type":"bigint"},
+      {"name":"surface_m2_not_null","type":"double"},
+      {"name":"prix_m2_not_null","type":"double"},
       {"name":"nombre_pieces_principales_sum","type":"bigint"},
       {"name":"count","type":"bigint"}
     ],
