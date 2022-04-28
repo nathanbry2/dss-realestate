@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651153700481
+    "lastModifiedOn": 1651153725364
   },
   "creationTag": {
     "versionNumber": 0,
@@ -60,7 +60,7 @@
     "columns": [
       {"name":"latitude","type":"double"},
       {"name":"longitude","type":"double"},
-      {"name":"pluscode_16_count","type":"bigint"},
+      {"name":"pluscode_16_distinct","type":"bigint"},
       {"name":"pluscode_16_first","type":"string"}
     ],
     "userModified": true
