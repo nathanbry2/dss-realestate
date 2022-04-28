@@ -6,68 +6,113 @@
       "conditionsMode": "AND",
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "longitude",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "longitude",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        },
+        {
+          "column1": {
+            "name": "latitude",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "latitude",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "date_mutation",
+      "type": "string",
       "table": 0
     },
     {
       "name": "longitude",
+      "type": "double",
       "table": 0
     },
     {
       "name": "latitude",
+      "type": "double",
       "table": 0
     },
     {
       "name": "type_local",
+      "type": "string",
       "table": 0
     },
     {
       "name": "nature_mutation",
+      "type": "string",
       "table": 0
     },
     {
       "name": "valeur_fonciere_avg",
+      "type": "double",
       "table": 0
     },
     {
       "name": "code_postal",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "lot1_surface_carrez_sum",
+      "type": "double",
       "table": 0
     },
     {
       "name": "surface_reelle_bati_sum",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "surface_m2_not_null",
+      "type": "double",
       "table": 0
     },
     {
       "name": "prix_m2_not_null",
+      "type": "double",
       "table": 0
     },
     {
       "name": "nombre_pieces_principales_sum",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "count",
+      "type": "bigint",
       "table": 0
     },
     {
-      "name": "pluscode_16_distinct",
-      "table": 1
-    },
-    {
       "name": "pluscode_16_first",
+      "type": "string",
       "table": 1
     }
   ],
@@ -128,5 +173,71 @@
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "date_mutation",
+            "type": "string"
+          },
+          {
+            "name": "longitude",
+            "type": "double"
+          },
+          {
+            "name": "latitude",
+            "type": "double"
+          },
+          {
+            "name": "type_local",
+            "type": "string"
+          },
+          {
+            "name": "nature_mutation",
+            "type": "string"
+          },
+          {
+            "name": "valeur_fonciere_avg",
+            "type": "double"
+          },
+          {
+            "name": "code_postal",
+            "type": "bigint"
+          },
+          {
+            "name": "lot1_surface_carrez_sum",
+            "type": "double"
+          },
+          {
+            "name": "surface_reelle_bati_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "surface_m2_not_null",
+            "type": "double"
+          },
+          {
+            "name": "prix_m2_not_null",
+            "type": "double"
+          },
+          {
+            "name": "nombre_pieces_principales_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          },
+          {
+            "name": "pluscode_16_first",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
