@@ -27,7 +27,8 @@ convert_dic = {
 
 '''
     This function converts pluscodes (length must be minimum 8) into matrix coordinates.
-    It takes as input the pluscode column and outputs several lists containing coordinates and reduced coordiates (for a smaller matrix).'''
+    It takes as input the pluscode column and outputs several lists,
+    containing coordinates and reduced coordiates (for a smaller matrix).'''
 
 def convert_pluscode(pluscode_col):
     
