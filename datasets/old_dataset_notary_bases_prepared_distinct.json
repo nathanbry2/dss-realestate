@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651152627395
+    "lastModifiedOn": 1651153292397
   },
   "creationTag": {
     "versionNumber": 0,
@@ -59,7 +59,8 @@
   "schema": {
     "columns": [
       {"name":"longitude","type":"double"},
-      {"name":"latitude","type":"double"}
+      {"name":"latitude","type":"double"},
+      {"name":"pluscode_12","type":"string"}
     ],
     "userModified": true
   },
