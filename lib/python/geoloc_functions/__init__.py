@@ -5,7 +5,7 @@ from math import sin, cos, sqrt, atan2, radians, pi
     centre cordinates correspond to Place Dauphine coordinates (which is considered as Paris surface centre)
     
     This functions computes the distance (in km) between a location and Paris centre. 
-    It takes as inputs the latitude and longitude columns of a pandas dataframe, and returns a distance column'''
+    It takes as inputs the latitude and longitude columns of a pandas dataframe, and returns a distance list'''
 
 def distance_to_centre(lat, long, R = 6373.0, lat_centre = 48.8565, long_centre = 2.3424):
    
@@ -21,7 +21,7 @@ def distance_to_centre(lat, long, R = 6373.0, lat_centre = 48.8565, long_centre 
 
 '''
     This functions computes the direction between a location and Paris centre. 
-    It takes as inputs the latitude and longitude columns of a pandas dataframe, and returns a direction column'''
+    It takes as inputs the latitude and longitude columns of a pandas dataframe, and returns a direction list'''
 
 def direction_from_centre(destination_long, destination_lat, origin_lat = 48.853, origin_long = 2.35):
     deltaX = destination_long - origin_long
