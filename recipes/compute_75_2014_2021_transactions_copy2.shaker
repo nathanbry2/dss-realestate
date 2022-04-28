@@ -81,7 +81,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "ColumnsSelector",
@@ -90,6 +90,26 @@
           "has_surface"
         ],
         "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnValue",
+      "params": {
+        "normalizationMode": "EXACT",
+        "booleanMode": "AND",
+        "columns": [
+          "nature_mutation"
+        ],
+        "values": [
+          "Vente"
+        ],
+        "matchingMode": "FULL_STRING",
+        "action": "KEEP_ROW",
         "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
