@@ -188,7 +188,7 @@
       "max": false,
       "firstLastNotNull": false,
       "column": "pluscode_16",
-      "count": true,
+      "count": false,
       "$idx": 8,
       "sum": false,
       "concat": false,
@@ -196,7 +196,7 @@
       "concatDistinct": false,
       "sum2": false,
       "min": false,
-      "countDistinct": false,
+      "countDistinct": true,
       "avg": false,
       "$selected": false,
       "stddev": false,
@@ -256,7 +256,7 @@
             "type": "double"
           },
           {
-            "name": "pluscode_16_count",
+            "name": "pluscode_16_distinct",
             "type": "bigint"
           },
           {
