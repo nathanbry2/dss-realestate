@@ -55,80 +55,6 @@
       "$selected": false,
       "stddev": false,
       "first": false
-    }
-  ],
-  "values": [
-    {
-      "last": false,
-      "max": false,
-      "firstLastNotNull": false,
-      "column": "nature_mutation",
-      "count": false,
-      "$idx": 0,
-      "sum": false,
-      "concat": false,
-      "type": "string",
-      "concatDistinct": false,
-      "sum2": false,
-      "min": false,
-      "countDistinct": false,
-      "avg": false,
-      "stddev": false,
-      "first": false
-    },
-    {
-      "last": false,
-      "max": false,
-      "firstLastNotNull": false,
-      "column": "valeur_fonciere",
-      "count": false,
-      "$idx": 1,
-      "sum": false,
-      "concat": false,
-      "type": "double",
-      "concatDistinct": false,
-      "sum2": false,
-      "min": false,
-      "countDistinct": false,
-      "avg": false,
-      "stddev": false,
-      "first": false
-    },
-    {
-      "last": false,
-      "max": false,
-      "firstLastNotNull": false,
-      "column": "code_postal",
-      "count": false,
-      "$idx": 2,
-      "sum": false,
-      "concat": false,
-      "type": "bigint",
-      "concatDistinct": false,
-      "sum2": false,
-      "min": false,
-      "countDistinct": false,
-      "avg": false,
-      "stddev": false,
-      "first": false
-    },
-    {
-      "last": false,
-      "max": false,
-      "firstLastNotNull": false,
-      "column": "lot1_surface_carrez",
-      "count": false,
-      "$idx": 3,
-      "sum": false,
-      "concat": false,
-      "type": "double",
-      "concatDistinct": false,
-      "sum2": false,
-      "min": false,
-      "countDistinct": false,
-      "avg": false,
-      "stddev": false,
-      "first": false
     },
     {
       "last": false,
@@ -145,6 +71,87 @@
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "nature_mutation",
+      "count": false,
+      "$idx": 0,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "$selected": false,
+      "stddev": false,
+      "first": false
+    }
+  ],
+  "values": [
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "valeur_fonciere",
+      "count": false,
+      "$idx": 0,
+      "sum": false,
+      "concat": false,
+      "type": "double",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": true,
+      "$selected": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "code_postal",
+      "count": false,
+      "$idx": 1,
+      "sum": false,
+      "concat": false,
+      "type": "bigint",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "$selected": true,
+      "stddev": false,
+      "first": true,
+      "orderColumn": "date_mutation",
+      "concatSeparator": ","
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "lot1_surface_carrez",
+      "count": false,
+      "$idx": 2,
+      "sum": true,
+      "concat": false,
+      "type": "double",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -154,8 +161,8 @@
       "firstLastNotNull": false,
       "column": "surface_reelle_bati",
       "count": false,
-      "$idx": 5,
-      "sum": false,
+      "$idx": 3,
+      "sum": true,
       "concat": false,
       "type": "bigint",
       "concatDistinct": false,
@@ -163,6 +170,7 @@
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -172,8 +180,8 @@
       "firstLastNotNull": false,
       "column": "nombre_pieces_principales",
       "count": false,
-      "$idx": 6,
-      "sum": false,
+      "$idx": 4,
+      "sum": true,
       "concat": false,
       "type": "bigint",
       "concatDistinct": false,
@@ -181,6 +189,7 @@
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     }
@@ -238,6 +247,34 @@
           {
             "name": "latitude",
             "type": "double"
+          },
+          {
+            "name": "type_local",
+            "type": "string"
+          },
+          {
+            "name": "nature_mutation",
+            "type": "string"
+          },
+          {
+            "name": "valeur_fonciere_avg",
+            "type": "double"
+          },
+          {
+            "name": "code_postal_first",
+            "type": "bigint"
+          },
+          {
+            "name": "lot1_surface_carrez_sum",
+            "type": "double"
+          },
+          {
+            "name": "surface_reelle_bati_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "nombre_pieces_principales_sum",
+            "type": "bigint"
           },
           {
             "name": "count",
