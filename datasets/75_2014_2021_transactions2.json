@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651142635513
+    "lastModifiedOn": 1651143213784
   },
   "creationTag": {
     "versionNumber": 0,
@@ -65,6 +65,7 @@
       {"name":"lot1_surface_carrez","type":"double"},
       {"name":"type_local","type":"string"},
       {"name":"surface_reelle_bati","type":"bigint"},
+      {"name":"has_surface","type":"bigint"},
       {"name":"nombre_pieces_principales","type":"bigint"},
       {"name":"longitude","type":"double"},
       {"name":"latitude","type":"double"}
