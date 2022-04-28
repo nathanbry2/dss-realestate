@@ -246,7 +246,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAABQlJREFUeF7tnM+LHEUUx9+rcY1ZRcQgqMSdRRAlB/GgiB4UEUT2B5qDqydFPOhBicLujiwRB4zRWYOL6CFEMSgYNCbkMDNBozkpevAf8KQ7SxAlKDmE2bjZrifTi5uunp5M93T1bHXnu8em+s2r7+d9X1X3djcT/gqtABd6dpgcAXDBiwCAAbjgChR8enAwABdcgYJPDw4G4IIrUPDpwcEAnE8FypXGg+HMW7Wpn/I5m8GzLqyDy5XmF0Ry66Y0wudbi5PTg0uVzzOvKMCkvCUhdV8QlSK1vPzuxFf5xNc/69wDHn+9+bgITQWnyqK/F1ZPhR3cAUyi3jDGsjoIwP0LZctGbACWiglYPgDgDUUK4uB0gEXo3u4N2cTcllWtxR8GYFYHRfRjRHT7/7oK0cWV2lTnWO7/ABiA3S5iG2swHOwwYwC+PBy0aLRoh+1LRHBwgRxcrjQ/DU+HmY6mvQ7GGuyIicuV+jEi3nEpHfmbWX0CwL0B5WoNHiZgJqqS8PNB6YT1Dyu16c8dqfdYaQBwj02WD5jobQMwyWEAjlVXgw0auoMBeDBQg54FwMmVQ4tGi05eNVmdAQcnVxYOhoOTV01WZ8DByZWFg+Hg5FWT9oydc/U7omKUFL0zrDtZva6DSXhXOLeV0ckFqrJOO+8sznfSwePz9SeFeY85YbVI5L2w9YDVA8xyVzC31vbJRwE4QXkCcAKx+gyFgxOuwSRwcOryg4NTS7gZAA6Gg+1VU9xIcHBcpfqPg4Ph4P5VYntE3hysuTSvRBuvzwjpb1dq0x/b1iZpPDjYgoM3AHuLQfGF5AgAd56KrDSe6apKkQt5utEBwJfpK+X5Zp1Yrrs0hP9g0V8DcNJmHD1+y1s0ANsB2SsKAGMNzrbC4OBs9YWDM3QwE98UxuettZfOLM2sZos1sKMZ1g/1+p0iO5iIdzHRPcG5e2vtiUICLi98c0sk5HXvUFF30VcU4Nvm6k8rxS8ZkFm/Rbr0GgBn10eHtgYD8AbEf9vtGW8Hda3BZ6sz57PADMAZbrKiWrQwzbLQAQOmyPHW4vRHuQHccWtUsmjRRIUAPFZpnGKikQDk37SWUwCcM8Djr564IcqpetvIUQCWI0laNCl1IawlXzN6bLn6yLk0rTvVGjxWqT/LFHpJWqu9pPSbAJwMsCjeyUL3B2Hy9mt3DwdwVdRY++TLXZXE+hwAE/X6d2ESB0cBFh6ZZVl/OKx7qzb5flxXx3NwVVR5tXk6GFSEfyXWPwNw1oAvmjtupgZT6XhXO1drq7/vf+KvruOxKgGAfZmE5HDUc9HZOjgCsND1QvRQkJ0qeXs0bTsLwBHfi476jFLvd5O6H3x3AXDk5RfRd2jRjtzo6L0Gx3NwesDthtH3hdSf/hostNtcm0sHmL1Z854z/+NfBzOZz18p+ZA0v2KOVW3/kR2i58zjpUP+y2dCpc3jTJ7/nSytXzR2n0Sf+R8EFz1qxIj4PValL30Hi9wYyvk9EjG+GS1MJ/wWTfrm4Fitrtqv9PqCoQPTSX+TJTJuHFe8j7XsDbXS0z5gLXeaY6/ex3rNHKv4R+60aJG7+8Zl/iWeg2Mt1BjkogIA7CIVizkBsEUxXQwFwC5SsZgTAFsU08VQAOwiFYs5AbBFMV0MBcAuUrGYEwBbFNPFUADsIhWLOQGwRTFdDAXALlKxmBMAWxTTxVAA7CIVizkBsEUxXQwFwC5SsZjTf4gslH9JSTN5AAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAABRVJREFUeF7tnc1rXFUYxp/3zKSgRYIlIEpIqIj+B+5UIoqaL0H8E9yVlmhoki6E7jrT2m4KblRwL4KaDwvdiQiiGIu1VRrNh1HBjRu1STr3vDKm2Dl37jRzOudOztw8XabnvHnP83uf95x77+SOgP8KrYAUenVcHAi44EVAwARccAUKvjw6mIALrkDBl0cHE3BvKjA4M/9kOnMxqr9UJr/qzRXdW9aFdfDw3OJJqI42ymLFzhDwvRVKdLMyAQMVgQ6lk92oTrwT3QICJdTzDn5ken6gXDavNbVjQdLkYKBigDlnrOLq+tnx44H0jC5MIQD3leWDFLRrMLJGwOj9W5V1B3cK2AKX09YzajfXz01+E50lPROigxVXVeRXgb7gaGftNAF7VlMew0M4mIDzIBMoJgHfXUi2aLboQFbLKQwdTAf/r4BtcR3MPTgn9/mGPTq9OJyeY7V2BH2lC51cBxOwL4mcxg/PLUxDMd4YXoCKNt+d8rrRQcA5AfMN203AovZU+WZ5OZ3jysXRbd+893N8T52iuwo4ozMo5MpGdWxqP4H5/m4CbnGZlNX6Cdi3vDzH08GegqHHHjYQMAHvKqDo+BTNFu1fTB3PoIP9JeQhi4cs/6rJawYd7K8sHUwH+1dNXjNicLBAmz/eA91crU5cyWvdncSN0sGDr186Yg4l76cW9puI3ujWvehWp2iB/gHg+cbcDHSKgD3KsA64dKj2YeMUhfxIwB4i3h4arYMJ2B9m1gwC9jxksUUHKDy26AAiskXfVoAODldN7Uaig9tVau9x3INDOFj0jK3pjbTc629Nru6NIN8RBBwKsMqpFKrl9er4G/ni2zs6ARPw3lXSyYihmYUpY8QttATX1ehsz9zoqLdoOji7DOqARfBy4/+KlSoBd2KbO3P3vUUTcBiQraIQMPfgfCuMDs5XXzo4RwcD8lMaXwJ8tlkd+y5frNyD7yiQJ2A1f0Lss40wE8gJAi7IKRoHCfCjs5f7E2y97bQmNf8o9PuiXiYdQMDbH7mAZYWA892Nu3bI2nUwAe++ZcA852K1WK+On8wDNQF3+ZCV+RoJ4OueAjw0u3BcgKcbK9Ki9K5BknpP5MFr0UUC/EoKcIWAgVaA5b7Db2a16LXTI1udtO6OWvQTMx8/sK1l550Z9WSs0QEBCDjjMqkVYBX5W1SfcZ6g1cyxjfOj1/YV8JaUPkkl8LMC3xIwlrMuk3wAJztyYrP//utNgE+P1NqF3raDh2fnjwEYcQOX3gPsDAFnPw/uFLC15owx1vmkiAq+3KiMu2eZu9D2BCyvurHMWQIGTIsH/nkBFshKmqncsp+vnZ/4oenn7Vp918EEnPnB964Dxg4UTzWykxoqWsJhAs54pX/Wi9C8/vgsFsDl1NcVAF+wRUdyoyPrFN1qDxa0cHCngEXM484xXuWSiL6YbgtWdcWIPOY8JlOzVBLrfM3Nf5dUVleNkaNOjASfooSX0nEVuiEQ91tTVJcg0hRXgU0BBt0cdKmUMdYqfjeCh9375M1xrULrLVpEHnLaI+yiwoy52mhS34PF6MBeOajqTh2wAR50xiayWCqpE9dCb9YBC6TfyfeWLqHP1UFV/2rbwe3u1RwXlwIEHBeP4NkQcHBJ4wpIwHHxCJ4NAQeXNK6ABBwXj+DZEHBwSeMKSMBx8QieDQEHlzSugAQcF4/g2RBwcEnjCkjAcfEIng0BB5c0roAEHBeP4NkQcHBJ4wr4LzFyxcK/XXQcAAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
@@ -281,13 +281,60 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "New chart",
+        "name": "Count by type_local",
         "userEditedName": false,
-        "genericDimension0": [],
+        "genericDimension0": [
+          {
+            "column": "type_local",
+            "type": "ALPHANUM",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of records, descending"
+            }
+          }
+        ],
         "genericDimension1": [],
         "facetDimension": [],
         "animationDimension": [],
-        "genericMeasures": [],
+        "genericMeasures": [
+          {
+            "function": "COUNT",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          }
+        ],
         "xDimension": [],
         "yDimension": [],
         "uaXDimension": [],
@@ -305,6 +352,7 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
+        "filters": [],
         "axis1LogScale": false,
         "axis2LogScale": false,
         "includeZero": true,
@@ -365,6 +413,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -382,6 +431,7 @@
           "gridLonDeg": 0.6,
           "gridLatDeg": 0.6
         },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAAnlJREFUeF7t3L8uBHEUxfHfyEYiolIoiM4r8A5CeAGReAGNbChV/kShplehQOMVNBK1RrKdXmV2NSqyMpuzufeYfNVzf+fO+cxPuVXhr9UNVK1+O16uANzyjwBggFveQMtfjxsMcMsbaPnrcYMBHt7AQvd+eRz99E7Xn8ZxDmf8bkC6wYvdu62qmtjRih1cvp2sX2lnMD2sAYBb/m0ADPDwBvgX7f91cIP9jaQNAZbq8x8G2N9I2hBgqT7/YYD9jaQNAZbq8x8G2N9I2hBgqT7/YYD9jaQNAZbq8x8G2N9I2hBgqT7/YYD9jaQNAZbq8x8G2N9I2hBgqT7/YYD9jaQNAZbq8x8G2N9I2hBgqT7/YYD9jaQNAZbq8x8G2N9I2hBgqT7/YYD9jaQNAZbq8x8G2N9I2hBgqT7/YYD9jaQNAZbq8x8G2N9I2hBgqT7/YYD9jaQNAZbq8x8G2N9I2hBgqT7/YYD9jaQNAZbq8x8G2N9I2vDfAM8f3M52+pPn0tuWUt5O1raanLHYfdhu8txfz/T79XPvbONFPUeZ/2/A18rLllJ6jYH3H46rQVlR8uq63gW4NPsx0u8bDPCIX9w4bvDmiJk/Hh/cNPm12W/gCy2rfIx4g5eUvLquD5vc4Lm9x+mp6nNGyep0qvr1aPX95xkSsLIQszENABzTc1oKwGnVxwQDHNNzWgrAadXHBAMc03NaCsBp1ccEAxzTc1oKwGnVxwQDHNNzWgrAadXHBAMc03NaCsBp1ccEAxzTc1oKwGnVxwQDHNNzWgrAadXHBAMc03NaCsBp1ccEAxzTc1oKwGnVxwQDHNNzWgrAadXHBAMc03NayherLF5gU9wMYwAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
