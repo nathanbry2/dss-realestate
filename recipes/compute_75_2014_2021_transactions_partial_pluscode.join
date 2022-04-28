@@ -1,0 +1,132 @@
+{
+  "joins": [
+    {
+      "table2": 1,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": []
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "date_mutation",
+      "table": 0
+    },
+    {
+      "name": "longitude",
+      "table": 0
+    },
+    {
+      "name": "latitude",
+      "table": 0
+    },
+    {
+      "name": "type_local",
+      "table": 0
+    },
+    {
+      "name": "nature_mutation",
+      "table": 0
+    },
+    {
+      "name": "valeur_fonciere_avg",
+      "table": 0
+    },
+    {
+      "name": "code_postal",
+      "table": 0
+    },
+    {
+      "name": "lot1_surface_carrez_sum",
+      "table": 0
+    },
+    {
+      "name": "surface_reelle_bati_sum",
+      "table": 0
+    },
+    {
+      "name": "surface_m2_not_null",
+      "table": 0
+    },
+    {
+      "name": "prix_m2_not_null",
+      "table": 0
+    },
+    {
+      "name": "nombre_pieces_principales_sum",
+      "table": 0
+    },
+    {
+      "name": "count",
+      "table": 0
+    },
+    {
+      "name": "pluscode_16_distinct",
+      "table": 1
+    },
+    {
+      "name": "pluscode_16_first",
+      "table": 1
+    }
+  ],
+  "resolvedSelectedColumns": [],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "originLabel": "75_2014_2021_transactions2_prepared_filtered",
+      "index": 0,
+      "computedColumns": []
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "originLabel": "old_dataset_notary_bases_unique",
+      "index": 1,
+      "computedColumns": []
+    }
+  ],
+  "enableAutoCastInJoinConditions": false
+}
