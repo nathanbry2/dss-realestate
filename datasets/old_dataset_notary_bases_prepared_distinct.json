@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651152244439
+    "lastModifiedOn": 1651152283893
   },
   "creationTag": {
     "versionNumber": 0,
@@ -58,17 +58,8 @@
   },
   "schema": {
     "columns": [
-      {"name":"date_mutation","type":"string"},
-      {"name":"nature_mutation","type":"string"},
-      {"name":"valeur_fonciere","type":"double"},
-      {"name":"code_postal","type":"bigint"},
-      {"name":"lot1_surface_carrez","type":"double"},
-      {"name":"type_local","type":"string"},
-      {"name":"surface_reelle_bati","type":"double"},
-      {"name":"nombre_pieces_principales","type":"bigint"},
       {"name":"longitude","type":"double"},
-      {"name":"latitude","type":"double"},
-      {"name":"pluscode_16","type":"string"}
+      {"name":"latitude","type":"double"}
     ],
     "userModified": true
   },
