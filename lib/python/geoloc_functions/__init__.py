@@ -20,9 +20,8 @@ def distance_to_centre(lat, long, R = 6373.0, lat_centre = 48.8565, long_centre 
     return distance
 
 '''
-
-
-    '''
+    This functions computes the direction between a location and Paris centre. 
+    It takes into input the latitude and longitude columns of a pandas dataframe, and returns a direction column'''
 
 def direction_from_centre(destination_long, destination_lat, origin_lat = 48.853, origin_long = 2.35):
     deltaX = destination_long - origin_long
