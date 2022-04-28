@@ -69,7 +69,7 @@
       "leadValues": "1",
       "$selected": false,
       "stddev": false,
-      "value": true,
+      "value": false,
       "orderColumn": "longitude",
       "concatSeparator": ",",
       "last": false,
@@ -122,10 +122,6 @@
           {
             "name": "latitude",
             "type": "double"
-          },
-          {
-            "name": "pluscode_12",
-            "type": "string"
           },
           {
             "name": "pluscode_12_first",
