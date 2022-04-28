@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651091169081
+    "lastModifiedOn": 1651142683649
   },
   "creationTag": {
     "versionNumber": 0,
@@ -59,8 +59,8 @@
   "schema": {
     "columns": [
       {"name":"date_mutation","type":"string"},
-      {"name":"longitude","type":"string"},
-      {"name":"latitude","type":"string"},
+      {"name":"longitude","type":"double"},
+      {"name":"latitude","type":"double"},
       {"name":"count","type":"bigint"}
     ],
     "userModified": true
