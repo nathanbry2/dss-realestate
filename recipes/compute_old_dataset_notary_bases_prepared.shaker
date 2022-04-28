@@ -31,7 +31,19 @@
   "exploreUIParams": {
     "autoRefresh": true
   },
-  "steps": [],
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "get(pluscode_16,0,13)",
+        "column": "pluscode_12"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -59,6 +71,7 @@
   "analysisColumnData": {},
   "columnWidthsByName": {
     "code_postal": 100,
+    "pluscode_12": 127,
     "valeur_fonciere": 128,
     "pluscode_16": 134,
     "latitude": 141,
