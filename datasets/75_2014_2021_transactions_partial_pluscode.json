@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651153810882
+    "lastModifiedOn": 1651153826802
   },
   "creationTag": {
     "versionNumber": 0,
@@ -71,7 +71,6 @@
       {"name":"prix_m2_not_null","type":"double"},
       {"name":"nombre_pieces_principales_sum","type":"bigint"},
       {"name":"count","type":"bigint"},
-      {"name":"pluscode_16_distinct","type":"bigint"},
       {"name":"pluscode_16_first","type":"string"}
     ],
     "userModified": true
