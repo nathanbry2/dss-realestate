@@ -24,7 +24,7 @@ def distance_to_centre(lat, long, R = 6373.0, lat_centre = 48.8565, long_centre 
 
     '''
 
-def direction_lookup(destination_long, destination_lat, origin_lat = 48.853, origin_long = 2.35):
+def direction_from_centre(destination_long, destination_lat, origin_lat = 48.853, origin_long = 2.35):
     deltaX = destination_long - origin_long
     deltaY = destination_lat - origin_lat
     degrees_temp = atan2(deltaX, deltaY)/math.pi*180
