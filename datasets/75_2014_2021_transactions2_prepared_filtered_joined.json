@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651151637407
+    "lastModifiedOn": 1651151746549
   },
   "creationTag": {
     "versionNumber": 0,
@@ -71,10 +71,6 @@
       {"name":"prix_m2_not_null","type":"double"},
       {"name":"nombre_pieces_principales_sum","type":"bigint"},
       {"name":"count","type":"bigint"},
-      {"name":"valeur_fonciere","type":"string"},
-      {"name":"lot1_surface_carrez","type":"string"},
-      {"name":"surface_reelle_bati","type":"string"},
-      {"name":"nombre_pieces_principales","type":"string"},
       {"name":"pluscode_16","type":"string"}
     ],
     "userModified": true
