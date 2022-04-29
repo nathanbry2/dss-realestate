@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651230754913
+    "lastModifiedOn": 1651230769718
   },
   "creationTag": {
     "versionNumber": 0,
@@ -72,7 +72,7 @@
       {"name":"surface_m2_not_null","type":"double"},
       {"name":"prix_m2_not_null","type":"double"},
       {"name":"nombre_pieces_principales_sum","type":"double"},
-      {"name":"GeoPoint_transaction","type":"geopoint"},
+      {"name":"GeoPoint_transaction","type":"string"},
       {"name":"pluscode_16_first","type":"string"},
       {"name":"distance_to_centre","type":"double"},
       {"name":"direction_from_centre","type":"string"},
@@ -83,7 +83,7 @@
       {"name":"reduced_h_coordinate","type":"bigint"},
       {"name":"reduced_coordinates_couple","type":"string"}
     ],
-    "userModified": true
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
