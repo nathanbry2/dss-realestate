@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651158916898
+    "lastModifiedOn": 1651230732586
   },
   "creationTag": {
     "versionNumber": 0,
@@ -86,7 +86,7 @@
   "schema": {
     "columns": [
       {"name":"Geo Point","type":"string"},
-      {"name":"Geo Shape","type":"string"},
+      {"name":"Geo Shape","type":"geometry"},
       {"name":"DEP","type":"string"},
       {"name":"INSEE_COM","type":"string"},
       {"name":"NOM_COM","type":"string"},
