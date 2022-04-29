@@ -209,21 +209,17 @@
       "lagDiff": false,
       "max": false,
       "firstLastNotNull": false,
-      "column": "nombre_pieces_principales_sum_avg",
+      "column": "nombre_pieces_principales_avg",
       "count": false,
       "$idx": 8,
-      "lagValues": "1",
       "sum": false,
       "concat": false,
       "type": "double",
       "lead": false,
-      "concatDistinct": false,
-      "dateDiffUnit": "DAY",
       "min": false,
-      "countDistinct": false,
       "avg": false,
       "lag": false,
-      "leadValues": "1",
+      "$selected": false,
       "stddev": false,
       "value": true,
       "leadDiff": false,
@@ -359,7 +355,7 @@
             "type": "double"
           },
           {
-            "name": "nombre_pieces_principales_sum_avg",
+            "name": "nombre_pieces_principales_avg",
             "type": "double"
           },
           {
