@@ -257,7 +257,8 @@
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -487,6 +488,10 @@
           },
           {
             "name": "nombre_pieces_principales_sum_avg",
+            "type": "double"
+          },
+          {
+            "name": "distance_to_centre_avg",
             "type": "double"
           },
           {
