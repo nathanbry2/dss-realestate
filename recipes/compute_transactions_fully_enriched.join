@@ -42,6 +42,50 @@
           "strict": false
         }
       ]
+    },
+    {
+      "table2": 2,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "rightLimit": {},
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": [
+        {
+          "column1": {
+            "name": "date_mutation_year",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "date_mutation_year",
+            "table": 2
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        },
+        {
+          "column1": {
+            "name": "iris_code",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "iris_code",
+            "table": 2
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        }
+      ]
     }
   ],
   "selectedColumns": [
@@ -163,9 +207,21 @@
     },
     {
       "name": "count",
-      "alias": "iris",
+      "alias": "count_iris",
       "type": "bigint",
       "table": 1
+    },
+    {
+      "name": "prix_m2_not_null_avg",
+      "alias": "prix_m2_coordinates_couple",
+      "type": "double",
+      "table": 2
+    },
+    {
+      "name": "count",
+      "alias": "count_coordinates_couple",
+      "type": "bigint",
+      "table": 2
     }
   ],
   "resolvedSelectedColumns": [],
@@ -223,6 +279,10 @@
       "originLabel": "transactions_by_coordinates_couple_year_windows_prepared",
       "index": 1,
       "computedColumns": []
+    },
+    {
+      "autoSelectColumns": false,
+      "index": 2
     }
   ],
   "computedColumns": [],
@@ -323,7 +383,15 @@
             "type": "double"
           },
           {
-            "name": "iris",
+            "name": "count_iris",
+            "type": "bigint"
+          },
+          {
+            "name": "prix_m2_coordinates_couple",
+            "type": "double"
+          },
+          {
+            "name": "count_coordinates_couple",
             "type": "bigint"
           }
         ],
