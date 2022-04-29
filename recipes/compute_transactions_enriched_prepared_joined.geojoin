@@ -5,140 +5,188 @@
       "table1": 0,
       "conditionsMode": "AND",
       "type": "LEFT",
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "GeoPoint_transaction",
+            "table": 0
+          },
+          "unit": "METER",
+          "dateDiffUnit": "SECOND",
+          "column2": {
+            "name": "Geo Shape",
+            "table": 1
+          },
+          "threshold": 100,
+          "type": "WITHIN"
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "date_mutation",
+      "type": "date",
       "table": 0
     },
     {
       "name": "date_mutation_year",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "date_mutation_month",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "date_mutation_day",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "longitude",
+      "type": "double",
       "table": 0
     },
     {
       "name": "latitude",
+      "type": "double",
       "table": 0
     },
     {
       "name": "type_local",
+      "type": "string",
       "table": 0
     },
     {
       "name": "valeur_fonciere_avg",
+      "type": "double",
       "table": 0
     },
     {
       "name": "code_postal",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "lot1_surface_carrez_sum",
+      "type": "double",
       "table": 0
     },
     {
       "name": "surface_reelle_bati_sum",
+      "type": "double",
       "table": 0
     },
     {
       "name": "surface_m2_not_null",
+      "type": "double",
       "table": 0
     },
     {
       "name": "prix_m2_not_null",
+      "type": "double",
       "table": 0
     },
     {
       "name": "nombre_pieces_principales_sum",
+      "type": "double",
       "table": 0
     },
     {
       "name": "GeoPoint_transaction",
+      "type": "geopoint",
       "table": 0
     },
     {
       "name": "pluscode_16_first",
+      "type": "string",
       "table": 0
     },
     {
       "name": "distance_to_centre",
+      "type": "double",
       "table": 0
     },
     {
       "name": "direction_from_centre",
+      "type": "string",
       "table": 0
     },
     {
       "name": "pluscode_10",
+      "type": "string",
       "table": 0
     },
     {
       "name": "v_coordinate",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "h_coordinate",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "reduced_v_coordinate",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "reduced_h_coordinate",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "reduced_coordinates_couple",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Geo Point",
+      "type": "string",
       "table": 1
     },
     {
       "name": "Geo Shape",
+      "type": "geometry",
       "table": 1
     },
     {
       "name": "DEP",
+      "type": "string",
       "table": 1
     },
     {
       "name": "INSEE_COM",
+      "type": "string",
       "table": 1
     },
     {
       "name": "NOM_COM",
+      "type": "string",
       "table": 1
     },
     {
       "name": "IRIS",
+      "type": "string",
       "table": 1
     },
     {
       "name": "CODE_IRIS",
+      "type": "string",
       "table": 1
     },
     {
       "name": "NOM_IRIS",
+      "type": "string",
       "table": 1
     },
     {
       "name": "TYP_IRIS",
+      "type": "string",
       "table": 1
     }
   ],
@@ -198,5 +246,147 @@
       "index": 1,
       "computedColumns": []
     }
-  ]
+  ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "date_mutation",
+            "type": "date"
+          },
+          {
+            "name": "date_mutation_year",
+            "type": "bigint"
+          },
+          {
+            "name": "date_mutation_month",
+            "type": "bigint"
+          },
+          {
+            "name": "date_mutation_day",
+            "type": "bigint"
+          },
+          {
+            "name": "longitude",
+            "type": "double"
+          },
+          {
+            "name": "latitude",
+            "type": "double"
+          },
+          {
+            "name": "type_local",
+            "type": "string"
+          },
+          {
+            "name": "valeur_fonciere_avg",
+            "type": "double"
+          },
+          {
+            "name": "code_postal",
+            "type": "bigint"
+          },
+          {
+            "name": "lot1_surface_carrez_sum",
+            "type": "double"
+          },
+          {
+            "name": "surface_reelle_bati_sum",
+            "type": "double"
+          },
+          {
+            "name": "surface_m2_not_null",
+            "type": "double"
+          },
+          {
+            "name": "prix_m2_not_null",
+            "type": "double"
+          },
+          {
+            "name": "nombre_pieces_principales_sum",
+            "type": "double"
+          },
+          {
+            "name": "GeoPoint_transaction",
+            "type": "geopoint"
+          },
+          {
+            "name": "pluscode_16_first",
+            "type": "string"
+          },
+          {
+            "name": "distance_to_centre",
+            "type": "double"
+          },
+          {
+            "name": "direction_from_centre",
+            "type": "string"
+          },
+          {
+            "name": "pluscode_10",
+            "type": "string"
+          },
+          {
+            "name": "v_coordinate",
+            "type": "bigint"
+          },
+          {
+            "name": "h_coordinate",
+            "type": "bigint"
+          },
+          {
+            "name": "reduced_v_coordinate",
+            "type": "bigint"
+          },
+          {
+            "name": "reduced_h_coordinate",
+            "type": "bigint"
+          },
+          {
+            "name": "reduced_coordinates_couple",
+            "type": "string"
+          },
+          {
+            "name": "Geo Point",
+            "type": "string"
+          },
+          {
+            "name": "Geo Shape",
+            "type": "geometry"
+          },
+          {
+            "name": "DEP",
+            "type": "string"
+          },
+          {
+            "name": "INSEE_COM",
+            "type": "string"
+          },
+          {
+            "name": "NOM_COM",
+            "type": "string"
+          },
+          {
+            "name": "IRIS",
+            "type": "string"
+          },
+          {
+            "name": "CODE_IRIS",
+            "type": "string"
+          },
+          {
+            "name": "NOM_IRIS",
+            "type": "string"
+          },
+          {
+            "name": "TYP_IRIS",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  }
 }
