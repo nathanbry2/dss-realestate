@@ -441,6 +441,7 @@
   "enlargeYourBits": true,
   "outputColumnNameOverrides": {
     "valeur_fonciere_avg_sum": "valeur_fonciere_sum",
+    "nombre_pieces_principales_sum_avg": "nombre_pieces_principales_avg",
     "valeur_fonciere_avg_avg": "valeur_fonciere_avg"
   },
   "computedColumns": [],
