@@ -6,144 +6,165 @@
       "conditionsMode": "AND",
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "date_mutation_year",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "date_mutation_year",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        },
+        {
+          "column1": {
+            "name": "reduced_coordinates_couple",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "reduced_coordinates_couple",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "date_mutation_year",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "date_mutation_month",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "date_mutation_day",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "longitude",
+      "type": "double",
       "table": 0
     },
     {
       "name": "latitude",
+      "type": "double",
       "table": 0
     },
     {
       "name": "type_local",
+      "type": "string",
       "table": 0
     },
     {
       "name": "valeur_fonciere_avg",
+      "type": "double",
       "table": 0
     },
     {
       "name": "code_postal",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "surface_m2_not_null",
+      "type": "double",
       "table": 0
     },
     {
       "name": "prix_m2_not_null",
+      "type": "double",
       "table": 0
     },
     {
       "name": "nombre_pieces_principales_sum",
+      "type": "double",
       "table": 0
     },
     {
       "name": "GeoPoint_transaction",
+      "type": "string",
       "table": 0
     },
     {
       "name": "distance_to_centre",
+      "type": "double",
       "table": 0
     },
     {
       "name": "direction_from_centre",
+      "type": "string",
       "table": 0
     },
     {
       "name": "pluscode_10",
+      "type": "string",
       "table": 0
     },
     {
       "name": "reduced_coordinates_couple",
+      "type": "string",
       "table": 0
     },
     {
       "name": "iris_code",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "iris_GeoPoint",
+      "type": "string",
       "table": 0
     },
     {
       "name": "iris_GeoShape",
+      "type": "string",
       "table": 0
     },
     {
       "name": "NOM_COM",
+      "type": "string",
       "table": 0
     },
     {
       "name": "NOM_IRIS",
+      "type": "string",
       "table": 0
     },
     {
       "name": "TYP_IRIS",
+      "type": "string",
       "table": 0
     },
     {
-      "name": "valeur_fonciere_sum",
-      "table": 1
-    },
-    {
-      "name": "surface_m2_not_null_avg",
-      "table": 1
-    },
-    {
-      "name": "surface_m2_not_null_sum",
-      "table": 1
-    },
-    {
       "name": "prix_m2_not_null_avg",
-      "table": 1
-    },
-    {
-      "name": "nombre_pieces_principales_avg",
-      "table": 1
-    },
-    {
-      "name": "distance_to_centre_avg",
+      "alias": "prix_m2_iris",
+      "type": "double",
       "table": 1
     },
     {
       "name": "count",
-      "table": 1
-    },
-    {
-      "name": "prix_m2_not_null_avg_lag1",
-      "table": 1
-    },
-    {
-      "name": "Growth%_1year",
-      "table": 1
-    },
-    {
-      "name": "prix_m2_not_null_avg_lag7",
-      "table": 1
-    },
-    {
-      "name": "CAGR%_7years",
-      "table": 1
-    },
-    {
-      "name": "Growth%_7years",
+      "alias": "iris",
+      "type": "bigint",
       "table": 1
     }
   ],
@@ -204,5 +225,111 @@
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "date_mutation_year",
+            "type": "bigint"
+          },
+          {
+            "name": "date_mutation_month",
+            "type": "bigint"
+          },
+          {
+            "name": "date_mutation_day",
+            "type": "bigint"
+          },
+          {
+            "name": "longitude",
+            "type": "double"
+          },
+          {
+            "name": "latitude",
+            "type": "double"
+          },
+          {
+            "name": "type_local",
+            "type": "string"
+          },
+          {
+            "name": "valeur_fonciere_avg",
+            "type": "double"
+          },
+          {
+            "name": "code_postal",
+            "type": "bigint"
+          },
+          {
+            "name": "surface_m2_not_null",
+            "type": "double"
+          },
+          {
+            "name": "prix_m2_not_null",
+            "type": "double"
+          },
+          {
+            "name": "nombre_pieces_principales_sum",
+            "type": "double"
+          },
+          {
+            "name": "GeoPoint_transaction",
+            "type": "string"
+          },
+          {
+            "name": "distance_to_centre",
+            "type": "double"
+          },
+          {
+            "name": "direction_from_centre",
+            "type": "string"
+          },
+          {
+            "name": "pluscode_10",
+            "type": "string"
+          },
+          {
+            "name": "reduced_coordinates_couple",
+            "type": "string"
+          },
+          {
+            "name": "iris_code",
+            "type": "bigint"
+          },
+          {
+            "name": "iris_GeoPoint",
+            "type": "string"
+          },
+          {
+            "name": "iris_GeoShape",
+            "type": "string"
+          },
+          {
+            "name": "NOM_COM",
+            "type": "string"
+          },
+          {
+            "name": "NOM_IRIS",
+            "type": "string"
+          },
+          {
+            "name": "TYP_IRIS",
+            "type": "string"
+          },
+          {
+            "name": "prix_m2_iris",
+            "type": "double"
+          },
+          {
+            "name": "iris",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
