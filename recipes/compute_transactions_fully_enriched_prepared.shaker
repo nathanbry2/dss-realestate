@@ -27,8 +27,34 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "(prix_m2_coordinates_couple * count_coordinates_couple - prix_m2_not_null)/(count_coordinates_couple-1)",
+        "column": "correct_prix_m2_coordinates_couple"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "(prix_m2_iris * count_iris - prix_m2_not_null)/(count_iris-1)",
+        "column": "correct_prix_m2_iris"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -54,7 +80,36 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "valeur_fonciere_avg": 158,
+    "prix_m2_coordinates_couple": 232,
+    "latitude": 141,
+    "reduced_coordinates_couple": 210,
+    "prix_m2_iris": 141,
+    "count_iris": 100,
+    "pluscode_10": 127,
+    "NOM_COM": 183,
+    "date_mutation_day": 143,
+    "prix_m2_not_null": 162,
+    "GeoPoint_transaction": 190,
+    "date_mutation_year": 150,
+    "type_local": 204,
+    "iris_GeoPoint": 204,
+    "longitude": 141,
+    "code_postal": 100,
+    "iris_GeoShape": 300,
+    "correct_prix_m2_coordinates_couple": 270,
+    "surface_m2_not_null": 158,
+    "TYP_IRIS": 100,
+    "date_mutation_month": 158,
+    "direction_from_centre": 173,
+    "NOM_IRIS": 183,
+    "distance_to_centre": 176,
+    "count_coordinates_couple": 195,
+    "nombre_pieces_principales_sum": 233,
+    "iris_code": 113,
+    "correct_prix_m2_iris": 190
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
