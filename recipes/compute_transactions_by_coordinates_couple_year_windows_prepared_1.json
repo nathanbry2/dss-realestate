@@ -12,6 +12,9 @@
           "map": {
             "transactions_enriched_by_coordinates_couple_year_windows": {
               "repartition": 10
+            },
+            "transactions_enriched_by_iris_code_year_windows": {
+              "repartition": 10
             }
           }
         },
@@ -73,11 +76,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651268661468
+    "lastModifiedOn": 1651268669106
   },
   "creationTag": {
     "versionNumber": 0,
