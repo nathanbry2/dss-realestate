@@ -5,7 +5,18 @@
   },
   "keys": [
     {
-      "column": "iris_code"
+      "countDistinct": false,
+      "min": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "iris_code",
+      "count": false,
+      "sum": false,
+      "concat": false,
+      "type": "bigint",
+      "stddev": false,
+      "first": false
     }
   ],
   "values": [
@@ -15,8 +26,10 @@
       "firstLastNotNull": false,
       "column": "date_mutation_year",
       "count": false,
+      "$idx": 0,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -31,8 +44,10 @@
       "firstLastNotNull": false,
       "column": "date_mutation_month",
       "count": false,
+      "$idx": 1,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -47,8 +62,10 @@
       "firstLastNotNull": false,
       "column": "date_mutation_day",
       "count": false,
+      "$idx": 2,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -63,8 +80,10 @@
       "firstLastNotNull": false,
       "column": "longitude",
       "count": false,
+      "$idx": 3,
       "sum": false,
       "concat": false,
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -79,8 +98,10 @@
       "firstLastNotNull": false,
       "column": "latitude",
       "count": false,
+      "$idx": 4,
       "sum": false,
       "concat": false,
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -95,8 +116,10 @@
       "firstLastNotNull": false,
       "column": "type_local",
       "count": false,
+      "$idx": 5,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -111,13 +134,16 @@
       "firstLastNotNull": false,
       "column": "valeur_fonciere_avg",
       "count": false,
-      "sum": false,
+      "$idx": 6,
+      "sum": true,
       "concat": false,
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -127,15 +153,20 @@
       "firstLastNotNull": false,
       "column": "code_postal",
       "count": false,
+      "$idx": 7,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
-      "first": false
+      "first": true,
+      "orderColumn": "date_mutation_year",
+      "concatSeparator": ","
     },
     {
       "last": false,
@@ -143,13 +174,16 @@
       "firstLastNotNull": false,
       "column": "surface_m2_not_null",
       "count": false,
-      "sum": false,
+      "$idx": 8,
+      "sum": true,
       "concat": false,
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -159,13 +193,16 @@
       "firstLastNotNull": false,
       "column": "prix_m2_not_null",
       "count": false,
+      "$idx": 9,
       "sum": false,
       "concat": false,
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -175,13 +212,16 @@
       "firstLastNotNull": false,
       "column": "nombre_pieces_principales_sum",
       "count": false,
+      "$idx": 10,
       "sum": false,
       "concat": false,
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -191,8 +231,10 @@
       "firstLastNotNull": false,
       "column": "GeoPoint_transaction",
       "count": false,
+      "$idx": 11,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -207,15 +249,20 @@
       "firstLastNotNull": false,
       "column": "distance_to_centre",
       "count": false,
+      "$idx": 12,
       "sum": false,
       "concat": false,
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
+      "$selected": false,
       "stddev": false,
-      "first": false
+      "first": false,
+      "orderColumn": "date_mutation_year",
+      "concatSeparator": ","
     },
     {
       "last": false,
@@ -223,15 +270,20 @@
       "firstLastNotNull": false,
       "column": "direction_from_centre",
       "count": false,
+      "$idx": 13,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
-      "first": false
+      "first": true,
+      "orderColumn": "date_mutation_year",
+      "concatSeparator": ","
     },
     {
       "last": false,
@@ -239,8 +291,10 @@
       "firstLastNotNull": false,
       "column": "pluscode_10",
       "count": false,
+      "$idx": 14,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -255,8 +309,10 @@
       "firstLastNotNull": false,
       "column": "reduced_coordinates_couple",
       "count": false,
+      "$idx": 15,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -271,8 +327,10 @@
       "firstLastNotNull": false,
       "column": "iris_GeoPoint",
       "count": false,
+      "$idx": 16,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -287,8 +345,10 @@
       "firstLastNotNull": false,
       "column": "iris_GeoShape",
       "count": false,
+      "$idx": 17,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -303,8 +363,10 @@
       "firstLastNotNull": false,
       "column": "NOM_COM",
       "count": false,
+      "$idx": 18,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -319,8 +381,10 @@
       "firstLastNotNull": false,
       "column": "NOM_IRIS",
       "count": false,
+      "$idx": 19,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -335,8 +399,10 @@
       "firstLastNotNull": false,
       "column": "TYP_IRIS",
       "count": false,
+      "$idx": 20,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -382,8 +448,63 @@
     }
   },
   "enlargeYourBits": true,
+  "outputColumnNameOverrides": {
+    "code_postal_first": "code_postal",
+    "direction_from_centre_first": "direction_from_centre"
+  },
   "computedColumns": [],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "iris_code",
+            "type": "bigint"
+          },
+          {
+            "name": "valeur_fonciere_avg_avg",
+            "type": "double"
+          },
+          {
+            "name": "valeur_fonciere_avg_sum",
+            "type": "double"
+          },
+          {
+            "name": "code_postal_first",
+            "type": "bigint"
+          },
+          {
+            "name": "surface_m2_not_null_avg",
+            "type": "double"
+          },
+          {
+            "name": "surface_m2_not_null_sum",
+            "type": "double"
+          },
+          {
+            "name": "prix_m2_not_null_avg",
+            "type": "double"
+          },
+          {
+            "name": "nombre_pieces_principales_sum_avg",
+            "type": "double"
+          },
+          {
+            "name": "distance_to_centre_avg",
+            "type": "double"
+          },
+          {
+            "name": "direction_from_centre_first",
+            "type": "string"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   }
