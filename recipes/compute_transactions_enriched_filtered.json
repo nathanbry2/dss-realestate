@@ -15,12 +15,13 @@
         "enabled": false,
         "rules": []
       },
-      "samplingMethod": "HEAD_SEQUENTIAL",
+      "samplingMethod": "FULL",
       "maxRecords": 100000,
       "targetRatio": 0.02,
       "withinFirstN": -1,
       "maxReadUncompressedBytes": -1
     },
+    "engineType": "SQL",
     "engineParams": {
       "dssEngineMaxThreads": 4,
       "sparkSQL": {
@@ -86,11 +87,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651256682081
+    "lastModifiedOn": 1651256709642
   },
   "creationTag": {
     "versionNumber": 0,

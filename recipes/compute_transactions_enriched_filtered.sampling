@@ -1,4 +1,22 @@
 {
+  "uiData": {
+    "mode": "CUSTOM",
+    "conditions": [
+      {
+        "input": "date_mutation",
+        "col": "date_mutation_year",
+        "num": 0,
+        "operator": "contains"
+      }
+    ]
+  },
+  "expression": "and(prix_m2_not_null\u003e\u003d${min_prix_m2},prix_m2_not_null\u003c\u003d${max_prix_m2},valeur_fonciere_avg\u003c\u003d${max_valuation})",
+  "$status": {
+    "validated": true,
+    "fullyTranslated": true,
+    "ok": true,
+    "sql": "\"prix_m2_not_null\" \u003e\u003d 3000 AND \"prix_m2_not_null\" \u003c\u003d 17000 AND \"valeur_fonciere_avg\" \u003c\u003d 50000000"
+  },
   "distinct": false,
-  "enabled": false
+  "enabled": true
 }
