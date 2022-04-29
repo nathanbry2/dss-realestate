@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651268903078
+    "lastModifiedOn": 1651269115223
   },
   "creationTag": {
     "versionNumber": 0,
@@ -80,18 +80,8 @@
       {"name":"NOM_COM","type":"string"},
       {"name":"NOM_IRIS","type":"string"},
       {"name":"TYP_IRIS","type":"string"},
-      {"name":"valeur_fonciere_sum","type":"double"},
-      {"name":"surface_m2_not_null_avg","type":"double"},
-      {"name":"surface_m2_not_null_sum","type":"double"},
-      {"name":"prix_m2_not_null_avg","type":"double"},
-      {"name":"nombre_pieces_principales_avg","type":"double"},
-      {"name":"distance_to_centre_avg","type":"double"},
-      {"name":"count","type":"bigint"},
-      {"name":"prix_m2_not_null_avg_lag1","type":"double"},
-      {"name":"Growth%_1year","type":"double"},
-      {"name":"prix_m2_not_null_avg_lag7","type":"double"},
-      {"name":"CAGR%_7years","type":"double"},
-      {"name":"Growth%_7years","type":"double"}
+      {"name":"prix_m2_iris","type":"double"},
+      {"name":"iris","type":"bigint"}
     ],
     "userModified": true
   },
