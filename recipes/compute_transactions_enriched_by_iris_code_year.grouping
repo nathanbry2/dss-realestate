@@ -449,6 +449,7 @@
   },
   "enlargeYourBits": true,
   "outputColumnNameOverrides": {
+    "nombre_pieces_principales_sum_avg": "nombre_pieces_principales_avg",
     "code_postal_first": "code_postal",
     "direction_from_centre_first": "direction_from_centre"
   },
