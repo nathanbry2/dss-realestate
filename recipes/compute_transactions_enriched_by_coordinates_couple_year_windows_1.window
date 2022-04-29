@@ -21,8 +21,9 @@
       "min": false,
       "avg": false,
       "lag": false,
+      "$selected": false,
       "stddev": false,
-      "value": false,
+      "value": true,
       "leadDiff": false,
       "first": false
     },
@@ -41,8 +42,9 @@
       "min": false,
       "avg": false,
       "lag": false,
+      "$selected": false,
       "stddev": false,
-      "value": false,
+      "value": true,
       "leadDiff": false,
       "first": false
     },
@@ -61,8 +63,9 @@
       "min": false,
       "avg": false,
       "lag": false,
+      "$selected": false,
       "stddev": false,
-      "value": false,
+      "value": true,
       "leadDiff": false,
       "first": false
     },
@@ -81,8 +84,9 @@
       "min": false,
       "avg": false,
       "lag": false,
+      "$selected": false,
       "stddev": false,
-      "value": false,
+      "value": true,
       "leadDiff": false,
       "first": false
     },
@@ -303,6 +307,22 @@
       "schema": {
         "columns": [
           {
+            "name": "iris_code",
+            "type": "bigint"
+          },
+          {
+            "name": "date_mutation_year",
+            "type": "bigint"
+          },
+          {
+            "name": "valeur_fonciere_avg_avg",
+            "type": "double"
+          },
+          {
+            "name": "valeur_fonciere_avg_sum",
+            "type": "double"
+          },
+          {
             "name": "code_postal",
             "type": "bigint"
           },
@@ -388,5 +408,8 @@
   "rank": false,
   "denseRank": false,
   "rowNumber": false,
-  "outputColumnNameOverrides": {}
+  "outputColumnNameOverrides": {
+    "valeur_fonciere_avg_sum": "valeur_fonciere_sum",
+    "valeur_fonciere_avg_avg": "valeur_fonciere_avg"
+  }
 }
