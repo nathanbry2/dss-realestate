@@ -116,6 +116,11 @@
       "table": 0
     },
     {
+      "name": "GeoPoint_transaction",
+      "type": "string",
+      "table": 0
+    },
+    {
       "name": "pluscode_16_first",
       "type": "string",
       "table": 1
@@ -232,6 +237,10 @@
           {
             "name": "nombre_pieces_principales_sum",
             "type": "bigint"
+          },
+          {
+            "name": "GeoPoint_transaction",
+            "type": "string"
           },
           {
             "name": "pluscode_16_first",
