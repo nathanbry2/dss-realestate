@@ -69,7 +69,7 @@
         ],
         "timezone_id": "UTC",
         "appliesTo": "SINGLE_COLUMN",
-        "lang": "auto"
+        "lang": "fr_FR"
       },
       "alwaysShowComment": false
     },
@@ -99,6 +99,18 @@
         ],
         "keep": false,
         "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "GeoPointCreator",
+      "params": {
+        "out_column": "GeoPoint_transaction",
+        "lat_column": "latitude",
+        "lon_column": "longitude"
       },
       "alwaysShowComment": false
     }
@@ -142,6 +154,7 @@
     "date_mutation_day": 143,
     "nombre_pieces_principales_sum": 233,
     "prix_m2_not_null": 162,
+    "GeoPoint_transaction": 190,
     "date_mutation_year": 150,
     "type_local": 204,
     "date_mutation_parsed": 190,
