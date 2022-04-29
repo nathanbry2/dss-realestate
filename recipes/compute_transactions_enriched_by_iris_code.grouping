@@ -162,8 +162,11 @@
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
-      "first": false
+      "first": true,
+      "orderColumn": "date_mutation_year",
+      "concatSeparator": ","
     },
     {
       "last": false,
@@ -255,8 +258,11 @@
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
-      "first": false
+      "first": true,
+      "orderColumn": "date_mutation_year",
+      "concatSeparator": ","
     },
     {
       "last": false,
@@ -442,7 +448,9 @@
   "outputColumnNameOverrides": {
     "valeur_fonciere_avg_sum": "valeur_fonciere_sum",
     "nombre_pieces_principales_sum_avg": "nombre_pieces_principales_avg",
-    "valeur_fonciere_avg_avg": "valeur_fonciere_avg"
+    "code_postal_first": "code_postal",
+    "valeur_fonciere_avg_avg": "valeur_fonciere_avg",
+    "distance_to_centre_first": "distance_to_centre"
   },
   "computedColumns": [],
   "postFilter": {
@@ -462,6 +470,10 @@
             "type": "double"
           },
           {
+            "name": "code_postal_first",
+            "type": "bigint"
+          },
+          {
             "name": "surface_m2_not_null_avg",
             "type": "double"
           },
@@ -475,6 +487,10 @@
           },
           {
             "name": "nombre_pieces_principales_sum_avg",
+            "type": "double"
+          },
+          {
+            "name": "distance_to_centre_first",
             "type": "double"
           },
           {
