@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651256682075
+    "lastModifiedOn": 1651263686984
   },
   "creationTag": {
     "versionNumber": 0,
@@ -58,7 +58,6 @@
   },
   "schema": {
     "columns": [
-      {"name":"date_mutation","type":"string"},
       {"name":"date_mutation_year","type":"bigint"},
       {"name":"date_mutation_month","type":"bigint"},
       {"name":"date_mutation_day","type":"bigint"},
@@ -67,29 +66,18 @@
       {"name":"type_local","type":"string"},
       {"name":"valeur_fonciere_avg","type":"double"},
       {"name":"code_postal","type":"bigint"},
-      {"name":"lot1_surface_carrez_sum","type":"double"},
-      {"name":"surface_reelle_bati_sum","type":"double"},
       {"name":"surface_m2_not_null","type":"double"},
       {"name":"prix_m2_not_null","type":"double"},
       {"name":"nombre_pieces_principales_sum","type":"double"},
       {"name":"GeoPoint_transaction","type":"string"},
-      {"name":"pluscode_16_first","type":"string"},
       {"name":"distance_to_centre","type":"double"},
       {"name":"direction_from_centre","type":"string"},
       {"name":"pluscode_10","type":"string"},
-      {"name":"v_coordinate","type":"bigint"},
-      {"name":"h_coordinate","type":"bigint"},
-      {"name":"reduced_v_coordinate","type":"bigint"},
-      {"name":"reduced_h_coordinate","type":"bigint"},
       {"name":"reduced_coordinates_couple","type":"string"},
-      {"name":"iris_code","type":"string"},
+      {"name":"iris_code","type":"bigint"},
       {"name":"Geo Point","type":"string"},
       {"name":"Geo Shape","type":"string"},
-      {"name":"DEP","type":"bigint"},
-      {"name":"INSEE_COM","type":"bigint"},
       {"name":"NOM_COM","type":"string"},
-      {"name":"IRIS","type":"bigint"},
-      {"name":"CODE_IRIS","type":"bigint"},
       {"name":"NOM_IRIS","type":"string"},
       {"name":"TYP_IRIS","type":"string"}
     ],
