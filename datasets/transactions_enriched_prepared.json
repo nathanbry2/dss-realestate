@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651263645783
+    "lastModifiedOn": 1651263859302
   },
   "creationTag": {
     "versionNumber": 0,
@@ -75,8 +75,8 @@
       {"name":"pluscode_10","type":"string"},
       {"name":"reduced_coordinates_couple","type":"string"},
       {"name":"iris_code","type":"bigint"},
-      {"name":"Geo Point","type":"string"},
-      {"name":"Geo Shape","type":"string"},
+      {"name":"iris_GeoPoint","type":"string"},
+      {"name":"iris_GeoShape","type":"string"},
       {"name":"NOM_COM","type":"string"},
       {"name":"NOM_IRIS","type":"string"},
       {"name":"TYP_IRIS","type":"string"}
