@@ -16,9 +16,9 @@
   },
   "tutorialProject": false,
   "settings": {
-    "flowAnchorSourcesAndSinks": false,
+    "flowAnchorSourcesAndSinks": true,
     "flowDisplaySettings": {
-      "zonesGraphRenderingAlgorithm": "DOT_OLDRANK",
+      "zonesGraphRenderingAlgorithm": "DOT_NEWRANK_FREERANK",
       "zonesGraphConnectZones": true
     },
     "gitCommitMode": "AUTO",
@@ -184,11 +184,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651269958009
+    "lastModifiedOn": 1651269990166
   },
   "creationTag": {
     "versionNumber": 0,
