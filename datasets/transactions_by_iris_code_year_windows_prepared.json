@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651268668981
+    "lastModifiedOn": 1651269202810
   },
   "creationTag": {
     "versionNumber": 0,
@@ -58,6 +58,10 @@
   },
   "schema": {
     "columns": [
+      {"name":"iris_code","type":"bigint"},
+      {"name":"date_mutation_year","type":"bigint"},
+      {"name":"valeur_fonciere_avg","type":"double"},
+      {"name":"valeur_fonciere_sum","type":"double"},
       {"name":"code_postal","type":"bigint"},
       {"name":"surface_m2_not_null_avg","type":"double"},
       {"name":"surface_m2_not_null_sum","type":"double"},
