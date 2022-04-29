@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651231015633
+    "lastModifiedOn": 1651231039510
   },
   "creationTag": {
     "versionNumber": 0,
@@ -71,8 +71,7 @@
       {"name":"surface_reelle_bati_sum","type":"bigint"},
       {"name":"surface_m2_not_null","type":"double"},
       {"name":"prix_m2_not_null","type":"double"},
-      {"name":"nombre_pieces_principales_sum","type":"bigint"},
-      {"name":"GeoPoint_transaction","type":"string"}
+      {"name":"nombre_pieces_principales_sum","type":"bigint"}
     ],
     "userModified": true
   },
