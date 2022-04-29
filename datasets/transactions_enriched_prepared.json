@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651236716885
+    "lastModifiedOn": 1651236752640
   },
   "creationTag": {
     "versionNumber": 0,
@@ -100,7 +100,7 @@
       {"name":"surface_m2_not_null","type":"double"},
       {"name":"prix_m2_not_null","type":"double"},
       {"name":"nombre_pieces_principales_sum","type":"double"},
-      {"name":"GeoPoint_transaction","type":"string"},
+      {"name":"GeoPoint_transaction","type":"geopoint"},
       {"name":"pluscode_16_first","type":"string"},
       {"name":"distance_to_centre","type":"double"},
       {"name":"direction_from_centre","type":"string"},
