@@ -4,7 +4,8 @@ from shapely.geometry import Polygon, Point
 
 '''
     This functions creates a dictionary with iris codes as keys and polygon shapes as values.
-    It takes as inputs the iris code and polygon columns of a dataframe, and returns a dictionary.'''
+    It takes as inputs the iris code and polygon columns of a dataframe, and returns a dictionary.
+'''
 
 def create_iris_polygon_dict(iris_code_column,polygon_column):
     
