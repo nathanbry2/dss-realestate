@@ -1,0 +1,124 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "maxRecordsForDisplay": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "timeout": -1
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "(prix_m2_not_null_avg - prix_m2_not_null_avg_lag1)/prix_m2_not_null_avg_lag1 * 100",
+        "column": "Growth%_1year"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "(prix_m2_not_null_avg - prix_m2_not_null_avg_lag7)/prix_m2_not_null_avg_lag7 * 100",
+        "column": "Growth%_7years"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "(pow((prix_m2_not_null_avg / prix_m2_not_null_avg_lag7),1/7)-1)*100",
+        "column": "CAGR%_7years"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "FULL"
+    },
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "columnWidthsByName": {
+    "code_postal": 100,
+    "valeur_fonciere_avg": 183,
+    "prix_m2_not_null_avg": 190,
+    "CAGR%_1year": 162,
+    "surface_m2_not_null_avg": 211,
+    "reduced_coordinates_couple": 210,
+    "distance_to_centre_avg": 204,
+    "Growth%_1year": 162,
+    "nombre_pieces_principales_sum_avg": 263,
+    "count": 100,
+    "valeur_fonciere_sum": 183,
+    "CAGR%_7years": 105,
+    "direction_from_centre": 173,
+    "surface_m2_not_null_sum": 211,
+    "Growth%_7year": 162,
+    "prix_m2_not_null_avg_lag1": 225,
+    "CAGR%_7year": 162,
+    "prix_m2_not_null_avg_lag7": 203,
+    "Growth%_7years": 120,
+    "nombre_pieces_principales_avg": 233,
+    "date_mutation_year": 150
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}

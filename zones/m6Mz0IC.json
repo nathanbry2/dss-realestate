@@ -41,6 +41,14 @@
     {
       "objectId": "compute_transactions_enriched_by_coordinates_couple_year_windows_1",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "transactions_by_iris_code_year_windows_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_transactions_by_coordinates_couple_year_windows_prepared_1",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
