@@ -1,7 +1,40 @@
 {
   "name": "Pluscode",
   "color": "#4B8021",
-  "items": [],
+  "items": [
+    {
+      "objectId": "compute_transactions_enriched_by_coordinates_couple_year",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_transactions_enriched_by_coordinates_couple",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "transactions_enriched_by_coordinates_couple_year",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_transactions_enriched_by_coordinates_couple_year_windows",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "transactions_enriched_by_coordinates_couple_year_windows",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_transactions_by_coordinates_couple_year_windows_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "transactions_by_coordinates_couple_year_windows_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "transactions_enriched_by_coordinates_couple",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
