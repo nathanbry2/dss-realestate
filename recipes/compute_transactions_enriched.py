@@ -11,8 +11,8 @@ from pluscode_functions import convert_dic, convert_pluscode
 # Read recipe inputs
 v75_2014_2021_transactions_partial_pluscode = dataiku.Dataset("75_2014_2021_transactions_partial_pluscode")
 v75_2014_2021_transactions_partial_pluscode_df = v75_2014_2021_transactions_partial_pluscode.get_dataframe()
-iris_75 = dataiku.Dataset("iris_75")
-iris_75_df = iris_75.get_dataframe()
+#iris_75 = dataiku.Dataset("iris_75")
+#iris_75_df = iris_75.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 v75_2014_2021_transactions_partial_pluscode_df['distance_to_centre']= distance_to_centre(v75_2014_2021_transactions_partial_pluscode_df['latitude'],v75_2014_2021_transactions_partial_pluscode_df['longitude'])
