@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651269727834
+    "lastModifiedOn": 1651269920787
   },
   "creationTag": {
     "versionNumber": 0,
@@ -82,8 +82,10 @@
       {"name":"TYP_IRIS","type":"string"},
       {"name":"prix_m2_iris","type":"double"},
       {"name":"count_iris","type":"bigint"},
+      {"name":"correct_prix_m2_iris","type":"double"},
       {"name":"prix_m2_coordinates_couple","type":"double"},
-      {"name":"count_coordinates_couple","type":"bigint"}
+      {"name":"count_coordinates_couple","type":"bigint"},
+      {"name":"correct_prix_m2_coordinates_couple","type":"double"}
     ],
     "userModified": true
   },
