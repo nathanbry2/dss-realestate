@@ -1,7 +1,20 @@
 {
   "name": "Machine Learning",
   "color": "#C82423",
-  "items": [],
+  "items": [
+    {
+      "objectId": "split_transactions_fully_enriched_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "validation_set",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "training_set",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
