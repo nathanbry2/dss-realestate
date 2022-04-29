@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651230769718
+    "lastModifiedOn": 1651256136458
   },
   "creationTag": {
     "versionNumber": 0,
@@ -81,7 +81,17 @@
       {"name":"h_coordinate","type":"bigint"},
       {"name":"reduced_v_coordinate","type":"bigint"},
       {"name":"reduced_h_coordinate","type":"bigint"},
-      {"name":"reduced_coordinates_couple","type":"string"}
+      {"name":"reduced_coordinates_couple","type":"string"},
+      {"name":"iris_code","type":"string"},
+      {"name":"Geo Point","type":"string"},
+      {"name":"Geo Shape","type":"string"},
+      {"name":"DEP","type":"bigint"},
+      {"name":"INSEE_COM","type":"bigint"},
+      {"name":"NOM_COM","type":"string"},
+      {"name":"IRIS","type":"bigint"},
+      {"name":"CODE_IRIS","type":"bigint"},
+      {"name":"NOM_IRIS","type":"string"},
+      {"name":"TYP_IRIS","type":"string"}
     ],
     "userModified": false
   },
