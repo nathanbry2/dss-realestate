@@ -449,6 +449,7 @@
   "enlargeYourBits": true,
   "outputColumnNameOverrides": {
     "valeur_fonciere_avg_sum": "valeur_fonciere_sum",
+    "nombre_pieces_principales_sum_avg": "nombre_pieces_principales_avg",
     "code_postal_first": "code_postal",
     "valeur_fonciere_avg_avg": "valeur_fonciere_avg",
     "direction_from_centre_first": "direction_from_centre"
