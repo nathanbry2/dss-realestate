@@ -56,6 +56,25 @@
         "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "Geo Point",
+            "to": "iris_GeoPoint"
+          },
+          {
+            "from": "Geo Shape",
+            "to": "iris_GeoShape"
+          }
+        ]
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -103,8 +122,10 @@
     "Geo Point": 204,
     "date_mutation_year": 150,
     "type_local": 197,
+    "iris_GeoPoint": 204,
     "longitude": 141,
     "code_postal": 100,
+    "iris_GeoShape": 300,
     "surface_m2_not_null": 158,
     "TYP_IRIS": 100,
     "INSEE_COM": 100,
