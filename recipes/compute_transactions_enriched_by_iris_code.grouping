@@ -257,10 +257,10 @@
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
       "$selected": false,
       "stddev": false,
-      "first": true,
+      "first": false,
       "orderColumn": "date_mutation_year",
       "concatSeparator": ","
     },
@@ -279,8 +279,11 @@
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
-      "first": false
+      "first": true,
+      "orderColumn": "date_mutation_year",
+      "concatSeparator": ","
     },
     {
       "last": false,
@@ -450,6 +453,7 @@
     "nombre_pieces_principales_sum_avg": "nombre_pieces_principales_avg",
     "code_postal_first": "code_postal",
     "valeur_fonciere_avg_avg": "valeur_fonciere_avg",
+    "direction_from_centre_first": "direction_from_centre",
     "distance_to_centre_first": "distance_to_centre"
   },
   "computedColumns": [],
@@ -490,8 +494,12 @@
             "type": "double"
           },
           {
-            "name": "distance_to_centre_first",
+            "name": "distance_to_centre_avg",
             "type": "double"
+          },
+          {
+            "name": "direction_from_centre_first",
+            "type": "string"
           },
           {
             "name": "count",
