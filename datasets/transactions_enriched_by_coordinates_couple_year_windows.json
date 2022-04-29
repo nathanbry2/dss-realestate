@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651265110666
+    "lastModifiedOn": 1651265289782
   },
   "creationTag": {
     "versionNumber": 0,
@@ -66,7 +66,9 @@
       {"name":"surface_m2_not_null_sum","type":"double"},
       {"name":"prix_m2_not_null_avg","type":"double"},
       {"name":"nombre_pieces_principales_sum_avg","type":"double"},
-      {"name":"count","type":"bigint"}
+      {"name":"count","type":"bigint"},
+      {"name":"prix_m2_not_null_avg_lag1","type":"double"},
+      {"name":"prix_m2_not_null_avg_lag7","type":"double"}
     ],
     "userModified": true
   },
