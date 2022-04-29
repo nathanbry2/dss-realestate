@@ -34,7 +34,8 @@ def create_iris_polygon_dict(iris_code_column,polygon_column):
 
 '''
     This functions creates GeoPoints from latitude and longitude coordinates, and finds the iris corresponding to these points.
-    It takes as inputs the latitude and longitude columns of a dataframe, the dictionary and returns a dictionary.
+    It takes as inputs the latitude and longitude columns of a dataframe, 
+    the dictionary of iris coords and their polygon shapes, and returns a list of iris codes.
 '''
 
 
