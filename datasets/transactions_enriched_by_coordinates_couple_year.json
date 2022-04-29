@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651264533696
+    "lastModifiedOn": 1651265428978
   },
   "creationTag": {
     "versionNumber": 0,
@@ -62,10 +62,13 @@
       {"name":"date_mutation_year","type":"bigint"},
       {"name":"valeur_fonciere_avg","type":"double"},
       {"name":"valeur_fonciere_sum","type":"double"},
+      {"name":"code_postal","type":"bigint"},
       {"name":"surface_m2_not_null_avg","type":"double"},
       {"name":"surface_m2_not_null_sum","type":"double"},
       {"name":"prix_m2_not_null_avg","type":"double"},
       {"name":"nombre_pieces_principales_sum_avg","type":"double"},
+      {"name":"distance_to_centre_avg","type":"double"},
+      {"name":"direction_from_centre","type":"string"},
       {"name":"count","type":"bigint"}
     ],
     "userModified": true
