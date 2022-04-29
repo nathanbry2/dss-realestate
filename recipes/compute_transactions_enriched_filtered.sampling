@@ -3,10 +3,10 @@
     "mode": "CUSTOM",
     "conditions": [
       {
-        "input": "date_mutation",
-        "col": "date_mutation_year",
+        "input": "date_mutation_year",
+        "col": "date_mutation_month",
         "num": 0,
-        "operator": "contains"
+        "operator": "\u003d\u003d [number]"
       }
     ]
   },

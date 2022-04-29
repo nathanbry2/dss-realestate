@@ -69,7 +69,7 @@
     "main": {
       "items": [
         {
-          "ref": "transactions_enriched",
+          "ref": "transactions_enriched_prepared",
           "deps": []
         }
       ]
@@ -87,11 +87,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651256709642
+    "lastModifiedOn": 1651263687275
   },
   "creationTag": {
     "versionNumber": 0,
