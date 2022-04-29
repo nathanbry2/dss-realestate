@@ -3,37 +3,40 @@
   "centileSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
-  "defaultOutputIndex": 1,
   "preFilter": {
     "distinct": false,
     "enabled": false
   },
+  "defaultOutputIndex": 1,
   "seed": 1337,
   "randomColumns": [],
   "centileOrders": [],
   "rangeSetTime": false,
+  "engineType": "DSS",
   "randomSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 85
     }
   ],
   "randomColumnsSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
   "computedColumns": [],
   "writeComputedColumnsInOutput": false,
+  "mode": "RANDOM",
   "centileTDigest": false,
   "valueSplits": [
     {
       "outputIndex": 0,
-      "caseSensitive": false
+      "caseSensitive": false,
+      "value": ""
     }
   ],
   "rangeSplits": [
@@ -89,6 +92,124 @@
         "uiData": {
           "mode": "\u0026\u0026",
           "conditions": []
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "date_mutation_year",
+                "type": "bigint"
+              },
+              {
+                "name": "date_mutation_month",
+                "type": "bigint"
+              },
+              {
+                "name": "date_mutation_day",
+                "type": "bigint"
+              },
+              {
+                "name": "longitude",
+                "type": "double"
+              },
+              {
+                "name": "latitude",
+                "type": "double"
+              },
+              {
+                "name": "type_local",
+                "type": "string"
+              },
+              {
+                "name": "valeur_fonciere_avg",
+                "type": "double"
+              },
+              {
+                "name": "code_postal",
+                "type": "bigint"
+              },
+              {
+                "name": "surface_m2_not_null",
+                "type": "double"
+              },
+              {
+                "name": "prix_m2_not_null",
+                "type": "double"
+              },
+              {
+                "name": "nombre_pieces_principales_sum",
+                "type": "double"
+              },
+              {
+                "name": "GeoPoint_transaction",
+                "type": "string"
+              },
+              {
+                "name": "distance_to_centre",
+                "type": "double"
+              },
+              {
+                "name": "direction_from_centre",
+                "type": "string"
+              },
+              {
+                "name": "pluscode_10",
+                "type": "string"
+              },
+              {
+                "name": "reduced_coordinates_couple",
+                "type": "string"
+              },
+              {
+                "name": "iris_code",
+                "type": "bigint"
+              },
+              {
+                "name": "iris_GeoPoint",
+                "type": "string"
+              },
+              {
+                "name": "iris_GeoShape",
+                "type": "string"
+              },
+              {
+                "name": "NOM_COM",
+                "type": "string"
+              },
+              {
+                "name": "NOM_IRIS",
+                "type": "string"
+              },
+              {
+                "name": "TYP_IRIS",
+                "type": "string"
+              },
+              {
+                "name": "prix_m2_iris",
+                "type": "double"
+              },
+              {
+                "name": "count_iris",
+                "type": "bigint"
+              },
+              {
+                "name": "correct_prix_m2_iris",
+                "type": "double"
+              },
+              {
+                "name": "prix_m2_coordinates_couple",
+                "type": "double"
+              },
+              {
+                "name": "count_coordinates_couple",
+                "type": "bigint"
+              },
+              {
+                "name": "correct_prix_m2_coordinates_couple",
+                "type": "double"
+              }
+            ]
+          }
         },
         "distinct": false,
         "enabled": true
