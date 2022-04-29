@@ -47,7 +47,7 @@ full_data
 # TODO: Write here your actual code that computes the outputs
 # NB: DSS supports several kinds of APIs for reading and writing data. Please see doc.
 
-transactions_enriched_df = ... # Compute a Pandas dataframe to write into transactions_enriched
+transactions_enriched_df = full_data # Compute a Pandas dataframe to write into transactions_enriched
 
 
 # Write recipe outputs
