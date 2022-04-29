@@ -1,7 +1,6 @@
 import json
 from shapely.geometry import Polygon, Point
 
-
 def create_iris_polygon_dict(iris_code_column,polygon_column):
     
     start = '['
