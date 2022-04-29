@@ -3,7 +3,7 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "engineType": "DSS",
+    "engineType": "SQL",
     "engineParams": {
       "spark": {
         "readParams": {
@@ -73,11 +73,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651231015848
+    "lastModifiedOn": 1651231039780
   },
   "creationTag": {
     "versionNumber": 0,

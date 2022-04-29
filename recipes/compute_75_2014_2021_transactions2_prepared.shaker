@@ -101,18 +101,6 @@
         "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
-    },
-    {
-      "preview": true,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "GeoPointCreator",
-      "params": {
-        "out_column": "GeoPoint_transaction",
-        "lat_column": "latitude",
-        "lon_column": "longitude"
-      },
-      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
