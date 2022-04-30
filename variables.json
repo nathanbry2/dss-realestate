@@ -1,6 +1,5 @@
 {
-  "max_prix_m2": 17000,
-  "min_prix_m2": 3000,
-  "max_valuation": 50000000,
-  "type_local": "Appartement"
+  "max_prix_m2": 15000,
+  "min_prix_m2": 5000,
+  "max_valuation": 50000000
 }
