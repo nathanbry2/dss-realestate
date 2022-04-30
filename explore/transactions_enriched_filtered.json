@@ -93,16 +93,19 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "Count by type_local",
+        "name": "Count by prix_m2_not_null",
         "userEditedName": false,
         "genericDimension0": [
           {
-            "column": "type_local",
-            "type": "ALPHANUM",
+            "column": "prix_m2_not_null",
+            "type": "NUMERICAL",
             "numParams": {
+              "mode": "FIXED_NB",
+              "nbBins": "12",
+              "binSize": 100,
               "emptyBinsMode": "ZEROS"
             },
-            "maxValues": 20,
+            "maxValues": 100,
             "generateOthersCategory": true,
             "oneTickPerBin": false,
             "filters": [],
@@ -123,23 +126,12 @@
                 "measureIdx": 0,
                 "label": "Count of records, ascending",
                 "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 1,
-                "label": "Average of prix_m2_not_null, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 1,
-                "label": "Average of prix_m2_not_null, ascending",
-                "sortAscending": true
               }
             ],
             "sort": {
-              "type": "AGGREGATION",
-              "measureIdx": 0,
-              "label": "Count of records, descending"
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
             }
           }
         ],
@@ -149,17 +141,6 @@
         "genericMeasures": [
           {
             "function": "COUNT",
-            "type": "NUMERICAL",
-            "displayed": true,
-            "isA": "measure",
-            "displayAxis": "axis1",
-            "displayType": "column",
-            "computeMode": "NORMAL",
-            "computeModeDim": 0
-          },
-          {
-            "column": "prix_m2_not_null",
-            "function": "AVG",
             "type": "NUMERICAL",
             "displayed": true,
             "isA": "measure",
@@ -247,6 +228,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -264,7 +246,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAAyBJREFUeF7t1L9rU1EAxfH7GgLa6lILkVabBMQfWGq7RdRODgUjHYItqIMgzqUOzWgrdTAgLs5SHaWL2Iw6qH+Ai4MoFoPgrIMO/fHcBe/7Bl8xp5ysOdx73vnkJQn+7OkFkj39dH640BXwkYVn+8lmXx/O/iI5Z3Z/ga6AjzbbU30hXY7VStOw2mnVn+x+dd9AFjAwWUk4Y2BhPFLdwGQl4YyBhfFIdQOTlYQzBhbGI9UNTFYSzhhYGI9UNzBZSThjYGE8Ut3AZCXhjIGF8Uh1A5OVhDMGFsYj1Q1MVhLOGFgYj1Q3MFlJOGNgYTxS3cBkJeGMgYXxSHUDk5WEMwYWxiPVDUxWEs4YWBiPVDcwWUk4Y2BhPFLdwGQl4YyBhfFIdQOTlYQzBhbGI9UNTFYSzhhYGI9UNzBZSThjYGE8Ut3AZCXhjIGF8Uh1A5OVhDMGFsYj1Q1MVhLOGFgYj1Q3MFlJOGNgYTxS3cBkJeGMgYXxSHUDk5WEMwYWxiPVDUxWEs4YWBiPVDcwWUk4Y2BhPFK954FHF9ebWQ/SadXvZ2Xo99XF5ydIdqM184Hk/nem54HLzRdrISSH/jZUmoYfnVZ9Jq8hy8321RDSW7Hz0jRd6bQuv8zrzt08J3fgKxOjH89WS2+ipbe3vzTODb8mD5YF3F8s/lyeHrudddbs+RH0xhHg+alTG+XBA53onVvhaeNC6XNWL/L92ttvp5NC0opmk+RVo1Z68Gcmd+C5ycqnWnnoWPQN2Nm5kyfwvUtn+qP3JeFdo3Z4gYxJgSuDA9XonVvJzTyB+wrJo/gzJus5AYcbsYvmJsvbtfJQIQN4lQO3H8fOOrivWLw7Pb6ZAfy9O+BwMXbe/NTJUBkciP5e0q1kBQEvLfUNb06MxA67PlY9XquUrmUAv/9nYPIGONNbC3T1F91b1d2GLGBgspJwxsDCeKS6gclKwhkDC+OR6gYmKwlnDCyMR6obmKwknDGwMB6pbmCyknDGwMJ4pLqByUrCGQML45HqBiYrCWcMLIxHqhuYrCScMbAwHqluYLKScMbAwnikuoHJSsKZ36N5IG9CUKCGAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAABBNJREFUeF7tnT1oFEEUx2c2ETFJI6iFxuRA02ihTRoLQbDR3dhYCSJWgogQ0JgDmxQasytqIwg2FoKgoGC+LRRstEmhjYWC3B7GKr1icjuyu0mwmK+F593O5n/tPN69+f/mvXmzc+xxhk+lFeCVnh0mxwC44osAgAG44gpUfHrIYACuuAIVnx4yGIDLqcCB62/2rHmr92XRCc5XmqE/uu/GfH83Ty6oZhCHwWQ5Z0cXlbMZnAHuWn0uBcz4538AP1XItRSHwRidlOX0BMDl5EIWFQCTSVlORwBcTi5kUQEwmZTldATA5eRCFtWWB1yrL9RYkpxQKdqI/CdkanfAEQDXF2pCtFQQP8RhcLMDXMi+EoABmGwxkTqietCRlmhkMCkaGmcAbKdjKUv0QH12ZyvxelVTWI5O/wBgxwFzwV5JpyDYlzgKrgAwAG/cJmkvG7AH2y0UUqu0RCODaSQt7R4MwABMch+MEk2zkAp5QYkuJJfWGCUaDzroVpOtJ2SwrVJmO2SwRQb3j80MdXv8pPLGKQwemaXujAUAWwLu8vhjGSLB+fvmlD/RGXzmbwVgADavEmqLsu3BaYlGBhNSBmA6MVGiUaLpVpOtJ2SwrVJmO2QwMti8SqgtkMF0iiKDkcF0qyn1tHviRV/P797LKq/xlH8XGUynedszOAP8q2dGMYVvcRhcAmAAbutvsvCgo8CCq2oGD4xPH+bCi6RScP4xDv1bBWQiM0WJJmqyMsDMeygnw98CcK6Ms3swAK8v7UqXaGTw+jGpgl00MhgZjCYLezBZ87zpCF00umjaVYUmi1ZPkzdkcBszuDY2d5RtUyNpTPqfTMCKjpMCPnh1fnvSJwZVQXy/43/dyhmcAhaeeCDTRwi22IyCsChAkz054NWeZFExgbgZBRcBGICdvE2yOQcjgyv+qBKAARh7MOvAOzps7oOpSvT++vSwJ/iorI/h3FtqTPnSJk3VbKHJavMxydRF54Dl98qc8+n/B1gIXqvPn1GtlEbov06PSeiipbmX3Qfb7ME2gPdem9mlOx79vDeysjFun8FC8MH63DupY8GW4yg4D8D6C38qwIPjs8cYY7flLMTLOBrZ/OEBADtYogG4wJ9y2LyEpf1Nln4PBmAARolmjGV/q4MM3tjJsyZr9pyqe4vDkWd5k9U6q7PJn0XvUHbjqZ/8h+/ilM5P/q7KP8r3ZqR+8j/Gah3X+ckBr6VNi/ST+slLNBvW2eTnYH5E+13ZZUNySGezfg4e0tnkJVrUdDbFu2jTtQXGS6mAfRddyvARlEkBADYp5Pg4ADsO0BQ+AJsUcnwcgB0HaAofgE0KOT4OwI4DNIUPwCaFHB8HYMcBmsIHYJNCjo8DsOMATeEDsEkhx8cB2HGApvD/Ahx2e9jEAiq9AAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
