@@ -109,19 +109,7 @@
                 "type": "bigint"
               },
               {
-                "name": "longitude",
-                "type": "double"
-              },
-              {
-                "name": "latitude",
-                "type": "double"
-              },
-              {
-                "name": "type_local",
-                "type": "string"
-              },
-              {
-                "name": "valeur_fonciere_avg",
+                "name": "valeur_fonciere",
                 "type": "double"
               },
               {
@@ -137,12 +125,16 @@
                 "type": "double"
               },
               {
-                "name": "nombre_pieces_principales_sum",
+                "name": "nombre_pieces_principales",
                 "type": "double"
               },
               {
-                "name": "GeoPoint_transaction",
-                "type": "string"
+                "name": "longitude",
+                "type": "double"
+              },
+              {
+                "name": "latitude",
+                "type": "double"
               },
               {
                 "name": "distance_to_centre",
