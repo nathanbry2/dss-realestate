@@ -97,7 +97,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -155,7 +155,7 @@
         "frequency_default_mode": "EXPLICIT",
         "frequency_default_value": 0.0,
         "frequency_normalized": true,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
@@ -178,7 +178,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -201,7 +201,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -236,7 +236,7 @@
         "frequency_default_mode": "EXPLICIT",
         "frequency_default_value": 0.0,
         "frequency_normalized": true,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
@@ -271,7 +271,7 @@
         "frequency_default_mode": "EXPLICIT",
         "frequency_default_value": 0.0,
         "frequency_normalized": true,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
@@ -294,7 +294,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -317,7 +317,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -352,7 +352,7 @@
         "frequency_default_mode": "EXPLICIT",
         "frequency_default_value": 0.0,
         "frequency_normalized": true,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
@@ -445,7 +445,7 @@
         "frequency_default_mode": "EXPLICIT",
         "frequency_default_value": 0.0,
         "frequency_normalized": true,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
@@ -526,7 +526,7 @@
         "frequency_default_mode": "EXPLICIT",
         "frequency_default_value": 0.0,
         "frequency_normalized": true,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
@@ -549,7 +549,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -631,7 +631,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -701,7 +701,7 @@
         "frequency_default_mode": "EXPLICIT",
         "frequency_default_value": 0.0,
         "frequency_normalized": true,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
@@ -747,7 +747,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -793,7 +793,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -816,7 +816,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -865,12 +865,12 @@
         ],
         "range": {
           "min": 80,
-          "max": 200,
+          "max": 500,
           "nbValues": 3,
           "scaling": "LINEAR"
         }
       },
-      "n_jobs": 4,
+      "n_jobs": -1,
       "max_tree_depth": {
         "gridMode": "EXPLICIT",
         "randomMode": "RANGE",
@@ -883,7 +883,7 @@
           15
         ],
         "range": {
-          "min": 10,
+          "min": 6,
           "max": 20,
           "nbValues": 3,
           "scaling": "LINEAR"
@@ -1474,7 +1474,7 @@
           "scaling": "LOGARITHMIC"
         }
       },
-      "enabled": false
+      "enabled": true
     },
     "lasso_regression": {
       "alphaMode": "AUTO_CV",
@@ -1496,7 +1496,7 @@
           "scaling": "LOGARITHMIC"
         }
       },
-      "enabled": false
+      "enabled": true
     },
     "leastsquare_regression": {
       "n_jobs": 2,
@@ -1626,7 +1626,7 @@
         ],
         "range": {
           "min": 3,
-          "max": 7,
+          "max": 15,
           "nbValues": 3,
           "scaling": "LINEAR"
         }
@@ -1635,7 +1635,7 @@
       "algorithm": "auto",
       "p": 2,
       "leaf_size": 30,
-      "enabled": false
+      "enabled": true
     },
     "logistic_regression": {
       "multi_class": "ovr",
@@ -2016,7 +2016,7 @@
       "early_stopping": true,
       "early_stopping_rounds": 4,
       "random_state": 1337,
-      "n_jobs": 4,
+      "n_jobs": -1,
       "max_depth": -1,
       "subsample": 0.75,
       "subsample_freq": 2,
@@ -2391,8 +2391,8 @@
           }
         }
       },
-      "n_estimators": 300,
-      "nthread": 4,
+      "n_estimators": 500,
+      "nthread": -1,
       "scale_pos_weight": 1.0,
       "base_score": 0.5,
       "impute_missing": false,
@@ -2403,7 +2403,7 @@
       "seed": 1337,
       "enable_early_stopping": true,
       "early_stopping_rounds": 4,
-      "enabled": false
+      "enabled": true
     },
     "deep_learning_sparkling": {
       "enabled": false,
@@ -2796,13 +2796,13 @@
         "enabled": false,
         "rules": []
       },
-      "samplingMethod": "HEAD_SEQUENTIAL",
+      "samplingMethod": "FULL",
       "maxRecords": 100000,
       "targetRatio": 0.02,
       "withinFirstN": -1,
       "maxReadUncompressedBytes": -1
     },
-    "ssdTrainingRatio": 0.8,
+    "ssdTrainingRatio": 0.85,
     "ssdSeed": 1337,
     "testOnLargerValues": true,
     "kfold": false,
