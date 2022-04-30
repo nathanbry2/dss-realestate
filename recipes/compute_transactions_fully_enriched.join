@@ -105,22 +105,7 @@
       "table": 0
     },
     {
-      "name": "longitude",
-      "type": "double",
-      "table": 0
-    },
-    {
-      "name": "latitude",
-      "type": "double",
-      "table": 0
-    },
-    {
-      "name": "type_local",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "valeur_fonciere_avg",
+      "name": "valeur_fonciere",
       "type": "double",
       "table": 0
     },
@@ -140,7 +125,17 @@
       "table": 0
     },
     {
-      "name": "nombre_pieces_principales_sum",
+      "name": "nombre_pieces_principales",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "longitude",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "latitude",
       "type": "double",
       "table": 0
     },
@@ -298,19 +293,7 @@
             "type": "bigint"
           },
           {
-            "name": "longitude",
-            "type": "double"
-          },
-          {
-            "name": "latitude",
-            "type": "double"
-          },
-          {
-            "name": "type_local",
-            "type": "string"
-          },
-          {
-            "name": "valeur_fonciere_avg",
+            "name": "valeur_fonciere",
             "type": "double"
           },
           {
@@ -326,7 +309,15 @@
             "type": "double"
           },
           {
-            "name": "nombre_pieces_principales_sum",
+            "name": "nombre_pieces_principales",
+            "type": "double"
+          },
+          {
+            "name": "longitude",
+            "type": "double"
+          },
+          {
+            "name": "latitude",
             "type": "double"
           },
           {
