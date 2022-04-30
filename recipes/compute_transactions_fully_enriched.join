@@ -145,11 +145,6 @@
       "table": 0
     },
     {
-      "name": "GeoPoint_transaction",
-      "type": "string",
-      "table": 0
-    },
-    {
       "name": "distance_to_centre",
       "type": "double",
       "table": 0
@@ -333,10 +328,6 @@
           {
             "name": "nombre_pieces_principales_sum",
             "type": "double"
-          },
-          {
-            "name": "GeoPoint_transaction",
-            "type": "string"
           },
           {
             "name": "distance_to_centre",
