@@ -733,7 +733,7 @@
           "scaling": "LINEAR"
         }
       },
-      "enabled": true
+      "enabled": false
     },
     "random_forest_classification": {
       "n_estimators": {
@@ -1811,7 +1811,7 @@
       "subsample": 0.9,
       "subsample_freq": 1,
       "use_bagging": false,
-      "enabled": true
+      "enabled": false
     },
     "lightgbm_classification": {
       "boosting_type": {
@@ -1994,7 +1994,8 @@
         },
         "values": [
           3,
-          7,
+          5,
+          8,
           10
         ],
         "range": {
@@ -2183,7 +2184,7 @@
           }
         }
       },
-      "n_estimators": 500,
+      "n_estimators": 1000,
       "nthread": 4,
       "scale_pos_weight": 1.0,
       "base_score": 0.5,
@@ -2553,7 +2554,7 @@
       "nContainers": 4
     },
     "metrics": {
-      "evaluationMetric": "R2",
+      "evaluationMetric": "RMSE",
       "customEvaluationMetricGIB": true,
       "customEvaluationMetricNeedsProba": false,
       "costMatrixWeights": {
