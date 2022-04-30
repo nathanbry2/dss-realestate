@@ -1004,7 +1004,7 @@
           "scaling": "LINEAR"
         }
       },
-      "enabled": true
+      "enabled": false
     },
     "random_forest_classification": {
       "n_estimators": {
@@ -1696,7 +1696,7 @@
       "algorithm": "auto",
       "p": 2,
       "leaf_size": 30,
-      "enabled": true
+      "enabled": false
     },
     "logistic_regression": {
       "multi_class": "ovr",
