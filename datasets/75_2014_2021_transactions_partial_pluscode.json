@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651326584452
+    "lastModifiedOn": 1651339711541
   },
   "creationTag": {
     "versionNumber": 0,
@@ -62,16 +62,16 @@
       {"name":"date_mutation_year","type":"bigint"},
       {"name":"date_mutation_month","type":"bigint"},
       {"name":"date_mutation_day","type":"bigint"},
-      {"name":"longitude","type":"double"},
-      {"name":"latitude","type":"double"},
-      {"name":"type_local","type":"string"},
-      {"name":"valeur_fonciere_avg","type":"double"},
+      {"name":"valeur_fonciere","type":"double"},
       {"name":"code_postal","type":"bigint"},
-      {"name":"lot1_surface_carrez_sum","type":"double"},
-      {"name":"surface_reelle_bati_sum","type":"bigint"},
+      {"name":"lot1_surface_carrez","type":"double"},
+      {"name":"type_local","type":"string"},
+      {"name":"surface_reelle_bati","type":"bigint"},
       {"name":"surface_m2_not_null","type":"double"},
       {"name":"prix_m2_not_null","type":"double"},
-      {"name":"nombre_pieces_principales_sum","type":"bigint"},
+      {"name":"nombre_pieces_principales","type":"bigint"},
+      {"name":"longitude","type":"double"},
+      {"name":"latitude","type":"double"},
       {"name":"pluscode_16_first","type":"string"}
     ],
     "userModified": true
