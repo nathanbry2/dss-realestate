@@ -66,22 +66,7 @@
       "table": 0
     },
     {
-      "name": "longitude",
-      "type": "double",
-      "table": 0
-    },
-    {
-      "name": "latitude",
-      "type": "double",
-      "table": 0
-    },
-    {
-      "name": "type_local",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "valeur_fonciere_avg",
+      "name": "valeur_fonciere",
       "type": "double",
       "table": 0
     },
@@ -91,12 +76,17 @@
       "table": 0
     },
     {
-      "name": "lot1_surface_carrez_sum",
+      "name": "lot1_surface_carrez",
       "type": "double",
       "table": 0
     },
     {
-      "name": "surface_reelle_bati_sum",
+      "name": "type_local",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "surface_reelle_bati",
       "type": "bigint",
       "table": 0
     },
@@ -111,8 +101,18 @@
       "table": 0
     },
     {
-      "name": "nombre_pieces_principales_sum",
+      "name": "nombre_pieces_principales",
       "type": "bigint",
+      "table": 0
+    },
+    {
+      "name": "longitude",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "latitude",
+      "type": "double",
       "table": 0
     },
     {
@@ -194,19 +194,7 @@
             "type": "bigint"
           },
           {
-            "name": "longitude",
-            "type": "double"
-          },
-          {
-            "name": "latitude",
-            "type": "double"
-          },
-          {
-            "name": "type_local",
-            "type": "string"
-          },
-          {
-            "name": "valeur_fonciere_avg",
+            "name": "valeur_fonciere",
             "type": "double"
           },
           {
@@ -214,11 +202,15 @@
             "type": "bigint"
           },
           {
-            "name": "lot1_surface_carrez_sum",
+            "name": "lot1_surface_carrez",
             "type": "double"
           },
           {
-            "name": "surface_reelle_bati_sum",
+            "name": "type_local",
+            "type": "string"
+          },
+          {
+            "name": "surface_reelle_bati",
             "type": "bigint"
           },
           {
@@ -230,8 +222,16 @@
             "type": "double"
           },
           {
-            "name": "nombre_pieces_principales_sum",
+            "name": "nombre_pieces_principales",
             "type": "bigint"
+          },
+          {
+            "name": "longitude",
+            "type": "double"
+          },
+          {
+            "name": "latitude",
+            "type": "double"
           },
           {
             "name": "pluscode_16_first",
