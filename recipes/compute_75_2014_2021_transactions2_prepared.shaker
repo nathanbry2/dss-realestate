@@ -38,7 +38,7 @@
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
-        "expression": "coalesce(lot1_surface_carrez_sum,surface_reelle_bati_sum)",
+        "expression": "coalesce(lot1_surface_carrez,surface_reelle_bati)",
         "column": "surface_m2_not_null"
       },
       "alwaysShowComment": false
@@ -49,7 +49,7 @@
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
-        "expression": "valeur_fonciere_avg / surface_m2_not_null",
+        "expression": "valeur_fonciere / surface_m2_not_null",
         "column": "prix_m2_not_null"
       },
       "alwaysShowComment": false
@@ -94,8 +94,7 @@
       "type": "ColumnsSelector",
       "params": {
         "columns": [
-          "nature_mutation",
-          "count"
+          "nature_mutation"
         ],
         "keep": false,
         "appliesTo": "COLUMNS"
@@ -131,6 +130,7 @@
   "columnWidthsByName": {
     "code_postal": 100,
     "valeur_fonciere_avg": 158,
+    "valeur_fonciere": 128,
     "latitude": 106,
     "count": 100,
     "surface_m2_not_null": 158,
@@ -142,9 +142,12 @@
     "date_mutation_day": 143,
     "nombre_pieces_principales_sum": 233,
     "prix_m2_not_null": 162,
+    "nombre_pieces_principales": 203,
     "GeoPoint_transaction": 190,
+    "lot1_surface_carrez": 158,
     "date_mutation_year": 150,
     "type_local": 204,
+    "surface_reelle_bati": 158,
     "date_mutation_parsed": 190,
     "longitude": 113
   },
