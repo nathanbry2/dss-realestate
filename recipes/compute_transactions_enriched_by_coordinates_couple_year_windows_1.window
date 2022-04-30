@@ -53,7 +53,7 @@
       "lagDiff": false,
       "max": false,
       "firstLastNotNull": false,
-      "column": "valeur_fonciere_avg_avg",
+      "column": "valeur_fonciere_avg",
       "count": false,
       "$idx": 2,
       "sum": false,
@@ -74,7 +74,7 @@
       "lagDiff": false,
       "max": false,
       "firstLastNotNull": false,
-      "column": "valeur_fonciere_avg_sum",
+      "column": "valeur_fonciere_sum",
       "count": false,
       "$idx": 3,
       "sum": false,
@@ -315,11 +315,11 @@
             "type": "bigint"
           },
           {
-            "name": "valeur_fonciere_avg_avg",
+            "name": "valeur_fonciere_avg",
             "type": "double"
           },
           {
-            "name": "valeur_fonciere_avg_sum",
+            "name": "valeur_fonciere_sum",
             "type": "double"
           },
           {
