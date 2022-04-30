@@ -97,7 +97,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -155,7 +155,7 @@
         "frequency_default_mode": "EXPLICIT",
         "frequency_default_value": 0.0,
         "frequency_normalized": true,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
@@ -178,7 +178,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -201,7 +201,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -236,7 +236,7 @@
         "frequency_default_mode": "EXPLICIT",
         "frequency_default_value": 0.0,
         "frequency_normalized": true,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
@@ -271,7 +271,7 @@
         "frequency_default_mode": "EXPLICIT",
         "frequency_default_value": 0.0,
         "frequency_normalized": true,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
@@ -294,7 +294,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -317,7 +317,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -447,7 +447,7 @@
         "frequency_default_mode": "EXPLICIT",
         "frequency_default_value": 0.0,
         "frequency_normalized": true,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
@@ -528,7 +528,7 @@
         "frequency_default_mode": "EXPLICIT",
         "frequency_default_value": 0.0,
         "frequency_normalized": true,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
@@ -551,7 +551,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -609,7 +609,7 @@
         "frequency_default_mode": "EXPLICIT",
         "frequency_default_value": 0.0,
         "frequency_normalized": true,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
@@ -632,7 +632,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -702,7 +702,7 @@
         "frequency_default_mode": "EXPLICIT",
         "frequency_default_value": 0.0,
         "frequency_normalized": true,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
@@ -748,7 +748,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -794,7 +794,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -817,7 +817,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -862,7 +862,9 @@
           "min": 1
         },
         "values": [
-          100
+          100,
+          300,
+          500
         ],
         "range": {
           "min": 80,
@@ -871,7 +873,7 @@
           "scaling": "LINEAR"
         }
       },
-      "n_jobs": 1,
+      "n_jobs": 4,
       "max_tree_depth": {
         "gridMode": "EXPLICIT",
         "randomMode": "RANGE",
@@ -880,7 +882,9 @@
         },
         "values": [
           6,
-          15
+          10,
+          15,
+          12
         ],
         "range": {
           "min": 10,
@@ -1863,7 +1867,11 @@
           "min": 1
         },
         "values": [
-          31
+          31,
+          50,
+          200,
+          350,
+          500
         ],
         "range": {
           "min": 20,
@@ -1897,7 +1905,9 @@
           "min": 1
         },
         "values": [
-          75
+          200,
+          75,
+          150
         ],
         "range": {
           "min": 50,
@@ -2015,7 +2025,7 @@
       "subsample": 0.9,
       "subsample_freq": 1,
       "use_bagging": false,
-      "enabled": false
+      "enabled": true
     },
     "lightgbm_classification": {
       "boosting_type": {
@@ -2197,7 +2207,10 @@
           "min": 1
         },
         "values": [
-          3
+          3,
+          5,
+          8,
+          10
         ],
         "range": {
           "min": 3,
@@ -2214,7 +2227,7 @@
           "max": 1.0
         },
         "values": [
-          0.2
+          0.1
         ],
         "range": {
           "min": 0.01,
@@ -2385,7 +2398,7 @@
           }
         }
       },
-      "n_estimators": 300,
+      "n_estimators": 500,
       "nthread": 4,
       "scale_pos_weight": 1.0,
       "base_score": 0.5,
@@ -2397,7 +2410,7 @@
       "seed": 1337,
       "enable_early_stopping": true,
       "early_stopping_rounds": 4,
-      "enabled": false
+      "enabled": true
     },
     "deep_learning_sparkling": {
       "enabled": false,
@@ -2755,7 +2768,7 @@
       "nContainers": 4
     },
     "metrics": {
-      "evaluationMetric": "R2",
+      "evaluationMetric": "RMSE",
       "customEvaluationMetricGIB": true,
       "customEvaluationMetricNeedsProba": false,
       "costMatrixWeights": {
@@ -2790,13 +2803,13 @@
         "enabled": false,
         "rules": []
       },
-      "samplingMethod": "HEAD_SEQUENTIAL",
+      "samplingMethod": "FULL",
       "maxRecords": 100000,
       "targetRatio": 0.02,
       "withinFirstN": -1,
       "maxReadUncompressedBytes": -1
     },
-    "ssdTrainingRatio": 0.8,
+    "ssdTrainingRatio": 0.85,
     "ssdSeed": 1337,
     "testOnLargerValues": true,
     "kfold": false,
@@ -2846,7 +2859,7 @@
   "taskType": "PREDICTION",
   "name": "Predict valeur_fonciere_avg",
   "backendType": "PY_MEMORY",
-  "maxConcurrentModelTraining": 2,
+  "maxConcurrentModelTraining": 4,
   "envSelection": {
     "envMode": "USE_BUILTIN_MODE"
   },
