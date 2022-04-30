@@ -2644,7 +2644,7 @@
   "taskType": "PREDICTION",
   "name": "Predict valeur_fonciere",
   "backendType": "PY_MEMORY",
-  "maxConcurrentModelTraining": 2,
+  "maxConcurrentModelTraining": 3,
   "envSelection": {
     "envMode": "USE_BUILTIN_MODE"
   },
