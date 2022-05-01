@@ -53,6 +53,28 @@
         "column": "correct_prix_m2_iris"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "surface_m2_not_null * correct_prix_m2_iris",
+        "column": "prediction_correct_iris"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "surface_m2_not_null * correct_prix_m2_coordinates_couple",
+        "column": "prediction_correct_coordinates_couple"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -92,6 +114,7 @@
     "NOM_COM": 183,
     "date_mutation_day": 143,
     "prix_m2_not_null": 162,
+    "prediction_correct_coordinates_couple": 293,
     "nombre_pieces_principales": 203,
     "GeoPoint_transaction": 190,
     "date_mutation_year": 150,
@@ -110,6 +133,7 @@
     "count_coordinates_couple": 195,
     "nombre_pieces_principales_sum": 233,
     "iris_code": 113,
+    "prediction_correct_iris": 211,
     "correct_prix_m2_iris": 190
   },
   "sorting": [],
