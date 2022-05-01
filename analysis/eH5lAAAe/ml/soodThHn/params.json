@@ -769,7 +769,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -792,7 +792,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -1995,7 +1995,7 @@
       "subsample": 0.9,
       "subsample_freq": 1,
       "use_bagging": false,
-      "enabled": true
+      "enabled": false
     },
     "lightgbm_classification": {
       "boosting_type": {
