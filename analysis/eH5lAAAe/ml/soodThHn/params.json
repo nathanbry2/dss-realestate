@@ -2759,7 +2759,31 @@
     "max_ensemble_nodes_serialized": 6000
   },
   "assertionsParams": {
-    "assertions": []
+    "assertions": [
+      {
+        "name": "Assertion 1",
+        "filter": {
+          "distinct": false,
+          "enabled": true,
+          "uiData": {
+            "mode": "\u0026\u0026",
+            "conditions": [
+              {
+                "input": "code_postal",
+                "operator": "not empty string",
+                "col": "date_mutation_month",
+                "num": 0.0
+              }
+            ]
+          }
+        },
+        "assertionCondition": {
+          "expectedValidRatio": 1.0,
+          "expectedMinValue": 0.0,
+          "expectedMaxValue": 1.0E8
+        }
+      }
+    ]
   },
   "predictionType": "REGRESSION",
   "targetVariable": "valeur_fonciere",
