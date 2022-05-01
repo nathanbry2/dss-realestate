@@ -1792,7 +1792,10 @@
           "min": 1
         },
         "values": [
-          31
+          31,
+          150,
+          300,
+          500
         ],
         "range": {
           "min": 20,
@@ -1826,7 +1829,9 @@
           "min": 1
         },
         "values": [
-          75
+          75,
+          150,
+          200
         ],
         "range": {
           "min": 50,
@@ -1944,7 +1949,7 @@
       "subsample": 0.9,
       "subsample_freq": 1,
       "use_bagging": false,
-      "enabled": false
+      "enabled": true
     },
     "lightgbm_classification": {
       "boosting_type": {
