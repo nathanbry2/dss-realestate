@@ -2197,7 +2197,9 @@
           "max": 1.0
         },
         "values": [
-          0.1
+          0.1,
+          0.01,
+          0.2
         ],
         "range": {
           "min": 0.01,
@@ -2262,7 +2264,8 @@
           "max": 1.0
         },
         "values": [
-          1.0
+          1.0,
+          0.5
         ],
         "range": {
           "min": 0.5,
@@ -2279,7 +2282,8 @@
           "max": 1.0
         },
         "values": [
-          1.0
+          1.0,
+          0.5
         ],
         "range": {
           "min": 0.5,
@@ -2379,7 +2383,7 @@
       "enable_cuda": false,
       "seed": 1337,
       "enable_early_stopping": true,
-      "early_stopping_rounds": 4,
+      "early_stopping_rounds": 100,
       "enabled": true
     },
     "deep_learning_sparkling": {
