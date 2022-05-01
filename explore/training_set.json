@@ -81,14 +81,21 @@
       "correct_prix_m2_iris": 190,
       "prix_m2_coordinates_couple": 232,
       "count_coordinates_couple": 195,
-      "correct_prix_m2_coordinates_couple": 270
+      "correct_prix_m2_coordinates_couple": 270,
+      "prediction_correct_iris": 211,
+      "prediction_correct_coordinates_couple": 293
     },
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
       "valueColoringMode": "HASH"
     },
-    "sorting": [],
+    "sorting": [
+      {
+        "column": "count_coordinates_couple",
+        "ascending": true
+      }
+    ],
     "analysisColumnData": {},
     "explorationSampling": {
       "selection": {
