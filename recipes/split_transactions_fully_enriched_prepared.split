@@ -189,6 +189,10 @@
                 "type": "double"
               },
               {
+                "name": "prediction_correct_iris",
+                "type": "double"
+              },
+              {
                 "name": "prix_m2_coordinates_couple",
                 "type": "double"
               },
@@ -198,6 +202,10 @@
               },
               {
                 "name": "correct_prix_m2_coordinates_couple",
+                "type": "double"
+              },
+              {
+                "name": "prediction_correct_coordinates_couple",
                 "type": "double"
               }
             ]
