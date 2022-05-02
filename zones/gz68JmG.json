@@ -13,6 +13,14 @@
     {
       "objectId": "training_set",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "train_Predict_valeur_fonciere__regression_",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "0yBr3sA6",
+      "objectType": "SAVED_MODEL"
     }
   ],
   "shared": [],
