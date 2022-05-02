@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651480665766
+    "lastModifiedOn": 1651480680693
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,7 +57,41 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"date_mutation_year","type":"bigint"},
+      {"name":"date_mutation_month","type":"bigint"},
+      {"name":"date_mutation_day","type":"bigint"},
+      {"name":"valeur_fonciere","type":"double"},
+      {"name":"code_postal","type":"bigint"},
+      {"name":"surface_m2_not_null","type":"double"},
+      {"name":"prix_m2_not_null","type":"double"},
+      {"name":"nombre_pieces_principales","type":"double"},
+      {"name":"longitude","type":"double"},
+      {"name":"latitude","type":"double"},
+      {"name":"distance_to_centre","type":"double"},
+      {"name":"direction_from_centre","type":"string"},
+      {"name":"pluscode_10","type":"string"},
+      {"name":"reduced_coordinates_couple","type":"string"},
+      {"name":"iris_code","type":"bigint"},
+      {"name":"iris_GeoPoint","type":"string"},
+      {"name":"iris_GeoShape","type":"string"},
+      {"name":"NOM_COM","type":"string"},
+      {"name":"NOM_IRIS","type":"string"},
+      {"name":"TYP_IRIS","type":"string"},
+      {"name":"prix_m2_iris","type":"double"},
+      {"name":"count_iris","type":"bigint"},
+      {"name":"correct_prix_m2_iris","type":"double"},
+      {"name":"prediction_correct_iris","type":"double"},
+      {"name":"prix_m2_coordinates_couple","type":"double"},
+      {"name":"count_coordinates_couple","type":"bigint"},
+      {"name":"correct_prix_m2_coordinates_couple","type":"double"},
+      {"name":"prediction_correct_coordinates_couple","type":"double"},
+      {"name":"prediction","type":"float"},
+      {"name":"error","type":"double"},
+      {"name":"error_decile","type":"smallint"},
+      {"name":"abs_error_decile","type":"smallint"},
+      {"name":"relative_error","type":"double"}
+    ],
     "userModified": true
   },
   "dkuProperties": [],

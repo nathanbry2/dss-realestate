@@ -33,6 +33,10 @@
     {
       "objectId": "z0Q15fLj",
       "objectType": "MODEL_EVALUATION_STORE"
+    },
+    {
+      "objectId": "evaluate_on_validation_set",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],

@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651480671302
+    "lastModifiedOn": 1651480680700
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,7 +57,20 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"date","type":"date"},
+      {"name":"evs","type":"double"},
+      {"name":"mae","type":"double"},
+      {"name":"mse","type":"double"},
+      {"name":"mape","type":"double"},
+      {"name":"rmse","type":"double"},
+      {"name":"rmsle","type":"double"},
+      {"name":"r2","type":"double"},
+      {"name":"pearson","type":"double"},
+      {"name":"customScore","type":"double"},
+      {"name":"passingAssertionsRatio","type":"double"},
+      {"name":"assertionsMetrics","type":"string"}
+    ],
     "userModified": true
   },
   "dkuProperties": [],
