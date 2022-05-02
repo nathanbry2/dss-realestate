@@ -25,6 +25,10 @@
     {
       "objectId": "validation_set_evaluated",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "metrics",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
