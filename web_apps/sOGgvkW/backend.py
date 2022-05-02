@@ -44,14 +44,14 @@ app.layout = html.Div(
     ## Step 2: Create Title & Description
     children=[
         html.Div(html.H1(
-            children='Escape Game',
+            children='Dataiku Real Estate Estimator',
             style={
                 #'backgroundColor': title_style['background'],
                 'color': title_style['text'],
                 'textAlign': 'center'}
         )),
-        html.Div(
-            children='Welcome! Please fill in the following fields to escape',
+        html.Div(html.H2(
+            children='Welcome! Please fill in the following fields to get an astimation of your property.',
             style={
                 'backgroundColor': desc_style['background'],
                 'color': desc_style['text'],
