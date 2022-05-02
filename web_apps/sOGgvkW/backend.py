@@ -69,25 +69,25 @@ app.layout = html.Div(
         dbc.Label("Surface (in m2)", html_for="input2"),html.Br(),html.Br(),
         dcc.Input(
             id="input2",
-            type='text',
+            type='number',
             placeholder="75",
         ),html.Br(),html.Br(),html.Br(),
         dbc.Label("Zip Code", html_for="input3"),html.Br(),html.Br(),
         dcc.Input(
             id="input3",
-            type='text',
+            type='number',
             placeholder="75009",
         ),html.Br(),html.Br(),html.Br(),
         dbc.Label("Number of main rooms", html_for="input4"),html.Br(),html.Br(),
         dcc.Input(
             id="input4",
-            type='text',
+            type='number',
             placeholder="3",
         ),html.Br(),html.Br(),html.Br(),
         dbc.Label("Year", html_for="input5"),html.Br(),html.Br(),
         dcc.Input(
             id="input5",
-            type='text',
+            type='number',
             placeholder="2021",
         ),
         
