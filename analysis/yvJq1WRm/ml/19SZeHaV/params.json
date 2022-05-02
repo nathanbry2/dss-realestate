@@ -2696,7 +2696,7 @@
       {
         "enabled": true,
         "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost regressor.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, it should:\n#  1. have at least fit(X,y) and predict(X) methods\n#  2. inherit sklearn.base.BaseEstimator\n#  3. handle the attributes in the __init__ function\n#     See: https://doc.dataiku.com/dss/latest/machine-learning/custom-models.html\n\nfrom catboost import CatBoostRegressor\n\nclf \u003d CatBoostRegressor()\n",
-        "name": "Custom Python model"
+        "name": "CatBoost basic"
       }
     ],
     "plugin_python": {},
