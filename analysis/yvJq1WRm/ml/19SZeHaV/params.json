@@ -2362,7 +2362,7 @@
           }
         }
       },
-      "n_estimators": 300,
+      "n_estimators": 500,
       "nthread": -1,
       "scale_pos_weight": 1.0,
       "base_score": 0.5,
