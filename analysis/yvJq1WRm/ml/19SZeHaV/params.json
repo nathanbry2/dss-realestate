@@ -2779,7 +2779,7 @@
       "withinFirstN": -1,
       "maxReadUncompressedBytes": -1
     },
-    "ssdTrainingRatio": 0.85,
+    "ssdTrainingRatio": 0.9,
     "ssdSeed": 1337,
     "testOnLargerValues": true,
     "kfold": false,
