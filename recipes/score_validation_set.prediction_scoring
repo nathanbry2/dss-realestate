@@ -6,6 +6,7 @@
   },
   "backendType": "PY_MEMORY",
   "filterInputColumns": false,
+  "engineType": "DSS",
   "mlFlowOutputStyle": "RAW",
   "useGPU": false,
   "pythonBatchSize": 100000,
@@ -21,7 +22,7 @@
     "shapleyBackgroundSize": 100,
     "nbExplanations": 3
   },
-  "forcedClassifierThreshold": 0.0,
+  "forcedClassifierThreshold": 0,
   "batchSize": 100,
   "outputExplanations": false,
   "overrideModelSpecifiedThreshold": false,
