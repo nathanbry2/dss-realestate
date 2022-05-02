@@ -59,7 +59,7 @@ app.layout = html.Div(
         )),html.Br(),html.Br(),
         
         ## Step 3: Create clues inputs
-        dbc.Label("Clue n°1", html_for="input1"),html.Br(),html.Br(),
+        dbc.Label("Surface (m2)", html_for="input1"),html.Br(),
         dcc.Input(
             id="input1",
             type='text',
