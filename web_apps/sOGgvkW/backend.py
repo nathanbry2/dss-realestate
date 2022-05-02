@@ -88,6 +88,7 @@ app.layout = html.Div(
         ## Step 3: Submit button
         html.Br(),html.Br(),html.Br(),
         html.Div(dbc.Col(dbc.Button(children="Submit answers", id="submit",n_clicks=0))),
+        html.Br(),html.Br(),
         html.Div(id='output')
         #html.Img(src='data:image/png;base64,{}'.format(encoded_logo))
     ]
