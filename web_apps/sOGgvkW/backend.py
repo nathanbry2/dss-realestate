@@ -78,11 +78,17 @@ app.layout = html.Div(
             type='text',
             placeholder="75009",
         ),html.Br(),html.Br(),html.Br(),
-        dbc.Label("Number of main rooms", html_for="input3"),html.Br(),html.Br(),
+        dbc.Label("Number of main rooms", html_for="input4"),html.Br(),html.Br(),
         dcc.Input(
             id="input4",
             type='text',
             placeholder="3",
+        ),html.Br(),html.Br(),html.Br(),
+        dbc.Label("Year", html_for="input5"),html.Br(),html.Br(),
+        dcc.Input(
+            id="input5",
+            type='text',
+            placeholder="2021",
         ),
         
         ## Step 3: Submit button
