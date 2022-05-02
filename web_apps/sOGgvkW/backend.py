@@ -59,30 +59,30 @@ app.layout = html.Div(
         )),html.Br(),html.Br(),
         
         ## Step 3: Create clues inputs
-        dbc.Label("Surface (m2)", html_for="input1"),html.Br(),
+        dbc.Label("Adresse", html_for="input1"),html.Br(),html.Br(),
         dcc.Input(
             id="input1",
             type='text',
             value='',
-            placeholder="Please fill in clue n°1",
+            placeholder="13 rue Saulnier, 75009, Paris",
         ),html.Br(),html.Br(),html.Br(),
-        dbc.Label("Clue n°2", html_for="input2"),html.Br(),html.Br(),
+        dbc.Label("Surface (in m2)", html_for="input2"),html.Br(),html.Br(),
         dcc.Input(
             id="input2",
             type='text',
-            placeholder="Please fill in clue n°2",
+            placeholder="75",
         ),html.Br(),html.Br(),html.Br(),
-        dbc.Label("Clue n°3", html_for="input3"),html.Br(),html.Br(),
+        dbc.Label("Zip Code", html_for="input3"),html.Br(),html.Br(),
         dcc.Input(
             id="input3",
             type='text',
-            placeholder="Please fill in clue n°3",
+            placeholder="75009",
         ),html.Br(),html.Br(),html.Br(),
-        dbc.Label("Clue n°4", html_for="input3"),html.Br(),html.Br(),
+        dbc.Label("Number of main rooms", html_for="input3"),html.Br(),html.Br(),
         dcc.Input(
             id="input4",
             type='text',
-            placeholder="Please fill in clue n°4",
+            placeholder="3",
         ),
         
         ## Step 3: Submit button
