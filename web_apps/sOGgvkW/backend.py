@@ -50,7 +50,7 @@ app.layout = html.Div(
                 'color': title_style['text'],
                 'textAlign': 'center'}
         )),
-        html.Div(html.H2(
+        html.Div(html.H3(
             children='Welcome! Please fill in the following fields to get an astimation of your property.',
             style={
                 'backgroundColor': desc_style['background'],
