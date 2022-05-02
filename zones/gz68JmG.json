@@ -21,6 +21,14 @@
     {
       "objectId": "0yBr3sA6",
       "objectType": "SAVED_MODEL"
+    },
+    {
+      "objectId": "validation_set_scored",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "score_validation_set",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
