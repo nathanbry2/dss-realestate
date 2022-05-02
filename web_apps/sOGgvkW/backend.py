@@ -56,7 +56,7 @@ app.layout = html.Div(
                 'backgroundColor': desc_style['background'],
                 'color': desc_style['text'],
                 'textAlign': 'center'}
-        ),html.Br(),html.Br(),
+        )),html.Br(),html.Br(),
         
         ## Step 3: Create clues inputs
         dbc.Label("Clue n°1", html_for="input1"),html.Br(),html.Br(),
