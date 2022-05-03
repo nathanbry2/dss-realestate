@@ -90,6 +90,12 @@
       "evaluationDataset:dataset-name"
     ],
     "alsoDisplayedLabels": [],
+    "barLabels": [
+      "evaluation:date",
+      "model:name",
+      "evaluationDataset:dataset-name"
+    ],
+    "graphStyle": "BAR",
     "sortColumn": "refStr",
     "sortDescending": false,
     "showConfidenceIntervals": true,
@@ -97,11 +103,11 @@
   },
   "governSyncOptOut": false,
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651482230843
+    "lastModifiedOn": 1651573203938
   },
   "creationTag": {
     "versionNumber": 0,
