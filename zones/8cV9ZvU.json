@@ -1,7 +1,12 @@
 {
   "name": "Test",
   "color": "#465A64",
-  "items": [],
+  "items": [
+    {
+      "objectId": "Interventions_Nathan___Sheet2__1_",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
