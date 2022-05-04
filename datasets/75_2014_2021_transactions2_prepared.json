@@ -9,7 +9,7 @@
     "kv": {}
   },
   "flowOptions": {
-    "virtualizable": true,
+    "virtualizable": false,
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
   },
@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651648539007
+    "lastModifiedOn": 1651670382515
   },
   "creationTag": {
     "versionNumber": 0,
