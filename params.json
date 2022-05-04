@@ -38,8 +38,8 @@
       ],
       "includedSavedModels": [
         {
-          "id": "0yBr3sA6",
-          "name": "Predict valeur_fonciere (regression)"
+          "id": "BoL37GXK",
+          "name": "Predict valeur_fonciere (regression) - full"
         }
       ],
       "includedModelEvaluationStores": [],
@@ -224,11 +224,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651702547879
+    "lastModifiedOn": 1651702656378
   },
   "creationTag": {
     "versionNumber": 0,
