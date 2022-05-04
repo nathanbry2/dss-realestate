@@ -299,6 +299,26 @@
       "partitioningColumns": [
         "iris_code"
       ]
+    },
+    {
+      "windowLimitMode": "ROWS",
+      "enablePartitioning": true,
+      "prefix": "w2",
+      "enableOrdering": true,
+      "precedingRows": 7,
+      "limitFollowing": true,
+      "orders": [
+        {
+          "column": "date_mutation_year",
+          "desc": false
+        }
+      ],
+      "limitPreceding": true,
+      "followingRows": 0,
+      "enableLimits": true,
+      "partitioningColumns": [
+        "code_postal"
+      ]
     }
   ],
   "computedColumns": [],
@@ -360,6 +380,14 @@
           },
           {
             "name": "prix_m2_not_null_avg_lag7",
+            "type": "double"
+          },
+          {
+            "name": "w2_prix_m2_not_null_avg_lag1",
+            "type": "double"
+          },
+          {
+            "name": "w2_prix_m2_not_null_avg_lag7",
             "type": "double"
           }
         ],
