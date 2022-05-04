@@ -2,7 +2,7 @@
   "savedModelType": "DSS_MANAGED",
   "publishPolicy": "UNCONDITIONAL",
   "rebuildBehavior": "EXPLICIT",
-  "name": "Predict valeur_fonciere (regression)",
+  "name": "Predict valeur_fonciere (regression) - full",
   "contentType": "prediction/py_memory",
   "activeVersion": "initial",
   "conditionalOutputs": [],
@@ -2157,11 +2157,11 @@
   "lastTrainIndex": 1,
   "lastTrainJobId": "",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651497093319
+    "lastModifiedOn": 1651702627991
   },
   "creationTag": {
     "versionNumber": 0,
