@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651269189692
+    "lastModifiedOn": 1651669006596
   },
   "creationTag": {
     "versionNumber": 0,
@@ -71,7 +71,9 @@
       {"name":"direction_from_centre","type":"string"},
       {"name":"count","type":"bigint"},
       {"name":"prix_m2_not_null_avg_lag1","type":"double"},
-      {"name":"prix_m2_not_null_avg_lag7","type":"double"}
+      {"name":"prix_m2_not_null_avg_lag7","type":"double"},
+      {"name":"w2_prix_m2_not_null_avg_lag1","type":"double"},
+      {"name":"w2_prix_m2_not_null_avg_lag7","type":"double"}
     ],
     "userModified": true
   },
