@@ -1,0 +1,25 @@
+{
+  "connection": "postgreSQL",
+  "name": "admin\u0027s notebook on postgreSQL",
+  "cells": [],
+  "automationLocal": false,
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1651758464376
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1651758464376
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
