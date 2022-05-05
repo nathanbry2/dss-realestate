@@ -1,0 +1,28 @@
+{
+  "queries": {
+    "75wt3zhusni": [
+      {
+        "mode": "SQL",
+        "id": "Qkb6gg2ZOpfJ",
+        "runOn": 1651758490808,
+        "runIn": -1,
+        "runBy": "admin",
+        "connection": "postgreSQL",
+        "state": "RUNNING",
+        "futureId": "hZ5kEEZY",
+        "hash": "a4054c679dfdb637452771692a174fe2",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT\n    *\nFROM\n    \"REALESTATE_75_2014_2021_transactions_distinct_grouped\"\nlimit\n    10",
+        "expandedSql": "SELECT\n    *\nFROM\n    \"REALESTATE_75_2014_2021_transactions_distinct_grouped\"\nlimit\n    10"
+      }
+    ]
+  }
+}
