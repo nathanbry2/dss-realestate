@@ -167,7 +167,7 @@
     },
     "dkuProperties": []
   },
-  "name": "Real Estate",
+  "name": "Demo Git",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -223,11 +223,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651741941731
+    "lastModifiedOn": 1651741952701
   },
   "creationTag": {
     "versionNumber": 0,
@@ -236,7 +236,7 @@
     },
     "lastModifiedOn": 1651088342223
   },
-  "shortDesc": "The project *Real Estate* was created by Administrator on Apr 27th 2022",
+  "shortDesc": "The project *Real Estate* was created by Administrator on Apr 27th 2022\nThe project *DEMOGIT* was copied from *REALESTATE* by Administrator on mai 05th 2022",
   "tags": [
     "duplicated"
   ],
