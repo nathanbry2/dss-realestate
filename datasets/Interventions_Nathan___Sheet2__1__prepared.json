@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651739551545
+    "lastModifiedOn": 1651739648306
   },
   "creationTag": {
     "versionNumber": 0,
@@ -88,7 +88,8 @@
     "columns": [
       {"name":"Contact","type":"string"},
       {"name":"Tel1","type":"double"},
-      {"name":"Tel2","type":"string"}
+      {"name":"Tel2","type":"string"},
+      {"name":"newcolumn_expression","type":"double"}
     ],
     "userModified": true
   },
