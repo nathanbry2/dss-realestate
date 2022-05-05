@@ -27,8 +27,50 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "coalesce(strval(\"Tel1\"),strval(\"Tel2\"))",
+        "column": "newcolumn_expression"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "04",
+            "to": "+334"
+          },
+          {
+            "from": "07",
+            "to": "+337"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "newcolumn_expression"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -54,7 +96,12 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Tel2": 100,
+    "Tel1": 100,
+    "newcolumn_expression": 190,
+    "Contact": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
