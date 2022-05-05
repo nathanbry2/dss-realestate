@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651757902441
+    "lastModifiedOn": 1651757923983
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,7 +57,19 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"date_mutation","type":"string","originalType":"text"},
+      {"name":"longitude","type":"double","originalType":"float8"},
+      {"name":"latitude","type":"double","originalType":"float8"},
+      {"name":"type_local","type":"string","originalType":"text"},
+      {"name":"nature_mutation","type":"string","originalType":"text"},
+      {"name":"valeur_fonciere_avg","type":"double","originalType":"float8"},
+      {"name":"code_postal","type":"bigint","originalType":"int8"},
+      {"name":"lot1_surface_carrez_sum","type":"double","originalType":"float8"},
+      {"name":"surface_reelle_bati_sum","type":"bigint","originalType":"int8"},
+      {"name":"nombre_pieces_principales_sum","type":"bigint","originalType":"int8"},
+      {"name":"count","type":"bigint","originalType":"int8"}
+    ],
     "userModified": true
   },
   "dkuProperties": [],
