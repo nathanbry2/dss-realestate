@@ -110,6 +110,28 @@
         },
         "sql": "SELECT * FROM \"REALESTATE_75_2014_2021_transactions_distinct_grouped\" limit 10",
         "expandedSql": "SELECT * FROM \"REALESTATE_75_2014_2021_transactions_distinct_grouped\" limit 10"
+      },
+      {
+        "mode": "SQL",
+        "id": "u6PYMudehoUq",
+        "runOn": 1651758553712,
+        "runIn": 122,
+        "runBy": "admin",
+        "connection": "postgreSQL",
+        "state": "RUNNING",
+        "futureId": "IGTlYeRX",
+        "hash": "855591f59f01b16ed5272fa6710cdb13",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT * FROM \"REALESTATE_75_2014_2021_transactions_distinct_grouped\" limit 100",
+        "expandedSql": "SELECT * FROM \"REALESTATE_75_2014_2021_transactions_distinct_grouped\" limit 100"
       }
     ]
   }
