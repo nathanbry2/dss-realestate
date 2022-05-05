@@ -168,7 +168,6 @@
     "dkuProperties": []
   },
   "name": "Real Estate",
-  "projectStatus": "Sandbox",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -224,11 +223,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651702656378
+    "lastModifiedOn": 1651741941731
   },
   "creationTag": {
     "versionNumber": 0,
@@ -238,7 +237,9 @@
     "lastModifiedOn": 1651088342223
   },
   "shortDesc": "The project *Real Estate* was created by Administrator on Apr 27th 2022",
-  "tags": [],
+  "tags": [
+    "duplicated"
+  ],
   "customFields": {},
   "checklists": {
     "checklists": [
