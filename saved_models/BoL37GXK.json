@@ -4,7 +4,7 @@
   "rebuildBehavior": "EXPLICIT",
   "name": "Predict valeur_fonciere (regression) - full",
   "contentType": "prediction/py_memory",
-  "activeVersion": "initial",
+  "activeVersion": "1651742649265",
   "conditionalOutputs": [],
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -16,7 +16,7 @@
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
   },
-  "lastExportedFrom": "A-REALESTATE-yvJq1WRm-19SZeHaV-s5-pp1-m1",
+  "lastExportedFrom": "A-DEMOGIT-yvJq1WRm-19SZeHaV-s5-pp1-m1",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -2157,11 +2157,11 @@
   "lastTrainIndex": 1,
   "lastTrainJobId": "",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651702627991
+    "lastModifiedOn": 1651742850096
   },
   "creationTag": {
     "versionNumber": 0,
