@@ -4,6 +4,10 @@
       "remote": "git@github.com:mdbloice/Augmentor.git",
       "checkout": "refs/heads/master",
       "remotePath": "Augmentor",
+      "lastHash": "5bd2d327dfd3680055c2796c6d70c49f1888322f",
+      "conflictingFiles": [],
+      "resolvedFiles": [],
+      "faultyHash": "",
       "isDirty": false
     }
   },
