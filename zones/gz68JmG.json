@@ -37,6 +37,14 @@
     {
       "objectId": "evaluate_on_validation_set",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "validation_set_evaluated_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_validation_set_evaluated_prepared",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
