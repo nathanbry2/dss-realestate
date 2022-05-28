@@ -77,12 +77,46 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
+        "expression": "val(\"error_33%\") / valeur_fonciere",
         "column": "relative_error_33%"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "val(\"error_50%\") / valeur_fonciere",
+        "column": "relative_error_50%"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "abs(val(\"relative_error_33%\"))",
+        "column": "absolute_relative_error_33%"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "abs(val(\"relative_error_50%\"))",
+        "column": "absolute_relative_error_50%"
       },
       "alwaysShowComment": false
     }
@@ -113,6 +147,7 @@
   },
   "analysisColumnData": {},
   "columnWidthsByName": {
+    "absolute_relative_error_33%": 239,
     "prediction_50%": 155,
     "prix_m2_coordinates_couple": 232,
     "valeur_fonciere": 128,
@@ -130,18 +165,23 @@
     "prediction_correct_coordinates_couple": 293,
     "nombre_pieces_principales": 203,
     "date_mutation_year": 150,
+    "error_50%": 148,
     "iris_GeoPoint": 204,
     "longitude": 141,
     "error_prediction50%": 183,
     "code_postal": 100,
     "iris_GeoShape": 300,
     "correct_prix_m2_coordinates_couple": 270,
+    "error_33%": 148,
     "surface_m2_not_null": 158,
     "TYP_IRIS": 100,
+    "absolute_relative_error_50%": 239,
     "prediction_33%": 155,
+    "relative_error_50%": 176,
     "date_mutation_month": 158,
     "direction_from_centre": 173,
     "NOM_IRIS": 204,
+    "relative_error_33%": 176,
     "distance_to_centre": 176,
     "count_coordinates_couple": 195,
     "iris_code": 113,
