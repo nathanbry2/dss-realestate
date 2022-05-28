@@ -27,8 +27,66 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "(prediction_correct_iris + prediction_correct_coordinates_couple + prediction)/3",
+        "column": "prediction_33%"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "0.25*prediction_correct_iris + 0.25*prediction_correct_coordinates_couple + 0.5*prediction",
+        "column": "prediction_50%"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "val(\"prediction_33%\") - valeur_fonciere",
+        "column": "error_33%"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "val(\"prediction_50%\") - valeur_fonciere",
+        "column": "error_50%"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "column": "relative_error_33%"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -54,7 +112,45 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "prediction_50%": 155,
+    "prix_m2_coordinates_couple": 232,
+    "valeur_fonciere": 128,
+    "latitude": 141,
+    "reduced_coordinates_couple": 210,
+    "prix_m2_iris": 141,
+    "count_iris": 100,
+    "pluscode_10": 127,
+    "error": 148,
+    "abs_error_decile": 135,
+    "NOM_COM": 183,
+    "error_decile": 105,
+    "date_mutation_day": 143,
+    "prix_m2_not_null": 162,
+    "prediction_correct_coordinates_couple": 293,
+    "nombre_pieces_principales": 203,
+    "date_mutation_year": 150,
+    "iris_GeoPoint": 204,
+    "longitude": 141,
+    "error_prediction50%": 183,
+    "code_postal": 100,
+    "iris_GeoShape": 300,
+    "correct_prix_m2_coordinates_couple": 270,
+    "surface_m2_not_null": 158,
+    "TYP_IRIS": 100,
+    "prediction_33%": 155,
+    "date_mutation_month": 158,
+    "direction_from_centre": 173,
+    "NOM_IRIS": 204,
+    "distance_to_centre": 176,
+    "count_coordinates_couple": 195,
+    "iris_code": 113,
+    "prediction": 120,
+    "prediction_correct_iris": 211,
+    "correct_prix_m2_iris": 190,
+    "error_prediction33%": 183,
+    "relative_error": 169
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
