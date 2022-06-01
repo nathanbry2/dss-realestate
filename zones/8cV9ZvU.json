@@ -1,7 +1,12 @@
 {
   "name": "Processing \u0026 Scoring New Inputs",
   "color": "#465A64",
-  "items": [],
+  "items": [
+    {
+      "objectId": "new_inputs",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
