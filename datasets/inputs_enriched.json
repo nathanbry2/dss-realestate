@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654291248125
+    "lastModifiedOn": 1654291460259
   },
   "creationTag": {
     "versionNumber": 0,
@@ -67,27 +67,10 @@
       {"name":"longitude","type":"double"},
       {"name":"distance_to_centre","type":"double"},
       {"name":"direction_from_centre","type":"string"},
-      {"name":"pluscode_16_first","type":"string"},
-      {"name":"pluscode_10","type":"string"},
-      {"name":"v_coordinate","type":"bigint"},
-      {"name":"h_coordinate","type":"bigint"},
-      {"name":"reduced_v_coordinate","type":"bigint"},
-      {"name":"reduced_h_coordinate","type":"bigint"},
       {"name":"reduced_coordinates_couple","type":"string"},
       {"name":"iris_code","type":"bigint"},
-      {"name":"valeur_fonciere_avg","type":"double"},
-      {"name":"valeur_fonciere_sum","type":"double"},
-      {"name":"surface_m2_not_null_avg","type":"double"},
-      {"name":"surface_m2_not_null_sum","type":"double"},
-      {"name":"prix_m2_not_null_avg","type":"double"},
-      {"name":"nombre_pieces_principales_avg","type":"double"},
-      {"name":"distance_to_centre_avg","type":"double"},
-      {"name":"count","type":"bigint"},
-      {"name":"prix_m2_not_null_avg_lag1","type":"double"},
-      {"name":"Growth%_1year","type":"double"},
-      {"name":"prix_m2_not_null_avg_lag7","type":"double"},
-      {"name":"CAGR%_7years","type":"double"},
-      {"name":"Growth%_7years","type":"double"}
+      {"name":"prix_m2_coordinates_couple","type":"double"},
+      {"name":"prix_m2_iris","type":"double"}
     ],
     "userModified": true
   },
