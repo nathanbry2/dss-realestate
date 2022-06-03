@@ -5,14 +5,6 @@
     {
       "objectId": "new_inputs",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "inputs_located",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_inputs_located",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],
