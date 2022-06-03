@@ -36,7 +36,7 @@
     "main": {
       "items": [
         {
-          "ref": "new_inputs_located",
+          "ref": "inputs_located",
           "appendMode": false
         }
       ]
@@ -44,11 +44,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654290952029
+    "lastModifiedOn": 1654290989252
   },
   "creationTag": {
     "versionNumber": 0,
