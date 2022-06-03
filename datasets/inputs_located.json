@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654290987541
+    "lastModifiedOn": 1654291004174
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,8 +57,26 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {"name":"adresse","type":"string"},
+      {"name":"code_postal","type":"bigint"},
+      {"name":"surface_m2_not_null","type":"bigint"},
+      {"name":"date_mutation_year","type":"bigint"},
+      {"name":"nombre_pieces_principales","type":"bigint"},
+      {"name":"latitude","type":"double"},
+      {"name":"longitude","type":"double"},
+      {"name":"distance_to_centre","type":"double"},
+      {"name":"direction_from_centre","type":"string"},
+      {"name":"pluscode_16_first","type":"string"},
+      {"name":"pluscode_10","type":"string"},
+      {"name":"v_coordinate","type":"bigint"},
+      {"name":"h_coordinate","type":"bigint"},
+      {"name":"reduced_v_coordinate","type":"bigint"},
+      {"name":"reduced_h_coordinate","type":"bigint"},
+      {"name":"reduced_coordinates_couple","type":"string"},
+      {"name":"iris_code","type":"bigint"}
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
