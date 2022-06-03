@@ -11,10 +11,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "new_inputs_located",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "inputs_located",
       "objectType": "DATASET"
     }
