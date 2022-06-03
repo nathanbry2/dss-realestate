@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654293115965
+    "lastModifiedOn": 1654293211003
   },
   "creationTag": {
     "versionNumber": 0,
@@ -70,7 +70,9 @@
       {"name":"reduced_coordinates_couple","type":"string"},
       {"name":"iris_code","type":"bigint"},
       {"name":"prix_m2_coordinates_couple","type":"double"},
-      {"name":"prix_m2_iris","type":"double"}
+      {"name":"prediction_coordinates_couple","type":"double"},
+      {"name":"prix_m2_iris","type":"double"},
+      {"name":"prediction_iris","type":"double"}
     ],
     "userModified": true
   },
