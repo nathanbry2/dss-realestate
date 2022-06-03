@@ -50,6 +50,27 @@ iris_coords_codes = create_iris_polygon_dict(iris_75_df['CODE_IRIS'],iris_75_df[
 new_inputs_df['iris_code'] = find_iris(new_inputs_df['latitude'],new_inputs_df['longitude'],iris_coords_codes)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+def correct_date(date_column):
+    
+    dates_list = date_column.to_list()
+    new_dates_list = []
+    
+    for date in dates_list:
+        if date > 2021:
+            new_date = 2021
+        elif date < 2014:
+            new_date = 2014
+        else:
+            new_date = date
+            
+        new_dates_list.append(new_date)
+    
+    return new_dates_list
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+new_inputs_df['date_mutation_year'] = correct_date(new_inputs_df['date_mutation_year'])
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Compute recipe outputs from inputs
 # TODO: Replace this part by your actual code that computes the output, as a Pandas dataframe
 # NB: DSS also supports other kinds of APIs for reading and writing data. Please see doc.
