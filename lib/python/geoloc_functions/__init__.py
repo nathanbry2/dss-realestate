@@ -1,5 +1,6 @@
 import numpy as np
 from math import sin, cos, sqrt, atan2, radians, pi
+from geopy.geocoders import Nominatim
 
 ''' R = approximate radius of earth in km,
     centre cordinates correspond to Place Dauphine coordinates (which is considered as Paris surface centre)
