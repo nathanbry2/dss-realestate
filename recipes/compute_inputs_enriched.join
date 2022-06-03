@@ -1,0 +1,192 @@
+{
+  "joins": [
+    {
+      "table2": 1,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": []
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "adresse",
+      "table": 0
+    },
+    {
+      "name": "code_postal",
+      "table": 0
+    },
+    {
+      "name": "surface_m2_not_null",
+      "table": 0
+    },
+    {
+      "name": "date_mutation_year",
+      "table": 0
+    },
+    {
+      "name": "nombre_pieces_principales",
+      "table": 0
+    },
+    {
+      "name": "latitude",
+      "table": 0
+    },
+    {
+      "name": "longitude",
+      "table": 0
+    },
+    {
+      "name": "distance_to_centre",
+      "table": 0
+    },
+    {
+      "name": "direction_from_centre",
+      "table": 0
+    },
+    {
+      "name": "pluscode_16_first",
+      "table": 0
+    },
+    {
+      "name": "pluscode_10",
+      "table": 0
+    },
+    {
+      "name": "v_coordinate",
+      "table": 0
+    },
+    {
+      "name": "h_coordinate",
+      "table": 0
+    },
+    {
+      "name": "reduced_v_coordinate",
+      "table": 0
+    },
+    {
+      "name": "reduced_h_coordinate",
+      "table": 0
+    },
+    {
+      "name": "reduced_coordinates_couple",
+      "table": 0
+    },
+    {
+      "name": "iris_code",
+      "table": 0
+    },
+    {
+      "name": "valeur_fonciere_avg",
+      "table": 1
+    },
+    {
+      "name": "valeur_fonciere_sum",
+      "table": 1
+    },
+    {
+      "name": "surface_m2_not_null_avg",
+      "table": 1
+    },
+    {
+      "name": "surface_m2_not_null_sum",
+      "table": 1
+    },
+    {
+      "name": "prix_m2_not_null_avg",
+      "table": 1
+    },
+    {
+      "name": "nombre_pieces_principales_avg",
+      "table": 1
+    },
+    {
+      "name": "distance_to_centre_avg",
+      "table": 1
+    },
+    {
+      "name": "count",
+      "table": 1
+    },
+    {
+      "name": "prix_m2_not_null_avg_lag1",
+      "table": 1
+    },
+    {
+      "name": "Growth%_1year",
+      "table": 1
+    },
+    {
+      "name": "prix_m2_not_null_avg_lag7",
+      "table": 1
+    },
+    {
+      "name": "CAGR%_7years",
+      "table": 1
+    },
+    {
+      "name": "Growth%_7years",
+      "table": 1
+    }
+  ],
+  "resolvedSelectedColumns": [],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "originLabel": "inputs_located",
+      "index": 0,
+      "computedColumns": []
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "originLabel": "transactions_by_coordinates_couple_year_windows_prepared",
+      "index": 1,
+      "computedColumns": []
+    }
+  ],
+  "enableAutoCastInJoinConditions": false
+}
