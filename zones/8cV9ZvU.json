@@ -5,6 +5,14 @@
     {
       "objectId": "new_inputs",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "recipe_from_notebook_notebook_editor_for_compute_inputs_located",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "new_inputs_located",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
