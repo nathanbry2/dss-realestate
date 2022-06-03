@@ -20,7 +20,8 @@ def distance_to_centre(lat, long, R = 6373.0, lat_centre = 48.8565, long_centre 
     return distance
 
 '''
-    This functions computes the direction between a location and Paris centre. 
+    This functions computes the direction between a location and Paris centre (Place Dauphine). 
+    The direction is the one FROM Paris centre TO the destination location.
     It takes as inputs the latitude and longitude columns of a pandas dataframe, and returns a direction list'''
 
 def direction_from_centre(destination_long, destination_lat, origin_lat = 48.853, origin_long = 2.35):
@@ -36,3 +37,22 @@ def direction_from_centre(destination_long, destination_lat, origin_lat = 48.853
     compass_lookup = round(degrees_final / 45)
 
     return compass_brackets[compass_lookup]#, degrees_final
+
+
+'''
+    This functions finds the latitude and longitude of a location (address).
+    It takes as inputs the address column of a pandas dataframe, and returns the latitude and longitude lists'''
+
+def find_location(address_column):
+    
+    latitude_list = []
+    longitude_list = []
+    address_list = address_column.to_list()
+    locator = Nominatim(user_agent="myGeocoder")
+    
+    for address in address_list:
+        location = locator.geocode(address)
+        latitude_list.append(location.latitude)
+        longitude_list.append(location.longitude)
+    
+    return latitude_list,longitude_list
