@@ -37,6 +37,14 @@
     {
       "objectId": "score_inputs_enriched_prepared",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "inputs_scored_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_inputs_scored_prepared",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
