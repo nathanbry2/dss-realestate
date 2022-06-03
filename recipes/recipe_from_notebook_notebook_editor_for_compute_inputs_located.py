@@ -60,8 +60,3 @@ inputs_located_df = new_inputs_df # For this sample code, simply copy input to o
 # Write recipe outputs
 inputs_located = dataiku.Dataset("inputs_located")
 inputs_located.write_with_schema(inputs_located_df)
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-# Recipe outputs
-new_inputs_located = dataiku.Dataset("new_inputs_located")
-new_inputs_located.write_with_schema(pandas_dataframe)
