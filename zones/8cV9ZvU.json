@@ -5,6 +5,10 @@
     {
       "objectId": "new_inputs",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "inputs_located",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
