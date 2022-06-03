@@ -19,6 +19,10 @@
         {
           "ref": "transactions_by_coordinates_couple_year_windows_prepared",
           "deps": []
+        },
+        {
+          "ref": "transactions_by_iris_code_year_windows_prepared",
+          "deps": []
         }
       ]
     }
@@ -35,11 +39,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654291248161
+    "lastModifiedOn": 1654291460490
   },
   "creationTag": {
     "versionNumber": 0,

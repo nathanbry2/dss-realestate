@@ -6,129 +6,155 @@
       "conditionsMode": "AND",
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "date_mutation_year",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "date_mutation_year",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        },
+        {
+          "column1": {
+            "name": "reduced_coordinates_couple",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "reduced_coordinates_couple",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        }
+      ]
+    },
+    {
+      "table2": 2,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "rightLimit": {},
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": [
+        {
+          "column1": {
+            "name": "date_mutation_year",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "date_mutation_year",
+            "table": 2
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        },
+        {
+          "column1": {
+            "name": "iris_code",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "iris_code",
+            "table": 2
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "adresse",
+      "type": "string",
       "table": 0
     },
     {
       "name": "code_postal",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "surface_m2_not_null",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "date_mutation_year",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "nombre_pieces_principales",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "latitude",
+      "type": "double",
       "table": 0
     },
     {
       "name": "longitude",
+      "type": "double",
       "table": 0
     },
     {
       "name": "distance_to_centre",
+      "type": "double",
       "table": 0
     },
     {
       "name": "direction_from_centre",
-      "table": 0
-    },
-    {
-      "name": "pluscode_16_first",
-      "table": 0
-    },
-    {
-      "name": "pluscode_10",
-      "table": 0
-    },
-    {
-      "name": "v_coordinate",
-      "table": 0
-    },
-    {
-      "name": "h_coordinate",
-      "table": 0
-    },
-    {
-      "name": "reduced_v_coordinate",
-      "table": 0
-    },
-    {
-      "name": "reduced_h_coordinate",
+      "type": "string",
       "table": 0
     },
     {
       "name": "reduced_coordinates_couple",
+      "type": "string",
       "table": 0
     },
     {
       "name": "iris_code",
+      "type": "bigint",
       "table": 0
     },
     {
-      "name": "valeur_fonciere_avg",
-      "table": 1
-    },
-    {
-      "name": "valeur_fonciere_sum",
-      "table": 1
-    },
-    {
-      "name": "surface_m2_not_null_avg",
-      "table": 1
-    },
-    {
-      "name": "surface_m2_not_null_sum",
+      "name": "prix_m2_not_null_avg",
+      "alias": "prix_m2_coordinates_couple",
+      "type": "double",
       "table": 1
     },
     {
       "name": "prix_m2_not_null_avg",
-      "table": 1
-    },
-    {
-      "name": "nombre_pieces_principales_avg",
-      "table": 1
-    },
-    {
-      "name": "distance_to_centre_avg",
-      "table": 1
-    },
-    {
-      "name": "count",
-      "table": 1
-    },
-    {
-      "name": "prix_m2_not_null_avg_lag1",
-      "table": 1
-    },
-    {
-      "name": "Growth%_1year",
-      "table": 1
-    },
-    {
-      "name": "prix_m2_not_null_avg_lag7",
-      "table": 1
-    },
-    {
-      "name": "CAGR%_7years",
-      "table": 1
-    },
-    {
-      "name": "Growth%_7years",
-      "table": 1
+      "alias": "prix_m2_iris",
+      "type": "double",
+      "table": 2
     }
   ],
   "resolvedSelectedColumns": [],
@@ -186,7 +212,73 @@
       "originLabel": "transactions_by_coordinates_couple_year_windows_prepared",
       "index": 1,
       "computedColumns": []
+    },
+    {
+      "autoSelectColumns": false,
+      "index": 2
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "adresse",
+            "type": "string"
+          },
+          {
+            "name": "code_postal",
+            "type": "bigint"
+          },
+          {
+            "name": "surface_m2_not_null",
+            "type": "bigint"
+          },
+          {
+            "name": "date_mutation_year",
+            "type": "bigint"
+          },
+          {
+            "name": "nombre_pieces_principales",
+            "type": "bigint"
+          },
+          {
+            "name": "latitude",
+            "type": "double"
+          },
+          {
+            "name": "longitude",
+            "type": "double"
+          },
+          {
+            "name": "distance_to_centre",
+            "type": "double"
+          },
+          {
+            "name": "direction_from_centre",
+            "type": "string"
+          },
+          {
+            "name": "reduced_coordinates_couple",
+            "type": "string"
+          },
+          {
+            "name": "iris_code",
+            "type": "bigint"
+          },
+          {
+            "name": "prix_m2_coordinates_couple",
+            "type": "double"
+          },
+          {
+            "name": "prix_m2_iris",
+            "type": "double"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
