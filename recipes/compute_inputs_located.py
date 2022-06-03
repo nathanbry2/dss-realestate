@@ -3,9 +3,9 @@
 import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
-from geoloc_functions import find_location,distance_to_centre, direction_from_centre
+from geoloc_functions import find_location, distance_to_centre, direction_from_centre
 from openlocationcode import openlocationcode as olc
-from pluscode_functions import convert_dic, convert_pluscode
+from pluscode_functions import convert_pluscode
 from iris_functions import create_iris_polygon_dict, find_iris
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
