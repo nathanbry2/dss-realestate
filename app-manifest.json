@@ -42,7 +42,17 @@
     "showVersionControlFeatures": false
   },
   "useAppHomepage": true,
-  "homepageSections": [],
+  "homepageSections": [
+    {
+      "sectionTitle": "Edit input",
+      "tiles": [
+        {
+          "type": "INLINE_DATASET_EDIT",
+          "prompt": "Edit input dataset"
+        }
+      ]
+    }
+  ],
   "label": "Real Estate",
   "shortDesc": "The template *Real Estate* was created by Administrator on Jun 04th 2022",
   "tags": [],
