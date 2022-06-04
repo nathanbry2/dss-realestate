@@ -16,11 +16,11 @@ iris_75 = dataiku.Dataset("iris_75")
 iris_75_df = iris_75.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-new_inputs_df
+new_inputs_df['adresse_full'] = new_inputs_df['adresse']+', '+new_inputs_df['code_postal'].astype(str)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-new_inputs_df['latitude'] = find_location(new_inputs_df['adresse'])[0]
-new_inputs_df['longitude'] = find_location(new_inputs_df['adresse'])[1]
+new_inputs_df['latitude'] = find_location(new_inputs_df['adresse_full'])[0]
+new_inputs_df['longitude'] = find_location(new_inputs_df['adresse_full'])[1]
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 new_inputs_df
@@ -51,10 +51,10 @@ new_inputs_df['iris_code'] = find_iris(new_inputs_df['latitude'],new_inputs_df['
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 def correct_date(date_column):
-    
+
     dates_list = date_column.to_list()
     new_dates_list = []
-    
+
     for date in dates_list:
         if date > 2021:
             new_date = 2021
@@ -62,9 +62,9 @@ def correct_date(date_column):
             new_date = 2014
         else:
             new_date = date
-            
+
         new_dates_list.append(new_date)
-    
+
     return new_dates_list
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
