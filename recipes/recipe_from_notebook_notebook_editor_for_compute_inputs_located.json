@@ -22,11 +22,11 @@
     "main": {
       "items": [
         {
-          "ref": "new_inputs",
+          "ref": "iris_75",
           "deps": []
         },
         {
-          "ref": "iris_75",
+          "ref": "new_inputs_editable",
           "deps": []
         }
       ]
@@ -44,11 +44,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654293019688
+    "lastModifiedOn": 1654345076976
   },
   "creationTag": {
     "versionNumber": 0,

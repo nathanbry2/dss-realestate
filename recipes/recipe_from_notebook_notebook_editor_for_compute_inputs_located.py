@@ -10,7 +10,7 @@ from iris_functions import create_iris_polygon_dict, find_iris
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Read recipe inputs
-new_inputs = dataiku.Dataset("new_inputs")
+new_inputs = dataiku.Dataset("new_inputs_editable")
 new_inputs_df = new_inputs.get_dataframe()
 iris_75 = dataiku.Dataset("iris_75")
 iris_75_df = iris_75.get_dataframe()
