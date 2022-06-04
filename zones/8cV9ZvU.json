@@ -45,6 +45,14 @@
     {
       "objectId": "compute_inputs_scored_prepared",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_new_inputs_editable",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "new_inputs_editable",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
