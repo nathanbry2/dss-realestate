@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654291004174
+    "lastModifiedOn": 1654345949966
   },
   "creationTag": {
     "versionNumber": 0,
@@ -63,6 +63,7 @@
       {"name":"surface_m2_not_null","type":"bigint"},
       {"name":"date_mutation_year","type":"bigint"},
       {"name":"nombre_pieces_principales","type":"bigint"},
+      {"name":"adresse_full","type":"string"},
       {"name":"latitude","type":"double"},
       {"name":"longitude","type":"double"},
       {"name":"distance_to_centre","type":"double"},
