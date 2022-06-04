@@ -12,11 +12,11 @@
     "exportInsightsData": false,
     "includedDatasetsData": [
       {
-        "name": "transactions_by_coordinates_couple_year_windows_prepared",
+        "name": "transactions_by_iris_code_year_windows_prepared",
         "type": "PostgreSQL"
       },
       {
-        "name": "transactions_by_iris_code_year_windows_prepared",
+        "name": "transactions_by_coordinates_couple_year_windows_prepared",
         "type": "PostgreSQL"
       },
       {
