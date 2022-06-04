@@ -44,11 +44,31 @@
   "useAppHomepage": true,
   "homepageSections": [
     {
-      "sectionTitle": "Edit input",
+      "sectionTitle": "Edit Inputs",
       "tiles": [
         {
+          "datasetName": "new_inputs_editable",
           "type": "INLINE_DATASET_EDIT",
           "prompt": "Edit input dataset"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Preprocess \u0026 Score Inputs",
+      "tiles": [
+        {
+          "scenarioId": "SCORENEWINPUTS",
+          "buttonText": "Score",
+          "type": "SCENARIO_RUN",
+          "prompt": "Run Scenario"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Visualize results",
+      "tiles": [
+        {
+          "type": "DASHBOARD_LINK"
         }
       ]
     }
