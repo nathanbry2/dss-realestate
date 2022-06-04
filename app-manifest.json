@@ -69,7 +69,8 @@
       "tiles": [
         {
           "dashboardId": "s6Az806",
-          "type": "DASHBOARD_LINK"
+          "type": "DASHBOARD_LINK",
+          "prompt": "View results"
         }
       ]
     }
