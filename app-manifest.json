@@ -10,8 +10,26 @@
     "exportManagedFolders": false,
     "exportAllInputManagedFolders": false,
     "exportInsightsData": false,
-    "includedDatasetsData": [],
-    "includedSavedModels": [],
+    "includedDatasetsData": [
+      {
+        "name": "transactions_by_coordinates_couple_year_windows_prepared",
+        "type": "PostgreSQL"
+      },
+      {
+        "name": "transactions_by_iris_code_year_windows_prepared",
+        "type": "PostgreSQL"
+      },
+      {
+        "name": "iris_75",
+        "type": "UploadedFiles"
+      }
+    ],
+    "includedSavedModels": [
+      {
+        "id": "BoL37GXK",
+        "name": "Predict valeur_fonciere (regression) - full"
+      }
+    ],
     "includedManagedFolders": [],
     "includedModelEvaluationStores": [],
     "exportGitRepository": false
