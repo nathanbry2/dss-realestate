@@ -11,7 +11,7 @@
   },
   "flowOptions": {
     "virtualizable": false,
-    "rebuildBehavior": "NORMAL",
+    "rebuildBehavior": "WRITE_PROTECT",
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "readWriteOptions": {
@@ -37,11 +37,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654346172570
+    "lastModifiedOn": 1654346207692
   },
   "creationTag": {
     "versionNumber": 0,
@@ -53,7 +53,9 @@
   "tags": [],
   "params": {
     "keepTrackOfChanges": true,
-    "notReadyIfEmpty": false
+    "notReadyIfEmpty": false,
+    "importSourceType": "NONE",
+    "importProjectKey": "REALESTATE"
   },
   "schema": {
     "columns": [
