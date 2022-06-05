@@ -6,12 +6,7 @@ import dash_bootstrap_components as dbc
 import pandas as pd
 from dash.dependencies import Input, Output, State
 
-# DEFINE CLUES
-
-clue1 = 'clue1'
-clue2 = 'clue2'
-clue3 = 'clue3'
-clue4 = 'clue4'
+app.config.external_stylesheets=[dbc.themes.FLATLY]
 
 # DEFINE STYLES
 
