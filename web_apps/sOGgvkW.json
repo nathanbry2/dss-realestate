@@ -5,7 +5,7 @@
     "autoStartBackend": false,
     "envSelection": {
       "envMode": "EXPLICIT_ENV",
-      "envName": "WebAppNew"
+      "envName": "real_estate"
     },
     "nbProcesses": 1,
     "serveLocally": true,
@@ -34,11 +34,11 @@
   "config": {},
   "name": "EstimationInterface",
   "versionTag": {
-    "versionNumber": 17,
+    "versionNumber": 18,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651515087288
+    "lastModifiedOn": 1654435415836
   },
   "creationTag": {
     "versionNumber": 0,
