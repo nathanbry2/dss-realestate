@@ -34,11 +34,11 @@
   "config": {},
   "name": "EstimationInterface",
   "versionTag": {
-    "versionNumber": 23,
+    "versionNumber": 24,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654435878408
+    "lastModifiedOn": 1654443023325
   },
   "creationTag": {
     "versionNumber": 0,
