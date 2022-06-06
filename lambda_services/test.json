@@ -1,4 +1,5 @@
 {
+  "name": "test",
   "endpoints": [
     {
       "modelRef": "BoL37GXK",
@@ -19,6 +20,17 @@
       "auditPostEnrichData": false,
       "id": "tres",
       "type": "STD_PREDICTION"
+    },
+    {
+      "envSelection": {
+        "envMode": "INHERIT"
+      },
+      "testQueries": [],
+      "inputFolderRefs": [],
+      "userFunctionName": "api_py_function",
+      "code": "\n# Insert here initialization code\n\n# This function is the entry point for your Python function API\n# You can call this function with passing \"param1\", \"param2\",\n# \"param3\" as arguments to the API call\n# (see REST API documentation)\ndef api_py_function(param1, param2, param3):\n    return param1 + param2 * param3\n",
+      "id": "t",
+      "type": "PY_FUNCTION"
     }
   ],
   "publicAccess": true,
@@ -26,11 +38,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654502187016
+    "lastModifiedOn": 1654502289682
   },
   "creationTag": {
     "versionNumber": 0,
