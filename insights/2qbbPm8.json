@@ -208,7 +208,7 @@
       },
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true,
-      "legendPlacement": "SIDEBAR"
+      "legendPlacement": "OUTER_RIGHT"
     },
     "maxDataBytes": 157286400
   },
@@ -217,11 +217,11 @@
   "name": "date_mutation_year vs valeur_fonciere (aggregated) on transactions_fully_enriched",
   "dashboardCreationId": "uWPmaJW",
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654763226300
+    "lastModifiedOn": 1654763229634
   },
   "creationTag": {
     "versionNumber": 0,
