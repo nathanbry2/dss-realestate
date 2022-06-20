@@ -30,7 +30,7 @@ clue_style = {
 }
 
 input_style = {
-    "margin-left":"15px"
+    "margin-left":"25px"
 }
 
 check_button_style = {
