@@ -159,20 +159,23 @@ app.layout = html.Div(
                     children='Click logo to get an estimation 🔽',
                 ),html.Br(),html.Br(),
                 dbc.Button(
-            html.Img(src='data:image/png;base64,{}'.format(estimate_logo_encoded.decode()),         
-                     style={
-                'width':'50%',
-                'height':'50%',}), id="submit",n_clicks=0,color='secondary',outline=True,style = {
-                #'margin-left':submit_button_style['margin-left'],
-                'width':'40%',
-                'height':'50%',
-                #'background': '#FFFFFF',
-                #'border':'2px',
-                
-            })]
-        
-        
-        
+                    html.Img(
+                        src='data:image/png;base64,{}'.format(estimate_logo_encoded.decode()),         
+                        style={
+                            'width':'50%',
+                            'height':'50%',
+                        }
+                    ), 
+                    id="submit",
+                    n_clicks=0,
+                    color='secondary',
+                    outline=True,
+                    style = {
+                        'width':'40%',
+                        'height':'50%',
+                    }
+                )
+            ]
         )
     ]
 )
