@@ -204,6 +204,6 @@ app.layout = html.Div(
 
 def output_function(n_clicks,input1,input2,input3,input4,input5):
     
-    return "Incorrect or empty answers ❌"
-    #return input1,input2,input3,input4,input5
+    #return "Incorrect or empty answers ❌"
+    return 'input1' + 'input2'#,input3,input4,input5
     
