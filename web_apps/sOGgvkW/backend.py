@@ -97,7 +97,7 @@ app.layout = html.Div(
                         value='',
                         placeholder="Address",
                         style = {
-                            'margin-left':input_style['margin-left']
+                            #'margin-left':input_style['margin-left']
                         }
                     )
                 ),
