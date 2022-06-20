@@ -61,25 +61,45 @@ app.layout = html.Div(
             },
     ## Step 2: Create Title & Description
             children=[
-                html.Div(html.H2(
-                    children='Dataiku Real Estate Estimator',
-                    style={
-                        #'backgroundColor': title_style['background'],
-                        'color': title_style['text'],
-                        'textAlign': 'center',
-                        'font-weight':'bold'
-                    })),
-                html.Br(),html.Div(html.H4(
-                    children='Welcome to the Dataiku Real Estate Estimator! Follow the instructions to have an estimation of how much your property is worth 💰',
-                    style={
-                        #'backgroundColor': desc_style['background'],
-                        'color': desc_style['text'],
-                        'textAlign': 'center',
-                        'margin-left':'20%',
-                        'margin-right':'20%',
-                    }))
+                html.Div(
+                    html.H2(
+                        children='Dataiku Real Estate Estimator',
+                        style={
+                            #'backgroundColor': title_style['background'],
+                            'color': title_style['text'],
+                            'textAlign': 'center',
+                            'font-weight':'bold'
+                        }
+                    )
+                ),html.Br(),
+                
+                html.Div(
+                    html.H4(
+                        children='Welcome to the Dataiku Real Estate Estimator! Follow the instructions to have an estimation of how much your property is worth 💰',
+                        style={
+                            #'backgroundColor': desc_style['background'],
+                            'color': desc_style['text'],
+                            'textAlign': 'center',
+                            'margin-left':'20%',
+                            'margin-right':'20%',
+                        }
+                    )
+                )
             ]
         ),html.Br(),html.Br(),
         
-        dbc.Row([])
-    ])
+        dbc.Row(
+            children=[
+                dcc.Input(
+                    id="input1",
+                    type='text',
+                    value='',
+                    placeholder="Please fill in answer 1",
+                    style = {
+                        'margin-left':input_style['margin-left']
+                    }
+                ),
+            ]
+        )
+    ]
+)
