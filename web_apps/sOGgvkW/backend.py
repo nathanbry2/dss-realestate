@@ -134,7 +134,7 @@ app.layout = html.Div(
                         value='',
                         placeholder="Nb of main rooms",
                         style = {
-                            'margin-left':input_style['margin-left']
+                            #'margin-left':input_style['margin-left']
                         }
                     )
                 ),
@@ -145,7 +145,7 @@ app.layout = html.Div(
                         value='',
                         placeholder="Year",
                         style = {
-                            'margin-left':input_style['margin-left']
+                            #'margin-left':input_style['margin-left']
                         }
                     )
                 ),
