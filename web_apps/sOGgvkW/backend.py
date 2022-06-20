@@ -175,7 +175,10 @@ app.layout = html.Div(
                         'height':'50%',
                     }
                 )
-            ]
+            ],
+            style = {
+                'text-align':'center'
+            },
         )
     ]
 )
