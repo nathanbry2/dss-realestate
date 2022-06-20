@@ -63,7 +63,7 @@ app.layout = html.Div(
             children=[
                 html.Div(
                     html.H2(
-                        children='Dataiku Real Estate Estimator',
+                        children='Dataiku Real Estate Estimator 🏡',
                         style={
                             #'backgroundColor': title_style['background'],
                             'color': title_style['text'],
