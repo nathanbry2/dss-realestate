@@ -185,3 +185,18 @@ app.layout = html.Div(
         )
     ]
 )
+
+
+@app.callback(
+    Output('output', 'children'),
+    Input('submit', 'n_clicks'),
+    State('input1', 'value'),
+    State('input2', 'value'),
+    State('input3', 'value'),
+    State('input4', 'value'),
+    State('input5', 'value'),prevent_initial_call=True)
+
+def output_function(n_clicks,input1,input2,input3,input4,input5):
+    
+    return input1,input2,input3,input4,input5
+    
