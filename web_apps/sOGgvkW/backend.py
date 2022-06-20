@@ -123,6 +123,10 @@ app.layout = html.Div(
                         }
                     )
                 ),
+            ]
+        ),
+        dbc.Row(
+            children=[
                 dbc.Col(
                     dcc.Input(
                         id="input4",
