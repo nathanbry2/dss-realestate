@@ -150,6 +150,6 @@ app.layout = html.Div(
                     )
                 ),
             ]
-        )
+        ,justify="center", align="center",)
     ]
 )
