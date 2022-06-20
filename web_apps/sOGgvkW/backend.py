@@ -89,25 +89,62 @@ app.layout = html.Div(
         ),html.Br(),html.Br(),
         
         dbc.Row(
-            children=[dbc.Col(
-                dcc.Input(
-                    id="input1",
-                    type='text',
-                    value='',
-                    placeholder="Address",
-                    style = {
-                        'margin-left':input_style['margin-left']
-                    }
-                )),
-                dbc.Col(dcc.Input(
-                    id="input2",
-                    type='text',
-                    value='',
-                    placeholder="Postal Code",
-                    style = {
-                        'margin-left':input_style['margin-left']
-                    }
-                ))
+            children=[
+                dbc.Col(
+                    dcc.Input(
+                        id="input1",
+                        type='text',
+                        value='',
+                        placeholder="Address",
+                        style = {
+                            'margin-left':input_style['margin-left']
+                        }
+                    )
+                ),
+                dbc.Col(
+                    dcc.Input(
+                        id="input2",
+                        type='text',
+                        value='',
+                        placeholder="Postal Code",
+                        style = {
+                            'margin-left':input_style['margin-left']
+                        }
+                    )
+                ),
+                dbc.Col(
+                    dcc.Input(
+                        id="input3",
+                        type='text',
+                        value='',
+                        placeholder="Surface",
+                        style = {
+                            'margin-left':input_style['margin-left']
+                        }
+                    )
+                ),
+                dbc.Col(
+                    dcc.Input(
+                        id="input4",
+                        type='text',
+                        value='',
+                        placeholder="Nb of main rooms",
+                        style = {
+                            'margin-left':input_style['margin-left']
+                        }
+                    )
+                ),
+                dbc.Col(
+                    dcc.Input(
+                        id="input5",
+                        type='text',
+                        value='',
+                        placeholder="Year",
+                        style = {
+                            'margin-left':input_style['margin-left']
+                        }
+                    )
+                ),
             ]
         )
     ]
