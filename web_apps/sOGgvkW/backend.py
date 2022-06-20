@@ -155,32 +155,21 @@ app.layout = html.Div(
         ),
         dbc.Row(
             children = [
-            html.H4(
-            children='Click logo to get an estimation 🔽',
-            ),html.Br(),html.Br(),
-            dbc.Button(children=[
+                html.H4(
+                    children='Click logo to get an estimation 🔽',
+                ),html.Br(),html.Br(),
+                dbc.Button(
             html.Img(src='data:image/png;base64,{}'.format(estimate_logo_encoded.decode()),         
                      style={
                 'width':'50%',
-                'height':'50%',})], id="submit",n_clicks=0,color='secondary',outline=True,style = {
+                'height':'50%',}), id="submit",n_clicks=0,color='secondary',outline=True,style = {
                 #'margin-left':submit_button_style['margin-left'],
                 'width':'40%',
                 'height':'50%',
                 #'background': '#FFFFFF',
                 #'border':'2px',
                 
-            }),
-            html.Br(),html.Br(),html.Br(),
-            html.H4(id='output',style = {
-                'margin-left':submit_output_style['margin-left'],
-                'margin-right':submit_output_style['margin-right'],
-                #'marginBottom':'125px',
-                #'font_size': '86px',
-                'font-weight':'bold',
-            }),
-                    
-        
-        ]
+            })]
         
         
         
