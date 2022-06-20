@@ -205,9 +205,10 @@ app.layout = html.Div(
 
 def output_function(n_clicks,input1,input2,input3,input4,input5):
     
-    df = pd.DataFrame([[input1,input2,input3,input4,input5]],columns=['address','postal_code','surface','nb_main_rooms','year'])
-    print(df)
-    return dash_table.DataTable(data=df.to_dict('records'),columns=[{"name": i, "id": i} for i in df.columns])
+    #df = pd.DataFrame([[input1,input2,input3,input4,input5]],columns=['address','postal_code','surface','nb_main_rooms','year'])
+    return input1,input2,input3,input4,input5
 
-#input1,input2,input3,input4,input5
+#dash_table.DataTable(data=df.to_dict('records'),columns=[{"name": i, "id": i} for i in df.columns])
+
+
     
