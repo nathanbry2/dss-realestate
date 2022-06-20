@@ -97,7 +97,7 @@ app.layout = html.Div(
                         value='',
                         placeholder="Address",
                         style = {
-                            'margin-left':input_style['margin-left']
+                            #'margin-left':input_style['margin-left']
                         }
                     )
                 ),
@@ -108,7 +108,7 @@ app.layout = html.Div(
                         value='',
                         placeholder="Postal Code",
                         style = {
-                            'margin-left':input_style['margin-left']
+                            #'margin-left':input_style['margin-left']
                         }
                     )
                 ),
@@ -119,11 +119,14 @@ app.layout = html.Div(
                         value='',
                         placeholder="Surface",
                         style = {
-                            'margin-left':input_style['margin-left']
+                            #'margin-left':input_style['margin-left']
                         }
                     )
                 ),
-            ]
+            ],
+            style = {
+                'text-align':'center'
+            },
         ),html.Br(),html.Br(),
         dbc.Row(
             children=[
@@ -149,9 +152,10 @@ app.layout = html.Div(
                         }
                     )
                 ),
-            ]
-        ,style = {
-                            'text-align':'center'
-                        },)
+            ],
+            style = {
+                'text-align':'center'
+            },
+        )
     ]
 )
