@@ -18,7 +18,7 @@
             },
             "autoLoad": true,
             "showTitle": "YES",
-            "title": "Prediction",
+            "title": "Estimation",
             "insightId": "LQ8nmMO",
             "insightType": "metrics",
             "displayMode": "INSIGHT",
@@ -34,11 +34,11 @@
   "name": "Scored inputs",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655720914530
+    "lastModifiedOn": 1655720926729
   },
   "creationTag": {
     "versionNumber": 0,
