@@ -181,8 +181,6 @@ app.layout = html.Div(
                 html.H4(
                     id='output',
                     style = {
-                        'margin-left':submit_output_style['margin-left'],
-                        'margin-right':submit_output_style['margin-right'],
                         'font-weight':'bold',
                     }
                 ),
