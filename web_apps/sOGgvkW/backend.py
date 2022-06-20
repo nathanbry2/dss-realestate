@@ -96,10 +96,7 @@ app.layout = html.Div(
                         type='text',
                         value='',
                         placeholder="Address",
-                        style = {
-                            #'margin-left':input_style['margin-left']
-                        }
-                    )
+                        )
                 ),
                 dbc.Col(
                     dcc.Input(
@@ -107,10 +104,7 @@ app.layout = html.Div(
                         type='text',
                         value='',
                         placeholder="Postal Code",
-                        style = {
-                            #'margin-left':input_style['margin-left']
-                        }
-                    )
+                        )
                 ),
                 dbc.Col(
                     dcc.Input(
@@ -118,10 +112,7 @@ app.layout = html.Div(
                         type='text',
                         value='',
                         placeholder="Surface",
-                        style = {
-                            #'margin-left':input_style['margin-left']
-                        }
-                    )
+                        )
                 ),
             ],
             style = {
@@ -136,10 +127,7 @@ app.layout = html.Div(
                         type='text',
                         value='',
                         placeholder="Nb of main rooms",
-                        style = {
-                            #'margin-left':input_style['margin-left']
-                        }
-                    )
+                        )
                 ),
                 dbc.Col(
                     dcc.Input(
@@ -147,10 +135,7 @@ app.layout = html.Div(
                         type='text',
                         value='',
                         placeholder="Year",
-                        style = {
-                            #'margin-left':input_style['margin-left']
-                        }
-                    )
+                        )
                 ),
             ],
             style = {
