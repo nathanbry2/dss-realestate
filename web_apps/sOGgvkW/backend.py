@@ -94,11 +94,20 @@ app.layout = html.Div(
                     id="input1",
                     type='text',
                     value='',
-                    placeholder="Please fill in answer 1",
+                    placeholder="Address",
                     style = {
                         'margin-left':input_style['margin-left']
                     }
                 ),
+                dcc.Input(
+                    id="input2",
+                    type='text',
+                    value='',
+                    placeholder="Postal Code",
+                    style = {
+                        'margin-left':input_style['margin-left']
+                    }
+                )
             ]
         )
     ]
