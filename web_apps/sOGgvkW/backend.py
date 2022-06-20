@@ -209,5 +209,5 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     print(df)
     return dash_table.DataTable(data=df.to_dict('records'),columns=[{"name": i, "id": i} for i in df.columns])
 
-input1,input2,input3,input4,input5
+#input1,input2,input3,input4,input5
     
