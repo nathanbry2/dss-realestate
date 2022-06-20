@@ -124,7 +124,7 @@ app.layout = html.Div(
                     )
                 ),
             ]
-        ),
+        ),html.Br(),html.Br(),
         dbc.Row(
             children=[
                 dbc.Col(
