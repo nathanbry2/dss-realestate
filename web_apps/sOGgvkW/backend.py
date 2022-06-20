@@ -152,7 +152,7 @@ app.layout = html.Div(
             style = {
                 'text-align':'center'
             },
-        ),
+        ),html.Br(),html.Br(),
         dbc.Row(
             children = [
                 html.H4(
