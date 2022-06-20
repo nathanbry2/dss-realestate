@@ -150,6 +150,8 @@ app.layout = html.Div(
                     )
                 ),
             ]
-        ,justify="center", align="center",)
+        ,style = {
+                            'margin-left':input_style['margin-left']
+                        },)
     ]
 )
