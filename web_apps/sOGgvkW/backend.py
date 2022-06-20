@@ -3,6 +3,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output, State
+from dash import Dash, dash_table
 import base64
 import os
 
@@ -206,5 +207,7 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     
     df = pd.DataFrame([[input1,input2,input3,input4,input5]],columns=['address','postal_code','surface','nb_main_rooms','year'])
     print(df)
-    return df#input1,input2,input3,input4,input5
+    return dash_table.DataTable(data=df.to_dict('records'),columns=[{"name": i, "id": i} for i in df.columns])
+
+input1,input2,input3,input4,input5
     
