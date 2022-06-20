@@ -8,6 +8,17 @@ import os
 
 app.config.external_stylesheets=[dbc.themes.FLATLY]
 
+address = ''
+postal_code = 0
+surface = 0
+nb_main_rooms = 0
+year = 0
+
+images_folder = dataiku.Folder("OMmeZS75")
+escape_logo = os.path.join(images_folder.get_path(), "estimate.png")
+escape_logo_encoded = base64.b64encode(open(escape_logo, 'rb').read()) 
+
+
 # DEFINE STYLES
 
 main_style = {
