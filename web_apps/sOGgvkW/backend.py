@@ -177,7 +177,15 @@ app.layout = html.Div(
                         "margin-left":"40%",
                         "margin-right":"40%",
                     }
-                )
+                ),html.Br(),html.Br(),html.Br(),
+                html.H4(
+                    id='output',
+                    style = {
+                        'margin-left':submit_output_style['margin-left'],
+                        'margin-right':submit_output_style['margin-right'],
+                        'font-weight':'bold',
+                    }
+                ),
             ],
             style = {
                 'text-align':'center'
