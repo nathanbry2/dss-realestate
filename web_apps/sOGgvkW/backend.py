@@ -89,7 +89,7 @@ app.layout = html.Div(
         ),html.Br(),html.Br(),
         
         dbc.Row(
-            children=[
+            children=[html.Span(
                 dcc.Input(
                     id="input1",
                     type='text',
@@ -98,8 +98,8 @@ app.layout = html.Div(
                     style = {
                         'margin-left':input_style['margin-left']
                     }
-                ),
-                dcc.Input(
+                )),
+                html.Span(dcc.Input(
                     id="input2",
                     type='text',
                     value='',
@@ -107,7 +107,7 @@ app.layout = html.Div(
                     style = {
                         'margin-left':input_style['margin-left']
                     }
-                )
+                ))
             ]
         )
     ]
