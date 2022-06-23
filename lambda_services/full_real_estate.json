@@ -17,9 +17,11 @@
         },
         {
           "q": {
-            "param1": 4,
-            "param2": 5,
-            "param3": 6
+            "address": "13 rue Saulnier",
+            "postal_code": 75009,
+            "surface": 75,
+            "nb_main_rooms": 3,
+            "year": 2021
           }
         }
       ],
@@ -35,11 +37,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1656021817714
+    "lastModifiedOn": 1656021831467
   },
   "creationTag": {
     "versionNumber": 0,
