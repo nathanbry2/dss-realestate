@@ -163,7 +163,7 @@ app.layout = html.Div(
                     html.Img(
                         src='data:image/png;base64,{}'.format(estimate_logo_encoded.decode()),         
                         style={
-                            'width':'65%',
+                            'width':'25%',
                             'height':'25%',
                         }
                     ), 
