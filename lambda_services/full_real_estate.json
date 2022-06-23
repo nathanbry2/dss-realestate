@@ -27,7 +27,7 @@
       ],
       "inputFolderRefs": [],
       "userFunctionName": "api_py_function",
-      "code": "import dataiku\nimport pandas as pd, numpy as np\nfrom dataiku import pandasutils as pdu\nfrom geoloc_functions import find_location,distance_to_centre, direction_from_centre\nfrom openlocationcode import openlocationcode as olc\nfrom pluscode_functions import convert_pluscode\nfrom iris_functions import create_iris_polygon_dict, find_iris\n\n# Insert here initialization code\n\n# This function is the entry point for your Python function API\n# You can call this function with passing \"param1\", \"param2\",\n# \"param3\" as arguments to the API call\n# (see REST API documentation)\ndef api_py_function(address, postal_code, surface,nb_main_rooms,year):\n    \n    df \u003d pd.DataFrame([[address, postal_code, surface,nb_main_rooms,year]],columns\u003d[\u0027address\u0027,\u0027postal_code\u0027,\u0027surface\u0027,\u0027nb_main_rooms\u0027,\u0027year\u0027])\n    \n    df[\u0027adress_full\u0027] \u003d df[\u0027address\u0027]+\u0027, \u0027+df[\u0027postal_code\u0027].astype(str)\n\n    \n    \n    \n    \n    \n    \n    return 1\n\n",
+      "code": "import dataiku\nimport pandas as pd, numpy as np\nfrom dataiku import pandasutils as pdu\nfrom geoloc_functions import find_location,distance_to_centre, direction_from_centre\nfrom openlocationcode import openlocationcode as olc\nfrom pluscode_functions import convert_pluscode\nfrom iris_functions import create_iris_polygon_dict, find_iris\n\n# Insert here initialization code\n\n# This function is the entry point for your Python function API\n# You can call this function with passing \"param1\", \"param2\",\n# \"param3\" as arguments to the API call\n# (see REST API documentation)\ndef api_py_function(address, postal_code, surface,nb_main_rooms,year):\n    \n    df \u003d pd.DataFrame([[address, postal_code, surface,nb_main_rooms,year]],columns\u003d[\u0027address\u0027,\u0027postal_code\u0027,\u0027surface\u0027,\u0027nb_main_rooms\u0027,\u0027year\u0027])\n    \n    df[\u0027address_full\u0027] \u003d df[\u0027address\u0027]+\u0027, \u0027+df[\u0027postal_code\u0027].astype(str)\n\n    df[\u0027latitude\u0027] \u003d find_location(df[\u0027address_full\u0027])[0]\n    df[\u0027longitude\u0027] \u003d find_location(df[\u0027address_full\u0027])[1]\n    \n    \n    \n    \n    \n    \n    return 1\n\n",
       "id": "full",
       "type": "PY_FUNCTION"
     }
@@ -37,11 +37,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1656021831467
+    "lastModifiedOn": 1656021885939
   },
   "creationTag": {
     "versionNumber": 0,
