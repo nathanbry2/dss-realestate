@@ -45,6 +45,10 @@
     {
       "objectId": "0zySYMnz",
       "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "compute_0zySYMnz",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
