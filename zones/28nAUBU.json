@@ -33,10 +33,6 @@
     {
       "objectId": "transactions_by_iris_code_year_windows_prepared",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_fN82pyEL",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],
