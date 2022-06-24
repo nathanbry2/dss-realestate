@@ -33,14 +33,6 @@
     {
       "objectId": "transactions_by_iris_code_year_windows_prepared",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "Uno0Mq5s",
-      "objectType": "MANAGED_FOLDER"
-    },
-    {
-      "objectId": "compute_Uno0Mq5s",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],

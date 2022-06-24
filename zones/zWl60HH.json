@@ -1,7 +1,32 @@
 {
   "name": "Storing Zone Data",
   "color": "#F9BE40",
-  "items": [],
+  "items": [
+    {
+      "objectId": "compute_Uno0Mq5s",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "Uno0Mq5s",
+      "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "compute_0zySYMnz",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "0zySYMnz",
+      "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "compute_IgpFFX1O",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "IgpFFX1O",
+      "objectType": "MANAGED_FOLDER"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},

@@ -33,22 +33,6 @@
     {
       "objectId": "transactions_enriched_by_coordinates_couple",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "IgpFFX1O",
-      "objectType": "MANAGED_FOLDER"
-    },
-    {
-      "objectId": "compute_IgpFFX1O",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "0zySYMnz",
-      "objectType": "MANAGED_FOLDER"
-    },
-    {
-      "objectId": "compute_0zySYMnz",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],
