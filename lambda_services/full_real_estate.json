@@ -27,13 +27,7 @@
       ],
       "inputFolderRefs": [
         {
-          "ref": "Uno0Mq5s"
-        },
-        {
-          "ref": "IgpFFX1O"
-        },
-        {
-          "ref": "i9Nc3svy"
+          "ref": "0zySYMnz"
         }
       ],
       "userFunctionName": "api_py_function",
@@ -47,11 +41,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 28,
+    "versionNumber": 29,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1656060649994
+    "lastModifiedOn": 1656061880627
   },
   "creationTag": {
     "versionNumber": 0,
