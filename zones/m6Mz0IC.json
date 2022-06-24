@@ -37,6 +37,10 @@
     {
       "objectId": "IgpFFX1O",
       "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "compute_IgpFFX1O",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
