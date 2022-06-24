@@ -37,6 +37,10 @@
     {
       "objectId": "Uno0Mq5s",
       "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "compute_Uno0Mq5s",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
