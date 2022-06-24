@@ -25,6 +25,14 @@
     {
       "objectId": "IgpFFX1O",
       "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "compute_i9Nc3svy",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "i9Nc3svy",
+      "objectType": "MANAGED_FOLDER"
     }
   ],
   "shared": [],
