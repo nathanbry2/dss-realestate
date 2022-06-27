@@ -50,14 +50,16 @@
       "testQueries": [
         {
           "q": {
-            "latitude": 48.8749729,
-            "longitude": 2.3443353,
-            "date_mutation_year": 2021,
-            "code_postal": 75009,
-            "surface_m2_not_null": 75,
-            "nombre_pieces_principales": 3,
-            "distance_to_centre": 2.0596112975,
-            "direction_from_centre": "N"
+            "features": {
+              "latitude": 48.8749729,
+              "longitude": 2.3443353,
+              "date_mutation_year": 2021,
+              "code_postal": 75009,
+              "surface_m2_not_null": 75,
+              "nombre_pieces_principales": 3,
+              "distance_to_centre": 2.0596112975,
+              "direction_from_centre": "N"
+            }
           }
         }
       ],
@@ -74,11 +76,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 64,
+    "versionNumber": 65,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1656350578517
+    "lastModifiedOn": 1656350589284
   },
   "creationTag": {
     "versionNumber": 0,
