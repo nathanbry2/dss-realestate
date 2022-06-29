@@ -57,7 +57,7 @@
               "code_postal": 75009,
               "surface_m2_not_null": 75,
               "nombre_pieces_principales": 3,
-              "distance_to_centre": 2.0596112975,
+              "distance_to_centre": 2.05961129750329,
               "direction_from_centre": "N"
             }
           }
@@ -76,11 +76,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 117,
+    "versionNumber": 118,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1656495849914
+    "lastModifiedOn": 1656495877118
   },
   "creationTag": {
     "versionNumber": 0,
