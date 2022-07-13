@@ -75,8 +75,8 @@
               "resourceLookupCol": "date_mutation_year"
             }
           ],
-          "missingLookupKeyBehavior": "IGNORE",
-          "notFoundBehavior": "IGNORE",
+          "missingLookupKeyBehavior": "ERROR",
+          "notFoundBehavior": "ERROR",
           "multiMatchBehavior": "KEEP_FIRST",
           "columnsMapping": {
             "prix_m2_not_null_avg": "prix_m2_not_null_avg"
@@ -95,11 +95,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 156,
+    "versionNumber": 157,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1657742507005
+    "lastModifiedOn": 1657742528963
   },
   "creationTag": {
     "versionNumber": 0,
