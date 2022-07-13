@@ -65,6 +65,23 @@
       ],
       "enrichMapping": [
         {
+          "datasetRef": "transactions_by_iris_code_year_windows_prepared",
+          "packagingType": "BUNDLED_TOCONNECTION",
+          "on": [
+            {
+              "resourceLookupCol": "iris_code"
+            },
+            {
+              "resourceLookupCol": "date_mutation_year"
+            }
+          ],
+          "missingLookupKeyBehavior": "IGNORE",
+          "notFoundBehavior": "IGNORE",
+          "multiMatchBehavior": "KEEP_FIRST",
+          "columnsMapping": {}
+        },
+        {
+          "datasetRef": "transactions_by_coordinates_couple_year_windows_prepared",
           "packagingType": "BUNDLED_TOCONNECTION",
           "on": [],
           "missingLookupKeyBehavior": "IGNORE",
@@ -85,11 +102,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 152,
+    "versionNumber": 153,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1657741540477
+    "lastModifiedOn": 1657741815398
   },
   "creationTag": {
     "versionNumber": 0,
