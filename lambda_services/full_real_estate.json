@@ -66,7 +66,7 @@
       "enrichMapping": [
         {
           "datasetRef": "transactions_by_iris_code_year_windows_prepared",
-          "packagingType": "BUNDLED_TOCONNECTION",
+          "packagingType": "REFERENCED",
           "on": [
             {
               "resourceLookupCol": "iris_code"
@@ -95,11 +95,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 155,
+    "versionNumber": 156,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1657742026810
+    "lastModifiedOn": 1657742507005
   },
   "creationTag": {
     "versionNumber": 0,
