@@ -78,16 +78,9 @@
           "missingLookupKeyBehavior": "IGNORE",
           "notFoundBehavior": "IGNORE",
           "multiMatchBehavior": "KEEP_FIRST",
-          "columnsMapping": {}
-        },
-        {
-          "datasetRef": "transactions_by_coordinates_couple_year_windows_prepared",
-          "packagingType": "BUNDLED_TOCONNECTION",
-          "on": [],
-          "missingLookupKeyBehavior": "IGNORE",
-          "notFoundBehavior": "IGNORE",
-          "multiMatchBehavior": "KEEP_FIRST",
-          "columnsMapping": {}
+          "columnsMapping": {
+            "prix_m2_not_null_avg": "prix"
+          }
         }
       ],
       "healthCheckQueries": [],
@@ -102,11 +95,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 153,
+    "versionNumber": 154,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1657741815398
+    "lastModifiedOn": 1657741976877
   },
   "creationTag": {
     "versionNumber": 0,
