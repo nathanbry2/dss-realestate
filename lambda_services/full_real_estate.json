@@ -66,10 +66,28 @@
       "enrichMapping": [
         {
           "datasetRef": "transactions_by_iris_code_year_windows_prepared",
-          "packagingType": "REFERENCED",
+          "packagingType": "BUNDLED_TOCONNECTION",
           "on": [
             {
               "resourceLookupCol": "iris_code"
+            },
+            {
+              "resourceLookupCol": "date_mutation_year"
+            }
+          ],
+          "missingLookupKeyBehavior": "IGNORE",
+          "notFoundBehavior": "IGNORE",
+          "multiMatchBehavior": "KEEP_FIRST",
+          "columnsMapping": {
+            "prix_m2_not_null_avg": "prix_m2_not_null_avg"
+          }
+        },
+        {
+          "datasetRef": "transactions_by_coordinates_couple_year_windows_prepared",
+          "packagingType": "BUNDLED_TOCONNECTION",
+          "on": [
+            {
+              "resourceLookupCol": "reduced_coordinates_couple"
             },
             {
               "resourceLookupCol": "date_mutation_year"
@@ -95,11 +113,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 158,
+    "versionNumber": 159,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1657742556975
+    "lastModifiedOn": 1657742592711
   },
   "creationTag": {
     "versionNumber": 0,
