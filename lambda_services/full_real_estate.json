@@ -63,7 +63,16 @@
           }
         }
       ],
-      "enrichMapping": [],
+      "enrichMapping": [
+        {
+          "packagingType": "BUNDLED_TOCONNECTION",
+          "on": [],
+          "missingLookupKeyBehavior": "IGNORE",
+          "notFoundBehavior": "IGNORE",
+          "multiMatchBehavior": "KEEP_FIRST",
+          "columnsMapping": {}
+        }
+      ],
       "healthCheckQueries": [],
       "returnPostEnrichData": false,
       "auditPostEnrichData": false,
@@ -76,11 +85,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 151,
+    "versionNumber": 152,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1656577982730
+    "lastModifiedOn": 1657741540477
   },
   "creationTag": {
     "versionNumber": 0,
