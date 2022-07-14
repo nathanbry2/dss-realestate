@@ -101,44 +101,56 @@ app.layout = html.Div(
         html.Div(
             
             [
-                dbc.Col(),
+                dbc.Col(
+                    [
+                        dcc.Input(
+                            id="input1",
+                            type='text',
+                            value='',
+                            placeholder="Address",
+                            )
+                        
+                        
+                    ]
+                
+                ),
                 
                 
                 dbc.Col(
                     children = [
-                html.H4(
-                    children='Click logo to get an estimation 🔽',
-                ),html.Br(),html.Br(),
-                dbc.Button(
-                    html.Img(
-                        src='data:image/png;base64,{}'.format(estimate_logo_encoded.decode()),         
-                        style={
-                            'width':'25%',
-                            'height':'25%',
-                        }
-                    ), 
-                    id="submit",
-                    n_clicks=0,
-                    color='secondary',
-                    outline=True,
+                        html.H4(
+                            children='Click logo to get an estimation 🔽',
+                        ),html.Br(),html.Br(),
+                        dbc.Button(
+                            html.Img(
+                                src='data:image/png;base64,{}'.format(estimate_logo_encoded.decode()),         
+                                style={
+                                    'width':'25%',
+                                    'height':'25%',
+                                }
+                            ), 
+                            id="submit",
+                            n_clicks=0,
+                            color='secondary',
+                            outline=True,
+                            style = {
+                                'width':'20%',
+                                'height':'25%',
+                                'text-align':'center',
+                                "margin-left":"40%",
+                                "margin-right":"40%",
+                            }
+                        ),html.Br(),html.Br(),html.Br(),
+                        html.H4(
+                            id='output',
+                            style = {
+                                'font-weight':'bold',
+                            }
+                        ),
+                    ],
                     style = {
-                        'width':'20%',
-                        'height':'25%',
-                        'text-align':'center',
-                        "margin-left":"40%",
-                        "margin-right":"40%",
-                    }
-                ),html.Br(),html.Br(),html.Br(),
-                html.H4(
-                    id='output',
-                    style = {
-                        'font-weight':'bold',
-                    }
-                ),
-            ],
-            style = {
-                'text-align':'center'
-            },
+                        'text-align':'center'
+                    },
                 
                 ),
                 
