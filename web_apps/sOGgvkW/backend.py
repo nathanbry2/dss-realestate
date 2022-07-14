@@ -222,7 +222,7 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     '''
     
     
-    return type(input1),type(input2),type(input3),type(input4),type(input5)
+    return input1
 
 #dash_table.DataTable(data=df.to_dict('records'),columns=[{"name": i, "id": i} for i in df.columns])
 
