@@ -8,7 +8,7 @@ from dash import Dash, dash_table
 import base64
 import os
 
-client = dataikuapi.APINodeClient("http://localhost:12000/", "full_real_estate")
+#client = dataikuapi.APINodeClient("http://localhost:12000/", "full_real_estate")
 
 app.config.external_stylesheets=[dbc.themes.FLATLY]
 
