@@ -171,12 +171,7 @@ app.layout = html.Div(
                                 "margin-right":"40%",
                             }
                         ),html.Br(),html.Br(),html.Br(),
-                        html.H4(
-                            id='output',
-                            style = {
-                                'font-weight':'bold',
-                            }
-                        ),
+                        
                     ],
                     style = {
                         'text-align':'center'
@@ -187,6 +182,17 @@ app.layout = html.Div(
             ]
         
         
+        ),
+        
+        html.Div(
+            [
+                html.H4(
+                    id='output',
+                    style = {
+                        'font-weight':'bold',
+                    }
+                ),
+            ]
         )
         
         
