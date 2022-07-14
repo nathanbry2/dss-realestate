@@ -222,7 +222,7 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     
     
     
-    return input1
+    return str(result.get('response'))
 
 #dash_table.DataTable(data=df.to_dict('records'),columns=[{"name": i, "id": i} for i in df.columns])
 
