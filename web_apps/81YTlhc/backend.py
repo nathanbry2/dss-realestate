@@ -63,7 +63,46 @@ submit_output_style = {
     "margin-right":"100px"
 }
 
-app.layout = html.Div()
+app.layout = html.Div(
+    [
+        html.Div(
+            style={
+                'backgroundColor': main_style['background'],
+                'font-family': main_style['font-family']
+            },
+            children=[
+                html.Div(
+                    html.H2(
+                        children='Dataiku Real Estate Estimator 🏡',
+                        style={
+                            #'backgroundColor': title_style['background'],
+                            'color': title_style['text'],
+                            'textAlign': 'center',
+                            'font-weight':'bold'
+                        }
+                    )
+                ),html.Br(),
+                
+                html.Div(
+                    html.H4(
+                        children='Welcome to the Dataiku Real Estate Estimator! Follow the instructions to have an estimation of how much your property is worth 💰',
+                        style={
+                            #'backgroundColor': desc_style['background'],
+                            'color': desc_style['text'],
+                            'textAlign': 'center',
+                            'margin-left':'20%',
+                            'margin-right':'20%',
+                        }
+                    )
+                )
+            ]
+        ),html.Br(),html.Br(),
+        
+        
+    ]
+
+
+)
 
 
 
