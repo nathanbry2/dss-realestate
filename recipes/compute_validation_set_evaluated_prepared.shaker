@@ -126,7 +126,7 @@
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
-        "expression": "val(\"prediction_50%\")*0.95",
+        "expression": "val(\"prediction_50%\")*0.925",
         "column": "prediction_50%_low_bound"
       },
       "alwaysShowComment": false
@@ -137,7 +137,7 @@
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
-        "expression": "val(\"prediction_50%\")*1.05",
+        "expression": "val(\"prediction_50%\")*1.075",
         "column": "prediction_50%_high_bound"
       },
       "alwaysShowComment": false
@@ -149,7 +149,7 @@
       "type": "CreateColumnWithGREL",
       "params": {
         "expression": "if(and(valeur_fonciere\u003e\u003dval(\"prediction_50%_low_bound\"),valeur_fonciere\u003c\u003dval(\"prediction_50%_high_bound\")),1,0)",
-        "column": "is_in_5%_bound"
+        "column": "is_in_7.5%_bound"
       },
       "alwaysShowComment": false
     }
@@ -223,6 +223,7 @@
     "iris_code": 113,
     "prediction": 120,
     "prediction_correct_iris": 211,
+    "is_in_7.5%_bound": 135,
     "correct_prix_m2_iris": 190,
     "error_prediction33%": 183,
     "relative_error": 169
