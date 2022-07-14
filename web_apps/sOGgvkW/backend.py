@@ -1,4 +1,5 @@
 import dataiku
+import dataikuapi
 import dash_core_components as dcc
 import dash_html_components as html
 import dash_bootstrap_components as dbc
@@ -6,6 +7,8 @@ from dash.dependencies import Input, Output, State
 from dash import Dash, dash_table
 import base64
 import os
+
+client = dataikuapi.APINodeClient("http://localhost:12000/", "full_real_estate")
 
 app.config.external_stylesheets=[dbc.themes.FLATLY]
 
@@ -205,8 +208,21 @@ app.layout = html.Div(
 
 def output_function(n_clicks,input1,input2,input3,input4,input5):
     
-    #df = pd.DataFrame([[input1,input2,input3,input4,input5]],columns=['address','postal_code','surface','nb_main_rooms','year'])
-    return input1,input2,input3,input4,input5
+    
+
+    
+
+    result = client.run_function("full",
+            address = input1,
+            postal_code = int(input2),
+            surface = int(input3),
+            nb_main_rooms = int(input4),
+            year = int(input5))
+    
+    
+    
+    
+    return result.get('response')
 
 #dash_table.DataTable(data=df.to_dict('records'),columns=[{"name": i, "id": i} for i in df.columns])
 
