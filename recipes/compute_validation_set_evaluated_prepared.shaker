@@ -141,6 +141,17 @@
         "column": "prediction_50%_high_bound"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "if(and(valeur_fonciere\u003e\u003dval(\"prediction_50%_low_bound\"),valeur_fonciere\u003c\u003dval(\"prediction_50%_high_bound\")),1,0)",
+        "column": "is_in_5%_bound"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -181,6 +192,7 @@
     "pluscode_10": 127,
     "error": 148,
     "abs_error_decile": 135,
+    "is_in_5%_bound": 120,
     "NOM_COM": 183,
     "error_decile": 105,
     "date_mutation_day": 143,
