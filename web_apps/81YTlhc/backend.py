@@ -190,6 +190,7 @@ app.layout = html.Div(
                     id='output',
                     style = {
                         'font-weight':'bold',
+                        'text-align':'center',                        
                     }
                 ),
             ]
