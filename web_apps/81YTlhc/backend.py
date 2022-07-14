@@ -108,7 +108,7 @@ app.layout = html.Div(
                             type='text',
                             value='',
                             placeholder="Address",
-                            ),
+                            ),html.Br(),html.Br(),
                         
                         dcc.Input(
                             id="input2",
