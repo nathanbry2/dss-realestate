@@ -100,9 +100,11 @@ app.layout = html.Div(
         
         html.Div(
             
-            dbc.Col(),
-            
-            dbc.Col(),
+            [
+                dbc.Col(),
+                dbc.Col(),
+                
+            ]
         
         
         )
