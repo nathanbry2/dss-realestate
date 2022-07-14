@@ -1,0 +1,115 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "columnWidthsByName": {
+      "date_mutation_year": 150,
+      "date_mutation_month": 158,
+      "date_mutation_day": 143,
+      "valeur_fonciere": 128,
+      "code_postal": 100,
+      "surface_m2_not_null": 158,
+      "prix_m2_not_null": 162,
+      "nombre_pieces_principales": 203,
+      "longitude": 141,
+      "latitude": 141,
+      "distance_to_centre": 176,
+      "direction_from_centre": 173,
+      "pluscode_10": 127,
+      "reduced_coordinates_couple": 210,
+      "iris_code": 113,
+      "iris_GeoPoint": 204,
+      "iris_GeoShape": 300,
+      "NOM_COM": 183,
+      "NOM_IRIS": 204,
+      "TYP_IRIS": 100,
+      "prix_m2_iris": 141,
+      "count_iris": 100,
+      "correct_prix_m2_iris": 190,
+      "prediction_correct_iris": 211,
+      "prix_m2_coordinates_couple": 232,
+      "count_coordinates_couple": 195,
+      "correct_prix_m2_coordinates_couple": 270,
+      "prediction_correct_coordinates_couple": 293,
+      "prediction": 120,
+      "prediction_50%": 155,
+      "prediction_50%_high_bound": 225,
+      "prediction_50%_low_bound": 218,
+      "is_in_5%_bound": 120,
+      "error_50%": 148,
+      "relative_error_50%": 176,
+      "absolute_relative_error_50%": 239,
+      "prediction_33%": 155,
+      "error_33%": 148,
+      "relative_error_33%": 176,
+      "absolute_relative_error_33%": 239,
+      "error": 148,
+      "error_decile": 105,
+      "abs_error_decile": 135,
+      "relative_error": 169
+    },
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxRecordsForDisplay": -1,
+        "maxStoredBytes": 157286400,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 100000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 1657817856594
+    },
+    "vizSampling": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": -1,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": []
+}
