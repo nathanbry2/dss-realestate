@@ -217,10 +217,10 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
             nb_main_rooms = int(input4),
             year = int(input5))
     
-    estim = round(result.get('response')['estimation_final'])
+    estim_low = round(result.get('response')['estimation_final_lower_bound'],-4)
+    estim_high = round(result.get('response')['estimation_final_higher_bound'],-4)
     
-    
-    return str(estim),'€'
+    return 'Your property is worth between ',str(estim_low),'€ and ',str(estim_high),'€'
 
 #dash_table.DataTable(data=df.to_dict('records'),columns=[{"name": i, "id": i} for i in df.columns])
 
