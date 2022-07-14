@@ -8,7 +8,7 @@ from dash import Dash, dash_table, html, dcc
 import base64
 import os
 
-#client = dataikuapi.APINodeClient("http://localhost:12000/", "full_real_estate")
+client = dataikuapi.APINodeClient("http://localhost:12000/", "full_real_estate")
 
 app.config.external_stylesheets=[dbc.themes.FLATLY]
 
@@ -222,7 +222,7 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     '''
     
     
-    return str(type(input1))
+    return 
 
 #dash_table.DataTable(data=df.to_dict('records'),columns=[{"name": i, "id": i} for i in df.columns])
 
