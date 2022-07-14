@@ -4,7 +4,8 @@
   "params": {
     "autoStartBackend": false,
     "envSelection": {
-      "envMode": "INHERIT"
+      "envMode": "EXPLICIT_ENV",
+      "envName": "WebAppNew"
     },
     "nbProcesses": 1,
     "serveLocally": true,
@@ -33,11 +34,11 @@
   "config": {},
   "name": "v2",
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1657826725115
+    "lastModifiedOn": 1657826784297
   },
   "creationTag": {
     "versionNumber": 0,
