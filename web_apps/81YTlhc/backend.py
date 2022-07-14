@@ -115,7 +115,28 @@ app.layout = html.Div(
                             type='text',
                             value='',
                             placeholder="Postal Code",
-                            ),
+                            ),html.Br(),html.Br(),
+                        
+                        dcc.Input(
+                            id="input3",
+                            type='text',
+                            value='',
+                            placeholder="Surface",
+                            ),html.Br(),html.Br(),
+                        
+                        dcc.Input(
+                            id="input4",
+                            type='text',
+                            value='',
+                            placeholder="Nb of main rooms",
+                            ),html.Br(),html.Br(),
+                        
+                        dcc.Input(
+                            id="input5",
+                            type='text',
+                            value='',
+                            placeholder="Year",
+                            )
                         
                         
                     ]
