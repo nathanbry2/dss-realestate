@@ -137,9 +137,11 @@ app.layout = html.Div(
                             value='',
                             placeholder="Year",
                             )
-                        
-                        
-                    ]
+                    ],
+                    
+                    style = {
+                        'text-align':'center'
+                    },
                 
                 ),
                 
