@@ -1,10 +1,10 @@
 import dataiku
 import dataikuapi
-import dash_core_components as dcc
-import dash_html_components as html
+#import dash_core_components as dcc
+#import dash_html_components as html
 import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output, State
-from dash import Dash, dash_table
+from dash import Dash, dash_table, html, dcc
 import base64
 import os
 
