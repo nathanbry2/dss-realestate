@@ -64,3 +64,33 @@ submit_output_style = {
 }
 
 app.layout = html.Div()
+
+
+
+@app.callback(
+    Output('output', 'children'),
+    Input('submit', 'n_clicks'),
+    State('input1', 'value'),
+    State('input2', 'value'),
+    State('input3', 'value'),
+    State('input4', 'value'),
+    State('input5', 'value'),prevent_initial_call=True)
+
+def output_function(n_clicks,input1,input2,input3,input4,input5):
+    
+    
+
+    
+
+    result = client.run_function("full",
+            address = input1,
+            postal_code = int(input2),
+            surface = int(input3),
+            nb_main_rooms = int(input4),
+            year = int(input5))
+    
+    estim_low = int(round(result.get('response')['estimation_final_lower_bound'],-4))
+    estim_high = int(round(result.get('response')['estimation_final_higher_bound'],-4))
+    
+    return 'Your property is worth between ',str(estim_low),'€ and ',str(estim_high),'€'
+
