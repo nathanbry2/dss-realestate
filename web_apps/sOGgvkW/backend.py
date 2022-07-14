@@ -219,10 +219,10 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
             nb_main_rooms = int(input4),
             year = int(input5))
     
+    estim = round(result.get('response')['estimation_final'])
     
     
-    
-    return str(result.get('response')['estimation_final'])
+    return str(estim),'€'
 
 #dash_table.DataTable(data=df.to_dict('records'),columns=[{"name": i, "id": i} for i in df.columns])
 
