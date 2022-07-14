@@ -108,7 +108,14 @@ app.layout = html.Div(
                             type='text',
                             value='',
                             placeholder="Address",
-                            )
+                            ),
+                        
+                        dcc.Input(
+                            id="input2",
+                            type='text',
+                            value='',
+                            placeholder="Postal Code",
+                            ),
                         
                         
                     ]
