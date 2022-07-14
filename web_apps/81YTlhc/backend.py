@@ -98,7 +98,7 @@ app.layout = html.Div(
             ]
         ),html.Br(),html.Br(),
         
-        html.Div(
+        dbc.Row(
             
             [
                 dbc.Col(
