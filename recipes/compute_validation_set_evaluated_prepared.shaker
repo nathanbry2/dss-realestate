@@ -119,6 +119,28 @@
         "column": "absolute_relative_error_50%"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "val(\"prediction_50%\")*0.95",
+        "column": "prediction_50%_low_bound"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "val(\"prediction_50%\")*1.05",
+        "column": "prediction_50%_high_bound"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -148,6 +170,7 @@
   "analysisColumnData": {},
   "columnWidthsByName": {
     "absolute_relative_error_33%": 239,
+    "prediction_50%_high_bound": 225,
     "prediction_50%": 155,
     "prix_m2_coordinates_couple": 232,
     "valeur_fonciere": 128,
@@ -181,6 +204,7 @@
     "date_mutation_month": 158,
     "direction_from_centre": 173,
     "NOM_IRIS": 204,
+    "prediction_50%_low_bound": 218,
     "relative_error_33%": 176,
     "distance_to_centre": 176,
     "count_coordinates_couple": 195,
