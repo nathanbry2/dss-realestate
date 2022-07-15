@@ -107,7 +107,7 @@ app.layout = html.Div(
                             id="input1",
                             type='text',
                             value='',
-                            placeholder="Address, e.g. 17 rue saulnier",
+                            placeholder="Address, e.g. 17 rue Saulnier",
                             size='md',
                             ),html.Br(),
                         
@@ -134,7 +134,7 @@ app.layout = html.Div(
                             id="input4",
                             type='number',
                             value='',
-                            placeholder="Nb of main rooms, e.g. 4",
+                            placeholder="Number of main rooms, e.g. 4",
                             size='md',
                             min=1
                             ),html.Br(),
