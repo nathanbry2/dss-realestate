@@ -125,6 +125,7 @@ app.layout = html.Div(
                             type='number',
                             value='',
                             placeholder="Surface",
+                            min=1,
                             ),html.Br(),html.Br(),
                         
                         dbc.Input(
@@ -132,6 +133,7 @@ app.layout = html.Div(
                             type='number',
                             value='',
                             placeholder="Nb of main rooms",
+                            min=1
                             ),html.Br(),html.Br(),
                         
                         dbc.Input(
@@ -139,6 +141,8 @@ app.layout = html.Div(
                             type='number',
                             value='',
                             placeholder="Year",
+                            min=2014,
+                            max=2021,
                             )
                     ],
                     
