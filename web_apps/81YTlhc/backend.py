@@ -147,10 +147,6 @@ app.layout = html.Div(
                             size='md',
                             min=2014,
                             max=2021,
-                            style = {
-                        "margin-left":"20%",
-                        "margin-right":"20%",
-                    }
                             )
                     ],
                     
