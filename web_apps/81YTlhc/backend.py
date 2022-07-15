@@ -147,13 +147,18 @@ app.layout = html.Div(
                             size='md',
                             min=2014,
                             max=2021,
+                            style = {
+                        'text-align':'center',
+                        "margin-left":"20%",
+                        "margin-right":"20%",
+                    }
                             )
                     ],
                     
                     style = {
                         'text-align':'center',
-                        "margin-left":"20%",
-                        "margin-right":"20%",
+                        #"margin-left":"20%",
+                        #"margin-right":"20%",
                     },
                 
                 ),
