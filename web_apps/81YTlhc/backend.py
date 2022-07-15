@@ -109,7 +109,7 @@ app.layout = html.Div(
                             value='',
                             placeholder="Address, ex: 13 rue saulnier",
                             size='sm',
-                            ),html.Br(),html.Br(),
+                            ),html.Br(),
                         
                         dbc.Input(
                             id="input2",
@@ -119,7 +119,7 @@ app.layout = html.Div(
                             size='sm',
                             min=75001,
                             max=75020,
-                            ),html.Br(),html.Br(),
+                            ),html.Br(),
                         
                         dbc.Input(
                             id="input3",
@@ -128,7 +128,7 @@ app.layout = html.Div(
                             placeholder="Surface",
                             size='sm',
                             min=1,
-                            ),html.Br(),html.Br(),
+                            ),html.Br(),
                         
                         dbc.Input(
                             id="input4",
@@ -137,7 +137,7 @@ app.layout = html.Div(
                             placeholder="Nb of main rooms",
                             size='sm',
                             min=1
-                            ),html.Br(),html.Br(),
+                            ),html.Br(),
                         
                         dbc.Input(
                             id="input5",
