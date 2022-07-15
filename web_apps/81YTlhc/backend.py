@@ -168,8 +168,8 @@ app.layout = html.Div(
                             html.Img(
                                 src='data:image/png;base64,{}'.format(estimate_logo_encoded.decode()),         
                                 style={
-                                    'width':'60%',
-                                    'height':'60%',
+                                    'width':'100%',
+                                    'height':'1000%',
                                 }
                             ), 
                             id="submit",
@@ -177,8 +177,8 @@ app.layout = html.Div(
                             color='secondary',
                             outline=True,
                             style = {
-                                'width':'30%',
-                                'height':'37.5%',
+                                'width':'100%',
+                                'height':'100%',
                                 'text-align':'center',
                                 #"margin-left":"40%",
                                 #"margin-right":"40%",
