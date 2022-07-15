@@ -107,7 +107,7 @@ app.layout = html.Div(
                             id="input1",
                             type='text',
                             value='',
-                            placeholder="Address, ex: 13 rue saulnier",
+                            placeholder="Address, e.g. 13 rue saulnier",
                             size='md',
                             ),html.Br(),
                         
