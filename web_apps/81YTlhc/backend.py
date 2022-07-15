@@ -152,8 +152,8 @@ app.layout = html.Div(
                     
                     style = {
                         'text-align':'center',
-                        "margin-left":"40%",
-                        "margin-right":"40%",
+                        "margin-left":"10%",
+                        "margin-right":"10%",
                     },
                 
                 ),
