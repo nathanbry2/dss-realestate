@@ -109,7 +109,6 @@ app.layout = html.Div(
                             value='',
                             placeholder="Address, ex: 13 rue saulnier",
                             size='md',
-                            html_size='20',
                             ),html.Br(),
                         
                         dbc.Input(
@@ -153,6 +152,8 @@ app.layout = html.Div(
                     
                     style = {
                         'text-align':'center',
+                        "margin-left":"40%",
+                        "margin-right":"40%",
                     },
                 
                 ),
