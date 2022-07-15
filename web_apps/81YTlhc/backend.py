@@ -103,7 +103,7 @@ app.layout = html.Div(
             [
                 dbc.Col(
                     [
-                        dcc.Input(
+                        dbc.Input(
                             id="input1",
                             type='text',
                             value='',
