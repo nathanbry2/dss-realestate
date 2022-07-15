@@ -120,21 +120,21 @@ app.layout = html.Div(
                         
                         dbc.Input(
                             id="input3",
-                            type='text',
+                            type='number',
                             value='',
                             placeholder="Surface",
                             ),html.Br(),html.Br(),
                         
                         dbc.Input(
                             id="input4",
-                            type='text',
+                            type='number',
                             value='',
                             placeholder="Nb of main rooms",
                             ),html.Br(),html.Br(),
                         
                         dbc.Input(
                             id="input5",
-                            type='text',
+                            type='number',
                             value='',
                             placeholder="Year",
                             )
