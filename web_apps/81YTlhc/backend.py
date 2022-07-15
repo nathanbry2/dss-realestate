@@ -116,6 +116,8 @@ app.layout = html.Div(
                             type='number',
                             value='',
                             placeholder="Postal Code",
+                            min=75001,
+                            max=75020,
                             ),html.Br(),html.Br(),
                         
                         dbc.Input(
