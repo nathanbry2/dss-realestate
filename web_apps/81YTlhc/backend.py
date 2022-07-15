@@ -110,28 +110,28 @@ app.layout = html.Div(
                             placeholder="Address, ex: 13 rue saulnier",
                             ),html.Br(),html.Br(),
                         
-                        dcc.Input(
+                        dbc.Input(
                             id="input2",
                             type='text',
                             value='',
                             placeholder="Postal Code",
                             ),html.Br(),html.Br(),
                         
-                        dcc.Input(
+                        dbc.Input(
                             id="input3",
                             type='text',
                             value='',
                             placeholder="Surface",
                             ),html.Br(),html.Br(),
                         
-                        dcc.Input(
+                        dbc.Input(
                             id="input4",
                             type='text',
                             value='',
                             placeholder="Nb of main rooms",
                             ),html.Br(),html.Br(),
                         
-                        dcc.Input(
+                        dbc.Input(
                             id="input5",
                             type='text',
                             value='',
