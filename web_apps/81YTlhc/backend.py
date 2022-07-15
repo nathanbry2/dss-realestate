@@ -108,7 +108,7 @@ app.layout = html.Div(
                             type='text',
                             value='',
                             placeholder="Address, ex: 13 rue saulnier",
-                            size='sm',
+                            size='md',
                             ),html.Br(),
                         
                         dbc.Input(
@@ -116,7 +116,7 @@ app.layout = html.Div(
                             type='number',
                             value='',
                             placeholder="Postal Code",
-                            size='sm',
+                            size='md',
                             min=75001,
                             max=75020,
                             ),html.Br(),
@@ -126,7 +126,7 @@ app.layout = html.Div(
                             type='number',
                             value='',
                             placeholder="Surface",
-                            size='sm',
+                            size='md',
                             min=1,
                             ),html.Br(),
                         
@@ -135,7 +135,7 @@ app.layout = html.Div(
                             type='number',
                             value='',
                             placeholder="Nb of main rooms",
-                            size='sm',
+                            size='md',
                             min=1
                             ),html.Br(),
                         
@@ -144,14 +144,14 @@ app.layout = html.Div(
                             type='number',
                             value='',
                             placeholder="Year",
-                            size='sm',
+                            size='md',
                             min=2014,
                             max=2021,
                             )
                     ],
                     
                     style = {
-                        'text-align':'center'
+                        'text-align':'center',
                     },
                 
                 ),
