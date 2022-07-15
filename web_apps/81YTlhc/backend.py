@@ -147,7 +147,6 @@ app.layout = html.Div(
                             size='md',
                             min=2014,
                             max=2021,
-                            style={'text-size':'40%'}
                             )
                     ],
                     
