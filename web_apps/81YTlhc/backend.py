@@ -113,7 +113,7 @@ app.layout = html.Div(
                         
                         dbc.Input(
                             id="input2",
-                            type='text',
+                            type='number',
                             value='',
                             placeholder="Postal Code",
                             ),html.Br(),html.Br(),
