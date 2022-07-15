@@ -182,7 +182,7 @@ app.layout = html.Div(
             ]
         
         
-        ),
+        ),html.Br(),html.Br(),
         
         html.Div(
             [
