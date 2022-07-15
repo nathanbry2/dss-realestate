@@ -135,7 +135,7 @@ app.layout = html.Div(
                             type='number',
                             value='',
                             placeholder="Nb of main rooms",
-                            size='sm',
+                            size='md',
                             min=1
                             ),html.Br(),
                         
