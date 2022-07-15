@@ -108,6 +108,7 @@ app.layout = html.Div(
                             type='text',
                             value='',
                             placeholder="Address, ex: 13 rue saulnier",
+                            size='sm',
                             ),html.Br(),html.Br(),
                         
                         dbc.Input(
