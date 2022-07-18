@@ -164,8 +164,14 @@ app.layout = html.Div(
                         html.H4(
                             children='Click logo to get an estimation 🔽',
                         ),html.Br(),html.Br(),
-                        dbc.Button(children="estimate",
-                             
+                        dbc.Button(
+                            html.Img(
+                                src='data:image/png;base64,{}'.format(estimate_logo_encoded.decode()),         
+                                style={
+                                    'width':'40%',
+                                    'height':'40%',
+                                }
+                            ), 
                             id="submit",
                             n_clicks=0,
                             color='secondary',
