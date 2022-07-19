@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651268297944
+    "lastModifiedOn": 1658225032534
   },
   "creationTag": {
     "versionNumber": 0,
@@ -68,6 +68,11 @@
       {"name":"nombre_pieces_principales_avg","type":"double"},
       {"name":"distance_to_centre_avg","type":"double"},
       {"name":"direction_from_centre","type":"string"},
+      {"name":"iris_GeoPoint_first","type":"string"},
+      {"name":"iris_GeoShape_first","type":"string"},
+      {"name":"NOM_COM_first","type":"string"},
+      {"name":"NOM_IRIS_first","type":"string"},
+      {"name":"TYP_IRIS_first","type":"string"},
       {"name":"count","type":"bigint"}
     ],
     "userModified": true
