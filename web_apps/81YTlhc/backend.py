@@ -211,7 +211,7 @@ app.layout = html.Div(
                         'text-align':'center',                        
                     }
                 ),html.Br(),html.Br(),
-                html.Div(id='output2')
+                html.Span(id='output2'),
             ]
         )
         
