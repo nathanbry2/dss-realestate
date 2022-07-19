@@ -289,8 +289,8 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     fig.update_xaxes(title_text="Year")
 
     # Set y-axes titles
-    fig.update_yaxes(title_text="Average m2 price", secondary_y=False)
-    fig.update_yaxes(title_text="Transactions count", secondary_y=True)
+    fig.update_yaxes(title_text="Average m2 price", secondary_y=True,ticksuffix='€')
+    fig.update_yaxes(title_text="Transactions count", secondary_y=False)
     
     
     return text1, dcc.Graph(figure=fig)
