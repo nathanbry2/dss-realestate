@@ -258,7 +258,7 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     
     text1 = 'Your property is worth between ' + str("{:,}".format(estim_low)) + '€ and ' + str("{:,}".format(estim_high)) + '€'
     
-    df_filtered = df[df['iris_code']==result.get('response')['iris_code']]
+    df_filtered = df[df['iris_code']==result.get('response')['iris_code']].sort_values(by=['date_mutation_year'])
     iris_code_name = df_filtered.iloc[0]['NOM_IRIS_first']
 
     
