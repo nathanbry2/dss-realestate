@@ -297,8 +297,11 @@
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
-      "first": false
+      "first": true,
+      "orderColumn": "date_mutation_year",
+      "concatSeparator": ","
     },
     {
       "last": false,
@@ -315,8 +318,11 @@
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
-      "first": false
+      "first": true,
+      "orderColumn": "date_mutation_year",
+      "concatSeparator": ","
     },
     {
       "last": false,
@@ -333,8 +339,11 @@
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
-      "first": false
+      "first": true,
+      "orderColumn": "date_mutation_year",
+      "concatSeparator": ","
     },
     {
       "last": false,
@@ -351,8 +360,11 @@
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
-      "first": false
+      "first": true,
+      "orderColumn": "date_mutation_year",
+      "concatSeparator": ","
     },
     {
       "last": false,
@@ -369,8 +381,11 @@
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
-      "first": false
+      "first": true,
+      "orderColumn": "date_mutation_year",
+      "concatSeparator": ","
     }
   ],
   "globalCount": true,
@@ -461,6 +476,26 @@
           },
           {
             "name": "direction_from_centre_first",
+            "type": "string"
+          },
+          {
+            "name": "iris_GeoPoint_first",
+            "type": "string"
+          },
+          {
+            "name": "iris_GeoShape_first",
+            "type": "string"
+          },
+          {
+            "name": "NOM_COM_first",
+            "type": "string"
+          },
+          {
+            "name": "NOM_IRIS_first",
+            "type": "string"
+          },
+          {
+            "name": "TYP_IRIS_first",
             "type": "string"
           },
           {
