@@ -211,7 +211,14 @@ app.layout = html.Div(
                         'text-align':'center',                        
                     }
                 ),html.Br(),html.Br(),
-                html.Div(id='output2'),
+                html.H5(
+                    id='output2',
+                    style = {
+                        'font-weight':'bold',
+                        'text-align':'center',                        
+                    }
+                ),html.Br(),html.Br(),
+                html.Div(id='output3'),
             ]
         )
         
@@ -227,7 +234,8 @@ app.layout = html.Div(
 
 @app.callback(
     Output('output', 'children'),
-    Output('output2','children'),
+    Output('output2', 'children'),
+    Output('output3','children'),
     Input('submit', 'n_clicks'),
     State('input1', 'value'),
     State('input2', 'value'),
@@ -249,12 +257,15 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     estim_high = int(round(result.get('response')['estimation_final_higher_bound'],-4))
     
     text1 = 'Your property is worth between ' + str("{:,}".format(estim_low)) + '€ and ' + str("{:,}".format(estim_high)) + '€'
-    text2 = 'test'
     
-    df_filtered = df[df['iris_code']==751093503]
-
+    df_filtered = df[df['iris_code']==751093503]    
     iris_code_name = df_filtered.iloc[0]['NOM_IRIS_first']
 
+    
+    text2 = "The average m² price in your area has grown " +  str(round(df_filtered.iloc[-1]['Growth%_7years'])) + "% in the last 7 years, or about " + str(round(df_filtered.iloc[-1]['CAGR%_7years'],1)) + "% per year."
+
+        
+        
     # Create figure with secondary y-axis
     fig = make_subplots(specs=[[{"secondary_y": True}]])
 
@@ -293,4 +304,4 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     fig.update_yaxes(title_text="Transactions count", secondary_y=False)
     
     
-    return text1, dcc.Graph(figure=fig)
+    return text1, text2, dcc.Graph(figure=fig)
