@@ -222,6 +222,7 @@ app.layout = html.Div(
 
 @app.callback(
     Output('output', 'children'),
+    Output('output2','children'),
     Input('submit', 'n_clicks'),
     State('input1', 'value'),
     State('input2', 'value'),
@@ -245,5 +246,7 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     estim_low = int(round(result.get('response')['estimation_final_lower_bound'],-4))
     estim_high = int(round(result.get('response')['estimation_final_higher_bound'],-4))
     
-    return 'Your property is worth between ',str("{:,}".format(estim_low)),'€ and ',str("{:,}".format(estim_high)),'€'
-
+    text1 = 'Your property is worth between ' + str("{:,}".format(estim_low)) + '€ and ' + str("{:,}".format(estim_high)) + '€'
+    text2 = 'test'
+    
+    return text1,text2
