@@ -5,6 +5,8 @@ from dash.dependencies import Input, Output, State
 from dash import Dash, dash_table, html, dcc
 import base64
 import os
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 
 client = dataikuapi.APINodeClient("http://localhost:12000/", "full_real_estate")
 
@@ -19,6 +21,9 @@ year = 0
 images_folder = dataiku.Folder("OMmeZS75")
 estimate_logo = os.path.join(images_folder.get_path(), "estimate.png")
 estimate_logo_encoded = base64.b64encode(open(estimate_logo, 'rb').read()) 
+
+mydataset = dataiku.Dataset("transactions_by_iris_code_year_windows_prepared")
+df = mydataset.get_dataframe()
 
 
 # DEFINE STYLES
@@ -232,9 +237,6 @@ app.layout = html.Div(
 
 def output_function(n_clicks,input1,input2,input3,input4,input5):
     
-    
-
-    
 
     result = client.run_function("full",
             address = input1,
@@ -249,4 +251,46 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     text1 = 'Your property is worth between ' + str("{:,}".format(estim_low)) + '€ and ' + str("{:,}".format(estim_high)) + '€'
     text2 = 'test'
     
-    return text1,text2
+    df_filtered = df[df['iris_code']==751093503]
+
+    iris_code_name = df_filtered.iloc[0]['NOM_IRIS_first']
+
+    # Create figure with secondary y-axis
+    fig = make_subplots(specs=[[{"secondary_y": True}]])
+
+    fig.add_trace(
+        go.Scatter(
+            x=df_filtered['date_mutation_year'],
+            y=df_filtered['prix_m2_not_null_avg'],
+            name="Average m2 price",
+            marker = {'color' : 'black'},
+        ),
+        secondary_y=True,
+    )
+
+    fig.add_trace(
+        go.Bar(
+            x=df_filtered['date_mutation_year'],
+            y=df_filtered['count'],
+            name="Transactions count",
+            marker = {'color' : '#00B2A9'},
+        ),
+        secondary_y=False,
+    )
+
+
+    # Add figure title
+    fig.update_layout(
+        title_text="Transactions count and Average m2 price evolution in zone <b>"+iris_code_name+"</b>",
+        plot_bgcolor='rgba(0,0,0,0)',
+    )
+
+    # Set x-axis title
+    fig.update_xaxes(title_text="Year")
+
+    # Set y-axes titles
+    fig.update_yaxes(title_text="Average m2 price", secondary_y=False)
+    fig.update_yaxes(title_text="Transactions count", secondary_y=True)
+    
+    
+    return text1,fig
