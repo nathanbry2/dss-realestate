@@ -205,7 +205,8 @@ app.layout = html.Div(
                         'font-weight':'bold',
                         'text-align':'center',                        
                     }
-                ),
+                ),html.Br(),html.Br(),
+                html.Div(id='output2',)
             ]
         )
         
