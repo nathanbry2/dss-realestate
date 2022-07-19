@@ -211,7 +211,7 @@ app.layout = html.Div(
                         'text-align':'center',                        
                     }
                 ),html.Br(),html.Br(),
-                html.Span(id='output2'),
+                html.Div(id='output2'),
             ]
         )
         
@@ -293,4 +293,4 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     fig.update_yaxes(title_text="Transactions count", secondary_y=True)
     
     
-    return text1,fig
+    return text1, dcc.Graph(figure=fig)
