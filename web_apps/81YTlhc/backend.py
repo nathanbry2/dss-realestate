@@ -211,7 +211,7 @@ app.layout = html.Div(
                         'text-align':'center',                        
                     }
                 ),html.Br(),html.Br(),
-                dcc.Graph(id="output2")
+                html.Div(id='output2')
             ]
         )
         
