@@ -217,6 +217,13 @@ app.layout = html.Div(
                         'font-weight':'bold',
                         'text-align':'center',                        
                     }
+                ),html.Br(),
+                html.H5(
+                    id='output3',
+                    style = {
+                        'font-weight':'bold',
+                        'text-align':'center',                        
+                    }
                 ),html.Br(),html.Br(),
                 html.Div(id='output3'),
             ]
@@ -235,8 +242,8 @@ app.layout = html.Div(
 @app.callback(
     Output('output', 'children'),
     Output('output2', 'children'),
-    Output('output2','children'),
     Output('output3','children'),
+    Output('output4','children'),
     Input('submit', 'n_clicks'),
     State('input1', 'value'),
     State('input2', 'value'),
