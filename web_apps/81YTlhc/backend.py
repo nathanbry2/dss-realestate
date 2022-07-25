@@ -235,6 +235,7 @@ app.layout = html.Div(
 @app.callback(
     Output('output', 'children'),
     Output('output2', 'children'),
+    Output('output2','children'),
     Output('output3','children'),
     Input('submit', 'n_clicks'),
     State('input1', 'value'),
@@ -261,8 +262,8 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     df_filtered = df[df['iris_code']==result.get('response')['iris_code']].sort_values(by=['date_mutation_year'])
     iris_code_name = df_filtered.iloc[0]['NOM_IRIS_first']
 
-    
-    text2 = "The average m² price in your area has grown " +  str(round(df_filtered.iloc[-1]['Growth%_7years'])) + "% in the last 7 years, or about " + str(round(df_filtered.iloc[-1]['CAGR%_7years'],1)) + "% per year."
+    text2 = "A few current metrics about your area " + iris_code_name
+    text3 = "The average m² price in your area has grown " +  str(round(df_filtered.iloc[-1]['Growth%_7years'])) + "% in the last 7 years, or about " + str(round(df_filtered.iloc[-1]['CAGR%_7years'],1)) + "% per year."
 
         
         
@@ -304,4 +305,4 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     fig.update_yaxes(title_text="Transactions count", secondary_y=False)
     
     
-    return text1, text2, dcc.Graph(figure=fig)
+    return text1, text2, text3, dcc.Graph(figure=fig)
