@@ -389,9 +389,9 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
                           below='',marker=dict(size=10, color='#221C35',symbol='circle'),               
                           )
     fig.update_layout(margin={"r":10,"t":50,"l":20,"b":20},
-                  title={
-                      'text': "<b>Average m² price (€) in Paris areas - 2021</b>",
-                  })
+                      title={
+                          'text': "<b>Average m² price (€) in Paris areas - 2021</b>",
+                      })
     #fig2.show()
     
     
