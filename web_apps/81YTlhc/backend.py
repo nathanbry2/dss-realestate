@@ -7,6 +7,10 @@ import base64
 import os
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
+import plotly.express as px
+from utils_functions import convert_df_to_geojson
+
+
 
 client = dataikuapi.APINodeClient("http://localhost:12000/", "full_real_estate")
 
@@ -246,7 +250,8 @@ app.layout = html.Div(
                         'text-align':'center',                        
                     }
                 ),html.Br(),html.Br(),
-                html.Div(id='output7'),
+                html.Div(id='output7'),html.Br(),html.Br(),
+                html.Div(id='output8'),
             ]
         )
         
@@ -268,6 +273,7 @@ app.layout = html.Div(
     Output('output5','children'),
     Output('output6','children'),
     Output('output7','children'),
+    Output('output8','children'),
     Input('submit', 'n_clicks'),
     State('input1', 'value'),
     State('input2', 'value'),
@@ -299,7 +305,7 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     text5 = "The average m² price in your area is currently " + str(round(df_filtered.iloc[-1]['prix_m2_not_null_avg'])) + "€."
     text6 = "It has grown " +  str(round(df_filtered.iloc[-1]['Growth%_7years'])) + "% in the last 7 years, or about " + str(round(df_filtered.iloc[-1]['CAGR%_7years'],1)) + "% per year."
 
-        
+    ### CREATE PRICE TRANSAC CHART
         
     # Create figure with secondary y-axis
     fig = make_subplots(specs=[[{"secondary_y": True}]])
@@ -339,4 +345,51 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     fig.update_yaxes(title_text="Transactions count", secondary_y=False)
     
     
-    return text1, text2, text3, text4, text5, text6, dcc.Graph(figure=fig)
+    ### CREATE MAP CHART
+    
+    df_filtered2 = df[df['date_mutation_year']==2021].sort_values(by=['date_mutation_year'])
+    geojson = convert_df_to_geojson(df_filtered2[['NOM_IRIS_first','iris_GeoShape_first']], properties=['NOM_IRIS_first'],geo_col = 'iris_GeoShape_first')
+    
+    sub_df = df_filtered2[['NOM_IRIS_first','prix_m2_not_null_avg','surface_m2_not_null_avg','count','Growth%_7years']]
+    sub_df['prix_m2_not_null_avg'] = sub_df['prix_m2_not_null_avg'].astype('int')
+    sub_df['surface_m2_not_null_avg'] = sub_df['surface_m2_not_null_avg'].astype('int')
+    sub_df['Growth%_7years'] = sub_df['Growth%_7years'].round(1)
+    
+    
+
+    fig2 = px.choropleth_mapbox(sub_df, geojson=geojson, locations='NOM_IRIS_first', color='prix_m2_not_null_avg',
+                               color_continuous_scale="rdylgn_r",
+                               range_color=(6000, 16000),
+                               mapbox_style="carto-positron",
+                               zoom=11.25, center = {"lat": 48.8565, "lon": 2.3424},
+                               opacity=0.5,
+                               labels={
+                                   'prix_m2_not_null_avg':'Average m² price (€)',
+                                   'surface_m2_not_null_avg':'Average surface (m²)',
+                                   'NOM_IRIS_first':"Area name",
+                                   'count':"Transactions count",
+                                   'Growth%_7years':"Growth % in last 7 years",
+
+                               },
+                               hover_name='NOM_IRIS_first',
+                               hover_data={
+                                   'NOM_IRIS_first':False,
+                                   'prix_m2_not_null_avg':':,',
+                                   'surface_m2_not_null_avg':True,
+                                   'count':True,
+                                   'Growth%_7years':True,
+                               }
+                              )
+
+
+    fig2.add_scattermapbox(lat = [float(df_filtered.iloc[-1].iris_GeoPoint_first.split(',')[0])],
+                          lon = [float(df_filtered.iloc[-1].iris_GeoPoint_first.split(',')[1])],
+                          mode = 'markers+text',
+                          text = [df_filtered.iloc[-1].NOM_IRIS_first],  #a list of strings, one  for each geographical position  (lon, lat)              
+                          below='',marker=dict(size=10, color='#221C35',symbol='circle'),               
+                          )
+    fig2.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+    fig2.show()
+    
+    
+    return text1, text2, text3, text4, text5, text6, dcc.Graph(figure=fig), dcc.Graph(figure=fig2)
