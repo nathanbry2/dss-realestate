@@ -333,7 +333,7 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
 
     # Add figure title
     fig.update_layout(
-        margin={"r":10,"t":10,"l":10,"b":10},
+        margin={"r":30,"t":10,"l":30,"b":10},
         title_text="Transactions count and Average m2 price evolution in zone <b>"+df_filtered.iloc[0]['NOM_IRIS_first']+"</b>",
         plot_bgcolor='rgba(0,0,0,0)',
     )
