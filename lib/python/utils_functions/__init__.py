@@ -17,7 +17,7 @@ def correct_date(date_column):
 
 
 
-def df_to_geojson(df, properties, geo_col):
+def convert_df_to_geojson(df, properties, geo_col):
     # create a new python dict to contain our geojson data, using geojson format
     geojson = {'type':'FeatureCollection', 'features':[]}
 
