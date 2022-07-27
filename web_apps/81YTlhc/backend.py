@@ -251,8 +251,8 @@ app.layout = html.Div(
                     }
                 ),html.Br(),html.Br(),
                 html.Div(id='output7',style={'height': '250%'}),html.Br(),html.Br(),
-                html.Div(id='output8',style={'width': 'auto','height':'300px','border':'none'}),html.Br(),html.Br(),
-                #
+                #html.Div(id='output8',style={'width': 'auto','height':'300px','border':'none'}),html.Br(),html.Br(),
+                dcc.Graph(id='output8')
             ]
         )
         
@@ -397,4 +397,4 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     #fig2.show()
     
     
-    return text1, text2, text3, text4, text5, text6, dcc.Graph(figure=fig), dcc.Graph(figure=fig2)
+    return text1, text2, text3, text4, text5, text6, dcc.Graph(figure=fig), fig2
