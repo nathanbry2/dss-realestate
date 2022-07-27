@@ -251,7 +251,7 @@ app.layout = html.Div(
                     }
                 ),html.Br(),html.Br(),
                 html.Div(id='output7',style={'height': '250%'}),html.Br(),html.Br(),
-                html.Div(id='output8',style={'width': 'auto','height':'auto'}),html.Br(),html.Br(),
+                html.Div(id='output8',style={'width': 'auto','height':'auto','border':'none'}),html.Br(),html.Br(),
                 #
             ]
         )
