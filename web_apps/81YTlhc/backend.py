@@ -274,7 +274,7 @@ app.layout = html.Div(
     Output('output5','children'),
     Output('output6','children'),
     Output('output7','children'),
-    Output('output8','children'),
+    Output('output8','figure'),
     Input('submit', 'n_clicks'),
     State('input1', 'value'),
     State('input2', 'value'),
