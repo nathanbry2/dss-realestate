@@ -390,9 +390,7 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
                           text = [df_filtered.iloc[-1].NOM_IRIS_first],  #a list of strings, one  for each geographical position  (lon, lat)              
                           below='',marker=dict(size=10, color='#221C35',symbol='circle'),               
                           )
-    fig2.update_layout(autosize=False,
-    width=500,
-    height=500,
+    fig2.update_layout(margin={"r":10,"t":50,"l":20,"b":20},
                       title={
                           'text': "<b>Average m² price (€) in Paris areas - 2021</b>",
                       })
