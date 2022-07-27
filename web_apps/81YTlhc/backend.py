@@ -250,8 +250,8 @@ app.layout = html.Div(
                         'text-align':'center',                        
                     }
                 ),html.Br(),html.Br(),
-                html.Div(id='output7'),html.Br(),html.Br(),
-                html.Div(id='output8',style={'height': '150%'}),html.Br(),html.Br(),
+                html.Div(id='output7',style={'height': '250%'}),html.Br(),html.Br(),
+                html.Div(id='output8',style={'height': '250%'}),html.Br(),html.Br(),
             ]
         )
         
