@@ -252,7 +252,7 @@ app.layout = html.Div(
                 ),html.Br(),html.Br(),
                 html.Div(id='output7',style={'height': '250%'}),html.Br(),html.Br(),
                 #html.Div(id='output8',style={'width': 'auto','height':'300px','border':'none'}),html.Br(),html.Br(),
-                dcc.Graph(id='output8',style={'width': 'auto','height':'1000px','border':'none'})
+                dcc.Graph(id='output8',style={'width': 'auto','height':'800px','border':'none'})
             ]
         )
         
