@@ -115,7 +115,7 @@ app.layout = html.Div(
                         dbc.Input(
                             id="input1",
                             type='text',
-                            value='',
+                            value='17 rue Saulnier',
                             placeholder="Address, e.g. 17 rue Saulnier",
                             size='md',
                             ),html.Br(),
@@ -123,7 +123,7 @@ app.layout = html.Div(
                         dbc.Input(
                             id="input2",
                             type='number',
-                            value='',
+                            value='75009',
                             placeholder="Postal Code, e.g. 75009",
                             size='md',
                             min=75001,
@@ -133,7 +133,7 @@ app.layout = html.Div(
                         dbc.Input(
                             id="input3",
                             type='number',
-                            value='',
+                            value='80',
                             placeholder="Surface (in m²), e.g. 80",
                             size='md',
                             min=1,
@@ -142,7 +142,7 @@ app.layout = html.Div(
                         dbc.Input(
                             id="input4",
                             type='number',
-                            value='',
+                            value='4',
                             placeholder="Number of main rooms, e.g. 4",
                             size='md',
                             min=1
@@ -151,7 +151,7 @@ app.layout = html.Div(
                         dbc.Input(
                             id="input5",
                             type='number',
-                            value='',
+                            value='2021',
                             placeholder="Year, e.g. 2021",
                             size='md',
                             min=2014,
