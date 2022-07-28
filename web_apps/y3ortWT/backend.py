@@ -232,34 +232,8 @@ app.layout = html.Div(
                                         'text-align':'center',                        
                                     }
                                 ),html.Br(),
-                                html.H5(
-                                    id='output3',
-                                    style = {
-                                        'font-weight':'bold',
-                                        'text-align':'center',                        
-                                    }
-                                ),html.Br(),
-                                html.H5(
-                                    id='output4',
-                                    style = {
-                                        'font-weight':'bold',
-                                        'text-align':'center',                        
-                                    }
-                                ),html.Br(),
-                                html.H5(
-                                    id='output5',
-                                    style = {
-                                        'font-weight':'bold',
-                                        'text-align':'center',                        
-                                    }
-                                ),html.Br(),
-                                html.H5(
-                                    id='output6',
-                                    style = {
-                                        'font-weight':'bold',
-                                        'text-align':'center',                        
-                                    }
-                                ),html.Br(),html.Br(),
+                                html.Ul(id='list_output')
+                                html.Br(),html.Br(),
                                 html.Br(),html.Br(),
                                 #html.Div(id='output8',style={'width': 'auto','height':'300px','border':'none'}),html.Br(),html.Br(),
                                 
@@ -316,10 +290,7 @@ app.layout = html.Div(
 @app.callback(
     Output('output', 'children'),
     Output('output2', 'children'),
-    Output('output3','children'),
-    Output('output4','children'),
-    Output('output5','children'),
-    Output('output6','children'),
+    Output('list_output','children'),
     Output('output7','children'),
     Output('output8','figure'),
     Input('submit', 'n_clicks'),
@@ -353,6 +324,8 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     text5 = "The average m² price in your area is currently " + str(round(df_filtered.iloc[-1]['prix_m2_not_null_avg'])) + "€."
     text6 = "It has grown " +  str(round(df_filtered.iloc[-1]['Growth%_7years'])) + "% in the last 7 years, or about " + str(round(df_filtered.iloc[-1]['CAGR%_7years'],1)) + "% per year."
 
+    text_list = [text3,text4,text5,text6]
+    
     ### CREATE PRICE TRANSAC CHART
         
     # Create figure with secondary y-axis
@@ -444,4 +417,4 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     #fig2.show()
     #,style={'width': 'auto','height':'300px','border':'none'}
     
-    return text1, text2, text3, text4, text5, text6, dcc.Graph(figure=fig), fig2
+    return text1, text2, [html.Li(i) for i in text_list], dcc.Graph(figure=fig), fig2
