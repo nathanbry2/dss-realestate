@@ -1,4 +1,6 @@
 import ast
+import plotly.graph_objects as go
+
 
 
 def correct_date(date_column):
@@ -44,3 +46,12 @@ def convert_df_to_geojson(df, properties, geo_col):
         geojson['features'].append(feature)
     
     return geojson
+
+
+def blank_figure():
+    b_fig = go.Figure(go.Scatter(x=[], y = []))
+    b_fig.update_layout(template = None)
+    b_fig.update_xaxes(showgrid = False, showticklabels = False, zeroline=False)
+    b_fig.update_yaxes(showgrid = False, showticklabels = False, zeroline=False)
+    
+    return b_fig
