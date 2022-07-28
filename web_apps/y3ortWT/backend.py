@@ -229,7 +229,9 @@ app.layout = html.Div(
                                     id='output2',
                                     style = {
                                         #'font-weight':'bold',
-                                        'text-align':'center',                        
+                                        'text-align':'center',  
+                                        'font-size': "25px",
+
                                     }
                                 ),html.Br(),
                                 html.Ul(id='list_output',style={
