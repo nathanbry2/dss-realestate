@@ -218,10 +218,10 @@ app.layout = html.Div(
                     [
                         html.Div(
                             [
-                                html.H4(
+                                dcc.Markdown(
                                     id='output',
                                     style = {
-                                        'font-weight':'bold',
+                                        #'font-weight':'bold',
                                         'text-align':'center',                        
                                     }
                                 ),html.Br(),html.Br(),
