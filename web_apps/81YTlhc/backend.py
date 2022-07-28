@@ -8,7 +8,7 @@ import os
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import plotly.express as px
-from utils_functions import convert_df_to_geojson
+from utils_functions import convert_df_to_geojson, blank_figure
 
 
 
@@ -29,13 +29,7 @@ estimate_logo_encoded = base64.b64encode(open(estimate_logo, 'rb').read())
 mydataset = dataiku.Dataset("transactions_by_iris_code_year_windows_prepared")
 df = mydataset.get_dataframe()
 
-def blank_fig():
-    b_fig = go.Figure(go.Scatter(x=[], y = []))
-    b_fig.update_layout(template = None)
-    b_fig.update_xaxes(showgrid = False, showticklabels = False, zeroline=False)
-    b_fig.update_yaxes(showgrid = False, showticklabels = False, zeroline=False)
-    
-    return b_fig
+
 
 
 # DEFINE STYLES
@@ -260,7 +254,7 @@ app.layout = html.Div(
                 ),html.Br(),html.Br(),
                 html.Div(id='output7',style={'height': '250%'}),html.Br(),html.Br(),
                 #html.Div(id='output8',style={'width': 'auto','height':'300px','border':'none'}),html.Br(),html.Br(),
-                dcc.Graph(id='output8',figure = blank_fig(),style={'width': 'auto','height':'650px','border':'none'})
+                dcc.Graph(id='output8',figure = blank_figure(),style={'width': 'auto','height':'650px','border':'none'})
             ]
         )
         
