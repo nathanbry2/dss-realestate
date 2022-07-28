@@ -225,7 +225,7 @@ app.layout = html.Div(
                                         'text-align':'center',                        
                                     }
                                 ),html.Br(),html.Br(),
-                                html.H5(
+                                html.P(
                                     id='output2',
                                     style = {
                                         'font-weight':'bold',
@@ -323,7 +323,7 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     df_filtered = df[df['iris_code']==result.get('response')['iris_code']].sort_values(by=['date_mutation_year'])
     #iris_code_name = df_filtered.iloc[0]['NOM_IRIS_first']
 
-    text2 = "A few current metrics about your area " + df_filtered.iloc[0]['NOM_IRIS_first']
+    text2 = "A few current metrics about your area **" + df_filtered.iloc[0]['NOM_IRIS_first'] + '**:'
     text3 = "On average, there are **" + str(round(df_filtered['count'].mean())) + "** transactions per year in your area"
     text4 = "The average surface in your area is **" + str(round(df_filtered['surface_m2_not_null_avg'].mean())) + 'm²**'
     text5 = "The average m² price in your area is currently **" + str(round(df_filtered.iloc[-1]['prix_m2_not_null_avg'])) + "€**"
