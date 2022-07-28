@@ -208,52 +208,97 @@ app.layout = html.Div(
         
         ),html.Br(),html.Br(),
         
+        
+        
+        
+        dbc.Row(
+            
+            [
+                dbc.Col(
+                    [
+                        html.Div(
+                            [
+                                html.H4(
+                                    id='output',
+                                    style = {
+                                        'font-weight':'bold',
+                                        'text-align':'center',                        
+                                    }
+                                ),html.Br(),html.Br(),
+                                html.H5(
+                                    id='output2',
+                                    style = {
+                                        'font-weight':'bold',
+                                        'text-align':'center',                        
+                                    }
+                                ),html.Br(),
+                                html.H5(
+                                    id='output3',
+                                    style = {
+                                        'font-weight':'bold',
+                                        'text-align':'center',                        
+                                    }
+                                ),html.Br(),
+                                html.H5(
+                                    id='output4',
+                                    style = {
+                                        'font-weight':'bold',
+                                        'text-align':'center',                        
+                                    }
+                                ),html.Br(),
+                                html.H5(
+                                    id='output5',
+                                    style = {
+                                        'font-weight':'bold',
+                                        'text-align':'center',                        
+                                    }
+                                ),html.Br(),
+                                html.H5(
+                                    id='output6',
+                                    style = {
+                                        'font-weight':'bold',
+                                        'text-align':'center',                        
+                                    }
+                                ),html.Br(),html.Br(),
+                                html.Br(),html.Br(),
+                                #html.Div(id='output8',style={'width': 'auto','height':'300px','border':'none'}),html.Br(),html.Br(),
+                                
+                            ]
+                        )
+                    ],
+                    
+                    style = {
+                        'text-align':'center',
+                        "margin-left":"5%",
+                        #"margin-right":"20%",
+                    },
+                
+                ),
+                
+                
+                dbc.Col(
+                    [
+                        html.Div(id='output7')
+                        
+                    ],
+                    style = {
+                        'text-align':'center'
+                    },
+                
+                ),
+                
+            ]
+        
+        
+        )
+        
+        
+        
+        
+        
         html.Div(
             [
-                html.H4(
-                    id='output',
-                    style = {
-                        'font-weight':'bold',
-                        'text-align':'center',                        
-                    }
-                ),html.Br(),html.Br(),
-                html.H5(
-                    id='output2',
-                    style = {
-                        'font-weight':'bold',
-                        'text-align':'center',                        
-                    }
-                ),html.Br(),
-                html.H5(
-                    id='output3',
-                    style = {
-                        'font-weight':'bold',
-                        'text-align':'center',                        
-                    }
-                ),html.Br(),
-                html.H5(
-                    id='output4',
-                    style = {
-                        'font-weight':'bold',
-                        'text-align':'center',                        
-                    }
-                ),html.Br(),
-                html.H5(
-                    id='output5',
-                    style = {
-                        'font-weight':'bold',
-                        'text-align':'center',                        
-                    }
-                ),html.Br(),
-                html.H5(
-                    id='output6',
-                    style = {
-                        'font-weight':'bold',
-                        'text-align':'center',                        
-                    }
-                ),html.Br(),html.Br(),
-                html.Div(id='output7',style={'height': '250%'}),html.Br(),html.Br(),
-                #html.Div(id='output8',style={'width': 'auto','height':'300px','border':'none'}),html.Br(),html.Br(),
+                html.Br(),html.Br(),
                 dcc.Graph(id='output8',figure = blank_figure(),style={'width': 'auto','height':'650px','border':'none'})
             ]
         )
