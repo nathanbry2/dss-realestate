@@ -230,7 +230,7 @@ app.layout = html.Div(
                                     style = {
                                         #'font-weight':'bold',
                                         'text-align':'center',  
-                                        'font-size': "25px",
+                                        'font-size': "20px",
 
                                     }
                                 ),html.Br(),
