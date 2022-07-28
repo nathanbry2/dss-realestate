@@ -230,14 +230,14 @@ app.layout = html.Div(
                                     style = {
                                         #'font-weight':'bold',
                                         'text-align':'center',  
-                                        'font-size': "20px",
+                                        'font-size': "22px",
 
                                     }
                                 ),html.Br(),
                                 html.Ul(id='list_output',style={
                                     "display": "grid",
                                     'gap': "15px",
-                                    'font-size': "18px",
+                                    'font-size': "20px",
                                     'justify-content': 'center'}),
                                 html.Br(),html.Br(),
                                 html.Br(),html.Br(),
