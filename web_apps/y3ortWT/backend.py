@@ -225,7 +225,7 @@ app.layout = html.Div(
                                         'text-align':'center',                        
                                     }
                                 ),html.Br(),html.Br(),
-                                html.P(
+                                dcc.Markdown(
                                     id='output2',
                                     style = {
                                         'font-weight':'bold',
