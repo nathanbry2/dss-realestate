@@ -281,8 +281,8 @@ app.layout = html.Div(
         html.Div(
             [
                 
-                dcc.Graph(id='output8',figure = blank_figure(),style={'width': '1200px','height':'650px','border':'none','text-align':'center'})
-            ]
+                dcc.Graph(id='output8',figure = blank_figure(),style={'width': '1200px','height':'650px','border':'none',})
+            ],style={'text-align':'center'}
         )
         
         
