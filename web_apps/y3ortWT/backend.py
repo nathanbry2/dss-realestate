@@ -232,7 +232,7 @@ app.layout = html.Div(
                                         'text-align':'center',                        
                                     }
                                 ),html.Br(),
-                                html.Ul(id='list_output')
+                                html.Ul(id='list_output'),
                                 html.Br(),html.Br(),
                                 html.Br(),html.Br(),
                                 #html.Div(id='output8',style={'width': 'auto','height':'300px','border':'none'}),html.Br(),html.Br(),
