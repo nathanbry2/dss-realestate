@@ -248,8 +248,7 @@ app.layout = html.Div(
                         #'text-align':'center',
                         #"margin-left":"5%",
                         #"margin-right":"20%",
-                        'display':'inline-block'
-                        
+                        'justify-content': 'center'
                     },
                 
                 ),
