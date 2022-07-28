@@ -221,8 +221,9 @@ app.layout = html.Div(
                                 dcc.Markdown(
                                     id='output',
                                     style = {
-                                        #'font-weight':'bold',
-                                        'text-align':'center',                        
+                                        'font-weight':'bold',
+                                        'text-align':'center',  
+                                        'font-size': "25px",
                                     }
                                 ),html.Br(),html.Br(),
                                 dcc.Markdown(
@@ -320,7 +321,7 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     estim_low = int(round(result.get('response')['estimation_final_lower_bound'],-4))
     estim_high = int(round(result.get('response')['estimation_final_higher_bound'],-4))
     
-    text1 = 'Your property is worth between ' + str("{:,}".format(estim_low)) + '€ and ' + str("{:,}".format(estim_high)) + '€'
+    text1 = 'Your property is worth between **' + str("{:,}".format(estim_low)) + '€** and **' + str("{:,}".format(estim_high)) + '€**'
     
     df_filtered = df[df['iris_code']==result.get('response')['iris_code']].sort_values(by=['date_mutation_year'])
     #iris_code_name = df_filtered.iloc[0]['NOM_IRIS_first']
