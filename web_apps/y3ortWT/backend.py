@@ -360,7 +360,7 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     # Add figure title
     fig.update_layout(
         margin={"r":30,"t":50,"l":30,"b":0},
-        title_text="Transactions count and Average m2 price evolution in zone <b>"+df_filtered.iloc[0]['NOM_IRIS_first']+"</b>",
+        title_text="<i>Transactions Count</i> and <i>Average m² Price</i> evolution in zone <b>"+df_filtered.iloc[0]['NOM_IRIS_first']+"</b>",
         plot_bgcolor='rgba(0,0,0,0)',
     )
 
@@ -368,7 +368,7 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     fig.update_xaxes(title_text="<b>Year</b>")
 
     # Set y-axes titles
-    fig.update_yaxes(title_text="<b>Average m2 price</b>", secondary_y=True,ticksuffix='€')
+    fig.update_yaxes(title_text="<b>Average m² price</b>", secondary_y=True,ticksuffix='€')
     fig.update_yaxes(title_text="<b>Transactions count</b>", secondary_y=False)
     
     
