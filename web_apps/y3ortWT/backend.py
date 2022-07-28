@@ -233,7 +233,7 @@ app.layout = html.Div(
                                     }
                                 ),html.Br(),
                                 html.Ul(id='list_output',style={
-                                    #"display": "grid",
+                                    "display": "grid",
                                     'gap': "15px"}),
                                 html.Br(),html.Br(),
                                 html.Br(),html.Br(),
