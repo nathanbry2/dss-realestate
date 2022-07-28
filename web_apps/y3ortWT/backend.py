@@ -236,7 +236,7 @@ app.layout = html.Div(
                                     }
                                 ),html.Br(),
                                 html.Ul(id='list_output',style={
-                                    "display": "block",
+                                    "display": "inline",
                                     'gap': "15px",
                                     'font-size': "20px",
                                     'justify-content': 'center'}),
