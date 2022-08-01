@@ -104,6 +104,7 @@ app.layout = html.Div(
                 'backgroundColor':'#DDE5ED',
                 'display': 'flex',
                 'align-items': 'center',
+                'justify-content': 'center',
            }
         ),
         html.Div(
