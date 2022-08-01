@@ -86,9 +86,7 @@ app.layout = html.Div(
                     style={
                         'width':'10%',
                         'height': 'auto',
-                        'margin-right': 'auto',
-                        'margin-left': '2%'
-                    }
+                        'margin-right': 'auto',                    }
                 ),
                 html.H2(
                     children='Dataiku Real Estate Estimator 🏡',
@@ -96,13 +94,7 @@ app.layout = html.Div(
                         #'backgroundColor': title_style['background'],
                         'color': title_style['text'],
                         'font-weight':'bold',
-                        'width': '100vw',
-                        'height': 100,
-                        'padding': 20,
-                        'position': 'absolute',
-                        'top': '50%',
-                        'left': 50,
-                        'margin': '-70px 0 0 -170px',
+                        'margin': 'auto',
                     }
                 )
             ],
