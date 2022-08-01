@@ -94,13 +94,14 @@ app.layout = html.Div(
                         #'backgroundColor': title_style['background'],
                         'color': title_style['text'],
                         'textAlign': 'center',
-                        'font-weight':'bold'
+                        'font-weight':'bold',
+                        'verticalAlign': 'top',
                     }
                 )
             ],
             style={
                 'backgroundColor':'#D9D8D6',
-                'verticalAlign': 'top',
+                
            }
         ),
         html.Div(
