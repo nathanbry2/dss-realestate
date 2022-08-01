@@ -87,7 +87,7 @@ app.layout = html.Div(
                         'width':'40%',
                         'height':'40%',
                     }
-                )
+                ),
                 html.H2(
                     children='Dataiku Real Estate Estimator 🏡',
                     style={
