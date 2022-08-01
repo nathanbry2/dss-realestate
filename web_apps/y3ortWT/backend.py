@@ -103,7 +103,6 @@ app.layout = html.Div(
             style={
                 'backgroundColor':'#D9D8D6',
                 'align-items': 'center',
-                'display': 'flex'
                 
                 
            }
