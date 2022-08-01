@@ -99,7 +99,7 @@ app.layout = html.Div(
                         'width': '100vw',
                         'height': 100,
                         'padding': 20,
-                        'position: absolute',
+                        'position': 'absolute',
                         'top': '50%',
                         'left': 50,
                         'margin': '-70px 0 0 -170px',
