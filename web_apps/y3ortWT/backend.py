@@ -76,7 +76,19 @@ submit_output_style = {
 
 app.layout = html.Div(
     [
-        html.Div(style={'backgroundColor':'#D9D8D6'}),
+        html.Div(
+            children=[
+                html.H2(
+                    children='Dataiku Real Estate Estimator 🏡',
+                    style={
+                        #'backgroundColor': title_style['background'],
+                        'color': title_style['text'],
+                        'textAlign': 'center',
+                        'font-weight':'bold'
+                        }
+                    )
+            ],
+            style={'backgroundColor':'#D9D8D6'}),
         html.Div(
             style={
                 'backgroundColor': main_style['background'],
