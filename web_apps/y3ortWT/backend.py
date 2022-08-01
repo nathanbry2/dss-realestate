@@ -86,7 +86,6 @@ app.layout = html.Div(
                     style={
                         'width':'10%',
                         'height':'10%',
-                        'text-align':'center'
                     }
                 ),
                 html.H2(
@@ -96,12 +95,12 @@ app.layout = html.Div(
                         'color': title_style['text'],
                         'textAlign': 'center',
                         'font-weight':'bold',
-                        'verticalAlign': 'top',
                     }
                 )
             ],
             style={
                 'backgroundColor':'#D9D8D6',
+                'text-align':'center'
                 
            }
         ),
