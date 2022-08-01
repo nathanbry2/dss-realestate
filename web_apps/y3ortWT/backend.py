@@ -101,7 +101,7 @@ app.layout = html.Div(
                 )
             ],
             style={
-                'backgroundColor':'#DDE5ED',
+                'backgroundColor':'#F5F5F5',
                 'align-items': 'center',
                 
                 
