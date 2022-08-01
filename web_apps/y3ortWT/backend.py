@@ -25,6 +25,9 @@ year = 0
 images_folder = dataiku.Folder("OMmeZS75")
 estimate_logo = os.path.join(images_folder.get_path(), "estimate.png")
 estimate_logo_encoded = base64.b64encode(open(estimate_logo, 'rb').read()) 
+dataiku_logo = os.path.join(images_folder.get_path(), "Dataiku_logo_teal.png")
+dataiku_logo_encoded = base64.b64encode(open(dataiku_logo, 'rb').read()) 
+
 
 mydataset = dataiku.Dataset("transactions_by_iris_code_year_windows_prepared")
 df = mydataset.get_dataframe()
@@ -78,6 +81,13 @@ app.layout = html.Div(
     [
         html.Div(
             children=[
+                html.Img(
+                    src='data:image/png;base64,{}'.format(dataiku_logo_encoded.decode()),         
+                    style={
+                        'width':'40%',
+                        'height':'40%',
+                    }
+                )
                 html.H2(
                     children='Dataiku Real Estate Estimator 🏡',
                     style={
@@ -85,8 +95,8 @@ app.layout = html.Div(
                         'color': title_style['text'],
                         'textAlign': 'center',
                         'font-weight':'bold'
-                        }
-                    )
+                    }
+                )
             ],
             style={'backgroundColor':'#D9D8D6'}),
         html.Div(
