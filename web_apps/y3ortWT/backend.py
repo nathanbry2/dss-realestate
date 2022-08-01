@@ -98,7 +98,11 @@ app.layout = html.Div(
                     }
                 )
             ],
-            style={'backgroundColor':'#D9D8D6'}),
+            style={
+                'backgroundColor':'#D9D8D6',
+                'verticalAlign': 'top',
+           }
+        ),
         html.Div(
             style={
                 'backgroundColor': main_style['background'],
