@@ -86,8 +86,6 @@ app.layout = html.Div(
                     style={
                         'width':'10%',
                         'height': 'auto',
-                        'textAlign': 'left',
-                        'float': 'left',
 
                     }
                 ),
