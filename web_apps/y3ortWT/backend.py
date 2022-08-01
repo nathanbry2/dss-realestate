@@ -86,6 +86,8 @@ app.layout = html.Div(
                     style={
                         'width':'10%',
                         'height':'10%',
+                        'textAlign': 'left',
+
                     }
                 ),
                 html.H2(
