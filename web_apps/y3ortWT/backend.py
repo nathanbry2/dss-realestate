@@ -104,7 +104,8 @@ app.layout = html.Div(
                 'display': 'flex',
                 'align-items': 'center',
                 'justify-content': 'center',
-                  'position': 'relative',
+                 'position': 'relative',
+                'height': '100px',
 
            }
         ),
