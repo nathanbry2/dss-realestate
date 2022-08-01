@@ -76,6 +76,7 @@ submit_output_style = {
 
 app.layout = html.Div(
     [
+        html.Div(style={'background':'#D9D8D6'}),
         html.Div(
             style={
                 'backgroundColor': main_style['background'],
