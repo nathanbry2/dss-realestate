@@ -97,6 +97,8 @@ app.layout = html.Div(
                         'color': title_style['text'],
                         'text-align': 'center',
                         'font-weight':'bold',
+                        'margin-left': 'auto',
+                        'margin-right': 'auto',
                     }
                 )
             ],
