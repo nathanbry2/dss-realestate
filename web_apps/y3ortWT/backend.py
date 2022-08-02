@@ -417,7 +417,7 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
             marker = {'color' : 'black'},
             hovertemplate =
             '<b>Year</b>: %{x}'+
-            '<br><b>Average m² price</b>: %{y:,}'+'€<br>',
+            '<br><b>Average m² price</b>: %{y:,}'+'€<extra></extra>',
         ),
         secondary_y=True,
     )
@@ -430,7 +430,7 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
             marker = {'color' : '#00B2A9'},
             hovertemplate =
             '<b>Year</b>: %{x}'+
-            '<br><b>Transactions count</b>: %{y}<br>',
+            '<br><b>Transactions count</b>: %{y}<extra></extra>',
         ),
         secondary_y=False,
     )
