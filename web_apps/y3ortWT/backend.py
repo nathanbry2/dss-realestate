@@ -321,6 +321,29 @@ app.layout = html.Div(
             }
         ),html.Br(),html.Br(),html.Br(),
         
+        html.Div(
+            children=[
+                html.H1(
+                    children='Made with ♡ by Dataiku',
+                    style={
+                        #'backgroundColor': title_style['background'],
+                        'color': title_style['text'],
+                        'font-weight':'bold',
+                        'margin': 'auto',
+                        'padding-right': '12%',
+                    }
+                )
+            ],
+            style={
+                'backgroundColor':'#DDE5ED',
+                'display': 'flex',
+                'align-items': 'center',
+                'justify-content': 'center',
+                'height': '80px',
+
+           }
+        ),
+        
         
         
         
