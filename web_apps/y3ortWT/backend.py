@@ -340,7 +340,7 @@ app.layout = html.Div(
                 'display': 'flex',
                 'align-items': 'center',
                 'justify-content': 'center',
-                'height': '60px',
+                'height': '80px',
 
            }
         ),
