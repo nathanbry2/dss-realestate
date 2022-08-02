@@ -304,12 +304,22 @@ app.layout = html.Div(
         
         html.Div(
             [
-                
-                dcc.Graph(id='output8',figure = blank_figure(),style={'width': '1400px','height':'650px','border':'none',})
-            ],style={'text-align':'center',
-                     "margin-left":"11%",
-                     "margin-right":"10%",}
-        )
+                dcc.Graph(
+                    id='output8',
+                    figure = blank_figure(),
+                    style={
+                        'width': '1400px',
+                        'height':'650px',
+                        'border':'none',
+                    }
+                )
+            ],
+            style={
+                'text-align':'center',
+                "margin-left":"11%",
+                "margin-right":"10%",
+            }
+        ),html.Br(),html.Br(),html.Br(),
         
         
         
