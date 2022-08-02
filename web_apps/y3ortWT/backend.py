@@ -326,7 +326,13 @@ app.layout = html.Div(
                 html.P(
                     children=[
                         'Made with ♡ by ',
-                        html.A(children='Dataiku',href='https://www.dataiku.com/')
+                        html.A(
+                            children='Dataiku',
+                            href='https://www.dataiku.com/',
+                            style={
+                                'font-weight':'bold',
+                            }
+                        )
                     ],
                     style={
                         #'backgroundColor': title_style['background'],
