@@ -118,7 +118,7 @@ app.layout = html.Div(
                 
                 html.Br(),html.Br(),
                 html.Div(
-                    html.H4(
+                    html.H3(
                         children='Welcome to the Dataiku Real Estate Estimator! Follow the instructions to have an estimation of how much your property is worth 💰',
                         style={
                             #'backgroundColor': desc_style['background'],
