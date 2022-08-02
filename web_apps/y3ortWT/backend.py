@@ -153,7 +153,7 @@ app.layout = html.Div(
                             size='lg',
                             min=75001,
                             max=75020,
-                            ),html.Br(),
+                            ),html.Br(),html.Br(),
                         
                         dbc.Input(
                             id="input3",
