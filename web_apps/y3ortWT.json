@@ -2,7 +2,7 @@
   "type": "DASH",
   "hasLegacyBackendURL": false,
   "params": {
-    "autoStartBackend": false,
+    "autoStartBackend": true,
     "envSelection": {
       "envMode": "EXPLICIT_ENV",
       "envName": "WebAppNew"
@@ -34,11 +34,11 @@
   "config": {},
   "name": "v3",
   "versionTag": {
-    "versionNumber": 163,
+    "versionNumber": 164,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1659431275494
+    "lastModifiedOn": 1659431290391
   },
   "creationTag": {
     "versionNumber": 0,
