@@ -115,17 +115,7 @@ app.layout = html.Div(
                 'font-family': main_style['font-family']
             },
             children=[
-                html.Div(
-                    html.H2(
-                        children='Dataiku Real Estate Estimator 🏡',
-                        style={
-                            #'backgroundColor': title_style['background'],
-                            'color': title_style['text'],
-                            'textAlign': 'center',
-                            'font-weight':'bold'
-                        }
-                    )
-                ),html.Br(),
+                
                 
                 html.Div(
                     html.H4(
