@@ -331,6 +331,7 @@ app.layout = html.Div(
                             href='https://www.dataiku.com/',
                             style={
                                 'font-weight':'bold',
+                                "text-decoration": "none"
                             }
                         )
                     ],
