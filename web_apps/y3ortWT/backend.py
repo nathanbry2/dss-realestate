@@ -399,7 +399,7 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     text2 = "📍 A few current metrics about your area **" + df_filtered.iloc[0]['NOM_IRIS_first'] + '**:'
     text3 = "🤝 On average, there are **" + str(round(df_filtered['count'].mean())) + "** transactions per year in your area 🤝"
     text4 = "📐 The average surface in your area is **" + str(round(df_filtered['surface_m2_not_null_avg'].mean())) + 'm² 📐**'
-    text5 = "💵 The average m² price in your area is currently **" + "{:,}".format(str(round(df_filtered.iloc[-1]['prix_m2_not_null_avg']))) + "€ 💵**"
+    text5 = "💵 The average m² price in your area is currently **" + str("{:,}".format(str(round(df_filtered.iloc[-1]['prix_m2_not_null_avg'])))) + "€ 💵**"
     text6 = "📈 It has grown **" +  str(round(df_filtered.iloc[-1]['Growth%_7years'])) + "%** in the last 7 years, or about **" + str(round(df_filtered.iloc[-1]['CAGR%_7years'],1)) + "%** per year 📈"
 
     text_list = [text3,text4,text5,text6]
