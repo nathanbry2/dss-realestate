@@ -324,7 +324,10 @@ app.layout = html.Div(
         html.Div(
             children=[
                 html.P(
-                    children='Made with ♡ by Dataiku',
+                    children=[
+                        'Made with ♡ by Dataiku',
+                        html.Link('Dataiku',href='https://www.dataiku.com/')
+                    ]
                     style={
                         #'backgroundColor': title_style['background'],
                         'color': title_style['text'],
