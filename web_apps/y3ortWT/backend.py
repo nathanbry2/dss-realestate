@@ -150,7 +150,7 @@ app.layout = html.Div(
                             type='number',
                             value='75009',
                             placeholder="Postal Code, e.g. 75009",
-                            size='md',
+                            size='lg',
                             min=75001,
                             max=75020,
                             ),html.Br(),
@@ -160,7 +160,7 @@ app.layout = html.Div(
                             type='number',
                             value='80',
                             placeholder="Surface (in m²), e.g. 80",
-                            size='md',
+                            size='lg',
                             min=1,
                             ),html.Br(),
                         
@@ -169,7 +169,7 @@ app.layout = html.Div(
                             type='number',
                             value='4',
                             placeholder="Number of main rooms, e.g. 4",
-                            size='md',
+                            size='lg',
                             min=1
                             ),html.Br(),
                         
@@ -178,7 +178,7 @@ app.layout = html.Div(
                             type='number',
                             value='2021',
                             placeholder="Year, e.g. 2021",
-                            size='md',
+                            size='lg',
                             min=2014,
                             max=2021,
                             )
