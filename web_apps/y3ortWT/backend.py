@@ -217,7 +217,7 @@ app.layout = html.Div(
                                 #"margin-left":"40%",
                                 #"margin-right":"40%",
                             }
-                        ),html.Br(),html.Br(),html.Br(),
+                        ),
                         
                     ],
                     style = {
