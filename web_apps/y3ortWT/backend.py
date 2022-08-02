@@ -323,7 +323,7 @@ app.layout = html.Div(
         
         html.Div(
             children=[
-                html.H5(
+                html.H6(
                     children='Made with ♡ by Dataiku',
                     style={
                         #'backgroundColor': title_style['background'],
@@ -339,7 +339,7 @@ app.layout = html.Div(
                 'display': 'flex',
                 'align-items': 'center',
                 'justify-content': 'center',
-                'height': '80px',
+                'height': '40px',
 
            }
         ),
