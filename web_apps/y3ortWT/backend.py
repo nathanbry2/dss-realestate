@@ -330,7 +330,7 @@ app.layout = html.Div(
                         'color': title_style['text'],
                         #'font-weight':'bold',
                         'margin': 'auto',
-                        'fontSize': '26px',
+                        'font-size': '26px',
                         
                     }
                 )
