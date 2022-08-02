@@ -323,7 +323,7 @@ app.layout = html.Div(
         
         html.Div(
             children=[
-                dcc.Markdown(
+                html.P(
                     children='Made with ♡ by Dataiku',
                     style={
                         #'backgroundColor': title_style['background'],
