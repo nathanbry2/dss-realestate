@@ -470,12 +470,11 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
                                zoom=11.25, center = {"lat": 48.8565, "lon": 2.3424},
                                opacity=0.5,
                                labels={
-                                   'prix_m2_not_null_avg':'Average m² price (€)',
-                                   'surface_m2_not_null_avg':'Average surface (m²)',
-                                   'NOM_IRIS_first':"Area name",
-                                   'count':"Transactions count",
-                                   'Growth%_7years':"Growth % in last 7 years",
-
+                                   'prix_m2_not_null_avg':'<b>Average m² price (€)</b>',
+                                   'surface_m2_not_null_avg':'<b>Average surface (m²)</b>',
+                                   'NOM_IRIS_first':"<b>Area name</b>",
+                                   'count':"<b>Transactions count</b>",
+                                   'Growth%_7years':"<b>Growth % in last 7 years</b>",
                                },
                                hover_name='NOM_IRIS_first',
                                hover_data={
@@ -491,7 +490,7 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     fig2.add_scattermapbox(lat = [float(df_filtered.iloc[-1].iris_GeoPoint_first.split(',')[0])],
                           lon = [float(df_filtered.iloc[-1].iris_GeoPoint_first.split(',')[1])],
                           mode = 'markers+text',
-                          text = ["<b>"+df_filtered.iloc[-1].NOM_IRIS_first+"</b>"],  #a list of strings, one  for each geographical position  (lon, lat)              
+                          text = ["<b>Your area: "+df_filtered.iloc[-1].NOM_IRIS_first+"</b>"],  #a list of strings, one  for each geographical position  (lon, lat)              
                           below='',
                           marker=dict(size=10, color='#221C35',symbol='circle'),
                           hovertemplate='%{text}'          
