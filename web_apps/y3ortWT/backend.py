@@ -325,7 +325,7 @@ app.layout = html.Div(
             children=[
                 html.P(
                     children=[
-                        'Made with ♡ by Dataiku',
+                        'Made with ♡ by ',
                         html.A(children='Dataiku',href='https://www.dataiku.com/')
                     ],
                     style={
