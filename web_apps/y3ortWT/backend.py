@@ -413,8 +413,11 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
         go.Scatter(
             x=df_filtered['date_mutation_year'],
             y=df_filtered['prix_m2_not_null_avg'].round(0),
-            name="Average m2 price",
+            name="Average m² price",
             marker = {'color' : 'black'},
+            hovertemplate =
+            '<b>Year</b>: %{x}'+
+            '<br><b>Average m² price</b>: %{y:,}'+'€<br>',
         ),
         secondary_y=True,
     )
@@ -425,6 +428,9 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
             y=df_filtered['count'],
             name="Transactions count",
             marker = {'color' : '#00B2A9'},
+            hovertemplate =
+            '<b>Year</b>: %{x}'+
+            '<br><b>Transactions count</b>: %{y}<br>',
         ),
         secondary_y=False,
     )
