@@ -116,7 +116,7 @@ app.layout = html.Div(
             },
             children=[
                 
-                
+                html.Br(),html.Br(),
                 html.Div(
                     html.H4(
                         children='Welcome to the Dataiku Real Estate Estimator! Follow the instructions to have an estimation of how much your property is worth 💰',
