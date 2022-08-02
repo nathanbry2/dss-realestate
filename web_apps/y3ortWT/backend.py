@@ -491,8 +491,10 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     fig2.add_scattermapbox(lat = [float(df_filtered.iloc[-1].iris_GeoPoint_first.split(',')[0])],
                           lon = [float(df_filtered.iloc[-1].iris_GeoPoint_first.split(',')[1])],
                           mode = 'markers+text',
-                          text = [df_filtered.iloc[-1].NOM_IRIS_first],  #a list of strings, one  for each geographical position  (lon, lat)              
-                          below='',marker=dict(size=10, color='#221C35',symbol='circle'),               
+                          text = ["<b>"+df_filtered.iloc[-1].NOM_IRIS_first+"</b>"],  #a list of strings, one  for each geographical position  (lon, lat)              
+                          below='',
+                          marker=dict(size=10, color='#221C35',symbol='circle'),
+                          hovertemplate='%{text}'          
                           )
     fig2.update_layout(margin={"r":10,"t":50,"l":20,"b":20},
                       title={
