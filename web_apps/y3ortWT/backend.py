@@ -278,6 +278,7 @@ app.layout = html.Div(
                         #"margin-right":"20%",
                        
                     },
+                    width=5
                 
                 ),
                 
@@ -290,6 +291,7 @@ app.layout = html.Div(
                     style = {
                         'text-align':'center'
                     },
+                    width=6
                 
                 ),
                 
