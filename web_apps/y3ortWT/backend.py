@@ -274,7 +274,7 @@ app.layout = html.Div(
                     
                     style = {
                         #'text-align':'center',
-                        #"margin-left":"5%",
+                        "margin-left":"5%",
                         #"margin-right":"20%",
                        
                     },
@@ -289,7 +289,8 @@ app.layout = html.Div(
                         
                     ],
                     style = {
-                        'text-align':'center'
+                        'text-align':'center',
+                        'margin-left':'5%'
                     },
                     width=6
                   
