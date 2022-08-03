@@ -291,7 +291,9 @@ app.layout = html.Div(
                     style = {
                         'text-align':'center'
                     },
-                    width=6
+                    width=6,
+                    offset=1
+                  
                 
                 ),
                 
