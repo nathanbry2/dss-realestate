@@ -290,7 +290,7 @@ app.layout = html.Div(
                     ],
                     style = {
                         'text-align':'center',
-                        'margin-left':'2%'
+                        'margin-left':'3%'
                     },
                     width=6
                   
