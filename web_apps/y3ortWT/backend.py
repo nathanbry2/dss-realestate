@@ -209,7 +209,8 @@ app.layout = html.Div(
                             ), 
                             id="submit",
                             n_clicks=0,
-                            color='secondary',
+                            #color='secondary',
+                            color=title_style['text'],
                             outline=True,
                             style = {
                                 'width':'40%',
