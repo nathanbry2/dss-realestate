@@ -153,6 +153,12 @@ app.layout = html.Div(
                             size='lg',
                             min=75001,
                             max=75020,
+                            style = {
+                                #"margin-left":"40%",
+                                #"margin-right":"40%",
+                                #'background-color': '#00B2A9',
+                                'border-color':'#00B2A9',
+                            }
                             ),html.Br(),html.Br(),
                         
                         dbc.Input(
