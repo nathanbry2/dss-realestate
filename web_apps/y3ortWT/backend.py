@@ -209,8 +209,8 @@ app.layout = html.Div(
                             ), 
                             id="submit",
                             n_clicks=0,
-                            color='info',
-                            #color='#00B2A9',
+                            #color='info',
+                            color='#00B2A9',
                             outline=False,
                             style = {
                                 'width':'40%',
