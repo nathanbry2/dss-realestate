@@ -195,11 +195,7 @@ app.layout = html.Div(
                 
                 dbc.Col(
                     children = [
-                        html.Br(),html.Br(),html.Br(),
-                        '''html.H4(
-                            children='Click logo to get an estimation 🔽',
-                        )'''
-                        ,html.Br(),html.Br(),
+                        html.Br(),html.Br(),html.Br(),html.Br(),html.Br(),
                         dbc.Button(html.H3(
                             children='Estimate my property 📊',
                             style={
