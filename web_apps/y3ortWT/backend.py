@@ -199,7 +199,7 @@ app.layout = html.Div(
                         html.H4(
                             children='Click logo to get an estimation 🔽',
                         ),html.Br(),html.Br(),
-                        dbc.Button(html.H4(
+                        dbc.Button(html.H3(
                             children='Estimate my property 📊',
                             style={
                                 'color': title_style['text'],
