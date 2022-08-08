@@ -212,8 +212,8 @@ app.layout = html.Div(
                             color='secondary',
                             outline=True,
                             style = {
-                                'width':'60%',
-                                'height':'auto',
+                                #'width':'60%',
+                                #'height':'auto',
                                 'text-align':'center',
                                 #"margin-left":"40%",
                                 #"margin-right":"40%",
