@@ -23,7 +23,7 @@ nb_main_rooms = 0
 year = 0
 
 images_folder = dataiku.Folder("OMmeZS75")
-estimate_logo = os.path.join(images_folder.get_path(), "estimate_white.png")
+estimate_logo = os.path.join(images_folder.get_path(), "estimate_blue.png")
 estimate_logo_encoded = base64.b64encode(open(estimate_logo, 'rb').read()) 
 dataiku_logo = os.path.join(images_folder.get_path(), "Dataiku_logo_teal.png")
 dataiku_logo_encoded = base64.b64encode(open(dataiku_logo, 'rb').read()) 
@@ -209,16 +209,16 @@ app.layout = html.Div(
                             ), 
                             id="submit",
                             n_clicks=0,
-                            #color='info',
+                            color='secondary',
                             #color='#00B2A9',
-                            outline=False,
+                            outline=True,
                             style = {
                                 'width':'40%',
                                 'height':'30%',
                                 'text-align':'center',
                                 #"margin-left":"40%",
                                 #"margin-right":"40%",
-                                'background-color': '#00B2A9',
+                                #'background-color': '#00B2A9',
                             }
                         ),
                         
