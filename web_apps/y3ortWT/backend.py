@@ -209,7 +209,7 @@ app.layout = html.Div(
                             ), 
                             id="submit",
                             n_clicks=0,
-                            color='primary',
+                            color='info',
                             #color='#00B2A9',
                             outline=True,
                             style = {
