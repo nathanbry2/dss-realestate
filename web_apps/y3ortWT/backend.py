@@ -279,11 +279,10 @@ app.layout = html.Div(
           dcc.Loading(
             id="loading-1",
             type="default",
-            children=html.Div(id="loading-output-1")
         )],
             id='anchor',
             style={
-                "height":100
+                'height':100
             }
         ),
         
