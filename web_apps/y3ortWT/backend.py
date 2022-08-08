@@ -143,6 +143,14 @@ app.layout = html.Div(
                             value='17 rue Saulnier',
                             placeholder="Address, e.g. 17 rue Saulnier",
                             size='lg',
+                            style = {
+                                #"margin-left":"40%",
+                                #"margin-right":"40%",
+                                #'background-color': '#00B2A9',
+                                'border-color':'#00B2A9',
+                                'border-width':"2px",
+
+                            }
                             ),html.Br(),html.Br(),
                         
                         dbc.Input(
