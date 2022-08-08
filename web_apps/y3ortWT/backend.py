@@ -554,7 +554,7 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     
     return text1, text2, [html.Li(dcc.Markdown(i)) for i in text_list], dcc.Graph(figure=fig), fig2
 
-app.callback(
+app.clientside_callback(
     """
     function(clicks, elemid) {
         document.getElementById(elemid).scrollIntoView({
@@ -566,6 +566,4 @@ app.callback(
     [Input('submit', 'n_clicks')],
     [State('output8', 'id')]
 )
-def f:
-    return null
 
