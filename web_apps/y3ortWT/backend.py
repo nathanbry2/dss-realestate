@@ -203,6 +203,7 @@ app.layout = html.Div(
                             children='Estimate my property 📊',
                             style={
                                 'color': title_style['text'],
+                                'font-weight':'bold',
                             }
                         )
                             , 
