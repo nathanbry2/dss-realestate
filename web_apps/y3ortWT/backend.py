@@ -211,7 +211,6 @@ app.layout = html.Div(
                             n_clicks=0,
                             #color='info',
                             #color='#00B2A9',
-                            
                             outline=False,
                             style = {
                                 'width':'40%',
@@ -219,7 +218,7 @@ app.layout = html.Div(
                                 'text-align':'center',
                                 #"margin-left":"40%",
                                 #"margin-right":"40%",
-                                background-color: '#8064A2',
+                                'background-color': '#8064A2',
                             }
                         ),
                         
