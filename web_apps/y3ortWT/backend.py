@@ -237,7 +237,7 @@ app.layout = html.Div(
                 dbc.Col(
                     children = [
                         html.Br(),html.Br(),html.Br(),html.Br(),html.Br(),html.Br(),html.Br(),
-                        dbc.Button(html.H3(
+                        html.A(dbc.Button(html.H3(
                             children='Estimate my property 📊',
                             style={
                                 'color': title_style['text'],
@@ -260,7 +260,7 @@ app.layout = html.Div(
                                 'border-color':'#00B2A9',
                                 'border-width':"2.5px"
                             }
-                        ),
+                        ),href='#anchor'),
                         
                     ],
                     style = {
@@ -276,7 +276,7 @@ app.layout = html.Div(
         
         
         
-        dcc.Location(id='anchor', refresh=False),
+        #dcc.Location(id='anchor', refresh=False),
 
         
         
@@ -342,7 +342,9 @@ app.layout = html.Div(
                 
                 ),
                 
-            ]
+            ],
+            
+            id='anchor',
         
         
         ),
@@ -554,7 +556,7 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     
     return text1, text2, [html.Li(dcc.Markdown(i)) for i in text_list], dcc.Graph(figure=fig), fig2
 
-app.clientside_callback(
+'''app.clientside_callback(
     """
     function(clicks, elemid) {
         document.getElementById(elemid).scrollIntoView({
@@ -565,5 +567,5 @@ app.clientside_callback(
     Output('garbage-output-0', 'children'),
     [Input('submit', 'n_clicks')],
     [State('output8', 'id')]
-)
+)'''
 
