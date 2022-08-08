@@ -204,7 +204,7 @@ app.layout = html.Div(
                                 src='data:image/png;base64,{}'.format(estimate_logo_encoded.decode()),         
                                 style={
                                     'width':'20%',
-                                    'height':'20%',
+                                    'height':'auto',
                                 }
                             ), 
                             id="submit",
