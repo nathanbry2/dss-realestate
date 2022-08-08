@@ -277,7 +277,7 @@ app.layout = html.Div(
         
         html.Div([
             html.P("Loading....")
-        ],id='anchor')
+        ],id='anchor'),
         
         dbc.Row(
             
