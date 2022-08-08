@@ -199,7 +199,9 @@ app.layout = html.Div(
                         html.H4(
                             children='Click logo to get an estimation 🔽',
                         ),html.Br(),html.Br(),
-                        dbc.Button("Estimate"
+                        dbc.Button(html.H4(
+                            children='Estimate 🔽',
+                        )
                             , 
                             id="submit",
                             n_clicks=0,
