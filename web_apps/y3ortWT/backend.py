@@ -201,6 +201,9 @@ app.layout = html.Div(
                         ),html.Br(),html.Br(),
                         dbc.Button(html.H4(
                             children='Estimate my property 📊',
+                            style={
+                                'color': title_style['text'],
+                            }
                         )
                             , 
                             id="submit",
