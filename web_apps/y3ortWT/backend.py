@@ -280,9 +280,10 @@ app.layout = html.Div(
             id="loading-1",
             type="default",
             children=html.Div(id="loading-output-1")
-        ),
+        )],
             id='anchor'
-        ]),
+ 
+        ),
         
         dbc.Row(
             
