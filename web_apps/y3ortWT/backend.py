@@ -275,10 +275,9 @@ app.layout = html.Div(
         ),html.Br(),html.Br(),html.Br(),html.Br(),
         
         
-        
-        #dcc.Location(id='anchor', refresh=False),
-
-        html.P(id='anchor'),html.Br(),html.Br(),
+        html.Div(children=[
+            html.P("Loading....")
+        ],id='anchor')
         
         dbc.Row(
             
