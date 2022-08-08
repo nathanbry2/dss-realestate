@@ -219,7 +219,7 @@ app.layout = html.Div(
                                 #"margin-right":"40%",
                                 #'background-color': '#00B2A9',
                                 'border-color':'#00B2A9',
-                                'border-width':"3px"
+                                'border-width':"2px"
                             }
                         ),
                         
