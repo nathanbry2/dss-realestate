@@ -281,7 +281,10 @@ app.layout = html.Div(
             type="default",
             children=html.Div(id="loading-output-1")
         )],
-            id='anchor'
+            id='anchor',
+            style={
+                "height":100
+            }
         ),
         
         dbc.Row(
