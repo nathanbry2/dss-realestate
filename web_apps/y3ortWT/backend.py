@@ -211,7 +211,7 @@ app.layout = html.Div(
                             n_clicks=0,
                             color='info',
                             #color='#00B2A9',
-                            outline=True,
+                            outline=False,
                             style = {
                                 'width':'40%',
                                 'height':'30%',
