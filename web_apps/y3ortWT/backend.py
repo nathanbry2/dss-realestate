@@ -563,8 +563,9 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     
     return text1, text2, [html.Li(dcc.Markdown(i)) for i in text_list], dcc.Graph(figure=fig), fig2
 
-
+'''
 @app.callback(Output("anchor", "id"), Input("submit", "id"))
 def input_triggers_spinner(value):
     time.sleep(1)
     return value
+'''
