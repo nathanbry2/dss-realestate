@@ -278,7 +278,7 @@ app.layout = html.Div(
         
         #dcc.Location(id='anchor', refresh=False),
 
-        html.P(id='anchor')
+        html.P(id='anchor'),
         
         dbc.Row(
             
