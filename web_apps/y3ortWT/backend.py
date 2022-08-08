@@ -39,7 +39,8 @@ df = mydataset.get_dataframe()
 
 main_style = {
     'background': '#FFFFFF',
-    'font-family': "Arial"
+    'font-family': "Arial",
+    'scroll-behavior': 'smooth'
 }
 
 title_style = {
@@ -274,6 +275,9 @@ app.layout = html.Div(
         ),html.Br(),html.Br(),html.Br(),html.Br(),
         
         
+        
+        dcc.Location(id='anchor', refresh=False),
+
         
         
         dbc.Row(
@@ -546,5 +550,6 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
                       })
     #fig2.show()
     #,style={'width': 'auto','height':'300px','border':'none'}
+
     
     return text1, text2, [html.Li(dcc.Markdown(i)) for i in text_list], dcc.Graph(figure=fig), fig2
