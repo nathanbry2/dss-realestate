@@ -206,25 +206,8 @@ app.layout = html.Div(
                             }
                             ),html.Br(),html.Br(),
                         
-                        '''dbc.Input(
-                            id="input5",
-                            type='number',
-                            value='2021',
-                            placeholder="Year, e.g. 2021",
-                            size='lg',
-                            min=2014,
-                            max=2021,
-                            style = {
-                                #"margin-left":"40%",
-                                #"margin-right":"40%",
-                                #'background-color': '#00B2A9',
-                                #'border-color':'#00B2A9',
-                                'border-width':"2px",
-
-                            }
-                            ),'''
                         
-                        ,dbc.Select(
+                        dbc.Select(
                             id="input5",
                             options=[
                                 {"label": "2014", "value": 2014},
