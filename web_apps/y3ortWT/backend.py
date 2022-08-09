@@ -113,7 +113,7 @@ app.layout = html.Div(
         html.Div(
             style={
                 'backgroundColor': main_style['background'],
-                'font-family': main_style['font-family']
+                #'font-family': main_style['font-family']
             },
             children=[
                 
