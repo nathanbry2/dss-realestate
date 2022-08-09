@@ -355,9 +355,11 @@ app.layout = html.Div(
         html.Br(),html.Br(),
         dcc.Loading(
             id="loading-1",
-            type="circle",
+            type="graph",
             children=html.Div(id="loading-output-1")
         ),
+        
+        #'graph', 'cube', 'circle', 'dot', or 'default'
         
         
         dbc.Row(
