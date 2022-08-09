@@ -227,7 +227,7 @@ app.layout = html.Div(
                             id="input3",
                             type='number',
                             value='80',
-                            placeholder="Surface (in m²), e.g. 80",
+                            placeholder="e.g. 80",
                             size='lg',
                             min=1,
                             style = {
@@ -253,7 +253,7 @@ app.layout = html.Div(
                             id="input4",
                             type='number',
                             value='3',
-                            placeholder="Number of main rooms, e.g. 4",
+                            placeholder="e.g. 4",
                             size='lg',
                             min=1,
                             style = {
@@ -288,8 +288,8 @@ app.layout = html.Div(
                                 {"label": "2020", "value": 2020},
                                 {"label": "2021", "value": 2021},
                             ],
-                            value='2021',
-                            #placeholder="Year, e.g. 2021",
+                            value='',
+                            placeholder="",
                             size='lg',
                             style = {
                                 #"margin-left":"40%",
