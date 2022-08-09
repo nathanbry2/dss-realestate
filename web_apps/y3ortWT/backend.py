@@ -138,6 +138,7 @@ app.layout = html.Div(
             [
                 dbc.Col(
                     [
+                        dbc.Label('Address'),
                         dbc.Input(
                             id="input1",
                             type='text',
