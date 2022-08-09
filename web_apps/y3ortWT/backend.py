@@ -224,7 +224,7 @@ app.layout = html.Div(
                             }
                             ),'''
                         
-                        dbc.Select(
+                        ,dbc.Select(
                             id="input5",
                             options=[
                                 {"label": "2014", "value": 2014},
