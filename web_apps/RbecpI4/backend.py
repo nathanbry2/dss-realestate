@@ -201,7 +201,7 @@ app.layout = html.Div(
                                 {"label": "75020", "value": 75020},
                             ],
                             value='',
-                            placeholder="e.g. 75009",
+                            placeholder="",
                             size='lg',
                             style = {
                                 #"margin-left":"40%",
