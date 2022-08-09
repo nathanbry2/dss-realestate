@@ -649,5 +649,5 @@ def input_triggers_spinner(value):
 
 @app.callback(Output("loading-output-1", "children"), Input("input1", "value"))
 def input_triggers_spinner(value):
-    time.sleep(1)
+    time.sleep(2)
     return value
