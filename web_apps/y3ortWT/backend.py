@@ -218,7 +218,7 @@ app.layout = html.Div(
                             )
         dbc.Label("Surface (in m²)"),
     ]
-)
+),
                         
                         dbc.Input(
                             id="input3",
