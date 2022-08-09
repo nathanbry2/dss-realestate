@@ -312,7 +312,7 @@ app.layout = html.Div(
                 
                 dbc.Col(
                     children = [
-                        html.Br(),html.Br(),html.Br(),html.Br(),html.Br(),html.Br(),html.Br(),
+                        html.Br(),html.Br(),html.Br(),html.Br(),html.Br(),html.Br(),html.Br(),html.Br(),html.Br(),
                         html.A(dbc.Button(html.H3(
                             children='Estimate my property 📊',
                             style={
