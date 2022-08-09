@@ -196,7 +196,7 @@ app.layout = html.Div(
                                 #'background-color': '#00B2A9',
                                 #'border-color':'#00B2A9',
                                 'border-width':"2px",
-                                'height':'3px',
+                                'height':'6px',
 
                             },
                         ),
