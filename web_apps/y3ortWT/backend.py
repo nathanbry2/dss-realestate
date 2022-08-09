@@ -156,7 +156,7 @@ app.layout = html.Div(
                         
                         
                         dbc.Select(
-                            id="input17",
+                            id="input2",
                             options=[
                                 {"label": "75001", "value": 75001},
                                 {"label": "75002", "value": 75002},
@@ -192,24 +192,6 @@ app.layout = html.Div(
                             },
                         ),html.Br(),html.Br(),
                         
-                        
-                        dbc.Input(
-                            id="input2",
-                            type='number',
-                            value='75009',
-                            placeholder="Postal Code, e.g. 75009",
-                            size='lg',
-                            min=75001,
-                            max=75020,
-                            style = {
-                                #"margin-left":"40%",
-                                #"margin-right":"40%",
-                                #'background-color': '#00B2A9',
-                                #'border-color':'#00B2A9',
-                                'border-width':"2px",
-
-                            }
-                            ),html.Br(),html.Br(),
                         
                         dbc.Input(
                             id="input3",
