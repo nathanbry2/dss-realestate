@@ -188,7 +188,7 @@ app.layout = html.Div(
                                 {"label": "75020", "value": 75020},
                             ],
                             #value='75009',
-                            placeholder="Year, e.g. 2021",
+                            placeholder="Postal code, e.g. 75009",
                             size='lg',
                             style = {
                                 #"margin-left":"40%",
@@ -199,7 +199,7 @@ app.layout = html.Div(
 
                             },
                         ),
-        dbc.Label("Surface (in m²)"),
+        dbc.Label(""),html.Br(),html.Br(),
     ]
 ),
                         
@@ -229,7 +229,7 @@ app.layout = html.Div(
                                 {"label": "75020", "value": 75020},
                             ],
                             value='75009',
-                            #placeholder="Year, e.g. 2021",
+                            #placeholder="Postal code, e.g. 75009",
                             size='lg',
                             style = {
                                 #"margin-left":"40%",
