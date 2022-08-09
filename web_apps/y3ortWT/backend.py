@@ -161,7 +161,7 @@ app.layout = html.Div(
                                 'border-width':"2px",
 
                             }
-                            ),html.Br(),html.Br(),
+                            ),html.Br(),
                         
                         
                        
