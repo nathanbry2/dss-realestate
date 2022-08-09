@@ -507,7 +507,8 @@ app.layout = html.Div(
     State('input2', 'value'),
     State('input3', 'value'),
     State('input4', 'value'),
-    State('input5', 'value'),prevent_initial_call=True)
+    State('input5', 'value'),
+    prevent_initial_call=True)
 
 def output_function(n_clicks,input1,input2,input3,input4,input5):
     
@@ -647,7 +648,12 @@ def input_triggers_spinner(value):
     return value'''
 
 
-@app.callback(Output("loading-output-1", "children"), Input("submit", "value"))
+@app.callback(
+    Output("loading-output-1", "children"), 
+    Input('submit', 'n_clicks'),
+    State('input1', 'value'),
+    prevent_initial_call=True)
+
 def input_triggers_spinner(value):
-    time.sleep(2)
+    time.sleep(1)
     return value
