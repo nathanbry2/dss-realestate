@@ -127,6 +127,7 @@ app.layout = html.Div(
                             'textAlign': 'center',
                             'margin-left':'20%',
                             'margin-right':'20%',
+                            'font-weight':'bold'
                         }
                     )
                 )
