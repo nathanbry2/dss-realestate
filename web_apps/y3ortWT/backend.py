@@ -203,7 +203,7 @@ app.layout = html.Div(
         dbc.Input(
                             id="input34",
                             type='number',
-                            value='80',
+                            #value='80',
                             placeholder="Surface (in m²), e.g. 80",
                             size='lg',
                             min=1,
