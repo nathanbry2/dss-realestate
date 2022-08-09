@@ -138,7 +138,12 @@ app.layout = html.Div(
             [
                 dbc.Col(
                     [
-                        dbc.Label('Address'),
+                        dbc.Label('Address'
+                                 style = {
+                        'text-align':'left',
+                        "margin-left":"5%",
+                        #"margin-right":"20%",
+                    }),
                         dbc.Input(
                             id="input1",
                             type='text',
