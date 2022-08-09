@@ -355,7 +355,7 @@ app.layout = html.Div(
         html.Br(),html.Br(),html.Br(),
         dcc.Loading(
             id="loading-1",
-            type="graph",
+            type="dot",
             color='#00B2A9',
             children=html.Div(id="loading-output-1")
         ),html.Br(),html.Br(),html.Br(),html.Br(),
