@@ -186,6 +186,29 @@ app.layout = html.Div(
             
         ),
                         
+                        dbc.InputGroup(
+            [
+                dbc.InputGroupText("Number of main rooms"),
+                dbc.Input(
+                            id="input68",
+                            type='text',
+                            value='13 rue Saulnier',
+                            placeholder="Address, e.g. 17 rue Saulnier",
+                            size='lg',
+                            style = {
+                                #"margin-left":"40%",
+                                #"margin-right":"40%",
+                                #'background-color': '#00B2A9',
+                                #'border-color':'#00B2A9',
+                                'border-width':"2px",
+
+                            }
+                            )
+                
+            ],
+            
+        ),
+                        
                         
                         dbc.Select(
                             id="input2",
