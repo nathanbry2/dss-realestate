@@ -647,7 +647,7 @@ def input_triggers_spinner(value):
     return value'''
 
 
-@app.callback(Output("loading-output-1", "children"), Input("input1", "value"))
+@app.callback(Output("loading-output-1", "children"), Input("submit", "value"))
 def input_triggers_spinner(value):
     time.sleep(2)
     return value
