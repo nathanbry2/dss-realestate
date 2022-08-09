@@ -215,7 +215,7 @@ app.layout = html.Div(
                                 'border-width':"2px",
 
                             }
-                            )
+                            ),
         dbc.Label("Surface (in m²)"),
     ]
 ),
