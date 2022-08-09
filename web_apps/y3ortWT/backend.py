@@ -198,6 +198,27 @@ app.layout = html.Div(
                             },
                         ),html.Br(),html.Br(),
                         
+                        dbc.FormFloating(
+    [
+        dbc.Input(
+                            id="input34",
+                            type='number',
+                            value='80',
+                            placeholder="Surface (in m²), e.g. 80",
+                            size='lg',
+                            min=1,
+                            style = {
+                                #"margin-left":"40%",
+                                #"margin-right":"40%",
+                                #'background-color': '#00B2A9',
+                                #'border-color':'#00B2A9',
+                                'border-width':"2px",
+
+                            }
+                            )
+        dbc.Label("Surface (in m²)"),
+    ]
+)
                         
                         dbc.Input(
                             id="input3",
