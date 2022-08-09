@@ -140,9 +140,11 @@ app.layout = html.Div(
                     [
                         dbc.Label('Address',
                                  style = {
-                        'text-align':'left',
-                        #"margin-left":"5%",
-                        #"margin-right":"20%",
+                                    'text-align':'left',
+                                     'font-size':'bold',
+
+                                    #"margin-left":"5%",
+                                    #"margin-right":"20%",
                     }),
                         dbc.Input(
                             id="input1",
