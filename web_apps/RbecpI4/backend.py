@@ -655,5 +655,5 @@ def input_triggers_spinner(value):
     prevent_initial_call=True)
 
 def input_triggers_spinner(value):
-    time.sleep(1)
+    time.sleep(1.5)
     return value
