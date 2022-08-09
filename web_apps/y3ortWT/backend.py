@@ -161,6 +161,49 @@ app.layout = html.Div(
                             ),html.Br(),html.Br(),
                         
                         
+                        dbc.FormFloating(
+    [
+        dbc.Select(
+                            id="input23",
+                            options=[
+                                {"label": "75001", "value": 75001},
+                                {"label": "75002", "value": 75002},
+                                {"label": "75003", "value": 75003},
+                                {"label": "75004", "value": 75004},
+                                {"label": "75005", "value": 75005},
+                                {"label": "75006", "value": 75006},
+                                {"label": "75007", "value": 75007},
+                                {"label": "75008", "value": 75008},
+                                {"label": "75009", "value": 75009},
+                                {"label": "75010", "value": 75010},
+                                {"label": "75011", "value": 75011},
+                                {"label": "75012", "value": 75012},
+                                {"label": "75013", "value": 75013},
+                                {"label": "75014", "value": 75014},
+                                {"label": "75015", "value": 75015},
+                                {"label": "75016", "value": 75016},
+                                {"label": "75017", "value": 75017},
+                                {"label": "75018", "value": 75018},
+                                {"label": "75019", "value": 75019},
+                                {"label": "75020", "value": 75020},
+                            ],
+                            #value='75009',
+                            placeholder="Year, e.g. 2021",
+                            size='lg',
+                            style = {
+                                #"margin-left":"40%",
+                                #"margin-right":"40%",
+                                #'background-color': '#00B2A9',
+                                #'border-color':'#00B2A9',
+                                'border-width':"2px",
+
+                            },
+                        ),
+        dbc.Label("Surface (in m²)"),
+    ]
+),
+                        
+                        
                         dbc.Select(
                             id="input2",
                             options=[
