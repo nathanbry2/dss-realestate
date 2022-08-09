@@ -200,8 +200,8 @@ app.layout = html.Div(
                                 {"label": "75019", "value": 75019},
                                 {"label": "75020", "value": 75020},
                             ],
-                            value='75009',
-                            #placeholder="Postal code, e.g. 75009",
+                            value='',
+                            placeholder="e.g. 75009",
                             size='lg',
                             style = {
                                 #"margin-left":"40%",
