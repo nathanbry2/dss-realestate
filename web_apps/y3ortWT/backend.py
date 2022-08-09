@@ -206,7 +206,7 @@ app.layout = html.Div(
                             }
                             ),html.Br(),html.Br(),
                         
-                        dbc.Input(
+                        '''dbc.Input(
                             id="input5",
                             type='number',
                             value='2021',
@@ -222,10 +222,10 @@ app.layout = html.Div(
                                 'border-width':"2px",
 
                             }
-                            ),
+                            ),'''
                         
                         dbc.Select(
-                            id="select",
+                            id="input5",
                             options=[
                                 {"label": "2014", "value": 2014},
                                 {"label": "2015", "value": 2015},
