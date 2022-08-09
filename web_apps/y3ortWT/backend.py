@@ -199,7 +199,7 @@ app.layout = html.Div(
 
                             },
                         ),
-        dbc.Label(""),html.Br(),html.Br(),
+        dbc.Label("Postal code"),html.Br(),html.Br(),
     ]
 ),
                         
