@@ -141,7 +141,7 @@ app.layout = html.Div(
                         html.H5('Address',
                                  style = {
                                     'text-align':'left',
-                                    'font-weight':'bold',
+                                    #'font-weight':'bold',
 
                                     #"margin-left":"5%",
                                     #"margin-right":"20%",
