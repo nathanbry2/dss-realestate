@@ -236,6 +236,17 @@ app.layout = html.Div(
                                 {"label": "2020", "value": 2020},
                                 {"label": "2021", "value": 2021},
                             ],
+                            value='2021',
+                            placeholder="Year, e.g. 2021",
+                            size='lg',
+                            style = {
+                                #"margin-left":"40%",
+                                #"margin-right":"40%",
+                                #'background-color': '#00B2A9',
+                                #'border-color':'#00B2A9',
+                                'border-width':"2px",
+
+                            },
                         ),
                     ],
                     
