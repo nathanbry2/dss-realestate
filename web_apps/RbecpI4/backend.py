@@ -353,6 +353,11 @@ app.layout = html.Div(
         
         html.Span(id='anchor'),
         html.Br(),html.Br(),
+        dcc.Loading(
+            id="loading-1",
+            type="default",
+            children=html.Div(id="loading-output-1")
+        ),
         
         
         dbc.Row(
@@ -638,3 +643,9 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
 def input_triggers_spinner(value):
     time.sleep(1)
     return value'''
+
+
+@app.callback(Output("loading-output-1", "children"), Input("input1", "value"))
+def input_triggers_spinner(value):
+    time.sleep(1)
+    return value
