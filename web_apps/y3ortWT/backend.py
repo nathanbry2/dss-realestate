@@ -305,18 +305,8 @@ app.layout = html.Div(
         
         html.Span(id='anchor'),
         
-        '''html.Div([
-          dcc.Loading(
-            id="loading-1",
-            type="default",
-        )],
-            id='anchor',
-            style={
-                'height':100
-            }
-        ),'''
         
-        ,dbc.Row(
+        dbc.Row(
             
             [
                 dbc.Col(
