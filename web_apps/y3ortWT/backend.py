@@ -140,12 +140,13 @@ app.layout = html.Div(
                     [
                         html.H5('Address',
                                  style = {
-                                    'text-align':'left',
+                                     'text-align':'left',
                                     'font-weight':'bold',
 
                                     #"margin-left":"5%",
                                     #"margin-right":"20%",
-                    }),
+                                 }
+                               ),
                         dbc.Input(
                             id="input1",
                             type='text',
@@ -165,7 +166,15 @@ app.layout = html.Div(
                         
                        
                         
-                        
+                        html.H5('Postal code',
+                                 style = {
+                                     'text-align':'left',
+                                    'font-weight':'bold',
+
+                                    #"margin-left":"5%",
+                                    #"margin-right":"20%",
+                                 }
+                               ),
                         dbc.Select(
                             id="input2",
                             options=[
@@ -204,7 +213,15 @@ app.layout = html.Div(
                         ),html.Br(),html.Br(),
                         
                         
-                        
+                        html.H5('Surface (in m2)',
+                                 style = {
+                                     'text-align':'left',
+                                    'font-weight':'bold',
+
+                                    #"margin-left":"5%",
+                                    #"margin-right":"20%",
+                                 }
+                               ),
                         dbc.Input(
                             id="input3",
                             type='number',
@@ -222,6 +239,15 @@ app.layout = html.Div(
                             }
                             ),html.Br(),html.Br(),
                         
+                        html.H5('Number of main rooms',
+                                 style = {
+                                     'text-align':'left',
+                                    'font-weight':'bold',
+
+                                    #"margin-left":"5%",
+                                    #"margin-right":"20%",
+                                 }
+                               ),
                         dbc.Input(
                             id="input4",
                             type='number',
@@ -240,6 +266,15 @@ app.layout = html.Div(
                             ),html.Br(),html.Br(),
                         
                         
+                        html.H5('Year',
+                                 style = {
+                                     'text-align':'left',
+                                    'font-weight':'bold',
+
+                                    #"margin-left":"5%",
+                                    #"margin-right":"20%",
+                                 }
+                               ),
                         dbc.Select(
                             id="input5",
                             options=[
