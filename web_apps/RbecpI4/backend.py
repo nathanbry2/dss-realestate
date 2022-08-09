@@ -226,7 +226,7 @@ app.layout = html.Div(
                         dbc.Input(
                             id="input3",
                             type='number',
-                            value='80',
+                            value='',
                             placeholder="e.g. 80",
                             size='lg',
                             min=1,
@@ -252,7 +252,7 @@ app.layout = html.Div(
                         dbc.Input(
                             id="input4",
                             type='number',
-                            value='3',
+                            value='',
                             placeholder="e.g. 4",
                             size='lg',
                             min=1,
