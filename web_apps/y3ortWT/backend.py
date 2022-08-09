@@ -141,7 +141,7 @@ app.layout = html.Div(
                         dbc.Label('Address',
                                  style = {
                                     'text-align':'left',
-                                     'font-size':'bold',
+                                    'font-weight':'bold',
 
                                     #"margin-left":"5%",
                                     #"margin-right":"20%",
