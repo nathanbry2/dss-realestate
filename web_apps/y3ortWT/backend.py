@@ -138,7 +138,7 @@ app.layout = html.Div(
             [
                 dbc.Col(
                     [
-                        html.H4('Address',
+                        html.H5('Address',
                                  style = {
                                     'text-align':'left',
                                     'font-weight':'bold',
