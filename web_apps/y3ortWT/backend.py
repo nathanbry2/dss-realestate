@@ -210,7 +210,7 @@ app.layout = html.Div(
                                 'border-width':"2px",
 
                             },
-                        ),html.Br(),html.Br(),
+                        ),html.Br(),
                         
                         
                         html.H5('Surface (in m2)',
@@ -237,7 +237,7 @@ app.layout = html.Div(
                                 'border-width':"2px",
 
                             }
-                            ),html.Br(),html.Br(),
+                            ),html.Br(),
                         
                         html.H5('Number of main rooms',
                                  style = {
@@ -263,7 +263,7 @@ app.layout = html.Div(
                                 'border-width':"2px",
 
                             }
-                            ),html.Br(),html.Br(),
+                            ),html.Br(),
                         
                         
                         html.H5('Year',
