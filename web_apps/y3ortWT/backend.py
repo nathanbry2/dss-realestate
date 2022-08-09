@@ -219,7 +219,7 @@ app.layout = html.Div(
                                 {"label": "2020", "value": 2020},
                                 {"label": "2021", "value": 2021},
                             ],
-                            #value='2021',
+                            value='2021',
                             #placeholder="Year, e.g. 2021",
                             size='lg',
                             style = {
