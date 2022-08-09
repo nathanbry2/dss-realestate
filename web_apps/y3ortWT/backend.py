@@ -184,7 +184,7 @@ app.layout = html.Div(
                 
             ],
             
-        )
+        ),
                         
                         
                         dbc.Select(
