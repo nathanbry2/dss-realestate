@@ -582,11 +582,11 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
     )
 
     # Set x-axis title
-    fig.update_xaxes(title_text="<b>Year</b>")
+    fig.update_xaxes(title_text="<b>Year</b>",title_font_size=14)
 
     # Set y-axes titles
-    fig.update_yaxes(title_text="<b>Average m² price</b>", secondary_y=True,ticksuffix='€',title_font_size=10)
-    fig.update_yaxes(title_text="<b>Transactions count</b>", secondary_y=False,title_font_size=10)
+    fig.update_yaxes(title_text="<b>Average m² price</b>", secondary_y=True,ticksuffix='€',title_font_size=14)
+    fig.update_yaxes(title_text="<b>Transactions count</b>", secondary_y=False,title_font_size=14)
     
     
     ### CREATE MAP CHART
