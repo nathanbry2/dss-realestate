@@ -151,7 +151,7 @@ app.layout = html.Div(
                         dbc.Input(
                             id="input1",
                             type='text',
-                            value='',
+                            value='13 rue Saulnier',
                             placeholder="e.g. 17 rue Saulnier",
                             size='lg',
                             style = {
@@ -200,7 +200,7 @@ app.layout = html.Div(
                                 {"label": "75019", "value": 75019},
                                 {"label": "75020", "value": 75020},
                             ],
-                            value='',
+                            value='75009',
                             placeholder="",
                             size='lg',
                             style = {
@@ -226,7 +226,7 @@ app.layout = html.Div(
                         dbc.Input(
                             id="input3",
                             type='number',
-                            value='',
+                            value='80',
                             placeholder="e.g. 80",
                             size='lg',
                             min=1,
@@ -252,7 +252,7 @@ app.layout = html.Div(
                         dbc.Input(
                             id="input4",
                             type='number',
-                            value='',
+                            value='4',
                             placeholder="e.g. 4",
                             size='lg',
                             min=1,
@@ -288,7 +288,7 @@ app.layout = html.Div(
                                 {"label": "2020", "value": 2020},
                                 {"label": "2021", "value": 2021},
                             ],
-                            value='',
+                            value='2021',
                             placeholder="",
                             size='lg',
                             style = {
