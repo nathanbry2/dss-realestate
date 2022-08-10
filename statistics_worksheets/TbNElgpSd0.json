@@ -1,0 +1,150 @@
+{
+  "dataSpec": {
+    "inputDatasetSmartName": "transactions_fully_enriched_prepared",
+    "datasetSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "autoRefreshSample": true,
+    "refreshTrigger": 0,
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "rootCard": {
+    "type": "worksheet_root",
+    "confidenceLevel": 0.95,
+    "showConfidenceInterval": false,
+    "cards": [
+      {
+        "type": "correlation_matrix",
+        "heatmapParams": {
+          "showValues": true,
+          "showColors": true,
+          "showAbsValues": false,
+          "threshold": 0.0,
+          "filterVariablesWithoutValues": false
+        },
+        "metric": "SPEARMAN",
+        "columns": [
+          {
+            "name": "date_mutation_year",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "date_mutation_month",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "date_mutation_day",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "valeur_fonciere",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "code_postal",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "surface_m2_not_null",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "prix_m2_not_null",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "nombre_pieces_principales",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "longitude",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "latitude",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "distance_to_centre",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "iris_code",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "prix_m2_iris",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "count_iris",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "correct_prix_m2_iris",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "prediction_correct_iris",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "prix_m2_coordinates_couple",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "count_coordinates_couple",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "correct_prix_m2_coordinates_couple",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "prediction_correct_coordinates_couple",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "id": "qjk5yWp"
+      }
+    ],
+    "id": "VO71BnZ"
+  },
+  "name": "Worksheet",
+  "versionTag": {
+    "versionNumber": 1,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1660119679994
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1660119646603
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
