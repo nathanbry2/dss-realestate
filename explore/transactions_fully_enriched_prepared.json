@@ -5,7 +5,36 @@
     "columnsSelection": {
       "mode": "ALL"
     },
-    "columnWidthsByName": {},
+    "columnWidthsByName": {
+      "date_mutation_year": 150,
+      "date_mutation_month": 158,
+      "date_mutation_day": 143,
+      "valeur_fonciere": 128,
+      "code_postal": 100,
+      "surface_m2_not_null": 158,
+      "prix_m2_not_null": 162,
+      "nombre_pieces_principales": 203,
+      "longitude": 141,
+      "latitude": 141,
+      "distance_to_centre": 176,
+      "direction_from_centre": 173,
+      "pluscode_10": 127,
+      "reduced_coordinates_couple": 210,
+      "iris_code": 113,
+      "iris_GeoPoint": 204,
+      "iris_GeoShape": 300,
+      "NOM_COM": 183,
+      "NOM_IRIS": 176,
+      "TYP_IRIS": 100,
+      "prix_m2_iris": 141,
+      "count_iris": 100,
+      "correct_prix_m2_iris": 190,
+      "prediction_correct_iris": 211,
+      "prix_m2_coordinates_couple": 232,
+      "count_coordinates_couple": 195,
+      "correct_prix_m2_coordinates_couple": 270,
+      "prediction_correct_coordinates_couple": 293
+    },
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
@@ -16,7 +45,7 @@
     "explorationSampling": {
       "selection": {
         "maxRecordsForDisplay": -1,
-        "maxStoredBytes": 104857600,
+        "maxStoredBytes": 209715200,
         "timeout": -1,
         "filter": {
           "distinct": false,
@@ -29,13 +58,13 @@
           "rules": []
         },
         "samplingMethod": "HEAD_SEQUENTIAL",
-        "maxRecords": 10000,
+        "maxRecords": 1000000,
         "targetRatio": 0.02,
         "withinFirstN": -1,
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 0
+      "_refreshTrigger": 1661197354103
     },
     "vizSampling": {
       "selection": {
@@ -59,7 +88,9 @@
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS"
@@ -71,13 +102,63 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "New chart",
+        "name": "Count by date_mutation_year",
         "userEditedName": false,
-        "genericDimension0": [],
+        "genericDimension0": [
+          {
+            "column": "date_mutation_year",
+            "type": "NUMERICAL",
+            "numParams": {
+              "mode": "TREAT_AS_ALPHANUM",
+              "nbBins": 10,
+              "binSize": 100,
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 100,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
         "genericDimension1": [],
         "facetDimension": [],
         "animationDimension": [],
-        "genericMeasures": [],
+        "genericMeasures": [
+          {
+            "function": "COUNT",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          }
+        ],
         "xDimension": [],
         "yDimension": [],
         "uaXDimension": [],
@@ -95,6 +176,7 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
+        "filters": [],
         "axis1LogScale": false,
         "axis2LogScale": false,
         "includeZero": true,
@@ -155,6 +237,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -172,6 +255,7 @@
           "gridLonDeg": 0.6,
           "gridLatDeg": 0.6
         },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAAhNJREFUeF7tkyFu3FAUAO2l4SnqAXKRkIb2FKEBrVQQmMJeJlIO0BP0BA0tClnojQpLqtXXjkbfGmM/z/sz/uvSs2sD665P1+GWAu/8JyhwgXduYOfH6wYXeOcGdn68bnCBzzPw8cvz7bpt9+e9zby1HpZfv5/uvjFfn/OrF7vBfwMfTttXVcO6/CzwvwUKrP6RPLzAvGOVUGBVPw8vMO9YJRRY1c/DC8w7VgkFVvXz8ALzjlVCgVX9PLzAvGOVUGBVPw8vMO9YJRRY1c/DC8w7VgkFVvXz8ALzjlVCgVX9PLzAvGOVUGBVPw8vMO9YJRRY1c/DC8w7VgkFVvXz8ALzjlVCgVX9PLzAvGOVUGBVPw8vMO9YJRRY1c/DC8w7VgkFVvXz8ALzjlVCgVX9PLzAvGOVUGBVPw8vMO9YJRRY1c/DC8w7VgkFVvXz8ALzjlVCgVX9PLzAvGOVUGBVPw8vMO9YJRRY1c/DC8w7VgkFVvXz8ALzjlVCgVX9PLzAvGOVUGBVPw8vMO9YJRRY1c/DC8w7VgkFVvXz8ALzjlVCgVX9PPyigdfT6YZf+f+E1++fflA7fHh4udqObxdzNrLnn+vPx+Vx3c6dVZc9d8neGzdQ4HF3U0wWeIpM40sWeNzdFJMFniLT+JIFHnc3xWSBp8g0vmSBx91NMVngKTKNL1ngcXdTTBZ4ikzjSxZ43N0Uk+/36atgPyFUkwAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
