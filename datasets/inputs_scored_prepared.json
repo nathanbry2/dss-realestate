@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661181359740
+    "lastModifiedOn": 1661181820755
   },
   "creationTag": {
     "versionNumber": 0,
@@ -165,7 +165,7 @@
           "level": 9
         },
         "configuration": {
-          "code": "-- the metrics values and names are taken from the columns of the select statement\nSELECT \n    round(cast(\"prediction_50%\"*0.925 as numeric),-4) AS Lower_Bound,\n    round(cast(\"prediction_50%\"*1.075 as numeric),-4) AS Upper_Bound \nFROM ${DKU_DATASET_TABLE_NAME}\n-- when partitioned, a filter for the WHERE clause can be added like:\n-- WHERE ${DKU_PARTITION_FILTER} \n-- when the dataset is a sql query, the select query is available as\n-- ${DKU_DATASET_QUERY} and, if any, statements before and after the\n-- select as ${DKU_DATASET_PRE_QUERIES} and  ${DKU_DATASET_POST_QUERIES}\n",
+          "code": "-- the metrics values and names are taken from the columns of the select statement\nSELECT \n    concat(round(cast(\"prediction_50%\"*0.925 as numeric),-4),\u0027€\u0027) AS Lower_Bound,\n    concat(round(cast(\"prediction_50%\"*1.075 as numeric),-4),\u0027€\u0027) AS Upper_Bound \nFROM ${DKU_DATASET_TABLE_NAME}\n-- when partitioned, a filter for the WHERE clause can be added like:\n-- WHERE ${DKU_PARTITION_FILTER} \n-- when the dataset is a sql query, the select query is available as\n-- ${DKU_DATASET_QUERY} and, if any, statements before and after the\n-- select as ${DKU_DATASET_PRE_QUERIES} and  ${DKU_DATASET_POST_QUERIES}\n",
           "canRunOnImpala": true,
           "singleAggregate": false,
           "perColumn": false,
