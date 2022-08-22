@@ -5,10 +5,29 @@
       "grid": {
         "tiles": [
           {
+            "tileType": "TEXT",
+            "box": {
+              "top": 0,
+              "left": 4,
+              "width": 4,
+              "height": 2
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "text": "# Dataiku Real Estate Estimator 🏡\n\n\n\n### Your property is estimated to be worth between",
+              "textAlign": "CENTER",
+              "isTransparent": false
+            },
+            "autoLoad": true,
+            "showTitle": "NO",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
             "tileType": "INSIGHT",
             "box": {
               "top": 2,
-              "left": 5,
+              "left": 4,
               "width": 2,
               "height": 2
             },
@@ -18,28 +37,27 @@
             },
             "autoLoad": true,
             "showTitle": "YES",
-            "title": "Estimation",
-            "insightId": "LQ8nmMO",
+            "insightId": "oqqUTLj",
             "insightType": "metrics",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
           },
           {
-            "tileType": "TEXT",
+            "tileType": "INSIGHT",
             "box": {
-              "top": 0,
-              "left": 5,
+              "top": 2,
+              "left": 6,
               "width": 2,
               "height": 2
             },
-            "clickAction": "DO_NOTHING",
+            "clickAction": "OPEN_INSIGHT",
             "tileParams": {
-              "text": "Your real property is estimated to be worth :",
-              "textAlign": "CENTER",
-              "isTransparent": false
+              "displayMode": "LAST_VALUE"
             },
             "autoLoad": true,
-            "showTitle": "NO",
+            "showTitle": "YES",
+            "insightId": "06NDZB0",
+            "insightType": "metrics",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
           }
@@ -53,11 +71,11 @@
   "name": "Scored inputs",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655720962531
+    "lastModifiedOn": 1661181598655
   },
   "creationTag": {
     "versionNumber": 0,
