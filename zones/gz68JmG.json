@@ -1,6 +1,6 @@
 {
-  "name": "Testing ML Algorithms",
-  "color": "#C82423",
+  "name": "4. Testing ML Algorithms",
+  "color": "#FF585D",
   "items": [
     {
       "objectId": "split_transactions_fully_enriched_prepared",
