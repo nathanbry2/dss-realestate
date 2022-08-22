@@ -1,6 +1,6 @@
 {
   "name": "2. Iris Data",
-  "color": "#087ABF",
+  "color": "#221C35",
   "items": [
     {
       "objectId": "compute_transactions_enriched_by_iris_code",
