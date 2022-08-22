@@ -1,0 +1,31 @@
+{
+  "type": "metrics",
+  "params": {
+    "objectSmartId": "inputs_scored_prepared",
+    "objectType": "DATASET",
+    "metricId": "sql_query:upper_bound:Estimation Bounds"
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "Estimation Upper Bound",
+  "dashboardCreationId": "s6Az806",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1661181473773
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1661181473773
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
