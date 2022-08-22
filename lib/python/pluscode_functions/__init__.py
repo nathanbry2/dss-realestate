@@ -1,6 +1,8 @@
 from math import floor
 
-# This dictionary contains the keys and values to convert pluscodes into matrice coordinates.
+'''
+    This dictionary contains the keys and values to convert pluscodes into matrice coordinates.
+'''
 
 convert_dic = {
     '2':0,
@@ -28,7 +30,8 @@ convert_dic = {
 '''
     This function converts pluscodes (length must be minimum 8) into matrix coordinates.
     It takes as input the pluscode column and outputs several lists,
-    containing coordinates and reduced coordiates (for a smaller matrix).'''
+    containing coordinates and reduced coordiates (for a smaller matrix).
+'''
 
 def convert_pluscode(pluscode_col):
     

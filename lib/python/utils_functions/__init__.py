@@ -27,7 +27,8 @@ def correct_date(date_column):
 '''
     This function converts a dataframe to the geojson format.
     It takes as input the dataframe to convert, a list of columns that need to be stored in the geojson (properties), the column containing the geo information (geo_col),
-    and outputs a list of corrected dates.'''
+    and outputs a list of corrected dates.
+'''
 
 
 def convert_df_to_geojson(df, properties, geo_col):
@@ -57,7 +58,8 @@ def convert_df_to_geojson(df, properties, geo_col):
 
 
 '''
-    This function creates a plotly blank figure.'''
+    This function creates a plotly blank figure.
+'''
 
 def blank_figure():
     b_fig = go.Figure(go.Scatter(x=[], y = []))
