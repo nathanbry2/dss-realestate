@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661180916422
+    "lastModifiedOn": 1661181094967
   },
   "creationTag": {
     "versionNumber": 0,
@@ -161,11 +161,11 @@
         "enabled": true,
         "computeOnBuildMode": "PARTITION",
         "meta": {
-          "name": "Estimation",
+          "name": "Estimation Bounds",
           "level": 9
         },
         "configuration": {
-          "code": "-- the metrics values and names are taken from the columns of the select statement\nSELECT \u0027prediction_50%\u0027*0.925 AS metric_1, \u0027prediction_50%\u0027*1.075 AS metric_2, FROM ${DKU_DATASET_TABLE_NAME}\n-- when partitioned, a filter for the WHERE clause can be added like:\n-- WHERE ${DKU_PARTITION_FILTER} \n-- when the dataset is a sql query, the select query is available as\n-- ${DKU_DATASET_QUERY} and, if any, statements before and after the\n-- select as ${DKU_DATASET_PRE_QUERIES} and  ${DKU_DATASET_POST_QUERIES}\n",
+          "code": "-- the metrics values and names are taken from the columns of the select statement\nSELECT \n\"prediction_50%\"*0.925 AS metric_1,\n\"prediction_50%\"*1.075 AS metric_2 FROM ${DKU_DATASET_TABLE_NAME}\n-- when partitioned, a filter for the WHERE clause can be added like:\n-- WHERE ${DKU_PARTITION_FILTER} \n-- when the dataset is a sql query, the select query is available as\n-- ${DKU_DATASET_QUERY} and, if any, statements before and after the\n-- select as ${DKU_DATASET_PRE_QUERIES} and  ${DKU_DATASET_POST_QUERIES}\n",
           "canRunOnImpala": true,
           "singleAggregate": false,
           "perColumn": false,
