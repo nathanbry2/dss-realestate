@@ -14,7 +14,7 @@
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
-              "text": "# Dataiku Real Estate Estimator 🏡\n\n\u003cbr\u003e\u003cbr\u003e\n\n### Your property valuation is estimated to be in the following range 💰",
+              "text": "# Dataiku Real Estate Estimator 🏡\n\n\u003cbr\u003e\u003cbr\u003e\u003cbr\u003e\u003cbr\u003e\n\n### Your property valuation is estimated to be in the following range 💰",
               "textAlign": "CENTER",
               "isTransparent": false
             },
@@ -71,11 +71,11 @@
   "name": "Scored inputs",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661181667067
+    "lastModifiedOn": 1661181675917
   },
   "creationTag": {
     "versionNumber": 0,
