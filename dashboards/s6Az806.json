@@ -71,11 +71,11 @@
   "name": "Scored inputs",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661181675917
+    "lastModifiedOn": 1661181878167
   },
   "creationTag": {
     "versionNumber": 0,
