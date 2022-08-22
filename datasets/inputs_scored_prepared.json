@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661181123868
+    "lastModifiedOn": 1661181145768
   },
   "creationTag": {
     "versionNumber": 0,
@@ -219,7 +219,9 @@
       "metrics": [
         "basic:COUNT_COLUMNS",
         "records:COUNT_RECORDS",
-        "col_stats:MIN:prediction_50%"
+        "col_stats:MIN:prediction_50%",
+        "sql_query:lower_bound:Estimation Bounds",
+        "sql_query:upper_bound:Estimation Bounds"
       ]
     }
   },
