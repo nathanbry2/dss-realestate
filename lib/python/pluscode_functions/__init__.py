@@ -2,7 +2,6 @@ from math import floor
 
 # This dictionary contains the keys and values to convert pluscodes into matrice coordinates.
 
-
 convert_dic = {
     '2':0,
     '3':1,

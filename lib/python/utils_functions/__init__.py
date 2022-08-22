@@ -48,6 +48,8 @@ def convert_df_to_geojson(df, properties, geo_col):
     return geojson
 
 
+
+
 def blank_figure():
     b_fig = go.Figure(go.Scatter(x=[], y = []))
     b_fig.update_layout(template = None)
