@@ -69,73 +69,17 @@
       "copySelectionFromScript": true,
       "engineType": "LINO",
       "def": {
-        "type": "binned_xy",
-        "variant": "binned_xy_rect",
-        "name": "date_mutation_year vs valeur_fonciere (aggregated)",
+        "type": "grouped_columns",
+        "variant": "normal",
+        "name": "New chart",
         "userEditedName": false,
         "genericDimension0": [],
         "genericDimension1": [],
         "facetDimension": [],
         "animationDimension": [],
         "genericMeasures": [],
-        "xDimension": [
-          {
-            "column": "date_mutation_year",
-            "type": "NUMERICAL",
-            "numParams": {
-              "mode": "FIXED_NB",
-              "nbBins": 10,
-              "binSize": 100,
-              "emptyBinsMode": "ZEROS"
-            },
-            "maxValues": 100,
-            "generateOthersCategory": true,
-            "oneTickPerBin": false,
-            "filters": [],
-            "isA": "dimension",
-            "possibleSorts": [
-              {
-                "type": "NATURAL",
-                "label": "Natural ordering",
-                "sortAscending": true
-              }
-            ],
-            "sort": {
-              "type": "NATURAL",
-              "label": "Natural ordering",
-              "sortAscending": true
-            }
-          }
-        ],
-        "yDimension": [
-          {
-            "column": "valeur_fonciere",
-            "type": "NUMERICAL",
-            "numParams": {
-              "mode": "FIXED_NB",
-              "nbBins": 10,
-              "binSize": 100,
-              "emptyBinsMode": "ZEROS"
-            },
-            "maxValues": 100,
-            "generateOthersCategory": true,
-            "oneTickPerBin": false,
-            "filters": [],
-            "isA": "dimension",
-            "possibleSorts": [
-              {
-                "type": "NATURAL",
-                "label": "Natural ordering",
-                "sortAscending": true
-              }
-            ],
-            "sort": {
-              "type": "NATURAL",
-              "label": "Natural ordering",
-              "sortAscending": true
-            }
-          }
-        ],
+        "xDimension": [],
+        "yDimension": [],
         "uaXDimension": [],
         "uaYDimension": [],
         "uaSize": [],
@@ -145,32 +89,12 @@
         "groupDimension": [],
         "xMeasure": [],
         "yMeasure": [],
-        "colorMeasure": [
-          {
-            "column": "valeur_fonciere",
-            "function": "AVG",
-            "type": "NUMERICAL",
-            "displayed": true,
-            "isA": "measure",
-            "displayAxis": "axis1",
-            "displayType": "column",
-            "computeModeDim": 0
-          }
-        ],
+        "colorMeasure": [],
         "sizeMeasure": [],
-        "geometry": [
-          {
-            "column": "iris_GeoShape",
-            "type": "GEOMETRY",
-            "treatAsAlphanum": false,
-            "isA": "ua",
-            "adminLevel": 8
-          }
-        ],
+        "geometry": [],
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
-        "filters": [],
         "axis1LogScale": false,
         "axis2LogScale": false,
         "includeZero": true,
@@ -231,7 +155,6 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
-        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -246,10 +169,9 @@
           "lockSquareGrid": false
         },
         "mapGridOptions": {
-          "gridLonDeg": 0.5,
-          "gridLatDeg": 0.5
+          "gridLonDeg": 0.6,
+          "gridLatDeg": 0.6
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAAuBJREFUeF7t3LFqFFEAheF7d7dbiLUPYLUPoKKCYBNEYpNSgmC1LM6iRZJyq2RLQ9bBpLKzsYlYiJbGJhCm8BnE3kI2bJgR1Af4p7jknuGkPnM5c74suSmSGPzV6QVip9/OLxcM3PFvAgMbuOMLdPz1/Ak2cMcX6Pjr+RNs4I4v0PHX8ydYCvje9XZ1v/40cLvFrjh9ZxRCXLASTRXCt5cGZmtlkjJwJhCpahg41bKZnGvgTCBS1TBwqmUzOfcv8H1e5vS1L1l8LcmkgSXZeGkD860kkwaWZOOlDcy3kkwaWJKNlzYw30oyaWBJNl7awHwryaSBJdl4aQPzrSSTBpZk46UNzLeSTBpYko2XNjDfSjJpYEk2XtrAfCvJpIEl2XhpA/OtJJMGlmTjpQ3Mt5JMGliSjZc2MN9KMmlgSTZe2sB8K8mkgSXZeGkD860kkwaWZOOlDcy3uvLkZPJ2VNfhFSkSY/helk/9F/5krFwy/4HRv3CIMVQGzkUO9jAwHEo1ZmBVOdjbwHAo1dh0+m6jrlebtP/h4daWb9F0rQxyOzvvR71eD12ymqau5vNN36IzcMMVDIyn0gwaWNMNtzYwnkozmAx4f//LCzrJcLgqi+LhBc07xxeYzT5uhBAe0ydms0fP0C16b+/zSYxxjRw8HK7WDUyWap+Zzz+NQhigW3QIsdrdfcBu0QZuj5HiCQOnWDWjMw2cEUaKKgZOsWpGZyYDLsuzD/Q9Ly/rJ0Vx6xfNO8cXODg4vTsY9LfhEz8mk9tjdIs+Ojo/ibFBt+jl8tp6Udzwr0lQoU1ssTgb9fsB3qKbajy+yW7RBm7DkC5r4HTbZnGygbNgSFciGfDx8fkbWnu5XJv6ZzBdq13uH3DzHD71G/8Mhgc6luEC6BadYW9XggsYGA6lGjOwqhzsbWA4lGrMwKpysLeB4VCqMQOrysHeBoZDqcYMrCoHexsYDqUaM7CqHOxtYDiUauwPYa79UYyBUtYAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
