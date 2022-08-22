@@ -29,7 +29,12 @@
   "projectAppType": "APP_TEMPLATE",
   "bundleContainerSettings": {
     "remapping": {
-      "connections": [],
+      "connections": [
+        {
+          "source": "postgreSQL",
+          "target": "postgreSQL"
+        }
+      ],
       "codeEnvs": []
     },
     "codeEnvsBehavior": {
@@ -253,11 +258,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 28,
+    "versionNumber": 29,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661180337088
+    "lastModifiedOn": 1661180354981
   },
   "creationTag": {
     "versionNumber": 0,
