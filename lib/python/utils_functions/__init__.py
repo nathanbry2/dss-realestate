@@ -2,6 +2,9 @@ import ast
 import plotly.graph_objects as go
 
 
+'''
+    This function correct dates that are not in the [2014-2021] range.
+    It takes as input the date column of a dataframe and outputs a list of corrected dates.'''
 
 def correct_date(date_column):
 
@@ -20,6 +23,11 @@ def correct_date(date_column):
 
     return new_dates_list
 
+
+'''
+    This function converts a dataframe to the geojson format.
+    It takes as input the dataframe to convert, a list of columns that need to be stored in the geojson (properties), the column containing the geo information (geo_col),
+    and outputs a list of corrected dates.'''
 
 
 def convert_df_to_geojson(df, properties, geo_col):
@@ -48,7 +56,8 @@ def convert_df_to_geojson(df, properties, geo_col):
     return geojson
 
 
-
+'''
+    This function creates a plotly blank figure.'''
 
 def blank_figure():
     b_fig = go.Figure(go.Scatter(x=[], y = []))
