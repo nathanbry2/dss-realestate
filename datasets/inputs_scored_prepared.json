@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654346833629
+    "lastModifiedOn": 1661180828583
   },
   "creationTag": {
     "versionNumber": 0,
@@ -154,6 +154,22 @@
         },
         "configuration": {
           "aggregates": []
+        }
+      },
+      {
+        "type": "sql_query",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Lower Bound Estimation",
+          "level": 9
+        },
+        "configuration": {
+          "code": "-- the metrics values and names are taken from the columns of the select statement\nSELECT \u0027prediction_50%\u0027*0.95 AS metric_1, \u0027prediction_50%\u0027*1.05 AS metric_2, FROM ${DKU_DATASET_TABLE_NAME}\n-- when partitioned, a filter for the WHERE clause can be added like:\n-- WHERE ${DKU_PARTITION_FILTER} \n-- when the dataset is a sql query, the select query is available as\n-- ${DKU_DATASET_QUERY} and, if any, statements before and after the\n-- select as ${DKU_DATASET_PRE_QUERIES} and  ${DKU_DATASET_POST_QUERIES}\n",
+          "canRunOnImpala": true,
+          "singleAggregate": false,
+          "perColumn": false,
+          "columns": []
         }
       }
     ],
