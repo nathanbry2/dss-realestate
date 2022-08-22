@@ -36,7 +36,7 @@
               "displayMode": "LAST_VALUE"
             },
             "autoLoad": true,
-            "showTitle": "YES",
+            "showTitle": "NO",
             "insightId": "oqqUTLj",
             "insightType": "metrics",
             "displayMode": "INSIGHT",
@@ -55,7 +55,7 @@
               "displayMode": "LAST_VALUE"
             },
             "autoLoad": true,
-            "showTitle": "YES",
+            "showTitle": "NO",
             "insightId": "06NDZB0",
             "insightType": "metrics",
             "displayMode": "INSIGHT",
@@ -71,11 +71,11 @@
   "name": "Scored inputs",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661181878167
+    "lastModifiedOn": 1661181891215
   },
   "creationTag": {
     "versionNumber": 0,
