@@ -1,6 +1,5 @@
 {
   "max_prix_m2": 16000,
   "min_prix_m2": 4000,
-  "max_valuation": 20000000,
-  "projectRandomKey": "A2hB"
+  "max_valuation": 20000000
 }
