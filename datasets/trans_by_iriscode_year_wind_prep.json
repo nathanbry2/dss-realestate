@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661264007192
+    "lastModifiedOn": 1661264014432
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,7 +57,30 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"iris_code","type":"bigint"},
+      {"name":"date_mutation_year","type":"bigint"},
+      {"name":"valeur_fonciere_avg","type":"double"},
+      {"name":"valeur_fonciere_sum","type":"double"},
+      {"name":"code_postal","type":"bigint"},
+      {"name":"surface_m2_not_null_avg","type":"double"},
+      {"name":"surface_m2_not_null_sum","type":"double"},
+      {"name":"prix_m2_not_null_avg","type":"double"},
+      {"name":"nombre_pieces_principales_avg","type":"double"},
+      {"name":"distance_to_centre_avg","type":"double"},
+      {"name":"direction_from_centre","type":"string"},
+      {"name":"iris_GeoPoint_first","type":"string"},
+      {"name":"iris_GeoShape_first","type":"string"},
+      {"name":"NOM_COM_first","type":"string"},
+      {"name":"NOM_IRIS_first","type":"string"},
+      {"name":"TYP_IRIS_first","type":"string"},
+      {"name":"count","type":"bigint"},
+      {"name":"prix_m2_not_null_avg_lag1","type":"double"},
+      {"name":"Growth%_1year","type":"double"},
+      {"name":"prix_m2_not_null_avg_lag7","type":"double"},
+      {"name":"CAGR%_7years","type":"double"},
+      {"name":"Growth%_7years","type":"double"}
+    ],
     "userModified": true
   },
   "dkuProperties": [],
