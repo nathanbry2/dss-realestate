@@ -204,17 +204,9 @@
       "computedColumns": []
     },
     {
-      "preFilter": {
-        "distinct": false,
-        "enabled": false
-      },
-      "autoSelectColumns": false,
-      "originLabel": "transactions_by_coordinates_couple_year_windows_prepared",
-      "index": 1,
-      "computedColumns": []
+      "index": 1
     },
     {
-      "autoSelectColumns": false,
       "index": 2
     }
   ],
