@@ -65,7 +65,7 @@
     "main": {
       "items": [
         {
-          "ref": "transactions_by_coordinates_couple_year_windows_prepared",
+          "ref": "trans_by_coord_couple_year_wind_prep",
           "appendMode": false
         }
       ]
@@ -73,11 +73,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651347090572
+    "lastModifiedOn": 1661264221442
   },
   "creationTag": {
     "versionNumber": 0,
