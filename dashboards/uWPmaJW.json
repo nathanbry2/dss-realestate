@@ -85,7 +85,7 @@
             "tileParams": {
               "showXAxis": true,
               "showYAxis": true,
-              "showLegend": false,
+              "showLegend": true,
               "showTooltips": true,
               "autoPlayAnimation": true
             },
@@ -241,11 +241,11 @@
   "name": "Real Estate\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 27,
+    "versionNumber": 28,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661268534043
+    "lastModifiedOn": 1661268540184
   },
   "creationTag": {
     "versionNumber": 0,
