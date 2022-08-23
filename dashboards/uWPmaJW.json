@@ -31,8 +31,8 @@
             "tileType": "INSIGHT",
             "box": {
               "top": 6,
-              "left": 0,
-              "width": 6,
+              "left": 5,
+              "width": 7,
               "height": 3
             },
             "clickAction": "OPEN_INSIGHT",
@@ -76,10 +76,10 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 9,
-              "left": 10,
-              "width": 2,
-              "height": 2
+              "top": 3,
+              "left": 0,
+              "width": 5,
+              "height": 4
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -241,11 +241,11 @@
   "name": "Real Estate\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 26,
+    "versionNumber": 27,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661268432106
+    "lastModifiedOn": 1661268534043
   },
   "creationTag": {
     "versionNumber": 0,
