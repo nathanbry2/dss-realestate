@@ -145,16 +145,16 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 10,
-              "left": 9,
-              "width": 2,
-              "height": 2
+              "top": 9,
+              "left": 6,
+              "width": 6,
+              "height": 5
             },
-            "clickAction": "OPEN_INSIGHT",
+            "clickAction": "DO_NOTHING",
             "tileParams": {
               "showXAxis": true,
               "showYAxis": true,
-              "showLegend": false,
+              "showLegend": true,
               "showTooltips": true,
               "autoPlayAnimation": true
             },
@@ -173,11 +173,11 @@
               "width": 6,
               "height": 5
             },
-            "clickAction": "OPEN_INSIGHT",
+            "clickAction": "DO_NOTHING",
             "tileParams": {
               "showXAxis": true,
               "showYAxis": true,
-              "showLegend": false,
+              "showLegend": true,
               "showTooltips": true,
               "autoPlayAnimation": true
             },
@@ -241,11 +241,11 @@
   "name": "Real Estate\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 31,
+    "versionNumber": 32,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661268614490
+    "lastModifiedOn": 1661268644348
   },
   "creationTag": {
     "versionNumber": 0,
