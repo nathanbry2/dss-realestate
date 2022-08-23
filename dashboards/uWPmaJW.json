@@ -9,8 +9,8 @@
             "box": {
               "top": 8,
               "left": 0,
-              "width": 8,
-              "height": 4
+              "width": 12,
+              "height": 6
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
@@ -390,11 +390,11 @@
   "name": "Real Estate\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 50,
+    "versionNumber": 51,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661280425629
+    "lastModifiedOn": 1661280461770
   },
   "creationTag": {
     "versionNumber": 0,
