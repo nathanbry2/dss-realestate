@@ -37,7 +37,7 @@
           "numParams": {
             "emptyBinsMode": "ZEROS"
           },
-          "maxValues": 20,
+          "maxValues": 15,
           "generateOthersCategory": true,
           "oneTickPerBin": false,
           "filters": [],
@@ -46,57 +46,67 @@
             {
               "type": "NATURAL",
               "label": "Natural ordering",
-              "sortAscending": true
+              "sortAscending": true,
+              "$$hashKey": "object:8539"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Average of Growth%_7years, descending"
+              "label": "Average of Growth%_7years, descending",
+              "$$hashKey": "object:8538"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
               "label": "Average of Growth%_7years, ascending",
-              "sortAscending": true
+              "sortAscending": true,
+              "$$hashKey": "object:8540"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 1,
-              "label": "Average of CAGR%_7years, descending"
+              "label": "Average of CAGR%_7years, descending",
+              "$$hashKey": "object:8541"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 1,
               "label": "Average of CAGR%_7years, ascending",
-              "sortAscending": true
+              "sortAscending": true,
+              "$$hashKey": "object:8542"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 2,
-              "label": "Average of prix_m2_not_null_avg, descending"
+              "label": "Average of prix_m2_not_null_avg, descending",
+              "$$hashKey": "object:8543"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 2,
               "label": "Average of prix_m2_not_null_avg, ascending",
-              "sortAscending": true
+              "sortAscending": true,
+              "$$hashKey": "object:8544"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 3,
-              "label": "Average of prix_m2_not_null_avg_lag7, descending"
+              "label": "Average of prix_m2_not_null_avg_lag7, descending",
+              "$$hashKey": "object:8545"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 3,
               "label": "Average of prix_m2_not_null_avg_lag7, ascending",
-              "sortAscending": true
+              "sortAscending": true,
+              "$$hashKey": "object:8546"
             }
           ],
           "sort": {
             "type": "AGGREGATION",
             "measureIdx": 0,
-            "label": "Average of Growth%_7years, descending"
+            "label": "Average of Growth%_7years, descending",
+            "$$hashKey": "object:8538"
           }
         }
       ],
@@ -248,6 +258,7 @@
         "defaultRadius": 5.0,
         "singleShape": "FILLED_CIRCLE"
       },
+      "computeMode": "NORMAL",
       "xAxisMode": "NORMAL",
       "yAxisMode": "NORMAL",
       "pieOptions": {
@@ -265,7 +276,6 @@
         "gridLonDeg": 0.5,
         "gridLatDeg": 0.5
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAA95JREFUeF7tnb1qVEEUx/9njK9gQPzo7CRZV0Gx2lWxs1A70QdIY0BBrLSxENIE8gLWQYOdNukUjaDPIJiYu6ZMGsPeI7tGvXP3jswle5N77v5Thtlw5vzO15wzsxHwp9EakEbvjpsDATfcCAiYgBuugYZvjx48qYCnVz8v5veedFrzENGG66RR2wt68LHVLy8EOJXdbdKZ7RKwLf6lAKdp+lzckREP7nVn39ra9uRIWwqwChZFcT+rHoUu9brnXk6OymztlIBt8SotLQGXVpmtD4wFsKa6k9/2j6vtN7ZU0UxpxwJYFHMQcRkVbSTd1p1mqszWrgjYFq/S0hJwaZXZ+kBlgNMU753ICU8drv866bQ/2FKRbWmrBexwO6seARZU8cA7Rws+9bqtR7bVWF/pDx4w8NBvlGCNgKszkFoAFqCvipPZbR517vF6Z+ZbdVufjL9cG8AALo2Ec+Cej8G96//cXc6j2bre3uQQpNhg6w7YC+eAW1Gk7fyUa9Aj175OeQbioOyRI3wnq2hcGBo2FDU6hlV0UZFVkIMHITrgwdGAi4Ygorjl2bWIDuQSwUXPGMQtJd2Zj00M2o3x4ADgkQ5b0PBSvekVf062BG49D31K8MpSbUDAGIaxBY2MLE71ya66zRFv39n+PlIb3Li8fdi1AQGXBFxkDMPaQPvnRcQ7CQxSGhTXfPC6CpWzeWPoXWk9rSJFEHDFgGNThwjep4oLWcgOWFbBbB580mk9izUGAq4RYNWCzt8+G0MEbBDwsDEEOeM1hkTmi4o/AjYKOH+snBJ3l4CBjcrO54Eiq0wOjg3RRX0DAv4dzwj4T1xvSCcrvtEReQ4ue0yiBwNrFbYqCTh0nqIHlzQ85uByLcFgKAxMk2JDIYusPZemB9ODh6YweJtU43EhczBz8JhSB3PwmBTJHFx46mCjg40OP1izyGKRxSLrr0+EB/6xx7fBPHg/vejQTRNOkxoyTSruG+gKARPwv9xs8NrsxJyD6cENr6IJmIB5TPIuvpcdYx5yJ4seTA+mB9ODA990x2nS4Tc6GKIZohmiGaIZogtfIv7v8dlB9aIZohmiGaIZohmiGaL3vKC6JyK8slPioQDHhUN7LPMVDnV9usIii0UWi6xJK7LmRu5MCzagOO7/XhNApkP3q7O/d8DXFDg97rWgXAjplv/5LMbaDK8hYMPwYkQn4BgtGV5DwIbhxYhOwDFaMryGgA3DixGdgGO0ZHgNARuGFyM6AcdoyfAaAjYML0Z0Ao7RkuE1BGwYXozoBByjJcNrCNgwvBjRCThGS4bXELBheDGiE3CMlgyv+QX5P9L9n3pOIQAAAABJRU5ErkJggg\u003d\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true,
       "legendPlacement": "OUTER_RIGHT"
@@ -277,11 +287,11 @@
   "name": "Avg. of Growth%_7years by NOM_IRIS_first on trans_by_iriscode_year_wind_prep",
   "dashboardCreationId": "uWPmaJW",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661267281544
+    "lastModifiedOn": 1661268500821
   },
   "creationTag": {
     "versionNumber": 0,
