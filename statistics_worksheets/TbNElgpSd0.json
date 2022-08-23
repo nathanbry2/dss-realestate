@@ -29,16 +29,117 @@
     "type": "worksheet_root",
     "confidenceLevel": 0.95,
     "showConfidenceInterval": false,
-    "cards": [],
+    "cards": [
+      {
+        "type": "correlation_matrix",
+        "heatmapParams": {
+          "showValues": true,
+          "showColors": true,
+          "showAbsValues": false,
+          "threshold": 0.0,
+          "filterVariablesWithoutValues": false
+        },
+        "metric": "SPEARMAN",
+        "columns": [
+          {
+            "name": "date_mutation_year",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "valeur_fonciere",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "code_postal",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "surface_m2_not_null",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "prix_m2_not_null",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "nombre_pieces_principales",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "longitude",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "latitude",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "distance_to_centre",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "id": "rSBamY9"
+      },
+      {
+        "type": "correlation_matrix",
+        "heatmapParams": {
+          "showValues": true,
+          "showColors": true,
+          "showAbsValues": false,
+          "threshold": 0.0,
+          "filterVariablesWithoutValues": false
+        },
+        "metric": "PEARSON",
+        "columns": [
+          {
+            "name": "date_mutation_year",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "valeur_fonciere",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "code_postal",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "surface_m2_not_null",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "prix_m2_not_null",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "nombre_pieces_principales",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "longitude",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "latitude",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "distance_to_centre",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "id": "M7QbGFy"
+      }
+    ],
     "id": "VO71BnZ"
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661268801533
+    "lastModifiedOn": 1661269058186
   },
   "creationTag": {
     "versionNumber": 0,
