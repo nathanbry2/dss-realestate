@@ -73,7 +73,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 12,
+              "top": 4,
               "left": 0,
               "width": 8,
               "height": 4
@@ -106,8 +106,8 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 0,
-              "left": 0,
+              "top": 4,
+              "left": 8,
               "width": 4,
               "height": 4
             },
@@ -139,15 +139,28 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 16,
+              "top": 0,
               "left": 0,
-              "width": 8,
+              "width": 4,
               "height": 4
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
               "displayMode": "algorithm",
-              "advancedOptions": {}
+              "advancedOptions": {
+                "interactiveScoring": {
+                  "featuresOrder": [
+                    "surface_m2_not_null",
+                    "direction_from_centre",
+                    "code_postal",
+                    "date_mutation_year",
+                    "longitude",
+                    "nombre_pieces_principales",
+                    "distance_to_centre",
+                    "latitude"
+                  ]
+                }
+              }
             },
             "autoLoad": true,
             "showTitle": "YES",
@@ -377,11 +390,11 @@
   "name": "Real Estate\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 49,
+    "versionNumber": 50,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661280401579
+    "lastModifiedOn": 1661280425629
   },
   "creationTag": {
     "versionNumber": 0,
