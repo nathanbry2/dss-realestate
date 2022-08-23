@@ -33,6 +33,10 @@
     {
       "objectId": "transactions_enriched_by_coordinates_couple",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "trans_by_coord_couple_year_wind_prep",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
