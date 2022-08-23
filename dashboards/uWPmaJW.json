@@ -312,6 +312,26 @@
             "insightType": "saved-model_report",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": -1,
+              "left": -1,
+              "width": 8,
+              "height": 4
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "displayMode": "performance-metrics",
+              "advancedOptions": {}
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "1kHNY3r",
+            "insightType": "saved-model_report",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
@@ -324,11 +344,11 @@
   "name": "Real Estate\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 42,
+    "versionNumber": 43,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661269229857
+    "lastModifiedOn": 1661269238406
   },
   "creationTag": {
     "versionNumber": 0,
