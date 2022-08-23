@@ -17,11 +17,11 @@
           "deps": []
         },
         {
-          "ref": "transactions_by_coordinates_couple_year_windows_prepared",
+          "ref": "trans_by_coord_couple_year_wind_prep",
           "deps": []
         },
         {
-          "ref": "transactions_by_iris_code_year_windows_prepared",
+          "ref": "trans_by_iriscode_year_wind_prep",
           "deps": []
         }
       ]
@@ -39,11 +39,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651346910891
+    "lastModifiedOn": 1661265797199
   },
   "creationTag": {
     "versionNumber": 0,
