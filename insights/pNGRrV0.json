@@ -88,7 +88,8 @@
           "displayType": "column",
           "computeMode": "NORMAL",
           "computeModeDim": 0,
-          "multiplier": "Auto"
+          "multiplier": "Auto",
+          "suffix": "%"
         }
       ],
       "xDimension": [],
@@ -212,11 +213,11 @@
   "name": "Avg. of Growth%_7years by code_postal on trans_by_iriscode_year_wind_prep",
   "dashboardCreationId": "uWPmaJW",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661268449827
+    "lastModifiedOn": 1661268452785
   },
   "creationTag": {
     "versionNumber": 0,
