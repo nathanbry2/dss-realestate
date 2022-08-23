@@ -324,7 +324,20 @@
             "clickAction": "DO_NOTHING",
             "tileParams": {
               "displayMode": "performance-metrics",
-              "advancedOptions": {}
+              "advancedOptions": {
+                "interactiveScoring": {
+                  "featuresOrder": [
+                    "surface_m2_not_null",
+                    "direction_from_centre",
+                    "code_postal",
+                    "date_mutation_year",
+                    "longitude",
+                    "nombre_pieces_principales",
+                    "distance_to_centre",
+                    "latitude"
+                  ]
+                }
+              }
             },
             "autoLoad": true,
             "showTitle": "YES",
@@ -344,11 +357,11 @@
   "name": "Real Estate\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 44,
+    "versionNumber": 45,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661269238771
+    "lastModifiedOn": 1661269239701
   },
   "creationTag": {
     "versionNumber": 0,
