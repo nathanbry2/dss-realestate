@@ -1,0 +1,298 @@
+{
+  "type": "chart",
+  "params": {
+    "datasetSmartName": "trans_by_iriscode_year_wind_prep",
+    "engineType": "LINO",
+    "refreshableSelection": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "def": {
+      "type": "grouped_columns",
+      "variant": "normal",
+      "name": "Avg. of Growth%_7years by NOM_IRIS_first",
+      "userEditedName": false,
+      "genericDimension0": [
+        {
+          "column": "NOM_IRIS_first",
+          "type": "ALPHANUM",
+          "numParams": {
+            "emptyBinsMode": "ZEROS"
+          },
+          "maxValues": 20,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of Growth%_7years, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of Growth%_7years, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Average of CAGR%_7years, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Average of CAGR%_7years, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 2,
+              "label": "Average of prix_m2_not_null_avg, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 2,
+              "label": "Average of prix_m2_not_null_avg, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 3,
+              "label": "Average of prix_m2_not_null_avg_lag7, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 3,
+              "label": "Average of prix_m2_not_null_avg_lag7, ascending",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "AGGREGATION",
+            "measureIdx": 0,
+            "label": "Average of Growth%_7years, descending"
+          }
+        }
+      ],
+      "genericDimension1": [],
+      "facetDimension": [],
+      "animationDimension": [],
+      "genericMeasures": [
+        {
+          "column": "Growth%_7years",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        }
+      ],
+      "xDimension": [],
+      "yDimension": [],
+      "uaXDimension": [],
+      "uaYDimension": [],
+      "uaSize": [],
+      "uaShape": [],
+      "uaColor": [],
+      "uaTooltip": [],
+      "groupDimension": [],
+      "xMeasure": [],
+      "yMeasure": [],
+      "colorMeasure": [],
+      "sizeMeasure": [],
+      "geometry": [],
+      "tooltipMeasures": [
+        {
+          "column": "CAGR%_7years",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeModeDim": 0
+        },
+        {
+          "column": "prix_m2_not_null_avg",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeModeDim": 0
+        },
+        {
+          "column": "prix_m2_not_null_avg_lag7",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeModeDim": 0
+        }
+      ],
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "filters": [
+        {
+          "filterType": "ALPHANUM_FACET",
+          "column": "code_postal",
+          "columnType": "NUMERICAL",
+          "isA": "filter",
+          "excludedValues": {},
+          "isAGlobalFilter": false,
+          "explicitExclude": false
+        },
+        {
+          "filterType": "ALPHANUM_FACET",
+          "column": "Growth%_7years",
+          "columnType": "NUMERICAL",
+          "isA": "filter",
+          "excludedValues": {
+            "NaN": true
+          },
+          "isAGlobalFilter": false,
+          "explicitExclude": false
+        }
+      ],
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "includeZero": true,
+      "smoothing": true,
+      "showLegend": true,
+      "showXAxis": false,
+      "showInChartValues": false,
+      "showInChartLabels": true,
+      "strokeWidth": 1,
+      "fillOpacity": 0.6,
+      "showXAxisLabel": true,
+      "showYAxisLabel": true,
+      "displayXAxis": true,
+      "displayYAxis": true,
+      "hexbinRadius": 20,
+      "hexbinNumber": 20,
+      "hexbinRadiusMode": "NUM_HEXAGONS",
+      "yCustomExtent": {
+        "editMode": "AUTO",
+        "manualExtent": [
+          null,
+          null
+        ]
+      },
+      "xCustomExtent": {
+        "editMode": "AUTO",
+        "manualExtent": [
+          null,
+          null
+        ]
+      },
+      "chartHeight": 200,
+      "singleXAxis": true,
+      "multiTooltips": false,
+      "animationFrameDuration": 3000,
+      "animationRepeat": true,
+      "colorOptions": {
+        "singleColor": "#2678B1",
+        "transparency": 0.75,
+        "colorPalette": "default",
+        "ccScaleMode": "NORMAL",
+        "customPalette": {
+          "id": "__dku_custom__",
+          "name": "Custom Palette",
+          "colors": [],
+          "values": [],
+          "fixedValues": false
+        },
+        "paletteType": "CONTINUOUS",
+        "quantizationMode": "NONE",
+        "numQuantizeSteps": 5,
+        "paletteMiddleValue": 0.0,
+        "customColors": {
+          "m_Growth%_7years_AVG_1": "#17becf"
+        },
+        "heatDensityMapIntensity": 0.5,
+        "heatDensityMapRadius": 0.5
+      },
+      "bubblesOptions": {
+        "defaultRadius": 5.0,
+        "singleShape": "FILLED_CIRCLE"
+      },
+      "xAxisMode": "NORMAL",
+      "yAxisMode": "NORMAL",
+      "pieOptions": {
+        "donutHoleSize": 54.0
+      },
+      "scatterOptions": {
+        "equalScales": false,
+        "identityLine": false
+      },
+      "mapOptions": {
+        "tilesLayer": "cartodb-positron",
+        "lockSquareGrid": false
+      },
+      "mapGridOptions": {
+        "gridLonDeg": 0.5,
+        "gridLatDeg": 0.5
+      },
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAA95JREFUeF7tnb1qVEEUx/9njK9gQPzo7CRZV0Gx2lWxs1A70QdIY0BBrLSxENIE8gLWQYOdNukUjaDPIJiYu6ZMGsPeI7tGvXP3jswle5N77v5Thtlw5vzO15wzsxHwp9EakEbvjpsDATfcCAiYgBuugYZvjx48qYCnVz8v5veedFrzENGG66RR2wt68LHVLy8EOJXdbdKZ7RKwLf6lAKdp+lzckREP7nVn39ra9uRIWwqwChZFcT+rHoUu9brnXk6OymztlIBt8SotLQGXVpmtD4wFsKa6k9/2j6vtN7ZU0UxpxwJYFHMQcRkVbSTd1p1mqszWrgjYFq/S0hJwaZXZ+kBlgNMU753ICU8drv866bQ/2FKRbWmrBexwO6seARZU8cA7Rws+9bqtR7bVWF/pDx4w8NBvlGCNgKszkFoAFqCvipPZbR517vF6Z+ZbdVufjL9cG8AALo2Ec+Cej8G96//cXc6j2bre3uQQpNhg6w7YC+eAW1Gk7fyUa9Aj175OeQbioOyRI3wnq2hcGBo2FDU6hlV0UZFVkIMHITrgwdGAi4Ygorjl2bWIDuQSwUXPGMQtJd2Zj00M2o3x4ADgkQ5b0PBSvekVf062BG49D31K8MpSbUDAGIaxBY2MLE71ya66zRFv39n+PlIb3Li8fdi1AQGXBFxkDMPaQPvnRcQ7CQxSGhTXfPC6CpWzeWPoXWk9rSJFEHDFgGNThwjep4oLWcgOWFbBbB580mk9izUGAq4RYNWCzt8+G0MEbBDwsDEEOeM1hkTmi4o/AjYKOH+snBJ3l4CBjcrO54Eiq0wOjg3RRX0DAv4dzwj4T1xvSCcrvtEReQ4ue0yiBwNrFbYqCTh0nqIHlzQ85uByLcFgKAxMk2JDIYusPZemB9ODh6YweJtU43EhczBz8JhSB3PwmBTJHFx46mCjg40OP1izyGKRxSLrr0+EB/6xx7fBPHg/vejQTRNOkxoyTSruG+gKARPwv9xs8NrsxJyD6cENr6IJmIB5TPIuvpcdYx5yJ4seTA+mB9ODA990x2nS4Tc6GKIZohmiGaIZogtfIv7v8dlB9aIZohmiGaIZohmiGaL3vKC6JyK8slPioQDHhUN7LPMVDnV9usIii0UWi6xJK7LmRu5MCzagOO7/XhNApkP3q7O/d8DXFDg97rWgXAjplv/5LMbaDK8hYMPwYkQn4BgtGV5DwIbhxYhOwDFaMryGgA3DixGdgGO0ZHgNARuGFyM6AcdoyfAaAjYML0Z0Ao7RkuE1BGwYXozoBByjJcNrCNgwvBjRCThGS4bXELBheDGiE3CMlgyv+QX5P9L9n3pOIQAAAABJRU5ErkJggg\u003d\u003d",
+      "disableSafetyLimits": false,
+      "useLiveProcessingIfAvailable": true,
+      "legendPlacement": "OUTER_RIGHT"
+    },
+    "maxDataBytes": 157286400
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "Avg. of Growth%_7years by NOM_IRIS_first on trans_by_iriscode_year_wind_prep",
+  "dashboardCreationId": "uWPmaJW",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1661267281544
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1661267281544
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
