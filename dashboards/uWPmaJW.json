@@ -1,6 +1,14 @@
 {
   "pages": [
     {
+      "id": "Gdf9KRS",
+      "grid": {
+        "tiles": []
+      },
+      "title": "Exploratory Data Analysis",
+      "showTitle": false
+    },
+    {
       "id": "COeSGV9",
       "grid": {
         "tiles": [
@@ -15,7 +23,20 @@
             "clickAction": "DO_NOTHING",
             "tileParams": {
               "displayMode": "interactive_scoring",
-              "advancedOptions": {}
+              "advancedOptions": {
+                "interactiveScoring": {
+                  "featuresOrder": [
+                    "surface_m2_not_null",
+                    "direction_from_centre",
+                    "code_postal",
+                    "date_mutation_year",
+                    "longitude",
+                    "nombre_pieces_principales",
+                    "distance_to_centre",
+                    "latitude"
+                  ]
+                }
+              }
             },
             "autoLoad": true,
             "showTitle": "YES",
@@ -26,6 +47,7 @@
           }
         ]
       },
+      "title": "Machine Learning",
       "showTitle": false
     }
   ],
@@ -34,11 +56,11 @@
   "name": "Real Estate\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661245625566
+    "lastModifiedOn": 1661245660503
   },
   "creationTag": {
     "versionNumber": 0,
