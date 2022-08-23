@@ -1,0 +1,104 @@
+{
+  "type": "eda",
+  "params": {
+    "card": {
+      "type": "correlation_matrix",
+      "heatmapParams": {
+        "showValues": true,
+        "showColors": true,
+        "showAbsValues": false,
+        "threshold": 0.0,
+        "filterVariablesWithoutValues": false
+      },
+      "metric": "PEARSON",
+      "columns": [
+        {
+          "name": "date_mutation_year",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "valeur_fonciere",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "code_postal",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "surface_m2_not_null",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "prix_m2_not_null",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "nombre_pieces_principales",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "longitude",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "latitude",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "distance_to_centre",
+          "type": "CONTINUOUS"
+        }
+      ],
+      "id": "M7QbGFy"
+    },
+    "dataSpec": {
+      "inputDatasetSmartName": "transactions_fully_enriched_prepared",
+      "datasetSelection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 100000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": true,
+      "refreshTrigger": 0,
+      "containerSelection": {
+        "containerMode": "INHERIT"
+      }
+    }
+  },
+  "owner": "admin",
+  "listed": true,
+  "name": "Correlation matrix on 9 variables  (Pearson)",
+  "dashboardCreationId": "uWPmaJW",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1661269112874
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1661269112874
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
