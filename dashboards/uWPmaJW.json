@@ -1,6 +1,147 @@
 {
   "pages": [
     {
+      "id": "COeSGV9",
+      "grid": {
+        "tiles": [
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 0,
+              "width": 8,
+              "height": 4
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "displayMode": "interactive_scoring",
+              "advancedOptions": {
+                "interactiveScoring": {
+                  "featuresOrder": [
+                    "surface_m2_not_null",
+                    "direction_from_centre",
+                    "code_postal",
+                    "date_mutation_year",
+                    "longitude",
+                    "nombre_pieces_principales",
+                    "distance_to_centre",
+                    "latitude"
+                  ]
+                }
+              }
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "9SjUEos",
+            "insightType": "saved-model_report",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 4,
+              "left": 0,
+              "width": 8,
+              "height": 4
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "displayMode": "variables_importance",
+              "advancedOptions": {
+                "interactiveScoring": {
+                  "featuresOrder": [
+                    "surface_m2_not_null",
+                    "direction_from_centre",
+                    "code_postal",
+                    "date_mutation_year",
+                    "longitude",
+                    "nombre_pieces_principales",
+                    "distance_to_centre",
+                    "latitude"
+                  ]
+                }
+              }
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "4b4MoJu",
+            "insightType": "saved-model_report",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 8,
+              "left": 0,
+              "width": 8,
+              "height": 4
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "displayMode": "r_scatter",
+              "advancedOptions": {
+                "interactiveScoring": {
+                  "featuresOrder": [
+                    "surface_m2_not_null",
+                    "direction_from_centre",
+                    "code_postal",
+                    "date_mutation_year",
+                    "longitude",
+                    "nombre_pieces_principales",
+                    "distance_to_centre",
+                    "latitude"
+                  ]
+                }
+              }
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "eanyyu4",
+            "insightType": "saved-model_report",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 12,
+              "left": 0,
+              "width": 8,
+              "height": 4
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "displayMode": "performance-metrics",
+              "advancedOptions": {
+                "interactiveScoring": {
+                  "featuresOrder": [
+                    "surface_m2_not_null",
+                    "direction_from_centre",
+                    "code_postal",
+                    "date_mutation_year",
+                    "longitude",
+                    "nombre_pieces_principales",
+                    "distance_to_centre",
+                    "latitude"
+                  ]
+                }
+              }
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "1kHNY3r",
+            "insightType": "saved-model_report",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          }
+        ]
+      },
+      "title": "Machine Learning",
+      "showTitle": true
+    },
+    {
       "id": "Gdf9KRS",
       "grid": {
         "tiles": [
@@ -209,147 +350,6 @@
       },
       "title": "Exploratory Data Analysis",
       "showTitle": true
-    },
-    {
-      "id": "COeSGV9",
-      "grid": {
-        "tiles": [
-          {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": 0,
-              "left": 0,
-              "width": 8,
-              "height": 4
-            },
-            "clickAction": "DO_NOTHING",
-            "tileParams": {
-              "displayMode": "interactive_scoring",
-              "advancedOptions": {
-                "interactiveScoring": {
-                  "featuresOrder": [
-                    "surface_m2_not_null",
-                    "direction_from_centre",
-                    "code_postal",
-                    "date_mutation_year",
-                    "longitude",
-                    "nombre_pieces_principales",
-                    "distance_to_centre",
-                    "latitude"
-                  ]
-                }
-              }
-            },
-            "autoLoad": true,
-            "showTitle": "YES",
-            "insightId": "9SjUEos",
-            "insightType": "saved-model_report",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "FIT_SIZE"
-          },
-          {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": 4,
-              "left": 0,
-              "width": 8,
-              "height": 4
-            },
-            "clickAction": "DO_NOTHING",
-            "tileParams": {
-              "displayMode": "variables_importance",
-              "advancedOptions": {
-                "interactiveScoring": {
-                  "featuresOrder": [
-                    "surface_m2_not_null",
-                    "direction_from_centre",
-                    "code_postal",
-                    "date_mutation_year",
-                    "longitude",
-                    "nombre_pieces_principales",
-                    "distance_to_centre",
-                    "latitude"
-                  ]
-                }
-              }
-            },
-            "autoLoad": true,
-            "showTitle": "YES",
-            "insightId": "4b4MoJu",
-            "insightType": "saved-model_report",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "FIT_SIZE"
-          },
-          {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": 8,
-              "left": 0,
-              "width": 8,
-              "height": 4
-            },
-            "clickAction": "DO_NOTHING",
-            "tileParams": {
-              "displayMode": "r_scatter",
-              "advancedOptions": {
-                "interactiveScoring": {
-                  "featuresOrder": [
-                    "surface_m2_not_null",
-                    "direction_from_centre",
-                    "code_postal",
-                    "date_mutation_year",
-                    "longitude",
-                    "nombre_pieces_principales",
-                    "distance_to_centre",
-                    "latitude"
-                  ]
-                }
-              }
-            },
-            "autoLoad": true,
-            "showTitle": "YES",
-            "insightId": "eanyyu4",
-            "insightType": "saved-model_report",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "FIT_SIZE"
-          },
-          {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": 12,
-              "left": 0,
-              "width": 8,
-              "height": 4
-            },
-            "clickAction": "DO_NOTHING",
-            "tileParams": {
-              "displayMode": "performance-metrics",
-              "advancedOptions": {
-                "interactiveScoring": {
-                  "featuresOrder": [
-                    "surface_m2_not_null",
-                    "direction_from_centre",
-                    "code_postal",
-                    "date_mutation_year",
-                    "longitude",
-                    "nombre_pieces_principales",
-                    "distance_to_centre",
-                    "latitude"
-                  ]
-                }
-              }
-            },
-            "autoLoad": true,
-            "showTitle": "YES",
-            "insightId": "1kHNY3r",
-            "insightType": "saved-model_report",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "FIT_SIZE"
-          }
-        ]
-      },
-      "title": "Machine Learning",
-      "showTitle": true
     }
   ],
   "owner": "admin",
@@ -357,11 +357,11 @@
   "name": "Real Estate\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 45,
+    "versionNumber": 46,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661269239701
+    "lastModifiedOn": 1661269333152
   },
   "creationTag": {
     "versionNumber": 0,
