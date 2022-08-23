@@ -6,7 +6,7 @@
         "tiles": []
       },
       "title": "Exploratory Data Analysis",
-      "showTitle": false
+      "showTitle": true
     },
     {
       "id": "COeSGV9",
@@ -48,7 +48,7 @@
         ]
       },
       "title": "Machine Learning",
-      "showTitle": false
+      "showTitle": true
     }
   ],
   "owner": "admin",
@@ -56,11 +56,11 @@
   "name": "Real Estate\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661245660503
+    "lastModifiedOn": 1661266559544
   },
   "creationTag": {
     "versionNumber": 0,
