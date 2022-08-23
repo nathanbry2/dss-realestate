@@ -9,7 +9,7 @@
             "box": {
               "top": 0,
               "left": 0,
-              "width": 5,
+              "width": 6,
               "height": 3
             },
             "clickAction": "OPEN_INSIGHT",
@@ -31,9 +31,9 @@
             "tileType": "INSIGHT",
             "box": {
               "top": 3,
-              "left": 7,
-              "width": 2,
-              "height": 2
+              "left": 0,
+              "width": 6,
+              "height": 3
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -55,8 +55,8 @@
             "box": {
               "top": 0,
               "left": 6,
-              "width": 2,
-              "height": 2
+              "width": 6,
+              "height": 3
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -76,8 +76,8 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 0,
-              "left": 8,
+              "top": 9,
+              "left": 10,
               "width": 2,
               "height": 2
             },
@@ -99,10 +99,10 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 2,
-              "left": 5,
-              "width": 2,
-              "height": 2
+              "top": 3,
+              "left": 6,
+              "width": 6,
+              "height": 3
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -122,7 +122,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 2,
+              "top": 11,
               "left": 9,
               "width": 2,
               "height": 2
@@ -145,8 +145,8 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 3,
-              "left": 0,
+              "top": 9,
+              "left": 8,
               "width": 2,
               "height": 2
             },
@@ -168,8 +168,8 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 3,
-              "left": 2,
+              "top": 9,
+              "left": 6,
               "width": 2,
               "height": 2
             },
@@ -241,11 +241,11 @@
   "name": "Real Estate\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 24,
+    "versionNumber": 25,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661268285681
+    "lastModifiedOn": 1661268382540
   },
   "creationTag": {
     "versionNumber": 0,
