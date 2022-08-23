@@ -1,0 +1,251 @@
+{
+  "type": "chart",
+  "params": {
+    "datasetSmartName": "transactions_fully_enriched_prepared",
+    "engineType": "SQL",
+    "refreshableSelection": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": -1,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 1661197452650
+    },
+    "def": {
+      "type": "multi_columns_lines",
+      "variant": "normal",
+      "name": "New chart",
+      "userEditedName": true,
+      "genericDimension0": [
+        {
+          "column": "code_postal",
+          "type": "NUMERICAL",
+          "numParams": {
+            "mode": "TREAT_AS_ALPHANUM",
+            "nbBins": 10,
+            "binSize": 100,
+            "emptyBinsMode": "ZEROS"
+          },
+          "maxValues": 100,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of prix_m2_not_null, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of prix_m2_not_null, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Average of surface_m2_not_null, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Average of surface_m2_not_null, ascending",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true
+          }
+        }
+      ],
+      "genericDimension1": [],
+      "facetDimension": [],
+      "animationDimension": [],
+      "genericMeasures": [
+        {
+          "column": "prix_m2_not_null",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
+          "column": "surface_m2_not_null",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis2",
+          "displayType": "line",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0,
+          "multiplier": "Auto"
+        }
+      ],
+      "xDimension": [],
+      "yDimension": [],
+      "uaXDimension": [],
+      "uaYDimension": [],
+      "uaSize": [],
+      "uaShape": [],
+      "uaColor": [],
+      "uaTooltip": [],
+      "groupDimension": [],
+      "xMeasure": [],
+      "yMeasure": [],
+      "colorMeasure": [],
+      "sizeMeasure": [],
+      "geometry": [],
+      "tooltipMeasures": [],
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "filters": [
+        {
+          "filterType": "NUMERICAL_FACET",
+          "column": "date_mutation_year",
+          "columnType": "NUMERICAL",
+          "isA": "filter",
+          "excludedValues": {},
+          "isAGlobalFilter": false,
+          "explicitExclude": false
+        }
+      ],
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "includeZero": true,
+      "smoothing": true,
+      "showLegend": true,
+      "showXAxis": false,
+      "showInChartValues": false,
+      "showInChartLabels": true,
+      "strokeWidth": 3,
+      "fillOpacity": 0.6,
+      "showXAxisLabel": true,
+      "showYAxisLabel": true,
+      "displayXAxis": true,
+      "displayYAxis": true,
+      "hexbinRadius": 20,
+      "hexbinNumber": 20,
+      "hexbinRadiusMode": "NUM_HEXAGONS",
+      "yCustomExtent": {
+        "editMode": "AUTO",
+        "manualExtent": [
+          null,
+          null
+        ]
+      },
+      "xCustomExtent": {
+        "editMode": "AUTO",
+        "manualExtent": [
+          null,
+          null
+        ]
+      },
+      "chartHeight": 200,
+      "singleXAxis": true,
+      "multiTooltips": false,
+      "animationFrameDuration": 3000,
+      "animationRepeat": true,
+      "colorOptions": {
+        "singleColor": "#2678B1",
+        "transparency": 0.8,
+        "colorPalette": "default",
+        "ccScaleMode": "NORMAL",
+        "customPalette": {
+          "id": "__dku_custom__",
+          "name": "Custom Palette",
+          "colors": [],
+          "values": [],
+          "fixedValues": false
+        },
+        "paletteType": "CONTINUOUS",
+        "quantizationMode": "NONE",
+        "numQuantizeSteps": 5,
+        "paletteMiddleValue": 0.0,
+        "customColors": {
+          "m_prix_m2_not_null_AVG_1": "#17becf",
+          "m_surface_m2_not_null_AVG_1": "#ff9896"
+        },
+        "heatDensityMapIntensity": 0.5,
+        "heatDensityMapRadius": 0.5
+      },
+      "bubblesOptions": {
+        "defaultRadius": 5.0,
+        "singleShape": "FILLED_CIRCLE"
+      },
+      "computeMode": "NORMAL",
+      "xAxisMode": "NORMAL",
+      "yAxisMode": "NORMAL",
+      "pieOptions": {
+        "donutHoleSize": 54.0
+      },
+      "scatterOptions": {
+        "equalScales": false,
+        "identityLine": false
+      },
+      "mapOptions": {
+        "tilesLayer": "cartodb-positron",
+        "lockSquareGrid": false
+      },
+      "mapGridOptions": {
+        "gridLonDeg": 0.5,
+        "gridLatDeg": 0.5
+      },
+      "thumbnailData": "data:image/png;base64,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\u003d",
+      "disableSafetyLimits": false,
+      "useLiveProcessingIfAvailable": true,
+      "legendPlacement": "OUTER_TOP"
+    },
+    "maxDataBytes": 157286400
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "New chart on transactions_fully_enriched_prepared",
+  "dashboardCreationId": "uWPmaJW",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1661266831658
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1661266831658
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

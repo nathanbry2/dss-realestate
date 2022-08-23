@@ -1,0 +1,251 @@
+{
+  "type": "chart",
+  "params": {
+    "datasetSmartName": "transactions_fully_enriched_prepared",
+    "engineType": "SQL",
+    "refreshableSelection": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": -1,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 1661197452650
+    },
+    "def": {
+      "type": "grouped_columns",
+      "variant": "normal",
+      "name": "Avg. of prix_m2_not_null by code_postal",
+      "userEditedName": true,
+      "genericDimension0": [
+        {
+          "column": "code_postal",
+          "type": "NUMERICAL",
+          "numParams": {
+            "mode": "TREAT_AS_ALPHANUM",
+            "nbBins": 10,
+            "binSize": 100,
+            "emptyBinsMode": "ZEROS"
+          },
+          "maxValues": 100,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of prix_m2_not_null, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of prix_m2_not_null, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Average of surface_m2_not_null, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Average of surface_m2_not_null, ascending",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true
+          }
+        }
+      ],
+      "genericDimension1": [],
+      "facetDimension": [],
+      "animationDimension": [],
+      "genericMeasures": [
+        {
+          "column": "prix_m2_not_null",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
+          "column": "surface_m2_not_null",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis2",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0,
+          "multiplier": "Auto"
+        }
+      ],
+      "xDimension": [],
+      "yDimension": [],
+      "uaXDimension": [],
+      "uaYDimension": [],
+      "uaSize": [],
+      "uaShape": [],
+      "uaColor": [],
+      "uaTooltip": [],
+      "groupDimension": [],
+      "xMeasure": [],
+      "yMeasure": [],
+      "colorMeasure": [],
+      "sizeMeasure": [],
+      "geometry": [],
+      "tooltipMeasures": [],
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "filters": [
+        {
+          "filterType": "NUMERICAL_FACET",
+          "column": "date_mutation_year",
+          "columnType": "NUMERICAL",
+          "isA": "filter",
+          "excludedValues": {},
+          "isAGlobalFilter": false,
+          "explicitExclude": false
+        }
+      ],
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "includeZero": true,
+      "smoothing": true,
+      "showLegend": true,
+      "showXAxis": false,
+      "showInChartValues": false,
+      "showInChartLabels": true,
+      "strokeWidth": 1,
+      "fillOpacity": 0.6,
+      "showXAxisLabel": true,
+      "showYAxisLabel": true,
+      "displayXAxis": true,
+      "displayYAxis": true,
+      "hexbinRadius": 20,
+      "hexbinNumber": 20,
+      "hexbinRadiusMode": "NUM_HEXAGONS",
+      "yCustomExtent": {
+        "editMode": "AUTO",
+        "manualExtent": [
+          null,
+          null
+        ]
+      },
+      "xCustomExtent": {
+        "editMode": "AUTO",
+        "manualExtent": [
+          null,
+          null
+        ]
+      },
+      "chartHeight": 200,
+      "singleXAxis": true,
+      "multiTooltips": false,
+      "animationFrameDuration": 3000,
+      "animationRepeat": true,
+      "colorOptions": {
+        "singleColor": "#2678B1",
+        "transparency": 0.8,
+        "colorPalette": "default",
+        "ccScaleMode": "NORMAL",
+        "customPalette": {
+          "id": "__dku_custom__",
+          "name": "Custom Palette",
+          "colors": [],
+          "values": [],
+          "fixedValues": false
+        },
+        "paletteType": "CONTINUOUS",
+        "quantizationMode": "NONE",
+        "numQuantizeSteps": 5,
+        "paletteMiddleValue": 0.0,
+        "customColors": {
+          "m_prix_m2_not_null_AVG_1": "#17becf",
+          "m_surface_m2_not_null_AVG_1": "#ff9896"
+        },
+        "heatDensityMapIntensity": 0.5,
+        "heatDensityMapRadius": 0.5
+      },
+      "bubblesOptions": {
+        "defaultRadius": 5.0,
+        "singleShape": "FILLED_CIRCLE"
+      },
+      "computeMode": "NORMAL",
+      "xAxisMode": "NORMAL",
+      "yAxisMode": "NORMAL",
+      "pieOptions": {
+        "donutHoleSize": 54.0
+      },
+      "scatterOptions": {
+        "equalScales": false,
+        "identityLine": false
+      },
+      "mapOptions": {
+        "tilesLayer": "cartodb-positron",
+        "lockSquareGrid": false
+      },
+      "mapGridOptions": {
+        "gridLonDeg": 0.5,
+        "gridLatDeg": 0.5
+      },
+      "thumbnailData": "data:image/png;base64,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\u003d",
+      "disableSafetyLimits": false,
+      "useLiveProcessingIfAvailable": true,
+      "legendPlacement": "OUTER_TOP"
+    },
+    "maxDataBytes": 157286400
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "Avg. of prix_m2_not_null by code_postal on transactions_fully_enriched_prepared",
+  "dashboardCreationId": "uWPmaJW",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1661266831639
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1661266831639
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
