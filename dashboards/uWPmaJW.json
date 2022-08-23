@@ -250,8 +250,8 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
+              "top": 4,
+              "left": 0,
               "width": 8,
               "height": 4
             },
@@ -278,11 +278,11 @@
   "name": "Real Estate\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 37,
+    "versionNumber": 38,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661269213897
+    "lastModifiedOn": 1661269214396
   },
   "creationTag": {
     "versionNumber": 0,
