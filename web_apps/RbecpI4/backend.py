@@ -314,7 +314,7 @@ app.layout = html.Div(
                 dbc.Col(
                     children = [
                         html.Br(),html.Br(),html.Br(),html.Br(),html.Br(),html.Br(),html.Br(),html.Br(),html.Br(),
-                        html.A(dbc.Button(html.H3(
+                        html.A(dbc.Button(html.H4(
                             children='Estimate my property 📊',
                             style={
                                 'color': title_style['text'],
