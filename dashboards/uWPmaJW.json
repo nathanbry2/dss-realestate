@@ -503,11 +503,11 @@
   "name": "Real Estate\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 64,
+    "versionNumber": 65,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661421361107
+    "lastModifiedOn": 1661421363462
   },
   "creationTag": {
     "versionNumber": 0,
