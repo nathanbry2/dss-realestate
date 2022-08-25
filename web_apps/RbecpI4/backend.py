@@ -202,7 +202,7 @@ app.layout = html.Div(
                             ],
                             value='75009',
                             placeholder="",
-                            size='lg',
+                            size='md',
                             style = {
                                 #"margin-left":"40%",
                                 #"margin-right":"40%",
@@ -228,7 +228,7 @@ app.layout = html.Div(
                             type='number',
                             value='80',
                             placeholder="e.g. 100",
-                            size='lg',
+                            size='md',
                             min=1,
                             style = {
                                 #"margin-left":"40%",
@@ -254,7 +254,7 @@ app.layout = html.Div(
                             type='number',
                             value='4',
                             placeholder="e.g. 4",
-                            size='lg',
+                            size='md',
                             min=1,
                             style = {
                                 #"margin-left":"40%",
@@ -290,7 +290,7 @@ app.layout = html.Div(
                             ],
                             value='2021',
                             placeholder="",
-                            size='lg',
+                            size='md',
                             style = {
                                 #"margin-left":"40%",
                                 #"margin-right":"40%",
