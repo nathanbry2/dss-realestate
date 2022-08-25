@@ -90,7 +90,7 @@ app.layout = html.Div(
                         'margin-left': '2%',
                    }
                 ),
-                html.H1(
+                html.H2(
                     children='Dataiku Real Estate Estimator 🏡',
                     style={
                         #'backgroundColor': title_style['background'],
