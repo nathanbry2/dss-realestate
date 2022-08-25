@@ -228,11 +228,11 @@
   "name": "Avg. of prix_m2_not_null by date_mutation_year on transactions_fully_enriched_prepared",
   "dashboardCreationId": "uWPmaJW",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661420099813
+    "lastModifiedOn": 1661420100974
   },
   "creationTag": {
     "versionNumber": 0,
