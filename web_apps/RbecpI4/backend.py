@@ -577,16 +577,16 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
         margin={"r":30,"t":50,"l":30,"b":0},
         title_text="<i>Transactions Count</i> and <i>Average m² Price</i> evolution in zone <b>"+df_filtered.iloc[0]['NOM_IRIS_first']+"</b>",
         plot_bgcolor='rgba(0,0,0,0)',
-        title_font_size=15.5
+        title_font_size=15
         
     )
 
     # Set x-axis title
-    fig.update_xaxes(title_text="<b>Year</b>",title_font_size=14)
+    fig.update_xaxes(title_text="<b>Year</b>",title_font_size=13)
 
     # Set y-axes titles
-    fig.update_yaxes(title_text="<b>Average m² price</b>", secondary_y=True,ticksuffix='€',title_font_size=14)
-    fig.update_yaxes(title_text="<b>Transactions count</b>", secondary_y=False,title_font_size=14)
+    fig.update_yaxes(title_text="<b>Average m² price</b>", secondary_y=True,ticksuffix='€',title_font_size=13)
+    fig.update_yaxes(title_text="<b>Transactions count</b>", secondary_y=False,title_font_size=13)
     
     
     ### CREATE MAP CHART
