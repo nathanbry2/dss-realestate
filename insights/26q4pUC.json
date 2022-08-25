@@ -46,67 +46,57 @@
             {
               "type": "NATURAL",
               "label": "Natural ordering",
-              "sortAscending": true,
-              "$$hashKey": "object:8539"
+              "sortAscending": true
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Average of Growth%_7years, descending",
-              "$$hashKey": "object:8538"
+              "label": "Average of Growth%_7years, descending"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
               "label": "Average of Growth%_7years, ascending",
-              "sortAscending": true,
-              "$$hashKey": "object:8540"
+              "sortAscending": true
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 1,
-              "label": "Average of CAGR%_7years, descending",
-              "$$hashKey": "object:8541"
+              "label": "Average of CAGR%_7years, descending"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 1,
               "label": "Average of CAGR%_7years, ascending",
-              "sortAscending": true,
-              "$$hashKey": "object:8542"
+              "sortAscending": true
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 2,
-              "label": "Average of prix_m2_not_null_avg, descending",
-              "$$hashKey": "object:8543"
+              "label": "Average of prix_m2_not_null_avg, descending"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 2,
               "label": "Average of prix_m2_not_null_avg, ascending",
-              "sortAscending": true,
-              "$$hashKey": "object:8544"
+              "sortAscending": true
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 3,
-              "label": "Average of prix_m2_not_null_avg_lag7, descending",
-              "$$hashKey": "object:8545"
+              "label": "Average of prix_m2_not_null_avg_lag7, descending"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 3,
               "label": "Average of prix_m2_not_null_avg_lag7, ascending",
-              "sortAscending": true,
-              "$$hashKey": "object:8546"
+              "sortAscending": true
             }
           ],
           "sort": {
             "type": "AGGREGATION",
             "measureIdx": 0,
-            "label": "Average of Growth%_7years, descending",
-            "$$hashKey": "object:8538"
+            "label": "Average of Growth%_7years, descending"
           }
         }
       ],
@@ -278,7 +268,7 @@
       },
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true,
-      "legendPlacement": "OUTER_RIGHT"
+      "legendPlacement": "OUTER_TOP"
     },
     "maxDataBytes": 157286400
   },
@@ -287,11 +277,11 @@
   "name": "Avg. of Growth%_7years by NOM_IRIS_first on trans_by_iriscode_year_wind_prep",
   "dashboardCreationId": "uWPmaJW",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661268500821
+    "lastModifiedOn": 1661420052802
   },
   "creationTag": {
     "versionNumber": 0,
