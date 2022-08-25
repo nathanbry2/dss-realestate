@@ -167,7 +167,7 @@ app.layout = html.Div(
                         
                        
                         
-                        html.H5('Postal code',
+                        html.H6('Postal code',
                                  style = {
                                      'text-align':'left',
                                     'font-weight':'bold',
