@@ -375,7 +375,7 @@ app.layout = html.Div(
                                     style = {
                                         #'font-weight':'bold',
                                         'text-align':'center',  
-                                        'font-size': "25px",
+                                        'font-size': "23px",
                                     }
                                 ),html.Br(),html.Br(),
                                 dcc.Markdown(
@@ -383,14 +383,14 @@ app.layout = html.Div(
                                     style = {
                                         #'font-weight':'bold',
                                         'text-align':'center',  
-                                        'font-size': "22px",
+                                        'font-size': "20px",
 
                                     }
                                 ),html.Br(),
                                 html.Ul(id='list_output',style={
                                     "display": "grid",
                                     'gap': "15px",
-                                    'font-size': "20px",
+                                    'font-size': "18px",
                                     'justify-content': 'center'}),
                                 html.Br(),html.Br(),
                                 html.Br(),html.Br(),
