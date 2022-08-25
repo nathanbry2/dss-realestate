@@ -210,7 +210,7 @@
             "box": {
               "top": 16,
               "left": 0,
-              "width": 12,
+              "width": 3,
               "height": 3
             },
             "clickAction": "DO_NOTHING",
@@ -253,20 +253,20 @@
                     "enabled": false,
                     "rules": []
                   },
-                  "samplingMethod": "FULL",
-                  "maxRecords": -1,
+                  "samplingMethod": "HEAD_SEQUENTIAL",
+                  "maxRecords": 1000000,
                   "targetRatio": 0.02,
                   "withinFirstN": -1,
                   "maxReadUncompressedBytes": -1
                 },
                 "autoRefreshSample": false,
-                "_refreshTrigger": 1661197452650
+                "_refreshTrigger": 0
               },
               "copySelectionFromScript": true
             },
             "autoLoad": true,
             "showTitle": "YES",
-            "insightId": "iFti7zF",
+            "insightId": "Cc2lYHz",
             "insightType": "filters",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
@@ -456,11 +456,11 @@
   "name": "Real Estate\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 55,
+    "versionNumber": 56,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661420226018
+    "lastModifiedOn": 1661420457541
   },
   "creationTag": {
     "versionNumber": 0,
