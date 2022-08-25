@@ -30,7 +30,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 6,
+              "top": 8,
               "left": 5,
               "width": 7,
               "height": 3
@@ -53,7 +53,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 0,
+              "top": 2,
               "left": 5,
               "width": 7,
               "height": 3
@@ -99,7 +99,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 3,
+              "top": 5,
               "left": 5,
               "width": 7,
               "height": 3
@@ -145,7 +145,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 9,
+              "top": 11,
               "left": 6,
               "width": 6,
               "height": 5
@@ -168,7 +168,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 9,
+              "top": 11,
               "left": 0,
               "width": 6,
               "height": 5
@@ -191,7 +191,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 14,
+              "top": 16,
               "left": 0,
               "width": 12,
               "height": 2
@@ -208,10 +208,10 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 16,
-              "left": 0,
-              "width": 3,
-              "height": 3
+              "top": 0,
+              "left": 7,
+              "width": 5,
+              "height": 2
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
@@ -456,11 +456,11 @@
   "name": "Real Estate\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 56,
+    "versionNumber": 57,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661420457541
+    "lastModifiedOn": 1661420559873
   },
   "creationTag": {
     "versionNumber": 0,
