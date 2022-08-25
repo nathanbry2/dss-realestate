@@ -448,7 +448,7 @@ app.layout = html.Div(
             ],
             style={
                 'text-align':'center',
-                "margin-left":"11%",
+                "margin-left":"8%",
                 "margin-right":"10%",
             }
         ),html.Br(),html.Br(),html.Br(),
