@@ -352,7 +352,7 @@ app.layout = html.Div(
         ),html.Br(),
         
         html.Span(id='anchor'),
-        html.Br(),html.Br(),
+        html.Br(),html.Br(),html.Br(),
         dcc.Loading(
             id="loading-1",
             type="graph",
