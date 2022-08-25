@@ -349,7 +349,7 @@ app.layout = html.Div(
             ]
         
         
-        ),html.Br(),html.Br(),
+        ),html.Br(),
         
         html.Span(id='anchor'),
         html.Br(),html.Br(),html.Br(),
