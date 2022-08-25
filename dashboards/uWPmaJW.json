@@ -460,7 +460,7 @@
               "top": 0,
               "left": 0,
               "width": 12,
-              "height": 9
+              "height": 8
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
@@ -484,11 +484,11 @@
   "name": "Real Estate\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 59,
+    "versionNumber": 60,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661420750075
+    "lastModifiedOn": 1661420764261
   },
   "creationTag": {
     "versionNumber": 0,
