@@ -153,7 +153,7 @@ app.layout = html.Div(
                             type='text',
                             value='17 rue Saulnier',
                             placeholder="e.g. 203 rue de Bercy",
-                            size='lg',
+                            size='md',
                             style = {
                                 #"margin-left":"40%",
                                 #"margin-right":"40%",
