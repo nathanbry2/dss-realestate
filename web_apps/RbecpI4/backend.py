@@ -440,8 +440,8 @@ app.layout = html.Div(
                     id='output8',
                     figure = blank_figure(),
                     style={
-                        'width': '1400px',
-                        'height':'650px',
+                        'width': '1200px',
+                        'height':'558px',
                         'border':'none',
                     }
                 )
