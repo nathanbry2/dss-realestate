@@ -637,7 +637,7 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
                       title={
                           'text': "<b>Average m² price (€) in Paris areas - 2021</b>",
                       },
-                      title_font_size=15)
+                      title_font_size=17)
     #fig2.show()
     #,style={'width': 'auto','height':'300px','border':'none'}
 
