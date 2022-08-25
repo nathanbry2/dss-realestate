@@ -49,28 +49,24 @@
             {
               "type": "NATURAL",
               "label": "Natural ordering",
-              "sortAscending": true,
-              "$$hashKey": "object:6609"
+              "sortAscending": true
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Average of Growth%_7years, descending",
-              "$$hashKey": "object:6610"
+              "label": "Average of Growth%_7years, descending"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
               "label": "Average of Growth%_7years, ascending",
-              "sortAscending": true,
-              "$$hashKey": "object:6611"
+              "sortAscending": true
             }
           ],
           "sort": {
             "type": "NATURAL",
             "label": "Natural ordering",
-            "sortAscending": true,
-            "$$hashKey": "object:6609"
+            "sortAscending": true
           }
         }
       ],
@@ -204,7 +200,7 @@
       },
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true,
-      "legendPlacement": "OUTER_RIGHT"
+      "legendPlacement": "OUTER_TOP"
     },
     "maxDataBytes": 157286400
   },
@@ -213,11 +209,11 @@
   "name": "Avg. of Growth%_7years by code_postal on trans_by_iriscode_year_wind_prep",
   "dashboardCreationId": "uWPmaJW",
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661268453377
+    "lastModifiedOn": 1661420066950
   },
   "creationTag": {
     "versionNumber": 0,
