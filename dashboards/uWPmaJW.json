@@ -206,6 +206,25 @@
             "resizeImageMode": "FIT_SIZE"
           },
           {
+            "tileType": "TEXT",
+            "box": {
+              "top": 0,
+              "left": 0,
+              "width": 7,
+              "height": 2
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "text": "#### This slide presents you insights on Paris real estate market.",
+              "textAlign": "LEFT",
+              "isTransparent": false
+            },
+            "autoLoad": true,
+            "showTitle": "NO",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
             "tileType": "INSIGHT",
             "box": {
               "top": 0,
@@ -254,7 +273,7 @@
                     "rules": []
                   },
                   "samplingMethod": "HEAD_SEQUENTIAL",
-                  "maxRecords": 1000000,
+                  "maxRecords": 10000,
                   "targetRatio": 0.02,
                   "withinFirstN": -1,
                   "maxReadUncompressedBytes": -1
@@ -266,7 +285,7 @@
             },
             "autoLoad": true,
             "showTitle": "YES",
-            "insightId": "Cc2lYHz",
+            "insightId": "CLC4ank",
             "insightType": "filters",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
@@ -484,11 +503,11 @@
   "name": "Real Estate\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 60,
+    "versionNumber": 61,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661420764261
+    "lastModifiedOn": 1661421103624
   },
   "creationTag": {
     "versionNumber": 0,
