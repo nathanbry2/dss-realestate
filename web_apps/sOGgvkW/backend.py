@@ -17,7 +17,7 @@ nb_main_rooms = 0
 year = 0
 
 images_folder = dataiku.Folder("OMmeZS75")
-estimate_logo = os.path.join(images_folder.get_path(), "estimate.png")
+estimate_logo = os.path.join(images_folder.get_path(), "estimate_black.png")
 estimate_logo_encoded = base64.b64encode(open(estimate_logo, 'rb').read()) 
 
 
