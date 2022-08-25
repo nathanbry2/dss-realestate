@@ -577,7 +577,7 @@ def output_function(n_clicks,input1,input2,input3,input4,input5):
         margin={"r":30,"t":50,"l":30,"b":0},
         title_text="<i>Transactions Count</i> and <i>Average m² Price</i> evolution in zone <b>"+df_filtered.iloc[0]['NOM_IRIS_first']+"</b>",
         plot_bgcolor='rgba(0,0,0,0)',
-        title_font_size=17
+        title_font_size=15
         
     )
 
