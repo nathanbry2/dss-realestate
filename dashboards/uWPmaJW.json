@@ -204,6 +204,72 @@
             "insightType": "eda",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 16,
+              "left": 0,
+              "width": 12,
+              "height": 3
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "filters": [
+                {
+                  "filterType": "NUMERICAL_FACET",
+                  "column": "date_mutation_year",
+                  "columnType": "NUMERICAL",
+                  "minValue": 2014.0,
+                  "maxValue": 2021.0,
+                  "isA": "filter",
+                  "excludedValues": {},
+                  "isAGlobalFilter": true,
+                  "explicitExclude": false
+                },
+                {
+                  "filterType": "NUMERICAL_FACET",
+                  "column": "code_postal",
+                  "columnType": "NUMERICAL",
+                  "minValue": 75001.0,
+                  "maxValue": 75020.0,
+                  "isA": "filter",
+                  "excludedValues": {},
+                  "isAGlobalFilter": true,
+                  "explicitExclude": false
+                }
+              ],
+              "engineType": "SQL",
+              "refreshableSelection": {
+                "selection": {
+                  "useMemTable": false,
+                  "filter": {
+                    "distinct": false,
+                    "enabled": false
+                  },
+                  "partitionSelectionMethod": "ALL",
+                  "latestPartitionsN": 1,
+                  "ordering": {
+                    "enabled": false,
+                    "rules": []
+                  },
+                  "samplingMethod": "FULL",
+                  "maxRecords": -1,
+                  "targetRatio": 0.02,
+                  "withinFirstN": -1,
+                  "maxReadUncompressedBytes": -1
+                },
+                "autoRefreshSample": false,
+                "_refreshTrigger": 1661197452650
+              },
+              "copySelectionFromScript": true
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "iFti7zF",
+            "insightType": "filters",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
@@ -390,11 +456,11 @@
   "name": "Real Estate\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 54,
+    "versionNumber": 55,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661420026968
+    "lastModifiedOn": 1661420226018
   },
   "creationTag": {
     "versionNumber": 0,
