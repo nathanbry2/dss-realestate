@@ -117,7 +117,7 @@ app.layout = html.Div(
             },
             children=[
                 
-                html.Br(),html.Br(),
+                html.Br(),
                 html.Div(
                     html.H4(
                         children=['Welcome to the Dataiku Real Estate Estimator!',html.Br(),'Fill in the following information about your property,', html.Br(), 'and click on the button to get an estimation of how much it is worth 💰'],
@@ -132,7 +132,7 @@ app.layout = html.Div(
                     )
                 )
             ]
-        ),html.Br(),html.Br(),
+        ),html.Br(),
         
         dbc.Row(
             
