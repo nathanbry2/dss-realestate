@@ -139,7 +139,7 @@ app.layout = html.Div(
             [
                 dbc.Col(
                     [
-                        html.H5('Address',
+                        html.H6('Address',
                                  style = {
                                      'text-align':'left',
                                     'font-weight':'bold',
@@ -214,7 +214,7 @@ app.layout = html.Div(
                         ),html.Br(),
                         
                         
-                        html.H5('Surface (in m2)',
+                        html.H6('Surface (in m2)',
                                  style = {
                                      'text-align':'left',
                                     'font-weight':'bold',
@@ -240,7 +240,7 @@ app.layout = html.Div(
                             }
                             ),html.Br(),
                         
-                        html.H5('Number of main rooms',
+                        html.H6('Number of main rooms',
                                  style = {
                                      'text-align':'left',
                                     'font-weight':'bold',
@@ -267,7 +267,7 @@ app.layout = html.Div(
                             ),html.Br(),
                         
                         
-                        html.H5('Year',
+                        html.H6('Year',
                                  style = {
                                      'text-align':'left',
                                     'font-weight':'bold',
