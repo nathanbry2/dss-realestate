@@ -215,7 +215,7 @@
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
-              "text": "####This first slide presents you insights on Paris real estate market.\n\u003cbr\u003e\n####You can visit the second slide *2. Machine Leaning* to have an overview of the Machine Learning model we used.\u003c/b\u003e\n\u003cbr\u003e\nFinally, you can use the Estimation tool in the third slide *3. Estimation Interface*",
+              "text": "#### This first slide presents you insights on Paris real estate market.\n\u003cbr\u003e\n#### You can visit the second slide *2. Machine Leaning* to have an overview of the Machine Learning model we used.\n\u003cbr\u003e\n#### Finally, you can use the Estimation tool in the third slide *3. Estimation Interface*",
               "textAlign": "LEFT",
               "isTransparent": false
             },
@@ -503,11 +503,11 @@
   "name": "Real Estate\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 65,
+    "versionNumber": 66,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1661421363462
+    "lastModifiedOn": 1661421382608
   },
   "creationTag": {
     "versionNumber": 0,
