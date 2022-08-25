@@ -85,7 +85,7 @@ app.layout = html.Div(
                 html.Img(
                     src='data:image/png;base64,{}'.format(dataiku_logo_encoded.decode()),         
                     style={
-                        'width':'10%',
+                        'width':'8%',
                         'height': 'auto',
                         'margin-left': '2%',
                    }
