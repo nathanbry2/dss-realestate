@@ -3,10 +3,6 @@
   "color": "#465A64",
   "items": [
     {
-      "objectId": "Interventions_Nathan___Sheet2__1_",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "Interventions_Nathan___Sheet2__1__prepared",
       "objectType": "DATASET"
     }
